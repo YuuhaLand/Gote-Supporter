@@ -1,0 +1,681 @@
+{
+  "namespace": "comment",
+
+  "comment_content_scrolling@common.scrolling_panel": {
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "$show_background": false,
+    "$scroll_size": [ 5, "100% - 4px" ],
+    "$scrolling_content": "comment.comment_content_scrolling_panel"
+  },
+
+  "comment_screen@common.base_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_tab_right",
+        "to_button_id": "button.comment_next_button",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_tab_left",
+        "to_button_id": "button.comment_prev_button",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_up",
+        "to_button_id": "button.menu_up",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_down",
+        "to_button_id": "button.menu_down",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_left",
+        "to_button_id": "button.menu_left",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_right",
+        "to_button_id": "button.menu_right",
+        "mapping_type": "global",
+        "scope": "view"
+      }
+    ],
+    "$screen_content": "comment.comment_screen_content",
+    "$screen_bg_content": "feed.chat_background"
+  },
+
+  "chat_header@common_store.store_top_bar": {
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "$back_button_text": "gui.back",
+    "controls": [
+      {
+        "title_panel": {
+          "type": "panel",
+          "size": [ "100%", 19 ],
+          "controls": [
+            {
+              "back_button_content_panel@play.back_content_panel": {
+                "offset": [ 2, 0 ]
+              }
+            },
+            {
+              "title_text": {
+                "type": "panel",
+                "size": [ "100%c", "100%c" ],
+                "controls": [
+                  {
+                    "title_panel": {
+                      "type": "label",
+                      "size": [ "default", 10 ],
+                      "text": "feed.comment",
+                      "offset": [ 0, -1 ],
+                      "color": "$title_text_color",
+                      "layer": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "comment_content_scrolling_panel": {
+    "type": "stack_panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "orientation": "vertical",
+    "size": [ "100%", "100%c" ],
+    "offset": [ 0, 0 ],
+
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "s": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "avatar_icon": {
+                "type": "image",
+                "texture": "#gamerpic_texture",
+                "size": [ 20, 20 ],
+                "texture_file_system": "#gamerpic_texture_source",
+                "bindings": [
+                  {
+                    "binding_name": "#gamerpic_texture",
+                    "binding_name_override": "#texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "comment_collection"
+                  },
+                  {
+                    "binding_name": "#gamerpic_texture_source",
+                    "binding_name_override": "#texture_file_system",
+                    "binding_type": "collection",
+                    "binding_collection_name": "comment_collection"
+                  },
+                  {
+                    "binding_name": "#gamerpic_visible",
+                    "binding_type": "collection",
+                    "binding_collection_name": "comment_collection",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "padding_2": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "author_and_honbun": {
+                "type": "stack_panel",
+                "size": [ "fill", "100%c" ],
+                "controls": [
+                  {
+                    "gamertag_and_date": {
+                      "type": "label",
+                      "text": "#text",
+                      "color": "$f_color_format",
+                      "size": [ "default", 10 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#author_gamertag",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        },
+                        {
+                          "binding_name": "#time_since_feed_post",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(#author_gamertag + '  §7' + #time_since_feed_post)",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_0": {
+                      "type": "panel",
+                      "size": [ 0, 2 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#content"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "honbun": {
+                      "type": "label",
+                      "text": "#content",
+                      "color": "$f_color_format",
+                      "font_type": "unicode",
+                      "size": [ "100%", "default" ],
+                      "bindings": [
+                        {
+                          "binding_name": "#content"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(not (#content = ''))",
+                          "target_property_name": "#visible"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_1": {
+                      "type": "panel",
+                      "size": [ 0, 2 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#text_visible",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "feed_texture": {
+                      "type": "image",
+                      "size": [ 180, 100 ],
+                      "texture": "#screenshot_texture",
+                      "texture_file_system": "#screenshot_texture_source",
+                      "bindings": [
+                        {
+                          "binding_name": "#screenshot_texture",
+                          "binding_name_override": "#texture",
+                          "binding_type": "global"
+                        },
+                        {
+                          "binding_name": "#screenshot_texture_source",
+                          "binding_name_override": "#texture_file_system",
+                          "binding_type": "global"
+                        },
+                        {
+                          "binding_name": "#text_visible",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_2": {
+                      "type": "panel",
+                      "size": [ 0, 2 ]
+                    }
+                  },
+                  {
+                    "likes_and_comments": {
+                      "type": "label",
+                      "text": "#likes_and_comments",
+                      "color": "$7_color_format",
+                      "size": [ "100%", "default" ],
+                      "bindings": [
+                        {
+                          "binding_name": "#likes_and_comments",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_3": {
+                      "type": "panel",
+                      "size": [ 0, 2 ]
+                    }
+                  },
+                  {
+                    "action_buttons": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": [ "100%", 14 ],
+                      "$collection_binding_name": "feed_collection",
+                      "controls": [
+                        {
+                          "like_button@common.button": {
+                            "size": [ 18, 18 ],
+                            "hover_control": "hover_border",
+                            "pressed_control": "pressed_border",
+                            "focus_enabled": true,
+                            "$pressed_button_name": "button.like_button",
+                            "controls": [
+                              {
+                                "base@feed.like_image_panel": {
+                                  "$is_like_visible": "#comment_like_icon_visible"
+                                }
+                              },
+                              {
+                                "hover_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              },
+                              {
+                                "pressed_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "feed_collection"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding_1": {
+                            "type": "panel",
+                            "size": [ 2, 0 ]
+                          }
+                        },
+                        {
+                          "more_options_button@common.button": {
+                            "size": [ 18, 18 ],
+                            "hover_control": "hover_border",
+                            "pressed_control": "pressed_border",
+                            "focus_enabled": true,
+                            "$pressed_button_name": "button.comment_options", //パッキャラパッキャラぱおーん
+                            "controls": [
+                              {
+                                "base": {
+                                  "type": "image",
+                                  "texture": "textures/ui/more-dots",
+                                  "size": [ 16, 16 ]
+                                }
+                              },
+                              {
+                                "hover_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              },
+                              {
+                                "pressed_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_4": {
+                      "type": "panel",
+                      "size": [ 0, 2 ]
+                    }
+                  },
+                  {
+                    "comment_text_panel@comment.comment_text_panel": {}
+                  },
+                  {
+                    "padding_5": {
+                      "type": "panel",
+                      "size": [ 0, 10 ]
+                    }
+                  },
+                  {
+                    "divider": {
+                      "type": "panel",
+                      "size": [ "100% + 30px", "100%c + 14px" ],
+                      "controls": [
+                        {
+                          "section_divider": {
+                            "type": "image",
+                            "size": [ "100% - 30px", 1 ],
+                            "offset": [ -30, 0 ],
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "layer": 3,
+                            "texture": "textures/ui/list_item_divider_line_light"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_6": {
+                      "type": "panel",
+                      "size": [ 0, 10 ]
+                    }
+                  },
+                  { "comment_grid_instance@comment.comment_grid": {} },
+                  {
+                    "padding_7": {
+                      "type": "panel",
+                      "size": [ 0, 20 ]
+                    }
+                  },
+                  {
+                    "pagination_panel@comment.pagination_panel": {
+                      "$is_visible_binding_name": "#comment_buttons_visible",
+                      "$this_page_index_text": "#comment_page_index_text",
+                      "$is_prev_visible": "#comment_prev_button_visible",
+                      "$is_next_visible": "#comment_next_button_visible"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "comment_msa_item": {
+    "type": "stack_panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "orientation": "vertical",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "s": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "avatar_icon": {
+                "type": "image",
+                "texture": "#comment_gamerpic_texture",
+                "size": [ 20, 20 ],
+                "texture_file_system": "#comment_gamerpic_texture_source",
+                "bindings": [
+                  {
+                    "binding_name": "#comment_gamerpic_texture",
+                    "binding_name_override": "#texture",
+                    "binding_type": "collection",
+                    "binding_collection_name": "comment_collection"
+                  },
+                  {
+                    "binding_name": "#comment_gamerpic_texture_source",
+                    "binding_name_override": "#texture_file_system",
+                    "binding_type": "collection",
+                    "binding_collection_name": "comment_collection"
+                  },
+                  {
+                    "binding_name": "#gamerpic_visible",
+                    "binding_type": "collection",
+                    "binding_collection_name": "comment_collection",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "padding_2": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "author_and_honbun": {
+                "type": "stack_panel",
+                "size": [ "fill", "100%c" ],
+                "controls": [
+                  {
+                    "gamertag_and_date": {
+                      "type": "label",
+                      "text": "#text",
+                      "color": "$f_color_format",
+                      "size": [ "default", 10 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#comment_gamertag",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        },
+                        {
+                          "binding_name": "#likes_and_time_since_comment_post",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(#comment_gamertag + '  §7' + #likes_and_time_since_comment_post)",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_0": {
+                      "type": "panel",
+                      "size": [ 0, 2 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#comment_content",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "honbun": {
+                      "type": "label",
+                      "text": "#comment_content",
+                      "color": "$f_color_format",
+                      "font_type": "unicode",
+                      "size": [ "100%", "default" ],
+                      "bindings": [
+                        {
+                          "binding_name": "#comment_content",
+                          "binding_type": "collection",
+                          "binding_collection_name": "comment_collection"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_1": {
+                      "type": "panel",
+                      "size": [ 0, 2 ]
+                    }
+                  },
+                  {
+                    "action_buttons": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": [ "100%", 14 ],
+                      "$collection_binding_name": "comment_collection",
+                      "controls": [
+                        {
+                          "like_button@common.button": {
+                            "size": [ 18, 18 ],
+                            "hover_control": "hover_border",
+                            "pressed_control": "pressed_border",
+                            "focus_enabled": true,
+                            "$pressed_button_name": "button.comment_grid_like",
+                            "controls": [
+                              {
+                                "base@feed.like_image_panel": {
+                                  "$is_like_visible": "#commentfeed_like_icon_visible"
+                                }
+                              },
+                              {
+                                "hover_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              },
+                              {
+                                "pressed_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "comment_collection"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding_2": {
+                            "type": "panel",
+                            "size": [ 2, 0 ]
+                          }
+                        },
+                        {
+                          "more_options_button@common.button": {
+                            "size": [ 18, 18 ],
+                            "hover_control": "hover_border",
+                            "pressed_control": "pressed_border",
+                            "focus_enabled": true,
+                            "$pressed_button_name": "button.comment_feed_options", //パッキャラパッキャラぱおーん
+                            "controls": [
+                              {
+                                "base": {
+                                  "type": "image",
+                                  "texture": "textures/ui/more-dots",
+                                  "size": [ 16, 16 ]
+                                }
+                              },
+                              {
+                                "hover_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              },
+                              {
+                                "pressed_border": {
+                                  "type": "image",
+                                  "size": [ "100%", "100%" ],
+                                  "texture": "textures/ui/focus_border_white"
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "collection_details",
+                                "binding_collection_name": "comment_collection"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "comment_screen_content@common.common_panel": {
+    "type": "panel",
+    "controls": [
+      { "chat_top_panel@comment.chat_header": { "layer": 2 } },
+      {
+        "comment_content_scrolling@comment.comment_content_scrolling": {
+          "size": [ "100%", "100% - 23px" ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left"
+        }
+      },
+      {
+        "popup_dialog_factory_options_comment": {
+          "type": "factory",
+          "control_ids": {
+            "options": "@comment.popup_dialog__options"
+          }
+        }
+      },
+      {
+        "popup_dialog_factory_options_comment_feed": {
+          "type": "factory",
+          "control_ids": {
+            "options": "@comment.popup_dialog__options_comment"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "scoreboard_player_list": {
+    "type": "stack_panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ "100%", "100%c" ],
+    "focus_container": true,
+    "use_last_focus": true,
+    "$focus_nagivation_mode_right": "contained",
+    "controls": [
+      {
+        "vertical_padding0@pause.vertical_padding": {
+          "size": [ "100%", 4 ]
+        }
+      },
+      { "worldname_label@pause.players_label": {} },
+      {
+        "vertical_padding_0@pause.vertical_padding": {
+          "size": [ "100%", 4 ]
+        }
+      },
+      {
+        "permissions_button@common_buttons.dark_text_button": {
+          "ignored": "$education_edition",
+          "size": [ "100%", 24 ],
+          "$button_text": "permissions.title",
+          "$pressed_button_name": "button.menu_permission",
+          "bindings": [
+            {
+              "binding_name": "#permissions_button_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "vertical_padding_1@pause.vertical_padding": {
+          "ignored": "$education_edition",
+          "size": [ "100%", 4 ],
+          "bindings": [
+            {
+              "binding_name": "#permissions_button_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { "players_label@scoreboard.list_objective_label": {} },
+      {
+        "vertical_padding_2@pause.vertical_padding": {
+          "size": [ "100%", 4 ]
+        }
+      },
+      { "scored_players_grid_panel@scoreboard.players_scored_grid_list": {} },
+      {
+        "vertical_padding_3@pause.vertical_padding": {
+          "size": [ "100%", 5 ],
+          "bindings": [
+            {
+              "binding_name": "#list_scores_not_empty",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { "unscored_players_grid_panel@scoreboard.players_unscored_grid_list": {} },
+      {
+        "vertical_padding_4@pause.vertical_padding": {
+          "size": [ "100%", 5 ],
+          "bindings": [
+            {
+              "binding_name": "#unscored_not_empty",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { "invite_players_button_panel@pause.invite_players_button_panel": {} },
+      {
+        "vertical_padding_5@pause.vertical_padding": {
+          "size": [ "100%", 4 ]
+        }
+      },
+      { "disconnected_from_multiplayer_label_panel@pause.disconnected_from_multiplayer_label_panel": {} },
+      {
+        "vertical_padding_6@pause.vertical_padding": {
+          "size": [ "100%", 4 ]
+        }
+      }
+    ]
+  }
+}

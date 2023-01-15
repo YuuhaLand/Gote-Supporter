@@ -1,0 +1,88 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "chest",
+
+  "player_renderer": {
+    "type": "image",
+    "texture": "textures/ui/White",
+    "color": [ 0.000, 0.000, 0.000 ],
+    "size": [ 62, 80 ],
+    "layer": 2,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [ -120, 0 ],
+    "controls": [
+      {
+        "player_renderer_panel": {
+          "type": "panel",
+          "size": [ 40, 40 ],
+          "offset": [ 0, -18 ],
+
+          "controls": [
+            {
+              "player_renderer": {
+                "type": "custom",
+                "renderer": "live_player_renderer",
+                "property_bag": {
+                  "#look_at_cursor": false
+                },
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.screen_exit_size_animation_push",
+                  "@common.screen_exit_size_animation_pop",
+                  "@common.screen_entrance_size_animation_push",
+                  "@common.screen_entrance_size_animation_pop"
+                ],
+                "layer": 8,
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "small_chest_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": []
+            }
+          },
+          {
+            "player_renderer@chest.player_renderer": {}
+          }
+        ]
+      }
+    ]
+  },
+  "large_chest_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": []
+            }
+          },
+          {
+            "player_renderer@chest.player_renderer": {}
+          },
+          {
+            "delital_panel@crafting.delital_panel": {}
+          }
+        ]
+      }
+    ]
+  }
+}

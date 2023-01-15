@@ -1,0 +1,324 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "dialog_content_with_skin": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "skin_pane": {
+          "type": "input_panel",
+          "size": [ "35% + 1px", "100%" ],
+          "ignored": "$hide_skin",
+          "gesture_tracking_button": "button.turn_doll",
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.turn_doll",
+              "mapping_type": "pressed",
+              "button_up_right_of_first_refusal": true
+            }
+          ],
+          "controls": [
+            {
+              "paper_doll_panel": {
+                "type": "panel",
+                "size": [ "100%", "100% - 10px" ],
+                "offset": [ 0, -35 ],
+                "controls": [
+                  {
+                    "paper_doll": {
+                      "type": "custom",
+                      "renderer": "paper_doll_renderer",
+                      "size": [ "100%", "100%" ],
+                      "layer": 2,
+                      "anchor_from": "bottom_middle",
+                      "anchor_to": "bottom_middle",
+                      "rotation": "gesture_x",
+                      "use_uuid": true,
+                      "use_selected_skin": false,
+                      "animation_reset_name": "screen_animation_reset",
+                      "anims": [
+                        "@common.screen_exit_size_animation_push",
+                        "@common.screen_exit_size_animation_pop",
+                        "@common.screen_entrance_size_animation_push",
+                        "@common.screen_entrance_size_animation_pop"
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "skin_pane",
+                          "source_property_name": "#gesture_delta_source",
+                          "target_property_name": "#gesture_delta_source"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "skin_pane",
+                          "source_property_name": "#gesture_mouse_delta_x",
+                          "target_property_name": "#gesture_mouse_delta_x"
+                        },
+                        {
+                          "binding_name": "#is_appearance_visible",
+                          "binding_name_override": "#visible",
+                          "binding_condition": "always"
+                        },
+                        {
+                          "binding_name": "#player_uuid"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "divider_padding": {
+          "type": "panel",
+          "size": [ 6, "100%" ],
+          "ignored": "$hide_skin"
+        }
+      },
+      {
+        "profile_panel": {
+          "type": "panel",
+          "size": [ "fill", "100%" ],
+          "controls": [
+            {
+              "dialog_content@profile_card.dialog_content": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "xbl_dialog_scrolling_content": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ "100%", 2 ]
+        }
+      },
+      {
+        "profile_info@profile_card.profile_info": {}
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ "100%", 4 ]
+        }
+      },
+      {
+        "title_presence_info": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "min_size": [ "100%", 20 ],
+          "text": "#currently_playing",
+          "color": "$body_text_color",
+          "bindings": [
+            {
+              "binding_name": "#currently_playing"
+            },
+            {
+              "binding_name": "#currently_playing_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ "100%", 2 ],
+          "bindings": [
+            {
+              "binding_name": "#currently_playing_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "add_friend_button@common_buttons.light_text_button": {
+          "size": [ "100%", 30 ],
+          "ignored": "$is_current_profile",
+          "$pressed_button_name": "button.add_friend",
+          "$button_text": "#add_friend_button_text",
+          "$button_text_binding_type": "global",
+          "$button_binding_condition": "once",
+          "bindings": [
+            {
+              "binding_name": "(#add_friend_button_visible)",
+              "binding_name_override": "#visible"
+            },
+            {
+              "binding_name": "#add_friend_button_text"
+            }
+          ],
+          "variables": [
+            {
+              "requires": "($nx_os or $is_ps4)",
+              "$focus_override_down": "mute_option"
+            }
+          ]
+        }
+      },
+      {
+        "remove_friend_button@common_buttons.light_text_button": {
+          "size": [ "100%", 30 ],
+          "ignored": true,
+          "$pressed_button_name": "button.remove_friend",
+          "$button_text": "#remove_friend_button_text",
+          "$button_text_binding_type": "global",
+          "$button_binding_condition": "once",
+          "$focus_override_down": "mute_option",
+          "bindings": [
+            {
+              "binding_name": "(#remove_friend_button_visible)",
+              "binding_name_override": "#visible"
+            },
+            {
+              "binding_name": "#remove_friend_button_text"
+            }
+          ]
+        }
+      },
+      {
+        "adding_friend_progress_bars": {
+          "type": "image",
+          "texture": "textures/ui/mainbanners",
+          "size": [ "100%", 30 ],
+          "controls": [
+            {
+              "searching_bars@common_store.progress_loading_bars": {
+                "size": [ "100%", "100%" ],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#add_remove_in_progress",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [ "100%", 4 ],
+          "ignored": "$is_current_profile",
+          "bindings": [
+            {
+              "binding_name": "(not #is_friend)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_visibility_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "ignored": "($is_current_profile)",
+          "$focus_override_down": "mute_option",
+          "controls": [
+            {
+              "friends_dropdown@settings_common.option_dropdown": {
+                "$button_content": "profile_card.add_friend_dropdown_panel",
+                "$show_option_label": false,
+                "$option_label": "#friend_status_dropdown_toggle_label",
+                "$dropdown_content": "profile_card.add_friend_dropdown_content",
+                "$dropdown_area": "dialog_content",
+                "$dropdown_name": "add_friend_dropdown",
+                "$options_dropdown_toggle_label_binding": "#friend_status_dropdown_toggle_label",
+                "$dropdown_scroll_content_size": [ "100%", 112 ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#is_friend",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "real_name_message": {
+          "type": "label",
+          "text": "xbox.profile.realName",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ]
+        }
+      },
+      {
+        "padding_4": {
+          "type": "panel",
+          "size": [ "100%", 4 ],
+          "ignored": "$is_current_profile"
+        }
+      },
+      {
+        "mute_option@profile_card.toggle_option": {
+          "$toggle_label": "xbox.profile.mute",
+          "$option_binding_name": "#mute_player",
+          "$toggle_name": "mute_player",
+          "ignored": "$is_current_profile",
+          "$focus_id": "mute_option" 
+        }
+      },
+      {
+        "padding_5": {
+          "type": "panel",
+          "size": [ "100%", 4 ],
+          "ignored": "$is_current_profile"
+        }
+      },
+      {
+        "block_option@profile_card.toggle_option": {
+          "$toggle_label": "xbox.profile.block",
+          "$option_binding_name": "#block_player",
+          "$toggle_name": "block_player",
+          "ignored": "$is_current_profile"
+        }
+      },
+      {
+        "padding_6": {
+          "type": "panel",
+          "size": [ "100%", 4 ],
+          "ignored": "$is_current_profile"
+        }
+      },
+      {
+        "report_button@common_buttons.dark_content_button": {
+          "size": [ "100%", 30 ],
+          "ignored": "$is_current_profile",
+          "$pressed_button_name": "button.report",
+          "$button_content": "profile_card.report_button_content"
+        }
+      },
+      {
+        "padding_7": {
+          "type": "panel",
+          "size": [ "100%", 2 ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#xbl_info_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  }
+}

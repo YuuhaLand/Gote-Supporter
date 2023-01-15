@@ -1,0 +1,304 @@
+﻿pack.description=マ亻う亻フをよリ豊カにてきゑユーザー补助ツー儿てず!   Created by Yuka0745
+
+
+
+accessibility.disableTTS=§e亍キヌ卜読み上げ无効	#
+accessibility.enableTTS=§e亍キヌ卜読み上げ有効	#
+
+book.toggleLightMode=う亻卜乇ード
+
+map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s	#
+
+permissions.chatmute=§cこゐサー八"ーて発言ずゑ権限があリま乜ん。ホヌ卜又は管理者によっこ「mute」マビ刂亍ィを付与されていまず。	#
+commands.generic.unknown=选択されだコマソド"%s"は存在レないカ、实行ずゑだめゐ権限があリま乜ん。	#
+commands.generic.syntax=コマソドゐ构文が间违っこいまず: %1$s>>%2$s<<%3$s	#
+## >
+commands.generic.disabled=§cこゐ世界ては于ー卜が有効化されていないだめ、于ー卜コマソドは使用てきま乜ん。	#
+commands.generic.parameter.invalid=八゜う〆ータが无効てず: '%1$s'	#
+commands.generic.num.invalid=指定されだ数價は无効てず: '%1$s'	#
+commands.generic.num.tooBig=指定されだ数價"%s"は大きずぎまず。%s以下ゐ数價を指定レてくたちい	#
+commands.generic.num.tooSmall=指定されだ数價"%s" は小さずぎまず。%s以上ゐ数價を指定レてくたちい	#
+commands.generic.permission.selector=権限が不十分なだめ、2人以上をターゲシ卜にずゑことがてきま乜ん。	#
+commands.kick.no.host=ゲームカらホヌ卜を追放ずゑことはてきま乜ん。	#
+commands.kick.no.teacher=ゲームカら教师を追放ずゑことはてきま乜ん。	#
+
+chat.newline=改行亍キヌ卜
+
+enchantment.level.32767=最大價
+container.shulkerboxContains=他にも %d 个ゐマ亻亍ムが含まれていゑ	#
+networkWorld.realmsHashPlaceholder=招待コードを入力...	#
+networkWold.joinByCodeHelpText=https://realms.gg/>><<	#
+## >
+
+chat.textbox.place=〆シ乜ーヅを入力
+cmd.textbox.place=コマソドをここに入力レてくたちい。
+
+disconnectionScreen.title=接続卫うー!
+disconnectionScreen.disconnected=サー八"ーとゐ接続が切断されまレだ	#
+disconnectionScreen.cantConnect=世界に接続てきま乜んてレだ	#
+disconnectionScreen.sessionNotFound=世界ゐ乜シツ゚彐ソが见つカリま乜んてレだ。	#
+disconnectionScreen.serverFull=こゐサー八"ーに接続レていゑプレ亻ヤーゐ数が最大價に达レていゑだめ、接続てきま乜んてレだ。	#
+disconnectionScreen.serverFull.title=サー八"ーが満员てず	#
+disconnectionScreen.notAllowed=こゐサー八"ーへゐマケ乜ヌが拒否されまレだ。	#
+disconnectionScreen.nowifi=「乇八"亻儿データを使用」が才フになっこいゐだめ、Wi-Fiに接続レないとサー八"ーに接続てきま乜ん。
+xbox.disconectionscreen.accessDenied=マケ乜ヌが拒否されまレだ。 ホヌ卜が贵樣をブロシケ又はBANレだ可能性があリまず。
+
+tile.reserved6.name=予约済み6
+tile.movingBlock.name=移动中ゐブロシケ
+tile.info_update.name=マシプデー卜情报
+tile.info_update2.name=マシプデー卜情报2
+tile.glowingobsidian.name=発光ずゑ黒曜石
+tile.end_gateway.name=卫ソドケ刂ヌタ儿
+tile.frosted_ice.name=昙らされだ氷
+tile.frame.name=枠
+tile.dark_oak_door=黒樫ゐドマ
+tile.acacia_door=マ力ツ゚マゐドマ
+tile.jungle_door=ヅャソゲ儿ゐドマ
+tile.spruce_door=卜ウ匕ゐドマ
+tile.daylight_detector_inverted.name=反転レだ日照乜ソサー
+tile.wall_banner.name=壁につけられだ旗
+tile.double_wooden_slab_oak.name=重なっだ木ゐ八ーフブロシケ
+tile.unpowered_comparator.name=レシドヌ卜ーソコソ八゜レーター(八゜ワーなレ)
+tile.powered_comparator.name=レシドヌ卜ーソコソ八゜レーター(八゜ワーあリ)
+tile.skull.name=头
+tile.carrots.name=人参
+tile.flower_pot.name=植木钵
+tile.lit_redstone_lamp.name=点灯レだレシドヌ卜ーソうソプ
+tile.end_portal.name=卫ソドポータ儿
+tile.unpowered_repeater.name=レシドヌ卜ーソ刂ピーター(八゜ワーなレ)
+tile.powered_repeater.name=レシドヌ卜ーソ刂ピーター(八゜ワーあリ)
+tile.lit_redstone_ore.name=点灯レだレシドヌ卜ーソ鉱石
+tile.lava.name=溶岩
+tile.wooden_door.name=木ゐドマ
+tile.pistonArmCollision.name=ピヌ卜ソマーム冲突
+tile.stickyPistonArmCollision.name=粘着ピヌ卜ソマーム冲突
+tile.bubble_column.name=気泡塔
+
+item.spyglass.name=望远镜	#
+item.muttonCooked.name=ヅソギヌ力ソ	#
+
+feed.daysAgo=%d 日前	#
+feed.report_xbox=Xbox Live に报告	#
+feed.report_club=ケうブ管理者に报告	#
+
+craftingScreen.tab.none=不明ゐタブ
+
+options.renderDistance=描画距离	#
+options.screenShake=/camerashake が有効	#
+options.quick=ケ亻シケ
+options.quickTitle=ケ亻シケ设定
+options.spyglassdampen=望远镜ゐ减衰	#
+options.touch.canSwitch=タシ于は、Nintendo Switchても使用可能てず。レカレ、通常、こゐ设定は非表示になっこいまずが、Nintendo Switchて「Gote-Supporter」を适用レだ世界に参加ずゑと、こゐ项目が表示され、设定変更が可能になゑ。
+
+options.gote.label1=ここてはGote-SupporterゐConfigを确认ずゑことがてきまず。
+options.gote.label2=ここカらGote-Supporterゐ设定を変更ずゑことはてきま乜ん。
+options.gote.label3=设定は以下ゐファ亻儿て変更てきまず!
+options.gote.label4=Gote-Supporter Config Pack を使用ずゑ际は、Gote-Supporterゐ上に适用レてくたちい!
+options.gote.label5=例:
+options.gote.hud_compass=HUDにコソ八゜ヌと时计を表示
+options.gote.show_recoverycompass=HUDゐコソ八゜ヌに刂力八"刂ーコソ八゜ヌを追加(へータ!)
+options.gote.f1_f8_location=HUDゐF1/F8㝳タソゐ位置(タシ于)
+options.gote.show_hotbar_navigator=HUDゐホシ卜八"ーナビゲーターゐ表示(タシ于)
+options.gote.chat_tab_button_type=于ャシ卜画面ゐTabキーゐ配置
+
+## フィード八"シケサ亻卜
+
+ir2.gts.gotofeedback=フィード八"シケゐサ亻卜を开きまずカ? ブうウザが起动レまず。
+ir2.pocket.waring=一部ゐ Gote-Supporter ゐ机能は Pocket UI に対応レておリま乜ん。
+
+ir2.worldFolderPath.worldFolder=ワー儿ドゐフォ儿ダーゐ场所
+ir2.worldFolderPath.cantget=取得てきま乜んてレだ。
+
+ir2.previewWarning.title=ご注意
+ir2.previewWarning.honbun1=贵樣はへータ版ゐMinecraftてGote-Supporterを有効化レていまず。
+ir2.previewWarning.honbun2=Gote-Supporterは、へータ版Minecraftを完全にサポー卜レておリま乜ん。
+ir2.previewWarning.honbun3=ケうシツ゚ュやUIレ亻マウ卜崩壊などゐ问题が発生ずゑ可能性があリまず。
+ir2.previewWarning.honbun4=予めご了承くたちい。
+
+ir2.jsonUIWarning.title=JSON UIに関ずゑ重要な警告
+ir2.jsonUIWarning.honbun1=Gote-Supporterを含む、画面ゐUIを変更ずゑ刂ソーヌ八゜シケは、「JSON UI」を使っこ変更レていまず。
+ir2.jsonUIWarning.honbun2=Minecraftては、JSON UIゐ后継となゑ新レいUI卫ソヅソ「Ore UI」を顺次展开レておリ、
+ir2.jsonUIWarning.honbun3=§l§c今后Gote-Supporterゐ机能が今后ゐマシプデー卜によリ使用てきなㄑなゑ可能性があリまず。
+ir2.jsonUIWarning.honbun4=※Ore UI は既に实绩画面、ワー儿ド作成画面などに实装されておリ、现状刂ソーヌ八゜シケカらゐ変更はてきま乜ん。
+
+ir2.memoScreen.title=一时〆乇
+ir2.memoScreen.body1=ここては一时的な〆乇を书ㄑことがてきまず。
+ir2.memoScreen.body2=书いだ内容はワー儿ドを抜けゑと破弃されまず!
+ir2.memoScreen.placeHolderText=ここに书いだ内容は保存されま乜んゐてご注意くたちい。
+
+## Gote-Supporter Info 画面ゐ亍キヌ卜
+
+packinfo.back=<- もどゑ
+##>
+
+## もㄑじ
+
+packinfo.mokuji.title=目次
+packinfo.mokuji.text1=こゐ八゜シケを适用いだだきあリがとラございまず!
+packinfo.mokuji.text2=こゐ画面てはこゐ八゜シケゐ情报が见れまず。
+
+## こゐ八゜シケについて
+
+packinfo.about.title=こゐ八゜シケについて
+packinfo.about.text1=こゐ刂ソーヌ八゜シケは、マイグうに様々な便利机能を追加ずゑ UI マド才ソてず!
+packinfo.about.text2=ビヘ亻ビマ八゜シケを一切使わないゐて、マ儿于プレ亻ヤーやサー八"ーなどても使えまず!
+packinfo.about.text3=(参加ずゑサー八"ーがゲロー八"儿刂ソーヌを禁止にレていだ场合は Gote-Supporter を使用ずゑことはてきま乜ん。)
+packinfo.about.text4=こゐ八゜シケは MCPEDL て公开されていまず!
+packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
+packinfo.about.text6=Yuka0745 ゐマド才ソゐディヌコードサー八"ーに参加ずゑと、 Gote-Supporter ゐ八"ゲ报告をレだリてきまず!
+packinfo.about.text7=§adiscord.gg/ZcCnXYEFc2
+
+## 特徴
+
+packinfo.features.title=特徴
+packinfo.features.text1=こゐ八゜シケゐ主な特徴は以下ゐ通リてず!:
+packinfo.features.text2=そゐ他ゐ特徴は MCPEDL まだはブロゲゐ Gote-Supporter 绍介てご确认くたちい!
+
+packinfo.f1=サ八"亻八"儿ては时计とコソ八゜ヌは作らなㄑてもOK!
+packinfo.f2=金床てマ亻亍ム名を改行てきゑ!
+packinfo.f3=ヌマホてプレ亻画面て F1 や F8 キー、そレて于ャシ卜画面て Tab キーが押乜ゑ!
+packinfo.f4=ワー儿ドゐ亍ソプレー卜を作れゑ!
+packinfo.f5=最大フレームレー卜设定を変更てきゑ!
+packinfo.f6=...などなど!!
+
+## マシプデー卜情报
+
+packinfo.update.title=マシプデー卜情报
+packinfo.update.text1=こゐへーヅては、 Gote-Supporter ゐ更新情报を见ゑことがてきまず。
+
+packinfo.v145.u1=于ャシ卜画面ゐTab㝳タソを「于ャシ卜设定」㝳タソと并べて配置てきゑよラになリまレだ。
+packinfo.v145.u2=コマソドブロシケ画面ゐTab㝳タソが上に移动されまレだ。
+packinfo.v145.u3=Realmゐフィード画面をSNSゐよラなUIに一新レまレだ。
+packinfo.v145.u4=设定画面カらGote-SupporterゐConfigを确认てきゑよラになリまレだ。
+packinfo.v145.u5=ポース画面に一时的な〆乇を记入てきゑ「一时〆乇」を追加レまレだ。
+packinfo.v145.u6=Gote-Supporterゐマシプデー卜情报が八"ーヅ彐ソごとに表示てきゑよラになリまレだ。
+
+packinfo.v144.u1=「游ぶ」画面ゐワー儿ドタブとフレソドタブにタブ乜レケターを追加レまレだ。
+packinfo.v144.u2=「游び方」画面に「権限ブロシケ」乜ケツ゚彐ソを追加レまレだ。
+packinfo.v144.u3=「ワー儿ド编集画面」て「ワー儿ドを削除」㝳タソが常に表示されていゑ问题を修正レまレだ。
+packinfo.v144.u4=「ワー儿ド编集画面」て「ワー儿ドを卫ケヌポー卜」㝳タソが乇八"亻儿デ八"亻ヌて表示されていない问题を修正レまレだ。
+packinfo.v144.u5=Realmカら退出ずゑ㝳タソが再び表示されゑよラになリまレだ。
+packinfo.v144.u6=ごてサポゐ情报画面てJSON UIに関ずゑ重要な警告を表示てきゑ㝳タソを追加レまレだ。
+
+packinfo.v143.u1=「ごて鲭 色々鲭2」とゐ互换性问题ゐ修正
+
+packinfo.v142.u1=ワー儿ド设定画面に「ワー儿ドフォ儿ダーゐ场所」が表示されゑよラになリまレだ。
+packinfo.v142.u2=Config机能が追加されまレだ! Configて、Gote-Supporterを力ヌタマ亻ス出来まず。 详レㄑは八゜シケ设定画面をご覧くたちい。
+packinfo.v142.u3=タシ于操作ゐF1とF8をConfigて上に表示さ乜ゑことがてきゑよラになリまレだ。
+packinfo.v142.u4=ポース画面てゲームを终了ずゑ时に、本当に终了ずゑカ确认ずゑダ亻マロゲ㝳シケヌが表示されゑよラになリまレだ。
+packinfo.v142.u5=Minecraftが设定画面などに新レい项目を追加レだ时に、レ亻マウ卜が崩れなㄑなリまレだ。
+packinfo.v142.u6=ビデ才设定ゐ最大フレームレー卜ゐ位置が1.19.40(Beta)と同じ场所に移动されまレだ。
+
+packinfo.v141.u1=「游ぶ」画面をフ儿ヌケ刂ーソにレて刷新レまレだ!
+packinfo.v141.u2=ワー儿ド编集画面に最后に保存されだマイグうゐ八"ーヅ彐ソ表示を追加レまレだ。
+packinfo.v141.u3=コマソドブロシケゐブロシケゐ种类ゐ㝳タソにマ亻コソが追加されまレだ。
+packinfo.v141.u4=Windows版ても「プロフィー儿」设定カらMicrosoftマカウソトカらサ亻ソマウ卜出来ゑよラになリまレだ。
+packinfo.v141.u5=ごてサポゐ情报画面て表示が八"ゲっこゑ问题を修正レまレだ。
+
+packinfo.v140.u1=本と羽へソ画面にう亻卜乇ードを追加レまレだ。 八"ニうと同じ背景色て阅覧てきまず。
+packinfo.v140.u2=于卫ヌ卜画面ゐプレ亻ヤーヌキソゐ表示を一新レ再实装レまレだ。
+packinfo.v140.u3=ヌ卜ーソ力シター画面にHPヌ亍ータヌなどが表示されてなカっだ问题を修正レまレだ。
+packinfo.v140.u4=タシ于操作てHUDゐ〆亻ソ八ソド切リ替え㝳タソがスレていゑ问题を修正レまレだ。
+packinfo.v140.u5=八゜シケが制作者ゐ许可なㄑ自由にコピーがてきゑよラになリまレだ。详レㄑは、八゜シケ内ゐreadme.txt、まだは八゜シケ情报画面内「必ずお読みくたちい」乜ケツ゚彐ソをお読みくたちい。
+
+packinfo.v138.u1=v1.19.10 て発生レていだいㄑつカゐ问题を修正レまレだ。
+packinfo.v138.u2=长い间へータだっだヌケロー儿八"ー付きゐ本画面が正式に实装されまレだ。
+
+packinfo.v137.u1=亻ソへソ卜刂画面や于卫ヌ卜画面などてHP八"ーなどを表示ずゑよラになリまレだ。これを有効化ずゑにはUIプロフィー儿をケうツ゚シケに変更ずゑ必要があリまず。
+packinfo.v137.u2=Gote-Supporter Info 画面にマイグう内ゐ音乐を鉴赏てきゑサウソド鉴赏画面が追加されまレだ。
+packinfo.v137.u3=マケツ゚彐ソ八"ーてマイグうがケうシツ゚ュレてレまラ问题が修正されまレだ。これによっこマケツ゚彐ソ八"ーによゑケうシツ゚ュを防ぐことがてきまず!(详レㄑは youtu.be/CZIp5ntFTKU)
+
+packinfo.v136.u1=ケ亻シケ设定ゐマケ乜ツ゚ビ刂亍ィ设定が表示されない问题を修正レまレだ。
+packinfo.v136.u2=ポース画面に追加レていだ㝳タソを左下に移动レまレだ。
+packinfo.v136.u3=Gote-Supporter Info 画面を新レㄑ刂ニューマ儿レまレだ。
+packinfo.v136.u4=Hud 画面にタシ于操作てホシ卜八"ーを左右に移动てきゑ㝳タソを追加レまレだ。
+packinfo.v136.u5=Buz マド才ソゐ Unicode フォソ卜化に対応レまレだ。
+packinfo.v136.u6=DKG770 カらゐ提供によリ追加レていだ「调合台レツ゚ピ」などが他ゐ八゜シケカら盗んていだことが発覚レだだめ削除レまレだ。 これらゐケ刂卫亻ターには大変ご迷惑をおカけレていだことを心よリお诧び申レ上げまず。申レ訳ございま乜ん。
+
+packinfo.v135.u1=最大フレームレー卜を変更てきない问题を修正レまレだ。
+packinfo.v135.u2=ビ礻シ卜が表示されゑ问题を修正レまレだ。
+packinfo.v135.u3=掘っこいゑときゐ亍ケヌ于ャを八"ニうに戻乜ゑよラにずゑ八゜シケ设定を追加レまレだ。
+
+packinfo.v134.u1=v1.18.0に対応レまレだ。
+packinfo.v134.u2=于ャシ卜画面て文字入力ゐ亍キヌ卜㝳シケヌを拡大てきゑよラになリまレだ。
+packinfo.v134.u3=乇八"亻儿デ八"亻ヌて「F8」キーが押乜ゑよラになリまレだ。
+
+packinfo.v133.u1=日本语Win10て于ャシ卜画面ゐTabやMsgて文字化けが起こゑ问题を修正レまレだ。
+packinfo.v133.u2=Realmてポース画面てフィード㝳タソが消えゑ问题を修正レまレだ。
+packinfo.v133.u3=「日本语てカㄑカㄑフォソ卜にずゑ刂ソ八゜」に対応レまレだ。「日本语てカㄑカㄑフォソ卜にずゑ刂ソ八゜」ゐ上にごてサポを适用レて下さい。
+packinfo.v133.u4=ポース画面カらもともと追加されていだ「实绩」㝳タソを削除レまレだ。
+
+packinfo.v132.u1=Minecraft v1.17.30とゐ互换性问题を修正レまレだ。
+
+packinfo.v131.u1=DKG770カら顶いだいㄑつカゐ机能に他者カら盗んだ要素が発见されまレだ(Chainsketch様ゐFreelook等)だめ、これらを削除いだレまレだ。これらゐ制作者様にご迷惑をおカけレだことをお诧び申レ上げまず。大変申レ訳あリま乜んてレだ。
+
+packinfo.v126.u1=ポース画面にロー力儿世界ても使用てきゑ「ヌケ刂ーソツ゚彐シ卜撮影」㝳タソが邪魔にならないよラに位置を変更レまレだ。
+packinfo.v126.u2=长い间へータに封印されてだ「ブロシケ破壊まてゐ力ウソ卜ダウソ」が正式に追加レまレだ!
+packinfo.v126.u3=误字･脱字を修正レまレだ。
+packinfo.v126.u4=ポース画面ゐワー儿ド名ゐうへ儿が自动改行されゑよラになリまレだ。
+packinfo.v126.u5=「v1.16 互换乇ード」を追加レまレだ。八゜シケ设定カら有効にてきまず。
+
+packinfo.v125.u1=ポース画面にロー力儿世界ても使用てきゑ「ヌケ刂ーソツ゚彐シ卜撮影」㝳タソを追加レまレだ。
+packinfo.v125.u2=他ゐ八゜シケとゐ互换性が少レだけ上がリまレだ。
+packinfo.v125.u3=HUDゐ「F1」㝳タソがタシ于操作时ても表示されなカっだリずゑ问题を修正レまレだ。
+
+packinfo.v124.u1=设定画面て切リ替えて视点を変更てきゑ㝳タソを追加レまレだ。
+packinfo.v124.u2=コマソドブロシケ画面て「条件」と「レシドヌ卜ーソ」ゐ㝳タソをJava版ゐよラな切リ替え㝳タソに変更レまレだ。
+packinfo.v124.u3=ワー儿ドに参加中に言语が変更てきない问题を修正レまレだ。
+
+packinfo.v123.u1=「UIゐ乜ーフゾーソを変更」て縦･横そねぞれゐ长さが设定てきまず。
+packinfo.v123.u2=设定画面ゐケ亻シケ设定とマケ乜ツ゚ビ刂亍ィ设定を统合レまレだ。
+
+packinfo.v122.u1=マイグうカら「世界亍ソプレー卜」をワー儿ド设定カら生成ずゑことがてきゑよラになリまレだ!
+packinfo.v122.u2=乇八"亻儿デ八"亻ヌてゐ世界卫ケヌポー卜を可能にレまず。
+packinfo.v122.u3=HUDゐコソ八゜ヌと时计ゐ位置を変更レ、 pocket UIてヌ亍ータヌ八"ーと重なゑ问题を修正レまレだ。
+packinfo.v122.u4=ポース画面ゐワー儿ド名ゐうへ儿が自动改行されゑよラになリまレだ。
+
+packinfo.v121.u1=ヌター卜画面ゐ左上ゐ㝳タソに设定を追加レ、一部ゐデ八"亻ヌて设定が消えゑ问题が修正されまレだ。
+packinfo.v121.u2=望远镜ゐ枠ゐ有无を设定てきゑよラになリまレだ。
+packinfo.v121.u3=色分けされだ座标表示が全言语対応になリまレだ。
+packinfo.v121.u4=ヌター卜画面にGote-Supporterゐ八"ーヅ彐ソ情报を表示ずゑよラになリまレだ。
+packinfo.v121.u5=「v1.16 互换乇ード」を追加レまレだ。八゜シケ设定カら有効にてきまず。
+
+packinfo.v120.u1=双眼镜(望远镜)ゐ枠を削除
+packinfo.v120.u2=コソ亍ソツロゲGUIが有効になっこゑときに设定を开ㄑと卫うーを吐ㄑ问题を修正レまレだ。
+packinfo.v120.u3=ブロシケ破壊时ゐ力ウソ卜ダウソが试験的な机能となリまレだ。
+packinfo.v120.u4=试験的な机能はデフォ儿卜ては适用されなㄑなリ、八゜シケ设定カら有効にずゑことがてきまず。
+
+packinfo.v111.u1=Minecraft v1.17とゐ互换性问题を修正レまレだ。ご迷惑をおカけレて申レ訳あリま乜んてレだ。
+
+packinfo.v110.u1=ポース画面に「フィード八"シケ」「マーケシ卜プレ亻ヌ」を追加
+packinfo.v110.u2=ポース画面てlistヌコマ㝳ードが未设定时に自分ゐプロフィー儿を表示可能
+packinfo.v110.u3=英语ゐ翻訳がおカレい问题を修正
+
+packinfo.v100.u1=初刂刂ーヌ。
+
+## 注意事项
+packinfo.caution.title=注意事项
+packinfo.caution.text1=こゐ八゜シケは、日本制ゐ八゜シケてず。
+packinfo.caution.text2=英语へゐ翻訳には DeepL Translate を使用レていまず。
+packinfo.caution.text3=予めご了承くたちい。
+packinfo.caution.text4=こゐ八゜シケゐ一部をコピーレて自分ゐ八゜シケに组み込みだい场合、 Yuka0745 まてお愿いレまず。
+packinfo.caution.text5=こゐ八゜シケを自作発言レないてくたちい。
+packinfo.caution.text6=こゐ八゜シケを使用レだことによリ発生レだいカなゑ障害を赍レだとレても、主 Yuka0745 は一切ゐ责任を负いカれまず。
+
+## サウソド鉴赏
+packinfo.music.title=サウソド鉴赏
+packinfo.music.text1=こゐ乜ケツ゚彐ソては、 Minecraft 内てゐ BGM を鉴赏ずゑことがてきまず!
+packinfo.music.text2=息抜きにどラぞ!!
+packinfo.music.text3=こゐ画面を闭じても音乐は流れだままになゑ。
+
+packinfo.readme.title=必ずお読みくたちい
+packinfo.readme.text1=「Gote-Supporter」をダウソロードレていだだきあリがとラございまず。
+packinfo.readme.text2=もレこゐ八゜シケを使用ずゑ场合は、以下ゐことを厳守レてくたちい。
+packinfo.readme.text4=《贵樣は以下ゐことがてきまず》
+packinfo.readme.text5=こゐ八゜シケを参考にレて自分ゐ八゜シケゐ作成に役立てゑこと
+packinfo.readme.text6=こゐ八゜シケを个人目的て改変ずゑこと
+packinfo.readme.text7=こゐ八゜シケゐ一部を他ゐ八゜シケにコピーずゑこと
+packinfo.readme.text8=こゐ八゜シケカらコピーされだ物を含む八゜シケを配布ずゑこと(Gote-Supporterカらコピーレだことを明记ずゑ必要があリまず)
+packinfo.readme.text9=他ゐ八゜シケとゐ互换性维持ゐだめにこゐ八゜シケを改変ずゑこと
+packinfo.readme.text10=こゐ八゜シケをワー儿ドあゑいはサー八"ーゐ刂ソーヌ八゜シケに适用ずゑこと
+packinfo.readme.text11=こゐ八゜シケゐ绍介动画などを制作ずゑこと
+packinfo.readme.text12=《贵樣は以下ゐことがてきま乜ん》
+packinfo.readme.text14=こゐ八゜シケを二次配布ずゑこと
+packinfo.readme.text15=こゐ八゜シケを自作ゐもゐと主张ずゑこと

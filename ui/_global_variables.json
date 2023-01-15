@@ -1,0 +1,117 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+
+
+/*********************************************
+Gote-Supporter Config
+
+コンフィグファイルへようこそ!
+このファイルでは、 Gote-Supporterをカスタマイズすることが出来ます!
+各設定には説明が書かれているので、それを読んで設定してください。
+
+なお、設定を適用するには、入っているワールドをリログするか、マイクラを再起動してください。
+
+項目を誤って設定してしまうと、Gote-Supporterが正常に機能しなくなる可能性があります!
+
+★★★
+
+Welcome to the Config File!
+This file allows you to customize Gote-Supporter!
+Each setting has a written description, so please read it and set it.
+
+To apply the settings, please relog the world you are in or restart Minecraft.
+
+If an item is incorrectly set, Gote-Supporter may not function properly!
+*********************************************/
+
+
+{
+  /************************************
+  HUDにコンパスと時計を表示
+  true = 表示 (デフォルト)
+  false = 非表示
+
+  Display compass and clock on HUD
+  true = show (Default)
+  false = hidden
+  ************************************/
+  "$hud_compass": true,
+
+
+  /************************************
+  HUDのコンパスにリカバリーコンパスを追加(ベータ!)
+  これはゲームのクラッシュをもたらす可能性があります!
+  true = 表示
+  false = 非表示 (デフォルト)
+
+  Add recovery compass to HUD compass (beta!).
+  This could result in game crashes!
+  true = show
+  false = hidden (default)
+  ************************************/
+  "$show_recoverycompass": false,
+  
+
+  /************************************
+  HUDのF1/F8ボタンの位置(タッチ)
+  "top" = 上のチャットボタンなどと並べて表示 (デフォルト)
+  "right" = 右下に表示
+
+  Location of F1/F8 buttons on HUD (Touch)
+  "top" = displayed alongside chat buttons, etc. above (default)
+  "right" = displayed in the lower right corner
+  ************************************/
+  "$f1_f8_location": "top",
+  
+
+  /************************************
+  HUDのホットバーナビゲーターの表示(タッチ)
+  true = 表示
+  false = 非表示 (デフォルト)
+
+  Show HUD hotbar navigator (touch)
+  true = show
+  false = hidden (default)
+  ************************************/
+  "$show_hotbar_navigator": false,
+
+
+  /************************************
+  チャット画面のTabキーの配置
+  "vertical" = 右下に並べて配置
+  "horizontal" = 
+
+  Placement of the Tab key on the Chat Screen
+  "vertical" = Place them side by side in the lower right corner
+  "horizontal" = Placed alongside Chat Setting buttons, etc.
+  ************************************/
+  "$chat_tab_button_type": "vertical",
+
+
+
+  "$creator_mode": true,
+
+
+
+  // 設定は以上です!
+  // That's it for the setup!
+
+
+
+
+
+
+
+  
+  //これらの設定は変更しないようお願いします!!
+  //Please do not change these settings!
+  "$gote_ver": "v1.4.5",
+  "$gote_ver2": "1.4.5",
+  "$gote_supporter_enabled": true,
+  "$is_yukandows_server": false, 
+  "$is_iroiro_server2": false,
+  "$is_ohara_city": false,
+  "$is_saishoku_server": false
+  /////////////////////////////////////////////
+}

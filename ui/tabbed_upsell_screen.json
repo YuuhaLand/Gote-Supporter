@@ -1,0 +1,1037 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "tabbed_upsell",
+
+  "jsonui_warning_dlga@ir2.dlga": {
+    "$toggle_name": "jsonui_warning"
+  },
+  "jsonui_warning_dlga_c@ir2.dlga_c": {
+    "$toggle_name": "jsonui_warning"
+  },
+  "jsonui_warning_dlga_close@ir2.close_dlga_esc": {
+    "$toggle_name": "jsonui_warning"
+  },
+
+  "warning_icon": {
+    "type": "image",
+    "texture": "textures/ui/ErrorGlyph",
+    "layer": 3,
+    "size": [ 13, 20 ]
+  },
+
+
+
+  "indexs_panel": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ]
+  },
+
+  "version_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 10 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "gotesupporter": {
+                "type": "label",
+                "text": "Gote-Supporter ",
+                "color": "$text_color"
+              }
+            },
+            {
+              "versions": {
+                "type": "label",
+                "text": "$version",
+                "color": "$text_color"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/dropdown_chevron",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -5, 0 ],
+          "size": [ 11, 11 ]
+        }
+      }
+    ]
+  },
+
+  "version_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "$version|default": "v1.0.0",
+    "$details_controls|default": [],
+    "controls": [
+      {
+        "toggle_button@common_toggles.light_content_toggle": {
+          "size": [ "100%", 20 ],
+          "$button_content": "tabbed_upsell.version_toggle_button_content",
+          "$toggle_name": "$version",
+          "$toggle_view_binding_name": "$version"
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      },
+      {
+        "details_panel": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%c" ],
+          "controls": "$details_controls",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$version",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      }
+    ]
+  },
+
+  "text": {
+    "type": "label",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [ "100%", "default" ],
+    "shadow": true
+  },
+  
+  "playsound_play": {
+    "type": "image",
+    "texture": "textures/ui/playsound_play",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "playsound_stop": {
+    "type": "image",
+    "texture": "textures/ui/playsound_stop",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "play_sound_panel": {
+    "type": "stack_panel", 
+    "size": [ "100%", "100%c + 3px" ],
+    "$sound_name|defalut": "dummy",
+    "$sound_id|defalut": "pvp2.music.daisuke",
+    "$sound_vol|defalut": 1.0,
+    "$is_music|defalut": false,
+    "controls": [
+      {
+        "music_name_label": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "size": [ "100%", "default" ],
+          "text": "$sound_name",
+          "shadow": true
+        }
+      },
+      {
+        "play_stop": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ 61, 25 ],
+          "controls": [
+            {
+              "play_button@common_buttons.light_content_button": {
+                "size": [ 25, 25 ],
+                "$button_content": "tabbed_upsell.playsound_play",
+                "sound_name": "$sound_id",
+                "sound_volume": "$sound_vol",
+                "$pressed_button_name": "button.dummy"
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 1, 0 ]
+              }
+            },
+            {
+              "stop_button@common_buttons.light_content_button": {
+                "size": [ 25, 25 ],
+                "ignored": "(not $is_music)",
+                "$button_content": "tabbed_upsell.playsound_stop",
+                "sound_name": "$sound_id",
+                "sound_volume": 0.00000001,
+                "$pressed_button_name": "button.dummy"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "dlga@common_toggles.light_text_toggle": {
+    "$radio_toggle_group": true,
+    "$toggle_focus_enabled": true,
+    "$binding_type": "global",
+    "$binding_condition": "once"
+  },
+
+  "page01@tabbed_upsell.dlga": {
+    "$toggle_name":"page_iti"
+  },
+  "page02@tabbed_upsell.dlga": {
+    "$toggle_name":"page_ni"
+  },
+  "page03@tabbed_upsell.dlga": {
+    "$toggle_name":"page_san"
+  },
+  "page04@tabbed_upsell.dlga": {
+    "$toggle_name":"page_yon"
+  },
+  "page05@tabbed_upsell.dlga": {
+    "$toggle_name":"page_go"
+  },
+  "page06@tabbed_upsell.dlga": {
+    "$toggle_name":"page_roku"
+  },
+  
+  "left_panel": {
+    "type": "stack_panel",
+    "size": [ "50% - 12px", "100%c + 20px" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "aoreimu_icon_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 70 ],
+          "offset": [ 0, 0 ],
+          "controls": [
+            {
+              "aoreimu_icon": {
+                "type": "image",
+                "texture": "textures/ui/aoreimu",
+                "size": [ 60, 60 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 4, 0 ]
+              }
+            },
+            {
+              "texts": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "controls": [
+                  {
+                    "created_by_yuka0745": {
+                      "type": "label",
+                      "text": "§l§aCreated by\n§dYuka0745",
+                      "font_scale_factor": 1.50,
+                      "offset": [ 0, 0 ],
+                      "shadow": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_01": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      },
+      {
+        "twitter": {
+          "type": "label",
+          "text": "§l§bTwitter:",
+          "font_scale_factor": 1.50,
+          "shadow": true
+        }
+      },
+      {
+        "twitter_url": {
+          "type": "label",
+          "text": "§etwitter.com/gotemba912",
+          "font_scale_factor": 1.0,
+          "shadow": true
+        }
+      },
+      {
+        "padding_02": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      },
+      {
+        "youtube": {
+          "type": "label",
+          "text": "§l§cYoutube:",
+          "font_scale_factor": 1.50,
+          "shadow": true
+        }
+      },
+      {
+        "youtube_url": {
+          "type": "label",
+          "text": "§eyoutube.com/c/yuka0745",
+          "font_scale_factor": 1.0,
+          "shadow": true
+        }
+      },
+      {
+        "padding_03": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      },
+      {
+        "github": {
+          "type": "label",
+          "text": "§l§fGitHub:",
+          "font_scale_factor": 1.50,
+          "shadow": true
+        }
+      },
+      {
+        "github_url": {
+          "type": "label",
+          "text": "§egithub.com/gotemba912",
+          "font_scale_factor": 1.0,
+          "shadow": true
+        }
+      }
+    ]
+  },
+
+  "right_panel": {
+    "type": "stack_panel",
+    "size": [ "100% - 6px", "100%c + 20px" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "mokuji_panel@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "mokuji_panel@tabbed_upsell.indexs_panel": {
+                "controls": [
+                  {
+                    "mokuji_panel@tabbed_upsell.indexs_panel": {
+                      "controls": [
+                        {
+                          "mokuji_panel@tabbed_upsell.indexs_panel": {
+                            "controls": [
+                              {
+                                "mokuji_panel@tabbed_upsell.indexs_panel": {
+                                  "controls": [
+                                    {
+                                      "mokuji_panel@tabbed_upsell.indexs_panel": {
+                                        "controls": [
+                                          {"fh2@how_to_play_common.header":{"$text":"packinfo.mokuji.title"}},
+                                          { "index_text01@tabbed_upsell.text": { "text": "packinfo.mokuji.text1" }},
+                                          { "index_text02@tabbed_upsell.text": { "text": "packinfo.mokuji.text2" }},
+                                          {
+                                            "padding_01": {
+                                              "type": "panel",
+                                              "size": [ 0, 10 ]
+                                            }
+                                          },
+                                          {
+                                            "page011@tabbed_upsell.page01": {
+                                              "size": [ "100%", 25 ],
+                                              "$toggle_view_binding_name": "page_itia",
+                                              "$button_content": "pause.feedback_icon",
+                                              "$toggle_group_forced_index": 100,
+                                              "$button_text": "packinfo.about.title"
+                                            }
+                                          },
+                                          {
+                                            "page061@tabbed_upsell.page06": {
+                                              "size": [ "100%", 25 ],
+                                              "$toggle_view_binding_name": "page_rokua",
+                                              "$button_content": "pause.feedback_icon",
+                                              "$toggle_group_forced_index": 100,
+                                              "$button_text": "packinfo.readme.title"
+                                            }
+                                          },
+                                          {
+                                            "page021@tabbed_upsell.page02": {
+                                              "size": [ "100%", 25 ],
+                                              "$toggle_view_binding_name": "page_nia",
+                                              "$button_content": "pause.feedback_icon",
+                                              "$toggle_group_forced_index": 100,
+                                              "$button_text": "packinfo.features.title"
+                                            }
+                                          },
+                                          {
+                                            "page031@tabbed_upsell.page03": {
+                                              "size": [ "100%", 25 ],
+                                              "$toggle_view_binding_name": "page_sana",
+                                              "$button_content": "pause.feedback_icon",
+                                              "$toggle_group_forced_index": 100,
+                                              "$button_text": "packinfo.update.title"
+                                            }
+                                          },
+                                          {
+                                            "page041@tabbed_upsell.page04": {
+                                              "size": [ "100%", 25 ],
+                                              "$toggle_view_binding_name": "page_yona",
+                                              "$button_content": "pause.feedback_icon",
+                                              "$toggle_group_forced_index": 100,
+                                              "$button_text": "packinfo.caution.title"
+                                            }
+                                          },
+                                          {
+                                            "page051@tabbed_upsell.page05": {
+                                              "size": [ "100%", 25 ],
+                                              "$toggle_view_binding_name": "page_goa",
+                                              "$button_content": "pause.feedback_icon",
+                                              "$toggle_group_forced_index": 100,
+                                              "$button_text": "packinfo.music.title"
+                                            }
+                                          }
+                                        ],
+                                        "bindings": [
+                                          {
+                                            "binding_type": "view",
+                                            "source_control_name": "page_rokua",
+                                            "source_property_name": "(not #toggle_state)",
+                                            "target_property_name": "#visible"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ],
+                                  "bindings": [
+                                    {
+                                      "binding_type": "view",
+                                      "source_control_name": "page_goa",
+                                      "source_property_name": "(not #toggle_state)",
+                                      "target_property_name": "#visible"
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "page_yona",
+                                "source_property_name": "(not #toggle_state)",
+                                "target_property_name": "#visible"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "page_sana",
+                          "source_property_name": "(not #toggle_state)",
+                          "target_property_name": "#visible"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "page_nia",
+                    "source_property_name": "(not #toggle_state)",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_itia",
+              "source_property_name": "(not #toggle_state)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "iti_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page01@tabbed_upsell.page01": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.about.title" }},
+            { "text01@tabbed_upsell.text": { "text": "packinfo.about.text1" }},
+            { "text02@tabbed_upsell.text": { "text": "packinfo.about.text2" }},
+            { "text04@tabbed_upsell.text": { "text": "packinfo.about.text3" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text05@tabbed_upsell.text": { "text": "packinfo.about.text4" }},
+            { "text06@tabbed_upsell.text": { "text": "packinfo.about.text5" }},
+            { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text07@tabbed_upsell.text": { "text": "packinfo.about.text6" }},
+            { "text08@tabbed_upsell.text": { "text": "packinfo.about.text7" }}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_itia",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "ni_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page02@tabbed_upsell.page02": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.features.title" }},
+            { "text01@tabbed_upsell.text": { "text": "packinfo.features.text1" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "fp1_@ir2.features_text_with_bubble":{"$text":"packinfo.f1"}},
+            { "fp2_@ir2.features_text_with_bubble":{"$text":"packinfo.f2"}},
+            { "fp3_@ir2.features_text_with_bubble":{"$text":"packinfo.f3"}},
+            { "fp4_@ir2.features_text_with_bubble":{"$text":"packinfo.f4"}},
+            { "fp5_@ir2.features_text_with_bubble":{"$text":"packinfo.f5"}},
+            { "fp6_@ir2.features_text_with_bubble":{"$text":"packinfo.f6"}},
+            { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text02@tabbed_upsell.text": { "text": "packinfo.features.text2" }}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_nia",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "san_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page03@tabbed_upsell.page03": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.update.title" }},
+            { "text01@tabbed_upsell.text": { "text": "packinfo.update.text1" }},
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [ 0, 3 ]
+              }
+            },
+            {
+              "update_description@change_logs.gotesupporter_changelogs": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_sana",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "yon_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page04@tabbed_upsell.page04": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.caution.title" }},
+            { "text01@tabbed_upsell.text": { "text": "packinfo.caution.text1" }},
+            { "text02@tabbed_upsell.text": { "text": "packinfo.caution.text2" }},
+            { "text03@tabbed_upsell.text": { "text": "packinfo.caution.text3" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text05@tabbed_upsell.text": { "text": "packinfo.caution.text4" }},
+            { "text06@tabbed_upsell.text": { "text": "packinfo.caution.text5" }},
+            { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text08@tabbed_upsell.text": { "text": "packinfo.caution.text6" }}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_yona",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "go_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page05@tabbed_upsell.page05": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.music.title" }},
+            { "text01@tabbed_upsell.text": { "text": "packinfo.music.text1" }},
+            { "text02@tabbed_upsell.text": { "text": "packinfo.music.text2" }},
+            { "text03@tabbed_upsell.text": { "text": "packinfo.music.text3" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "fh3@how_to_play_common.header": { "$text":"accessibility.screenName.start" }},
+            {"m1@tabbed_upsell.play_sound_panel":{"$sound_name":"Menu1","$sound_id":"pvp2.menu1","$sound_vol":1.0,"$is_music":true}},
+            {"m2@tabbed_upsell.play_sound_panel":{"$sound_name":"Menu2","$sound_id":"pvp2.menu2","$sound_vol":1.0,"$is_music":true}},
+            {"m3@tabbed_upsell.play_sound_panel":{"$sound_name":"Menu3","$sound_id":"pvp2.menu3","$sound_vol":1.0,"$is_music":true}},
+            {"m4@tabbed_upsell.play_sound_panel":{"$sound_name":"Menu4","$sound_id":"pvp2.menu4","$sound_vol":1.0,"$is_music":true}},
+            {"m5@tabbed_upsell.play_sound_panel":{"$sound_name":"Infinite Amethyst","$sound_id":"pvp2.infinite_amethyst","$sound_vol":1.0,"$is_music":true}},
+            {"m6@tabbed_upsell.play_sound_panel":{"$sound_name":"Left To Bloom","$sound_id":"pvp2.left_to_bloom","$sound_vol":1.0,"$is_music":true}},
+            {"m7@tabbed_upsell.play_sound_panel":{"$sound_name":"One More Day","$sound_id":"pvp2.one_more_day","$sound_vol":1.0,"$is_music":true}},
+            {"m8@tabbed_upsell.play_sound_panel":{"$sound_name":"Stand Tall","$sound_id":"pvp2.stand_tall","$sound_vol":1.0,"$is_music":true}},
+            {"m9@tabbed_upsell.play_sound_panel":{"$sound_name":"Wending","$sound_id":"pvp2.wending","$sound_vol":1.0,"$is_music":true}},
+            { "fh4@how_to_play_common.header": { "$text":"gameMode.survival" }},
+            {"m10@tabbed_upsell.play_sound_panel":{"$sound_name":"Calm1","$sound_id":"pvp2.calm1","$sound_vol":1.0,"$is_music":true}},
+            {"m11@tabbed_upsell.play_sound_panel":{"$sound_name":"Calm2","$sound_id":"pvp2.calm2","$sound_vol":1.0,"$is_music":true}},
+            {"m12@tabbed_upsell.play_sound_panel":{"$sound_name":"Calm3","$sound_id":"pvp2.calm3","$sound_vol":1.0,"$is_music":true}},
+            {"m14@tabbed_upsell.play_sound_panel":{"$sound_name":"Hal1","$sound_id":"pvp2.hal1","$sound_vol":1.0,"$is_music":true}},
+            {"m15@tabbed_upsell.play_sound_panel":{"$sound_name":"Hal2","$sound_id":"pvp2.hal2","$sound_vol":1.0,"$is_music":true}},
+            {"m16@tabbed_upsell.play_sound_panel":{"$sound_name":"Hal3","$sound_id":"pvp2.hal3","$sound_vol":1.0,"$is_music":true}},
+            {"m17@tabbed_upsell.play_sound_panel":{"$sound_name":"Hal4","$sound_id":"pvp2.hal4","$sound_vol":1.0,"$is_music":true}},
+            {"m18@tabbed_upsell.play_sound_panel":{"$sound_name":"Nuance1","$sound_id":"pvp2.nuance1","$sound_vol":1.0,"$is_music":true}},
+            {"m19@tabbed_upsell.play_sound_panel":{"$sound_name":"Nuance2","$sound_id":"pvp2.nuance2","$sound_vol":1.0,"$is_music":true}},
+            {"m20@tabbed_upsell.play_sound_panel":{"$sound_name":"Piano1","$sound_id":"pvp2.piano1","$sound_vol":1.0,"$is_music":true}},
+            {"m21@tabbed_upsell.play_sound_panel":{"$sound_name":"Piano2","$sound_id":"pvp2.piano2","$sound_vol":1.0,"$is_music":true}},
+            {"m22@tabbed_upsell.play_sound_panel":{"$sound_name":"Piano3","$sound_id":"pvp2.piano3","$sound_vol":1.0,"$is_music":true}},
+            {"m23@tabbed_upsell.play_sound_panel":{"$sound_name":"Floating Dream","$sound_id":"pvp2.floating_dream","$sound_vol":1.0,"$is_music":true}},
+            {"m24@tabbed_upsell.play_sound_panel":{"$sound_name":"Comforting Memories","$sound_id":"pvp2.comforting_memories","$sound_vol":1.0,"$is_music":true}},
+            {"m13@tabbed_upsell.play_sound_panel":{"$sound_name":"An Ordinary Day","$sound_id":"pvp2.an_ordinary_day","$sound_vol":1.0,"$is_music":true}},
+            { "fh5@how_to_play_common.header": { "$text":"dimension.dimensionName1" }},
+            {"m25@tabbed_upsell.play_sound_panel":{"$sound_name":"Nether1","$sound_id":"pvp2.nether1","$sound_vol":1.0,"$is_music":true}},
+            {"m26@tabbed_upsell.play_sound_panel":{"$sound_name":"Nether2","$sound_id":"pvp2.nether2","$sound_vol":1.0,"$is_music":true}},
+            {"m27@tabbed_upsell.play_sound_panel":{"$sound_name":"Nether3","$sound_id":"pvp2.nether3","$sound_vol":1.0,"$is_music":true}},
+            {"m28@tabbed_upsell.play_sound_panel":{"$sound_name":"Nether4","$sound_id":"pvp2.nether4","$sound_vol":1.0,"$is_music":true}},
+            {"m29@tabbed_upsell.play_sound_panel":{"$sound_name":"So Below","$sound_id":"pvp2.so_below","$sound_vol":1.0,"$is_music":true}},
+            {"m30@tabbed_upsell.play_sound_panel":{"$sound_name":"Chrysopoenia","$sound_id":"pvp2.chrysopoeia","$sound_vol":1.0,"$is_music":true}},
+            {"m31@tabbed_upsell.play_sound_panel":{"$sound_name":"Rubedo","$sound_id":"pvp2.rubedo","$sound_vol":1.0,"$is_music":true}},
+            { "fh6@how_to_play_common.header": { "$text":"dimension.dimensionName2" }},
+            {"m57@tabbed_upsell.play_sound_panel":{"$sound_name":"End","$sound_id":"pvp2.end","$sound_vol":1.0,"$is_music":true}},
+            {"m32@tabbed_upsell.play_sound_panel":{"$sound_name":"End Boss","$sound_id":"pvp2.endboss","$sound_vol":1.0,"$is_music":true}},
+            {"m33@tabbed_upsell.play_sound_panel":{"$sound_name":"Credits","$sound_id":"pvp2.credits","$sound_vol":1.0,"$is_music":true}},
+            { "fh7@how_to_play_common.header": { "$text":"tile.water.name" }},
+            {"m34@tabbed_upsell.play_sound_panel":{"$sound_name":"Axolotl","$sound_id":"pvp2.axolotl","$sound_vol":1.0,"$is_music":true}},
+            {"m35@tabbed_upsell.play_sound_panel":{"$sound_name":"Dragon Fish","$sound_id":"pvp2.dragon_fish","$sound_vol":1.0,"$is_music":true}},
+            {"m36@tabbed_upsell.play_sound_panel":{"$sound_name":"Shuniji","$sound_id":"pvp2.shuniji","$sound_vol":1.0,"$is_music":true}},
+            { "fh8@how_to_play_common.header": { "$text":"gameMode.creative" }},
+            {"m37@tabbed_upsell.play_sound_panel":{"$sound_name":"Creative1","$sound_id":"pvp2.creative1","$sound_vol":1.0,"$is_music":true}},
+            {"m38@tabbed_upsell.play_sound_panel":{"$sound_name":"Creative2","$sound_id":"pvp2.creative2","$sound_vol":1.0,"$is_music":true}},
+            {"m39@tabbed_upsell.play_sound_panel":{"$sound_name":"Creative3","$sound_id":"pvp2.creative3","$sound_vol":1.0,"$is_music":true}},
+            {"m40@tabbed_upsell.play_sound_panel":{"$sound_name":"Creative4","$sound_id":"pvp2.creative4","$sound_vol":1.0,"$is_music":true}},
+            {"m41@tabbed_upsell.play_sound_panel":{"$sound_name":"Creative5","$sound_id":"pvp2.creative5","$sound_vol":1.0,"$is_music":true}},
+            {"m42@tabbed_upsell.play_sound_panel":{"$sound_name":"Creative6","$sound_id":"pvp2.creative6","$sound_vol":1.0,"$is_music":true}},
+            { "fh9@how_to_play_common.header": { "$text":"item.record.name" }},
+            {"m43@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_13.desc","$sound_id":"pvp2.13","$sound_vol":1.0,"$is_music":true}},
+            {"m44@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_cat.desc","$sound_id":"pvp2.cat","$sound_vol":1.0,"$is_music":true}},
+            {"m45@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_blocks.desc","$sound_id":"pvp2.blocks","$sound_vol":1.0,"$is_music":true}},
+            {"m46@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_chirp.desc","$sound_id":"pvp2.chirp","$sound_vol":1.0,"$is_music":true}},
+            {"m47@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_far.desc","$sound_id":"pvp2.far","$sound_vol":1.0,"$is_music":true}},
+            {"m48@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_mall.desc","$sound_id":"pvp2.mall","$sound_vol":1.0,"$is_music":true}},
+            {"m49@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_mellohi.desc","$sound_id":"pvp2.mellohi","$sound_vol":1.0,"$is_music":true}},
+            {"m50@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_stal.desc","$sound_id":"pvp2.stal","$sound_vol":1.0,"$is_music":true}},
+            {"m51@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_strad.desc","$sound_id":"pvp2.strad","$sound_vol":1.0,"$is_music":true}},
+            {"m52@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_ward.desc","$sound_id":"pvp2.ward","$sound_vol":1.0,"$is_music":true}},
+            {"m53@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_11.desc","$sound_id":"pvp2.11","$sound_vol":1.0,"$is_music":true}},
+            {"m54@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_wait.desc","$sound_id":"pvp2.wait","$sound_vol":1.0,"$is_music":true}},
+            {"m55@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_pigstep.desc","$sound_id":"pvp2.pigstep","$sound_vol":1.0,"$is_music":true}},
+            {"m56@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_otherside.desc","$sound_id":"pvp2.otherside","$sound_vol":1.0,"$is_music":true}}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_goa",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "yroku_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page06@tabbed_upsell.page06": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "fm2@how_to_play_common.header": { "$text":"packinfo.readme.title" }},
+            { "fm3@tabbed_upsell.text": { "text":"packinfo.readme.text1" }},
+            { "fm4@tabbed_upsell.text": { "text":"packinfo.readme.text2" }},
+            { "fm5@how_to_play_common.header": { "$text":"packinfo.readme.text4" }},
+            { "fm6@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text5"}},
+            { "fm7@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text6"}},
+            { "fm8@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text7"}},
+            { "fm9@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text8"}},
+            { "fm10@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text9"}},
+            { "fm11@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text10"}},
+            { "fm12@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text11"}},
+            { "fm13@how_to_play_common.header": { "$text":"packinfo.readme.text12" }},
+            { "fm15@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text14"}},
+            { "fm16@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text15"}}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_rokua",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  
+  "main_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "title_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": [ "100%c", 35 ],
+          "offset": [ 0, 3 ],
+          "controls": [
+            {
+              "pack_icon":{
+                "type": "image",
+                "texture": "textures/ui/gote_support_icon",
+                "size": [ 35, 35 ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 4, 0 ]
+              }
+            },
+            {
+              "title_text": {
+                "type": "label",
+                "text": "('§l§aGote§d-§bSupporter\n§l§6Ver ' + $gote_ver2)",
+                "shadow": true,
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "info_line": {
+          "type": "image",
+          "texture": "textures/ui/info_line",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": [ "100%", 4 ],
+          "layer": 1,
+          "offset": [ 0, 41 ]
+        }
+      },
+      {
+        "info_line_v": {
+          "type": "image",
+          "texture": "textures/ui/info_line_v",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": [ 4, "100% - 44px" ],
+          "layer": 2,
+          "offset": [ 0, 44 ]
+        }
+      },
+      {
+        "left_panel@common.scrolling_panel": {
+          "$show_background": false,
+          "size": [ "50% - 4px", "100% - 46px" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          
+          "$scrolling_content": "tabbed_upsell.left_panel",
+          "$scrolling_panel_size": [ "100%", "100%" ],
+          "$scroll_size": [ "4px", "100% - 2px" ],
+          "$always_handle_scrolling": false,
+          "offset": [ 2, 46 ]
+        }
+      },
+      {
+        "right_panel@common.scrolling_panel": {
+          "$show_background": false,
+          "size": [ "50% - 4px", "100% - 46px" ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          
+          "$scrolling_content": "tabbed_upsell.right_panel",
+          "$scrolling_panel_size": [ "100%", "100%" ],
+          "$scroll_size": [ "4px", "100% - 2px" ],
+          "$always_handle_scrolling": false,
+          "offset": [ 0, 46 ]
+        }
+      }
+    ]
+  },
+
+
+
+  "jsonui_warning_text": {
+    "type": "stack_panel",
+    "size": [ "100% - 2px", "default" ],
+    "offset": [ 2, 0 ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "controls": [
+      {
+        "1": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.jsonUIWarning.honbun1"
+        }
+      },
+      {
+        "2": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.jsonUIWarning.honbun2"
+        }
+      },
+      {
+        "3": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.jsonUIWarning.honbun3"
+        }
+      },
+      {
+        "4": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.jsonUIWarning.honbun4"
+        }
+      }
+    ]
+  },
+
+  "jsonui_warning_text_scroll@common.scrolling_panel": {
+    "$show_background": false,
+    "size": [ "100% - 4px", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [ 2, 0 ],
+    
+    "$scrolling_content": "tabbed_upsell.jsonui_warning_text",
+    "$scrolling_panel_size": [ "100%", "100%" ],
+    "$scroll_size": [ "4px", "100% - 2px" ],
+    "$always_handle_scrolling": false
+  },
+
+  "jsonui_warning_okbutton@tabbed_upsell.jsonui_warning_dlga": {
+    "$checked_control": "common_toggles.toggle_unchecked",
+    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+
+    "$button_text": "gui.ok",
+    "$toggle_default_state": true,
+    "$toggle_group_forced_index": 0,
+
+    "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+  },
+
+
+  "dialog1@ir2.dummy_dialog_one": {
+    "layer": 503,
+    "size": [ "80%", "80%" ],
+    "$text_name": "ir2.jsonUIWarning.title",
+    "$child_control": "tabbed_upsell.jsonui_warning_text_scroll",
+    "$bottom_button_panel": "tabbed_upsell.jsonui_warning_okbutton",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "jsonui_warning",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "root_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "root_panel@common.fullscreen_header": {
+          "$back_button_has_title": true,
+          "$button_text": "§l§1Gote-Supporter §4Info",
+          "$child_control": "tabbed_upsell.main_panel",
+          "layer": 10
+        }
+      },
+      {
+        "jsonui_warning_button@tabbed_upsell.jsonui_warning_dlga_c": {
+          "size": [ 25, 25 ],
+          "offset": [ -5, 25 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$button_content": "tabbed_upsell.warning_icon",
+          "$toggle_view_binding_name": "jsonui_warning",
+          "$toggle_group_forced_index": 100,
+          "layer": 100
+        }
+      },
+      {
+        "jsonui_warning_popup": {
+          "type": "image",
+          "texture": "textures/ui/White",
+          "alpha": 0.8,
+          "color": [ 0, 0, 0 ],
+          "layer": 409,
+          "size": [ "100%", "100%" ],
+          "controls": [
+            {
+              "scrool@common.scrolling_panel": {
+                "type": "scroll_view",
+                "size": [ "100%", "100%" ],
+                "layer": 501,
+                "$scrolling_content": "common.empty_panel",
+                "$show_background": false
+              }
+            },
+            {
+              "jsonui_warning_dlga_close@tabbed_upsell.jsonui_warning_dlga_close": {
+                "layer": 502,
+                "size": [ "100%", "100%" ],
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0
+              }
+            },
+            {
+              "dialog1@tabbed_upsell.dialog1": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "jsonui_warning",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "tabbed_upseel_screen_panel@common.base_screen": {
+    "$screen_bg_content": "tabbed_upsell.black",
+    "$screen_content": "tabbed_upsell.root_panel",
+	  "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      }
+    ]
+  },
+
+  "black": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui/parau_bind",
+    "fill": true
+  }
+}

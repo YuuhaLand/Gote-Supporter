@@ -1,0 +1,17 @@
+{
+  "text_edit_box_label": {
+    "$default_value|default": "",
+    "property_bag": {
+      "#property_field": "#item_name",
+      "#item_name": "$default_value"
+    }
+  },
+  "toggle": {
+    "$default_state|default": false,
+    "$toggle_property_bag": {
+      "#property_field": "#toggle_state",
+      "#toggle_state": "$default_state"
+    }
+
+  }
+}

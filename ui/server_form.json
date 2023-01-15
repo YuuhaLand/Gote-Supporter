@@ -1,0 +1,22 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "server_form",
+  "main_screen_content": {
+    "size": [ "100%", "100%" ],
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

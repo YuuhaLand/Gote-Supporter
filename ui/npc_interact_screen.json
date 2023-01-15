@@ -1,0 +1,27 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "npc_interact",
+  "npc_screen_contents": {
+    "modifications": [/
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": [
+                {
+                  "binding_name": "#student_view_visible",
+                  "binding_name_override": "#visible",
+                  "binding_type": "global"
+                }
+            ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

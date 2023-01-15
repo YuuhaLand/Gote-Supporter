@@ -1,0 +1,24 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "trade2",
+  "screen_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": []
+            }
+          },
+          {
+            "delital_panel@crafting.delital_panel": {}
+          }
+        ]
+      }
+    ]
+  }
+}

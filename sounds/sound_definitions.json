@@ -1,0 +1,592 @@
+{
+  //menu
+
+  "pvp2.menu1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/menu/menu1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.menu2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/menu/menu2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.menu3": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/menu/menu3",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.menu4": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/menu/menu4",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.infinite_amethyst": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/infinite_amethyst",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.left_to_bloom": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/left_to_bloom",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.one_more_day": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/one_more_day",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.stand_tall": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/stand_tall",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.wending": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/wending",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+
+  // game
+
+  "pvp2.calm1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/calm1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.calm2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/calm2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.calm3": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/calm3",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.hal1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/hal1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.hal2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/hal2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.hal3": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/hal3",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.hal4": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/hal4",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.nuance1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nuance1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.nuance2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nuance2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.piano1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/piano1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.piano2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/piano2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.piano3": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/piano3",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.floating_dream": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/floating_dream",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.comforting_memories": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/comforting_memories",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.an_ordinary_day": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/an_ordinary_day",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+
+  //nether
+
+  "pvp2.nether1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/nether1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.nether2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/nether2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.nether3": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/nether3",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.nether4": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/nether4",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.so_below": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/so_below",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.chrysopoeia": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/chrysopoeia",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.rubedo": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/nether/rubedo",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+
+  //end
+
+  "pvp2.end": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/end/end",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.endboss": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/end/boss",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.credits": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/end/credits",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+
+  //creative
+
+  "pvp2.creative1": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/creative/creative1",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creative2": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/creative/creative2",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creative3": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/creative/creative3",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creative4": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/creative/creative4",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creative5": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/creative/creative5",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creative6": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/creative/creative6",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+
+  //record
+
+  "pvp2.13": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/13",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.cat": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/cat",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.blocks": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/blocks",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.chirp": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/chirp",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.mall": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/mall",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.far": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/far",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.mellohi": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/mellohi",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.stal": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/stal",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.strad": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/strad",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.ward": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/ward",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.11": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/11",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.wait": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/wait",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.pigstep": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/pigstep_master",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.otherside": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/otherside",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+
+  //water
+  
+  "pvp2.axolotl": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/water/axolotl",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.dragon_fish": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/water/dragon_fish",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.shuniji": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/water/shuniji",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  }
+}

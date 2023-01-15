@@ -1,0 +1,163 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "toggle@common_toggles.light_text_toggle": {
+    "$checked_control": "common_toggles.toggle_unchecked",
+    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+    "size": [ "100%", "30px" ],
+    "$radio_toggle_group": true,
+
+    "$toggle_state_binding_name|default": "$option_binding_name",
+    "$toggle_enabled_binding_type|default": "global",
+    "$toggle_name": "$toggle_state_binding_name",
+
+    "$binding_type": "global",
+    "$binding_condition": "once"
+  },
+
+  "cameranoiti": {
+    "type": "stack_panel",
+    "ignored": "(not $include_controls_and_settings_sections)",
+    "size": ["100%", "100%c"],
+    "controls": [
+      {
+        "thirdpersonfront@settings.toggle": {
+          "$toggle_name":"#thirdperson_radio_first",
+          "$button_text": "options.thirdperson.thirdpersonfront",
+          "$option_binding_name": "#thirdperson_radio_first",
+          "bindings": [
+            {
+              "binding_name": "#thirdperson_radio_third_front",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "firstperson@settings.toggle": {
+          "$toggle_name":"#thirdperson_radio_third_back",
+          "$button_text": "options.thirdperson.firstperson",
+          "$option_binding_name": "#thirdperson_radio_third_back",
+          "bindings": [
+            {
+              "binding_name": "#thirdperson_radio_first",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "thirdpersonback@settings.toggle": {
+          "$toggle_name":"#thirdperson_radio_third_front",
+          "$button_text": "options.thirdperson.thirdpersonback",
+          "$option_binding_name": "#thirdperson_radio_third_front",
+          "bindings": [
+            {
+              "binding_name": "#thirdperson_radio_third_back",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "selector_stack_panel/controls_and_settings_selector_pane/touch_button": {
+    "ignored": "($is_holographic or not $touch_supported)"
+  },
+
+  "selector_stack_panel/controls_and_settings_selector_pane/language_button": {
+    "ignored": false
+  },
+
+  "section_content_panels/general_and_controls_sections/touch_section": {
+    "ignored": "($is_holographic or not $touch_supported)"
+  },
+
+  "section_content_panels/general_and_controls_sections/language_section": {
+    "ignored": false
+  },
+
+  "section_content_panels/general_and_controls_sections": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "config_section@gote_section.config_section": {
+              "visible": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+
+  "selector_stack_panel": {
+    "modifications": [
+      {
+        "control_name": "spacer_0",
+        "operation": "insert_after",
+        "value": [
+          {
+            "camera_label": {
+              "type": "label",
+              "size": [ "100%", "default" ],
+              "ignored": "(not $include_controls_and_settings_sections)",
+              "color": "$main_header_text_color",
+              "text": "options.thirdperson"
+            }
+          },
+          {
+            "cameranoiti@settings.cameranoiti": {}
+          },
+          {
+            "padding": {
+              "type": "panel",
+              "ignored": "(not $include_controls_and_settings_sections)",
+              "size": [ 0, 10 ]
+            }
+          }
+        ]
+      },
+      {
+        "control_name": "addons_selector_panel",
+        "operation": "insert_after",
+        "value": [
+          {
+            "spacer_gote": {
+              "type": "panel",
+              "size": [ 2, 2 ]
+            }
+          },
+          {
+            "gotesupporter_selector_panel@settings.gotesupporter_selector_panel": {
+              "ignored": "(not $include_controls_and_settings_sections)"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  
+
+  "gotesupporter_selector_panel": {
+    "type": "stack_panel",
+    "$tts_section_header": "Gote Supporter",
+    "controls": [
+      {
+        "selector_group_label_2@settings_common.selector_group_label": {
+          "text": "Gote-Supporter"
+        }
+      },
+      {
+        "config_button@gote_section.config_button": {
+          "$toggle_group_forced_index": 100
+        }
+      }
+    ]
+  }
+}

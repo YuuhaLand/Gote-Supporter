@@ -1,0 +1,30 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+Do not use for other packs without permission.
+*********************************************/
+{
+  "namespace": "loom",
+  "loom_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": []
+            }
+          },
+          {
+            "player_renderer@chest.player_renderer": {
+              "offset": [ -195, 0 ]
+            }
+          },
+          {
+            "delital_panel@crafting.delital_panel": {}
+          }
+        ]
+      }
+    ]
+  }
+}

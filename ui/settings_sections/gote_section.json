@@ -1,0 +1,364 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "gote_section",
+
+  "sample_resource_pack_button@common.button": {
+    "size": [ "100%", 44 ],
+    "$pressed_button_name": "button.dummmy",
+    "hover_control": "hover_border",
+    "pressed_control": "pressed_border",
+    "$config_pack|default": false,
+    "controls": [
+      {
+        "hover_border": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "textures/ui/focus_border_white"
+        }
+      },
+      {
+        "pressed_border": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "textures/ui/focus_border_white"
+        }
+      },
+      {
+        "default_item": {
+          "type": "panel",
+          "size": [ "100%-2px", "44px" ],
+          "controls": [
+            {
+              "icon_image": {
+                "type": "image",
+                "layer": 4,
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "size": [ 42, 42 ],
+                "offset": [ 0, 0 ],
+                "texture": "$texture",
+                "$texture": "textures/ui/gote_support_icon",
+                      
+                "variables": [
+                  {
+                    "requires": "$config_pack",
+                    "$texture": "textures/ui/gote_support_config_icon"
+                  }
+                ]
+              }
+            },
+            {
+              "name_panel": {
+                "layer": 5,
+                "type": "panel",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "size": [ "100% - 48px", 10 ],
+                "offset": [ -2, 2 ],
+                "controls": [
+                  {
+                    "white_label@resource_packs.white_label": {
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left",
+                      "text": "$text",
+                      "$text": "('Gote-Supporter ' + $gote_ver)",
+                      "layer": 1,
+                      
+                      "variables": [
+                        {
+                          "requires": "$config_pack",
+                          "$text": "Gote-Supporter Config Pack"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "description_panel": {
+                "layer": 4,
+                "type": "panel",
+                "anchor_from": "bottom_right",
+                "anchor_to": "bottom_right",
+                "size": [ "100%-48px", 30 ],
+                "offset": [ -2, -1 ],
+                "controls": [
+                  {
+                    "white_label@resource_packs.white_label": {
+                      "layer": 1,
+                      "size": [ "100%", "100%" ],
+                      "text": "$text",
+                      "$text": "マイクライフをより豊かにできるユーザー補助ツールです!\nCreated by Yuka0745",
+                      "font_type": "smooth",
+                      "offset": [ 1, 0 ],
+                      
+                      "variables": [
+                        {
+                          "requires": "$config_pack",
+                          "$text": "Gote-SupporterをカスタマイズするConfig"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "config_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "config_button_toggle",
+    "$glyph_texture": "textures/ui/debug_glyph",
+    "$glyph_color_texture": "textures/ui/debug_glyph_color",
+    "$glyph_size": [ 15, 15 ],
+    "$button_text": "Config",
+    "$toggle_property_bag": {
+      "#panel_title": "Gote-Supporter Config"
+    }
+  },
+
+  "config_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "$spatialPatternsPadding": [ "100%", 8 ],
+    "$paddingLineDivider": [ "100%", 16 ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "config_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "gotesupporter_ver": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ],
+          "text": "('Gote-Supporter ' + $gote_ver)"
+        }
+      },
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ "100%", 5 ]
+        }
+      },
+      {
+        "label1": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ],
+          "text": "options.gote.label1"
+        }
+      },
+      {
+        "label2": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ],
+          "text": "options.gote.label2"
+        }
+      },
+      {
+        "label3": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ],
+          "text": "options.gote.label3"
+        }
+      },
+      {
+        "padding_1": {
+          "type": "input_panel",
+          "size": [ "100%", 5 ],
+          "focus_enabled": true
+        }
+      },
+      {
+        "label4": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$e_color_format",
+          "size": [ "100%", "default" ],
+          "text": "Gote-Supporter/ui/_global_variables.json"
+        }
+      },
+      {
+        "padding_15": {
+          "type": "panel", 
+          "size": [ "100%", 2 ]
+        }
+      },
+      {
+        "storage_application_warning": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", "100%c" ],
+          "ignored": "(not $storage_location_switch_enabled)",
+          "bindings": [
+            {
+              "binding_name": "#storage_location_radio_package",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "ms_warning": {
+                "type": "image",
+                "texture": "textures/ui/ms_warning",
+                "size": [ 16, 16 ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 2, 0 ]
+              }
+            },
+            {
+              "label_text": {
+                "type": "label",
+                "size": [ "fill", "default" ],
+                "color": "$c_color_format",
+                "text": "現在、Gote-SupporterのConfigを変更できません。 ファイルストレージの場所が「アプリケーション」に設定されているため、Gote-SupporterのConfigファイルにアクセスできません。 ファイルストレージの場所を「外部」に設定すると、Configにアクセスできるようになります。"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "input_panel", 
+          "size": [ "100%", 5 ],
+          "focus_enabled": true
+        }
+      },
+
+      
+      {
+        "hud_compass@settings_common.option_toggle": {
+          "$option_label": "options.gote.hud_compass",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$hud_compass",
+          "$toggle_name": "hud_compass",
+          "enabled": false
+        }
+      },
+      {
+        "show_recoverycompass@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_recoverycompass",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_recoverycompass",
+          "$toggle_name": "show_recoverycompass",
+          "enabled": false
+        }
+      },
+      {
+        "f1_f8_location@settings_common.option_text_edit": {
+          "$option_label": "options.gote.f1_f8_location",
+          "$option_binding_name": "",
+          "$default_value": "$f1_f8_location",
+          "$text_box_name": "f1_f8_location",
+          "enabled": false
+        }
+      },
+      {
+        "show_hotbar_navigator@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_hotbar_navigator",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_hotbar_navigator",
+          "$toggle_name": "show_hotbar_navigator",
+          "enabled": false
+        }
+      },
+      {
+        "chat_tab_button_type@settings_common.option_text_edit": {
+          "$option_label": "options.gote.chat_tab_button_type",
+          "$option_binding_name": "",
+          "$default_value": "$chat_tab_button_type",
+          "$text_box_name": "chat_tab_button_type",
+          "enabled": false
+        }
+      },
+
+      {
+        "padding_3": {
+          "type": "input_panel", 
+          "size": [ "100%", 10 ],
+          "focus_enabled": true
+        }
+      },
+      {
+        "label5": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ],
+          "text": "options.gote.label4"
+        }
+      },
+      {
+        "label6": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$body_text_color",
+          "size": [ "100%", "default" ],
+          "text": "options.gote.label5"
+        }
+      },
+      {
+        "gotesupporter_config_pack@gote_section.sample_resource_pack_button": {
+          "$config_pack": true
+        }
+      },
+      {
+        "divider_padding1": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      },
+      {
+        "divider@common.horizontal_divider": {}
+      },
+      {
+        "divider_padding2": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      },
+      {
+        "gotesupporter_pack@gote_section.sample_resource_pack_button": {
+          "$config_pack": false
+        }
+      }
+    ]
+  }
+}

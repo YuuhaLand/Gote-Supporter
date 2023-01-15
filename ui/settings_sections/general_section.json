@@ -1,0 +1,578 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "gamertag_controls/sign_out": {
+    "ignored": "(not $is_pregame or $requires_xbl_signin_to_play)"
+  },
+
+  "video_section/max_framerate_slider": {
+    "ignored": false
+  },
+
+  "accessibility_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "accessibility_button_toggle",
+    "$glyph_color_texture": "textures/ui/speed_effect",
+    "$glyph_texture": "textures/ui/speed_effect",
+    "$glyph_size": [ 18, 18 ],
+    "$button_text": "options.quick",
+    "$toggle_property_bag": {
+      "#panel_title": "options.quickTitle"
+    }
+  },
+  "accessibility_section": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {"header_1@how_to_play_common.header":{"$text":"options.videoTitle"}},
+          {
+            "thirdperson_label": {
+              "type": "label",
+              "size": [ "100%", "default" ],
+              "color": "$main_header_text_color",
+              "text": "options.thirdperson"
+              }
+            },
+          {
+            "tp_first@settings_common.option_toggle": {
+              "$toggle_name":"#thirdperson_radio_first",
+              "$option_label": "options.thirdperson.firstperson",
+              "$option_binding_name": "#thirdperson_radio_first"
+            }
+          },
+          {
+            "tp_tb@settings_common.option_toggle": {
+              "$toggle_name":"#thirdperson_radio_third_back",
+              "$option_label": "options.thirdperson.thirdpersonback",
+              "$option_binding_name": "#thirdperson_radio_third_back"
+            }
+          },
+          {
+            "tp_tf@settings_common.option_toggle": {
+              "$toggle_name":"#thirdperson_radio_third_front",
+              "$option_label": "options.thirdperson.thirdpersonfront",
+              "$option_binding_name": "#thirdperson_radio_third_front"
+            }
+          },
+          {
+            "render_distance_slider@settings_common.option_slider": {
+              "ignored": "($is_holographic)",
+              "$option_label": "#render_distance_slider_label",
+              "$slider_name": "render_distance",
+              "$slider_value_binding_name": "#render_distance",
+              "$slider_tts_text_value": "#render_distance_text_value",
+              "$option_enabled_binding_name": "#render_distance_enabled",
+              "$slider_steps_binding_name": "#render_distance_steps",
+              "$label_bindings": [
+                {
+                  "binding_name": "$option_label"
+                }
+              ],
+              "bindings": [
+                {
+                  "binding_name": "#show_render_distance",
+                  "binding_name_override": "#visible"
+                }
+              ]
+            }
+          },
+          {
+            "option_toggle_hidehand@settings_common.option_toggle": {
+              "ignored": "($is_holographic)",
+              "$option_label": "options.hidehand",
+              "$option_binding_name": "#hide_hand",
+              "$option_enabled_binding_name": "#hide_hand_enabled",
+              "$toggle_name": "hide_hand"
+            }
+          },
+          {
+            "option_toggle_vrhidehand@settings_common.option_toggle": {
+              "ignored": "(not $is_holographic)",
+              "$option_label": "options.vrHideHand",
+              "$option_binding_name": "#vr_hide_hand",
+              "$option_enabled_binding_name": "#vr_hide_hand_enabled",
+              "$toggle_name": "vr_hide_hand"
+            }
+          },
+          {
+            "hide_paperdoll_toggle@settings_common.option_toggle": {
+              "$option_label": "options.hidepaperdoll",
+              "$option_binding_name": "#hide_paperdoll",
+              "$option_enabled_binding_name": "#hide_paperdoll_enabled",
+              "$toggle_name": "hide_paperdoll"
+            }
+          },
+          {
+            "option_toggle_hidehud@settings_common.option_toggle": {
+              "ignored": "($is_holographic)",
+              "$option_label": "options.hidehud",
+              "$option_binding_name": "#hide_hud",
+              "$option_enabled_binding_name": "#hide_hud_enabled",
+              "$toggle_name": "hide_hud"
+            }
+          },
+          {
+            "option_toggle_vrhidehud@settings_common.option_toggle": {
+              "ignored": "(not $is_holographic)",
+              "$option_label": "options.vrHideHud",
+              "$option_binding_name": "#vr_hide_hud",
+              "$option_enabled_binding_name": "#vr_hide_hud_enabled",
+              "$toggle_name": "vr_hide_hud"
+            }
+          },
+          {"header_2@how_to_play_common.header":{"$text":"options.sounds.title"}},
+          {
+            "option_slider_0_sound@settings_common.option_slider": {
+              "$option_label": "#main_volume_slider_label",
+              "$slider_name": "main_volume",
+              "$slider_value_binding_name": "#main_volume",
+              "$slider_tts_text_value": "#main_volume_text_value",
+              "$option_enabled_binding_name": "#main_volume_enabled",
+              "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+              "$label_bindings": [
+                {
+                  "binding_name": "$option_label"
+                }
+              ]
+            }
+          },
+          {
+            "option_slider_1_sound@settings_common.option_slider": {
+              "$option_label": "#music_volume_slider_label",
+              "$slider_name": "music_volume",
+              "$slider_value_binding_name": "#music_volume",
+              "$slider_tts_text_value": "#music_volume_text_value",
+              "$option_enabled_binding_name": "#music_volume_enabled",
+              "$label_bindings": [
+                {
+                  "binding_name": "$option_label"
+                }
+              ]
+            }
+          },
+          {
+            "option_slider_2_sound@settings_common.option_slider": {
+              "$option_label": "#sound_volume_slider_label",
+              "$slider_name": "sound_volume",
+              "$slider_value_binding_name": "#sound_volume",
+              "$slider_tts_text_value": "#sound_volume_text_value",
+              "$option_enabled_binding_name": "#sound_volume_enabled",
+              "$label_bindings": [
+                {
+                  "binding_name": "$option_label"
+                }
+              ]
+            }
+          },  
+          {"header_3@how_to_play_common.header":{"$text":"options.accessibility.title"}}
+        ]
+      }
+    ]
+  },
+
+  "video_section": {
+    "modifications": [
+      {
+        "control_name": "perspective_dropdown",
+        "operation": "replace",
+        "value": [
+          {
+            "camera_label": {
+              "type": "label",
+              "size": [ "100%", "default" ],
+              "ignored": "($is_holographic and $is_reality_mode)",
+              "color": "$main_header_text_color",
+              "text": "options.thirdperson"
+            }
+          },
+          {
+            "cameranoiti@settings.cameranoiti": {
+              "ignored": "($is_holographic and $is_reality_mode)"
+            }
+          },
+          {
+            "padding_camera": {
+              "type": "panel",
+              "ignored": "(not $include_controls_and_settings_sections)",
+              "size": [ 0, 10 ]
+            }
+          }
+        ]
+      },
+      {
+        "control_name": "ui_profile_dropdown",
+        "operation": "insert_after",
+        "value": [
+          {
+            "gote_pocket_warning": {
+              "type": "panel",
+              "size": [ "100%", "100%cm + 16px" ],
+              "controls": [
+                {
+                  "render_distance_popup@common.static_tooltip_popup_with_image_and_text": {
+                    "size": [ "100% - 4px", "100%cm + 8px" ],
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "$tooltip_panel_offset": [ 0, 9 ],
+                    "$tooltip_popup_image": "textures/ui/WarningGlyph",
+                    "$tooltip_button_binding_type": "global",
+                    "$tooltip_button_collection_name": "",
+                    "$tooltip_popup_visible_binding": "#ui_profile_radio_pocket",
+                    "$tooltip_text_binding_name": "ir2.pocket.waring",
+                    "$tooltip_chevron_anchor": "top_right",
+                    "$tooltip_popup_chevron_offset": [ "-30%x", "-10px" ],
+                    "$tooltip_popup_chevron_texture": "textures/ui/tooltip_inverted_chevron"
+                  }
+                }
+              ],
+              "bindings": [
+                {
+                  "binding_name": "#ui_profile_radio_pocket",
+                  "binding_name_override": "#visible"
+                }
+              ]
+            }
+          },
+          {
+            "vsync_dropdown@settings_common.option_dropdown": {
+              "$option_label": "options.vsync",
+              "$dropdown_content": "general_section.vysnc_dropdown_content",
+              "$dropdown_area": "content_area",
+              "$dropdown_name": "vsync_dropdown",
+              "$options_dropdown_toggle_label_binding": "#vsync_dropdown_toggle_label",
+              "$option_enabled_binding_name": "#vsync_dropdown_enabled",
+              "$dropdown_scroll_content_size": [ "100%", "200%" ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "sound_section": {
+    "controls": [
+      {
+        "paddingMainVolume": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      },
+      {
+        "option_slider_0@settings_common.option_slider": {
+          "size": [ "100%", 16 ],
+          "$option_label": "#main_volume_slider_label",
+          "$slider_name": "main_volume",
+          "$slider_value_binding_name": "#main_volume",
+          "$slider_tts_text_value": "#main_volume_text_value",
+          "$option_enabled_binding_name": "#main_volume_enabled",
+          "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "paddingDividerAudioSettings": {
+          "type": "panel",
+          "size": [ "100%", 10 ]
+        }
+      },
+      {
+        "dividerAudioSettings": {
+          "type": "panel",
+          "size": [ "100%", "100%c + 6px" ],
+          "controls": [
+            {
+              "section_divider": {
+                "type": "image",
+                "size": [ "100% - 30px", 1 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 3,
+                "texture": "textures/ui/list_item_divider_line_light"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_00": {
+          "type": "panel",
+          "size": [ "100%", 10 ]
+        }
+      },
+      {
+        "bgm_sounds": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 16 ],
+          "controls": [
+            {
+              "slider0@settings_common.option_slider": {
+                "size": [ "50% - 3px", 16 ],
+                "$option_label": "#music_volume_slider_label",
+                "$slider_name": "music_volume",
+                "$slider_value_binding_name": "#music_volume",
+                "$slider_tts_text_value": "#music_volume_text_value",
+                "$option_enabled_binding_name": "#music_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "slider1@settings_common.option_slider": {
+                "size": [ "fill", 16 ],
+                "$option_label": "#sound_volume_slider_label",
+                "$slider_name": "sound_volume",
+                "$slider_value_binding_name": "#sound_volume",
+                "$slider_tts_text_value": "#sound_volume_text_value",
+                "$option_enabled_binding_name": "#sound_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ "100%", 15 ]
+        }
+      },
+      {
+        "ambent_block": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 16 ],
+          "controls": [
+            {
+              "slider0@settings_common.option_slider": {
+                "size": [ "50% - 3px", 16 ],
+                "$option_label": "#ambient_volume_slider_label",
+                "$slider_name": "ambient_volume",
+                "$slider_value_binding_name": "#ambient_volume",
+                "$slider_tts_text_value": "#ambient_volume_text_value",
+                "$option_enabled_binding_name": "#ambient_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "slider1@settings_common.option_slider": {
+                "size": [ "fill", 16 ],
+                "$option_label": "#block_volume_slider_label",
+                "$slider_name": "block_volume",
+                "$slider_value_binding_name": "#block_volume",
+                "$slider_tts_text_value": "#block_volume_text_value",
+                "$option_enabled_binding_name": "#block_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ "100%", 15 ]
+        }
+      },
+      {
+        "hostile_neutral": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 16 ],
+          "controls": [
+            {
+              "slider0@settings_common.option_slider": {
+                "size": [ "50% - 3px", 16 ],
+                "$option_label": "#hostile_volume_slider_label",
+                "$slider_name": "hostile_volume",
+                "$slider_value_binding_name": "#hostile_volume",
+                "$slider_tts_text_value": "#hostile_volume_text_value",
+                "$option_enabled_binding_name": "#hostile_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "slider1@settings_common.option_slider": {
+                "size": [ "fill", 16 ],
+                "$option_label": "#neutral_volume_slider_label",
+                "$slider_name": "neutral_volume",
+                "$slider_value_binding_name": "#neutral_volume",
+                "$slider_tts_text_value": "#neutral_volume_text_value",
+                "$option_enabled_binding_name": "#neutral_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ "100%", 15 ]
+        }
+      },
+      {
+        "player_record": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 16 ],
+          "controls": [
+            {
+              "slider0@settings_common.option_slider": {
+                "size": [ "50% - 3px", 16 ],
+                "$option_label": "#player_volume_slider_label",
+                "$slider_name": "player_volume",
+                "$slider_value_binding_name": "#player_volume",
+                "$slider_tts_text_value": "#player_volume_text_value",
+                "$option_enabled_binding_name": "#player_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "slider1@settings_common.option_slider": {
+                "size": [ "fill", 16 ],
+                "$option_label": "#record_volume_slider_label",
+                "$slider_name": "record_volume",
+                "$slider_value_binding_name": "#record_volume",
+                "$slider_tts_text_value": "#record_volume_text_value",
+                "$option_enabled_binding_name": "#record_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [ "100%", 15 ]
+        }
+      },
+      {
+        "weather_tts": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 16 ],
+          "controls": [
+            {
+              "slider0@settings_common.option_slider": {
+                "size": [ "50% - 3px", 16 ],
+                "$option_label": "#weather_volume_slider_label",
+                "$slider_name": "weather_volume",
+                "$slider_value_binding_name": "#weather_volume",
+                "$slider_tts_text_value": "#weather_volume_text_value",
+                "$option_enabled_binding_name": "#weather_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "slider1@settings_common.option_slider": {
+                "size": [ "fill", 16 ],
+                "$option_label": "#texttospeech_volume_slider_label",
+                "$slider_name": "texttospeech_volume",
+                "$slider_value_binding_name": "#texttospeech_volume",
+                "$slider_tts_text_value": "#texttospeech_volume_text_value",
+                "$option_enabled_binding_name": "#texttospeech_volume_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "paddingResetVolumes": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      },
+
+      {
+        "reset_button@settings_common.action_button": {
+          "ignored": "(not $is_pregame)",
+          "$pressed_button_name": "button.reset_settings",
+          "$button_text": "options.resetSettings",
+          "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+          "property_bag": {
+            "reset_group": "audio"
+          }
+        }
+      }
+    ]
+  }
+}

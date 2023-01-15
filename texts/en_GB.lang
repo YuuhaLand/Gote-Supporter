@@ -1,0 +1,273 @@
+﻿pack.description=You can conveniently enjoy your Minecraft life.   Created by Yuka0745
+
+
+accessibility.disableTTS=§eText To Speech disabled	#
+accessibility.enableTTS=§eText To Speech enabled	#
+
+permissions.chatmute=Oops! You are not authorized to speak on this server.	#
+
+book.toggleLightMode=Light Mode
+
+map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s	#
+
+disconnectionScreen.title=Connection error!
+disconnectionScreen.sessionNotFound=No world session was found.	#
+disconnectionScreen.notAllowed=Access to this server has been denied.	#
+xbox.disconectionscreen.accessDenied=Access denied. The host may have blocked or banned you.
+
+createWorldScreen.gameMode.spectator=Spectator
+createWorldScreen.gameMode.hardcore=hardcore
+
+craftingScreen.tab.none=None
+
+chat.newline=Newline
+chat.textbox.place=Message
+cmd.textbox.place=Enter your command input here
+
+qs.video=Quick Video Settings
+qs.accessibility=Quick Accessibility Settings
+qs.chat=Chat Settings
+qs.chatonly=This feature only supports chat settings
+chat.settingsPlus=Quick Settings
+
+options.screenShake=Enable "/camerashake"
+options.quick=Quick
+options.quickTitle=Quick Settings
+options.touch.canSwitch=Touch is also available on Nintendo Switch. However, this setting is usually hidden, If you participate in the world where you applied "Gote-Supporter", this item will be displayed and you will be able to change settings.
+
+options.gote.label1=Here you can check the Config of Gote-Supporter.
+options.gote.label2=Gote-Supporter settings cannot be changed from here.
+options.gote.label3=Settings can be changed in the following files!
+options.gote.label4=When using the Gote-Supporter Config Pack, apply it on top of Gote-Supporter!
+options.gote.label5=Example:
+options.gote.hud_compass=Display compass and clock on HUD
+options.gote.show_recoverycompass=Add recovery compass to HUD compass (beta!)
+options.gote.f1_f8_location=Location of F1/F8 buttons on HUD (Touch)
+options.gote.show_hotbar_navigator=Show HUD hotbar navigator (touch)
+options.gote.chat_tab_button_type=Placement of the Tab key on the Chat Screen
+
+
+item.spawn_egg.name=Empty Spawn Egg
+
+tile.reserved6.name=Reserved6
+tile.movingBlock.name=Moving Block
+tile.info_update.name=Info Update
+tile.info_update2.name=Info Update2
+tile.glowingobsidian.name=Glowing Obsidian
+tile.end_gateway.name=End Gateway
+tile.frosted_ice.name=Frosted Ice
+tile.frame.name=Frame
+tile.dark_oak_door=Dark Oak Door
+tile.acacia_door=Acacia Door
+tile.jungle_door=Jungle Door
+tile.spruce_door=Spruce Door
+tile.daylight_detector_inverted.name=Daylight Sensor Inverted
+tile.wall_banner.name=Wall Banner
+tile.double_wooden_slab_oak.name=Double Wooden Slab Oak
+tile.unpowered_comparator.name=Unpowered comparator
+tile.powered_comparator.name=Powered comparator
+tile.skull.name=Skull
+tile.carrots.name=Carrots
+tile.flower_pot.name=Flower Pot
+tile.lit_redstone_lamp.name=Lit Redstone Lamp
+tile.end_portal.name=End Portal
+tile.unpowered_repeater.name=Unpowered Repeater
+tile.powered_repeater.name=Powered Repeater
+tile.lit_redstone_ore.name=Lit Redstone Ore
+tile.lava.name=Lava
+tile.wooden_door.name=Wooden Door
+tile.pistonArmCollision.name=Piston Arm Collision
+tile.stickyPistonArmCollision.name=Sticky Piston Arm Collision
+tile.bubble_column.name=Bubble Column
+
+## フィードバックサイト
+
+ir2.gts.gotofeedback=Open Feedback site? Your browser will launch.
+ir2.pocket.waring=Some Gote-Supporter features are not supported by Pocket UI.
+ir2.worldFolderPath.worldFolder=World Folder Location
+ir2.worldFolderPath.cantget=Could not be obtained.
+ir2.previewWarning.title=Warning
+ir2.previewWarning.honbun1=You have enabled Gote-Supporter in the beta version of Minecraft.
+ir2.previewWarning.honbun2=Gote-Supporter does not fully support the beta version of Minecraft.
+ir2.previewWarning.honbun3=This may cause problems such as crashes and UI layout collapses.
+ir2.previewWarning.honbun4=Please understand this in advance.
+
+ir2.jsonUIWarning.title=Important JSON UI Warning
+ir2.jsonUIWarning.honbun1=Resource packs that modify the screen UI, including Gote-Supporter, are modified using "JSON UI".
+ir2.jsonUIWarning.honbun2=Minecraft is progressively rolling out a new UI engine, Ore UI, which is the successor to JSON UI.
+ir2.jsonUIWarning.honbun3=§l§cGote-Supporter features may not be available in the future due to future updates.
+ir2.jsonUIWarning.honbun4=*The Ore UI is already implemented in the Achievements screen, world creation screen, etc. and cannot currently be changed from the resource pack.
+
+ir2.memoScreen.title=Temporary Note
+ir2.memoScreen.body1=Here you can write temporary notes.
+ir2.memoScreen.body2=It will be deleted when you exit the world!
+ir2.memoScreen.placeHolderText=Please note that what you write here will not be saved.
+
+## Gote-Supporter Info 画面のテキスト
+
+packinfo.back=<- Back
+##>
+
+## もくじ
+
+packinfo.mokuji.title=Table of Contents
+packinfo.mokuji.text1=Thank you for using this pack!
+packinfo.mokuji.text2=On this screen you can see information about this pack.
+
+## このパックについて
+
+packinfo.about.title=About this pack
+packinfo.about.text1=This resource pack is a UI add-on that adds a variety of useful features to Micra!
+packinfo.about.text2=It does not use any behavior packs and can be used in multiplayer, servers, etc.!
+packinfo.about.text3=(Gote-Supporter cannot be used if the participating server has denied global resources.)
+packinfo.about.text4=This pack is available on MCPEDL!
+packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
+packinfo.about.text6=Join Yuka0745's add-on Discord server and report bugs in Gote-Supporter!
+packinfo.about.text7=§adiscord.gg/ZcCnXYEFc2
+
+## 特徴
+
+packinfo.features.title=Features
+packinfo.features.text1=The main features of this pack are as follows! :
+packinfo.features.text2=See more features at MCPEDL or on our blog Introducing Gote-Supporter!
+
+packinfo.f1=You don't have to make a clock and compass for survival!
+packinfo.f2=Item names can be newlined in an anvil!
+packinfo.f3=You can press the F1 and F8 keys on the play screen and the Tab key on the chat screen on your phone!
+packinfo.f4=You can create a world template!
+packinfo.f5=Maximum frame rate setting can be changed!
+packinfo.f6=...And more!
+
+## アップデート情報
+
+packinfo.update.title=Changelog
+packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v144.u1=Tab selectors have been added to the World and Friends tabs on the "Play" screen.
+packinfo.v144.u2=Added "Permission Blocks" section to the "How to Play" screen.
+packinfo.v144.u3=Fixed a problem in which the "Delete World" button was always displayed on the "Edit World" screen.
+packinfo.v144.u4=The "Export World" button on the "Edit World" screen was not being displayed on mobile devices.
+packinfo.v144.u5=The button to exit from Realm is now visible again.
+packinfo.v144.u6=A button has been added to the Gote-Supporter information screen that can display important warnings about the JSON UI.
+
+packinfo.v143.u1=Improvement of compatibility issues with "ごて鯖 色々鯖2"
+
+packinfo.v142.u1="World Folder Location" is now displayed on the World Settings screen.
+packinfo.v142.u2=Config functionality has been added! With Config, you can customize Gote-Supporter. For details, please refer to the Pack Settings screen.
+packinfo.v142.u3=F1 and F8 for touch operation can now be displayed above by editing Config.
+packinfo.v142.u4=When exiting a game on the pause screen, a dialog box is now displayed to confirm that the game is really over.
+packinfo.v142.u5=When Minecraft adds new items to the settings screen, etc., the layout is no longer broken.
+packinfo.v142.u6=The maximum frame rate in the video settings has been moved to the same location as in 1.19.40(Beta).
+
+packinfo.v141.u1=The "play" screen has been redesigned to full screen!
+packinfo.v141.u2=Added last saved Minecraft version label to world edit screen.
+packinfo.v141.u3=Added icons to the block type buttons in the command block.
+packinfo.v141.u4=The Windows version also allows you to sign out of your Microsoft account from the "Profile" setting.
+packinfo.v141.u5=Fixed a display problem with the Gote-Supporter information screen.
+
+packinfo.v140.u1=Added light mode to the Book & Quill screen. You can browse with the same background color as vanilla.
+packinfo.v140.u2=The Paperdoll display on the chest screen has been redesigned and reimplemented.
+packinfo.v140.u3=Fixed a problem in which HP status and other information was not displayed on the Stonecutter screen.
+packinfo.v140.u4=Fixed a problem with the HUD main hand switching button being misaligned on touch control.
+packinfo.v140.u5=Packs can now be freely copied without the permission of the producer. For more information, please read the readme.txt in the pack or the "Read Me!" section in the pack information screen.
+
+packinfo.v138.u1=Fixed several problems that occurred in v1.19.10.
+packinfo.v138.u2=This screen with scrollbars, which was a beta for a long time, is now officially implemented.
+
+packinfo.v137.u1=HP bars, etc. are now displayed on inventory and chest screens. To activate this, the UI profile must be changed to Classic.
+packinfo.v137.u2=A Music Listen screen has been added to the Gote-Supporter Info screen, allowing users to appreciate music in Minecraft.
+packinfo.v137.u3=The problem with Minecraft crashing due to the action bar has been fixed. This prevents crashes caused by action bars! (For more information youtu.be/CZIp5ntFTKU)
+
+packinfo.v136.u1=Fixed an issue where accessibility settings in Quick Settings were not displayed.
+packinfo.v136.u2=The button that had been added to the pause screen has been moved to the lower left corner.
+packinfo.v136.u3=The Gote-Supporter Info screen has been newly renewed.
+packinfo.v136.u4=A button has been added to the Hud screen that allows the hot bar to be moved left or right by touch.
+packinfo.v136.u5=Support for conversion of Buz add-ons to Unicode fonts has been added.
+packinfo.v136.u6=The "recipe for the Brewing stand" and other items that had been added by DKG770 were removed after it was discovered that they had been stolen from other packs. We sincerely apologize for the inconvenience caused to these creators. Our apologies.
+
+packinfo.v135.u1=Fixed a problem where the maximum frame rate could not be changed.
+packinfo.v135.u2=Fixed a problem with vignettes being displayed.
+packinfo.v135.u3=Added a pack setting that allows the texture to be returned to vanilla when digging.
+
+packinfo.v134.u1=Added supported for v1.18.0.
+packinfo.v134.u2=Text boxes for text input can now be enlarged on the chat screen.
+packinfo.v134.u3=The "F8" key can now be pressed on mobile devices.
+
+packinfo.v133.u1=Fixed a problem that causes garbled characters in Tab and Msg on the chat screen in Japanese Win10.
+packinfo.v133.u2=Fixed a problem in Realm where the feed button disappears on the pause screen.
+packinfo.v133.u3="日本語でかくかくフォントにするリソパ" is now supported. Please apply Gote-Supporter on top of "日本語でかくかくフォントにするリソパ".
+packinfo.v133.u4=Removed the "Achievements" button that was originally added to the Pause screen.
+
+packinfo.v132.u1=Fixed compatibility issues with Minecraft v1.17.30.
+
+packinfo.v131.u1=We found elements stolen from others in some of the features we received from DKG770 (such as Chainsketch's Freelook) and have removed them. We apologize for any inconvenience caused to these creators. We are very sorry.
+
+packinfo.v126.u1=The "Take Screenshot" button, which can also be used in the local world on the pause screen, has been repositioned so that it does not get in the way.
+packinfo.v126.u2=After being in beta for so long, the "Countdown to Block Destruction" has been officially added!
+packinfo.v126.u3=Corrected typos and omissions.
+
+packinfo.v125.u1=A "take screenshot" button has been added to the pause screen for use in the local world.
+packinfo.v125.u2=Compatibility with other packs has been slightly increased.
+packinfo.v125.u3=Fixed a problem where the "F1" button on the HUD was not displayed even when operated by touch.
+
+packinfo.v124.u1=Added button to change viewpoint by switching in the settings screen.
+packinfo.v124.u2=The "Condition" and "Redstone" buttons on the command block screen have been changed to a Minecraft Java Edition-like toggle button.
+packinfo.v124.u3=Fixed a problem where the language could not be changed while joining a world.
+
+packinfo.v123.u1=You can set the length of each of the vertical and horizontal sections under "Change UI Safe Zones."
+packinfo.v123.u2=Quick Settings and Accessibility settings on the Settings screen have been merged.
+
+packinfo.v122.u1=You can now generate "world templates" from Minecraft from your world settings!
+packinfo.v122.u2=Enables global export on mobile devices.
+packinfo.v122.u3=Changed the position of the compass and clock in the HUD and fixed the problem of overlapping with the status bar in the pocket UI.
+packinfo.v122.u4=World name labels on the pause screen now automatically break lines.
+
+packinfo.v121.u1=Settings have been added to the button in the upper left corner of the Start screen, and a problem with settings disappearing on some devices has been fixed.
+packinfo.v121.u2=Spyglass can now be configured with or without a frame.
+packinfo.v121.u3=Color-coded coordinate displays are now available in all languages.
+packinfo.v121.u4=Gote-Supporter version information is now displayed on the start screen.
+packinfo.v121.u5=Added "v1.16 compatibility mode". It can be enabled from the pack settings.
+
+packinfo.v120.u1=Remove Spyglass frame.
+packinfo.v120.u2=Fixed a problem where opening the configuration when the content log GUI is enabled throws an error.
+packinfo.v120.u3=The countdown at the time of block destruction is now a test feature.
+packinfo.v120.u4=Pilot features are no longer applied by default and can be enabled through pack settings.
+
+packinfo.v111.u1=Fixed compatibility issue with Minecraft v1.17. We apologize for any inconvenience caused.
+
+packinfo.v110.u1=Added "Feedback" and "Marketplace" to Pause screen.
+packinfo.v110.u2=Pause screen can display your profile when the list scoreboard is not set.
+packinfo.v110.u3=Fixed an issue with incorrect English translation.
+
+packinfo.v100.u1=First release.
+
+## 注意事項
+packinfo.caution.title=Precautions
+packinfo.caution.text1=This pack is made in Japan.
+packinfo.caution.text2=For translation into English, we use DeepL Translate.
+packinfo.caution.text3=Please understand this in advance.
+packinfo.caution.text4=If you would like to copy any part of this pack and incorporate it into your own pack, please contact Yuka0745.
+packinfo.caution.text5=Do not claim this add-on as your own.
+packinfo.caution.text6=Yuka0745 is not responsible for any damage caused by the use of this pack.
+
+## サウンド鑑賞
+packinfo.music.title=Music Listen
+packinfo.music.text1=In this section you can listen to Minecraft background music!
+packinfo.music.text2=Take a break!
+packinfo.music.text3=Music will remain playing even if this screen is closed.
+
+## 必ずお読みください
+packinfo.readme.title=Read me!
+packinfo.readme.text1=Thank you for downloading Gote-Supporter.
+packinfo.readme.text2=If you use this pack, you must strictly adhere to the following
+packinfo.readme.text4=《You can do the following》
+packinfo.readme.text5=To use this pack as a reference for creating your own packs.
+packinfo.readme.text6=To modify this pack for personal use.
+packinfo.readme.text7=Copying parts of this pack into other packs.
+packinfo.readme.text8=Distributing packs that contain material copied from this pack.(It must be clearly stated that it was copied from Gote-Supporter.)
+packinfo.readme.text9=Modifying this pack to maintain compatibility with other packs.
+packinfo.readme.text10=Apply this pack to a world or server resource pack.
+packinfo.readme.text11=Producing a video introducing this pack.
+packinfo.readme.text12=《You CAN'T do the following》
+packinfo.readme.text14=Secondary distribution of this pack
+packinfo.readme.text15=Claiming this pack as your own work

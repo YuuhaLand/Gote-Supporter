@@ -1,0 +1,27 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "redstone",
+  "panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "status_bar@crafting.status_bar": {
+              "bindings": []
+            }
+          },
+          {
+            "player_renderer@chest.player_renderer": {}
+          },
+          {
+            "delital_panel@crafting.delital_panel": {}
+          }
+        ]
+      }
+    ]
+  }
+}

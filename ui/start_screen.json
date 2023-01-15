@@ -1,0 +1,639 @@
+﻿/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "namespace": "start",
+
+  "preview_warning_dlga@ir2.dlga": {
+    "$toggle_name": "preview_warning"
+  },
+  "preview_warning_dlga_c@ir2.dlga_c": {
+    "$toggle_name": "preview_warning"
+  },
+  "preview_warning_dlga_close@ir2.close_dlga_esc": {
+    "$toggle_name": "preview_warning"
+  },
+
+
+  "quit_icon": {
+    "type": "image",
+    "texture": "textures/ui/cancel",
+    "layer": 3,
+    "size": [ 13, 13 ]
+  },
+
+  "op_icon": {
+    "type": "image",
+    "texture": "textures/ui/achievements",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "mail_icon": {
+    "type": "image",
+    "texture": "textures/ui/invite_base",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+
+  "info_icon": {
+    "type": "image",
+    "texture": "textures/ui/info_icon",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+
+  "gear_icon": {
+    "type": "image",
+    "texture": "textures/ui/gear",
+    "layer": 3,
+    "size": [ 14, 14 ]
+  },
+  
+  "invite_new": {
+    "type": "image",
+    "texture": "textures/ui/invite_new",
+    "layer": 3,
+    "size": [ 40, 25 ]
+  },
+
+  "warning_icon": {
+    "type": "image",
+    "texture": "textures/ui/WarningGlyph",
+    "layer": 3,
+    "size": [ 13, 20 ]
+  },
+
+  "quit_button@common_buttons.light_content_button": {
+    "$pressed_button_name": "button.menu_exit",
+    "size": [ 25, 25 ],
+    "$button_content": "start.quit_icon",
+    "$button_tts_header": "accessibility.button.exit"
+  },
+
+  "achievement_button@common_buttons.light_content_button": {
+    "$pressed_button_name": "button.menu_achievements",
+    "size": [ 25, 25 ],
+    "$button_content": "start.op_icon",
+    "$button_tts_header": "gui.achievements"
+  },
+ 
+  "invite_realm_button@common_buttons.light_content_button": {
+    "$pressed_button_name": "button.menu_invite_notification",
+    "size": [ 25, 25 ],
+    "$button_content": "start.mail_icon",
+    "$button_tts_header": "realmsInvitationScreen.shareTitle"
+  },
+
+  "invite_realm_panel2": {
+    "type": "panel",
+    "size": [ 25, 25 ],
+    "controls": [
+      {
+        "button@start.invite_realm_button": {}
+      },
+      {
+        "count@start.notification_button_text_panel": {
+          "offset": [ -3.5, 3 ],
+          "bindings": [
+            {
+              "binding_name": "#realms_notification_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "feed_back_button@common_buttons.hyperlink_content_button": {
+    "size": [ 25, 25 ],
+    "$button_content": "start.feedback_icon",
+    "$button_tts_header": "accessibility.start.feedback",
+    "property_bag": {
+      "#hyperlink": "https://aka.ms/minecraftfb"
+    }
+  },
+
+  "pack_info_button@common_buttons.light_content_button": {
+    "$pressed_button_name": "button.menu_buy_game",
+    "size": [ 25, 25 ],
+    "$button_content": "start.info_icon",
+    "$button_tts_header": "manifestvalidation.title"
+  },
+
+  "settings_button2@common_buttons.light_content_button": {
+    "$pressed_button_name": "button.menu_settings",
+    "size": [ 25, 25 ],
+    "$button_content": "start.gear_icon",
+    "$button_tts_header": "menu.settings"
+  },
+
+  "invite_new_panel": {
+    "type": "panel",
+    "offset": [ 48, 52],
+    "size": [ 40, 25],
+    "controls": [
+      {"invite_new@start.invite_new": {}}
+    ],
+    "bindings": [
+      {
+        "binding_name": "#realms_notification_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "buttons_padding": {
+    "type": "panel",
+    "size": [ 0, 1 ]
+  },
+  "buttons_panel":{
+    "type": "stack_panel",
+	  "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "orientation": "horizontal",
+    "size": [ 60, "100%" ],
+    "offset": [ 5, 5 ],
+	  "controls":[
+      {
+        "buttons1": {
+          "type": "stack_panel",
+          "size": [ 25, "100%" ],
+          "controls": [
+            {"quit_button@start.quit_button":{}},
+            {"padding_1@start.buttons_padding":{}},
+            {
+              "achievement_button@start.achievement_button": {
+                "ignored": "$pre_release"
+              }
+            },
+            {
+              "padding_2@start.buttons_padding": {
+                "ignored": "$pre_release"
+              }
+            },
+            {"settings_button2@start.settings_button2": {}}
+          ]
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [ 1, 0 ]
+        }
+      },
+      {
+        "buttons2": {
+          "type": "stack_panel",
+          "size": [ 25, "100%" ],
+          "controls": [
+            {"feed_back_button@start.feed_back_button": {}},
+            {"padding_1@start.buttons_padding":{}},
+            {
+              "invite_realm_panel2@start.invite_realm_panel2": {
+                "ignored": "$pre_release"
+              }
+            },
+            {
+              "padding_2@start.buttons_padding": {
+                "ignored": "$pre_release"
+              }
+            },
+            {"pack_info_button@start.pack_info_button": {}}
+          ]
+        }
+      }
+	  ]
+  },
+
+  "gamertag_icon": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", 24 ],
+    "controls": [
+      {
+        "gamerpic_with_border": {
+          "type": "panel",
+          "size": [ "100%c", "100%" ],
+          "controls": [
+            {
+              "gamerpic": {
+                "type": "image",
+                "size": [ 24, 24 ],
+                "layer": 1,
+                "bindings": [
+                  {
+                    "binding_name": "#gamerpic_texture_path",
+                    "binding_name_override": "#texture"
+                  },
+                  {
+                    "binding_name": "#gamerpic_texture_location_type",
+                    "binding_name_override": "#texture_file_system"
+                  }
+                ]
+              }
+            },
+            {
+              "border_white@common.focus_border_white": {
+                "layer": 3,
+                "size": [ 24, 24 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "spacer": {
+          "type": "panel",
+          "size": [ 1, 0 ]
+        }
+      },
+      {
+        "label_panel": {
+          "type": "panel",
+          "size": [ "100%c", "100%" ],
+          "controls": [
+            {
+              "gamertag_label": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "layer": 1,
+                "text": "#gamertag_label",
+                "locked_alpha": 0.5,
+                "size": [ "default", "100%" ],
+                "offset": [ 0, "25%" ],
+                "bindings": [
+                  {
+                    "binding_name": "#gamertag_label"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(not #sign_in_visible)",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "online_buttons_panel": {
+    "type": "panel",
+    "anchor_to": "bottom_left",
+    "anchor_from": "bottom_left",
+    "size": [ "50% - 75px", 32 ],
+    "offset": [ 0, "-10%" ],
+    "controls": [
+      {
+        "stacked_column": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%" ],
+          "offset": [ "5%", 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "gamertag_icon@start.gamertag_icon": {}
+            },
+            {
+              "xbl_btn@start.column_frame": {
+                "ignored": "($nx_os or $is_ps4)",
+                "size": [ 94, 32 ],
+                "max_size": [ "95%", 32 ],
+                "controls": [
+                  { "xbl_signin_button@start.xbl_signin_button": {} }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#sign_in_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "platform_signin_btn@start.column_frame": {
+                "ignored": "(not $nx_os and not $is_ps4)",
+                "size": [ "90% - 6px", 32 ],
+                "controls": [
+                  {
+                    "platform_signin_button@start.platform_signin_button": {}
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#sign_in_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "signingin": {
+                "size": [ "default", "100%" ],
+                "max_size": [ 150, "100%" ],
+                "type": "label",
+                "color": "$main_header_text_color",
+                "text": "#signingin_text",
+                "bindings": [
+                  {
+                    "binding_name": "#signingin_visible",
+                    "binding_name_override": "#visible"
+                  },
+                  {
+                    "binding_name": "#signingin_text"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#online_buttons_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "copyright2": {
+    "type": "panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": [ "100%-2px", 10 ],
+    "controls": [
+      {
+        "gote-supporter_version": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ "default", 10 ],
+          "offset": [ 0, -10 ],
+          "text": "Gote-Supporter: Yuka0745(@Gotemba912)"
+        }
+      },
+      {
+        "minecraft_version": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ "100%c", 10 ],
+          "controls": [
+            {
+              "minecraft": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "text": "Minecraft: "
+              }
+            },
+            {
+              "mc_ver": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "text": "menu.copyright"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "ver_texts": {
+    "type": "panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": [ "100%-2px", 10 ],
+    "controls": [
+      {
+        "gote-supporter_version": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "size": [ "default", 10 ],
+          "offset": [ 0, -10 ],
+          "text": "('Gote-Supporter ' + $gote_ver)"
+        }
+      },
+      {
+        "minecraft_version": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "size": [ "100%c", 10 ],
+          "controls": [
+            {
+              "minecraft": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "text": "Minecraft "
+              }
+            },
+            {
+              "mc_ver": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "text": "#version",
+                "bindings": [
+                  {
+                    "binding_name": "#version"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "text_panel": {
+    "type": "panel",
+    "size": [ "100%-2px", 10 ],
+    "offset": [ 0, -1 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "copyright2@start.copyright2": {}
+      },
+      {
+        "development_version@start.development_version": {
+          "ignored": "$is_publish"
+        }
+      },
+      {
+        "ver_texts@start.ver_texts": {}
+      }
+    ]
+  },
+
+  "preview_warning_text": {
+    "type": "stack_panel",
+    "size": [ "100% - 2px", "default" ],
+    "offset": [ 2, 0 ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "controls": [
+      {
+        "1": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.previewWarning.honbun1"
+        }
+      },
+      {
+        "2": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.previewWarning.honbun2"
+        }
+      },
+      {
+        "3": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.previewWarning.honbun3"
+        }
+      },
+      {
+        "4": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "ir2.previewWarning.honbun4"
+        }
+      }
+    ]
+  },
+
+  "preview_warning_text_scroll@common.scrolling_panel": {
+    "$show_background": false,
+    "size": [ "100% - 4px", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [ 2, 0 ],
+    
+    "$scrolling_content": "start.preview_warning_text",
+    "$scrolling_panel_size": [ "100%", "100%" ],
+    "$scroll_size": [ "4px", "100% - 2px" ],
+    "$always_handle_scrolling": true
+  },
+
+  "preview_warning_okbutton@start.preview_warning_dlga": {
+    "$checked_control": "common_toggles.toggle_unchecked",
+    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+
+    "$button_text": "gui.ok",
+    "$toggle_default_state": true,
+    "$toggle_group_forced_index": 0,
+
+    "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+  },
+
+  "dialog1@ir2.dummy_dialog_one": {
+    "layer": 503,
+    "size": [ 214, 130 ],
+    "$text_name": "ir2.previewWarning.title",
+    "$child_control": "start.preview_warning_text_scroll",
+    "$bottom_button_panel": "start.preview_warning_okbutton",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "preview_warning",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+
+
+  
+  "start_screen_content": {
+    "controls": [
+      {
+        "skin_panel@start.skin_panel": { "layer": 1 }
+      },
+      {
+        "main_buttons_and_title_panel@start.main_buttons_stack_panel": {}
+      },
+      {
+        "online_buttons_panel@start.online_buttons_panel": {}
+      },
+      {
+        "text_panel@start.text_panel": {}
+      },
+      {
+        "gathering_panel@start.gathering_panel": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 0, -60 ]
+        }
+      },
+	    {
+	      "buttons_panel@start.buttons_panel": {}
+  	  },
+      {
+        "preview_warning_button@start.preview_warning_dlga_c": {
+          "ignored": "(not $pre_release)",
+          "size": [ 25, 25 ],
+          "offset": [ -5, 5 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$button_content": "start.warning_icon",
+          "$toggle_view_binding_name": "preview_warning",
+          "$toggle_group_forced_index": 100
+        }
+      },
+      {
+        "preview_warning_popup": {
+          "type": "panel",
+          "ignored": "(not $pre_release)",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            {
+              "scrool@common.scrolling_panel": {
+                "type": "scroll_view",
+                "size": [ "100%", "100%" ],
+                "layer": 501,
+                "$scrolling_content": "common.empty_panel",
+                "$show_background": false
+              }
+            },
+            {
+              "preview_warning_dlga_close@start.preview_warning_dlga_close": {
+                "layer": 502,
+                "size": [ "100%", "100%" ],
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0
+              }
+            },
+            {
+              "dialog1@start.dialog1": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "preview_warning",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

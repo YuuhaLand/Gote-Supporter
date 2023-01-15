@@ -1,0 +1,186 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "main_content": {
+    "type": "stack_panel",
+    "size": [ "100% - 8px", "100%c" ],
+    "offset": [ 4, 4 ],
+    "controls": [
+      {
+        "ch1@how_to_play_common.header": {
+          "$text": "サバイバル ステータス"
+        }
+      },
+      {
+        "hpt": {
+          "type": "label",
+          "size": [ "100%", 10 ],
+          "color": "$main_header_text_color",
+          "text": "HP"
+        }
+      },
+      {
+        "heart_renderer": {
+          "type": "panel",
+          "size": [ 1, 10 ],
+          "controls": [
+            {
+              "hr": {
+                "type": "custom",
+                "renderer": "heart_renderer"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding01": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "hgt": {
+          "type": "label",
+          "size": [ "100%", 10 ],
+          "color": "$main_header_text_color",
+          "text": "空腹度"
+        }
+      },
+      {
+        "hunger_renderer": {
+          "type": "panel",
+          "size": [ 1, 10 ],
+          "controls": [
+            {
+              "hr": {
+                "type": "custom",
+                "offset": [ 80, 0 ],
+                "renderer": "hunger_renderer"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding02": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "art": {
+          "type": "label",
+          "size": [ "100%", 10 ],
+          "color": "$main_header_text_color",
+          "text": "防具による防御度"
+        }
+      },
+      {
+        "armor_renderer": {
+          "type": "panel",
+          "size": [ 1, 10 ],
+          "controls": [
+            {
+              "hr": {
+                "type": "custom",
+                "offset": [ 0, 11 ],
+                "renderer": "armor_renderer"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding03": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "ch1_@how_to_play_common.header": {
+          "$text": "エフェクト ステータス"
+        }
+      },
+      {
+        "meg": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "mob_effect_grid@mob_effect.mob_effect_grid": { }
+            }
+          ]
+        }
+      },
+      {
+        "padding04": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      }
+    ]
+  },
+  "scroll@common.scrolling_panel": {
+    "$show_background": false,
+    "$scrolling_content": "mob_effect.main_content",
+    "$scrolling_panel_size": [ "100% - 2px", "100%" ],
+    "$scroll_size": [ "4px", "100% - 2px" ],
+    "$always_handle_scrolling": true
+  },
+  "main_screen": {
+    "type": "panel",
+    "controls": [
+      {
+        "main_panel": {
+          "type": "panel",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "size": [ "75%", "75%" ],
+          "$text_name": "プレイヤー ステータス",
+          "$panel_indent_size": [ "100% - 16px", "100% - 31px" ],
+          "$custom_background": "dialog_background_hollow_3",
+          "controls": [
+            {
+              "common_panel@common.common_panel": { "$dialog_background": "$custom_background" }
+            },
+            {
+              "title_label@common_dialogs.title_label": {}
+            },
+            {
+              "panel_indent": {
+                "type": "panel",
+                "size": "$panel_indent_size",
+                "offset": [ 0, 23 ],
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "controls": [
+                  { "inside_header_panel@mob_effect.scroll": {} }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "mob_effect_screen@common.base_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_continue",
+        "mapping_type": "global"
+      },
+	    {
+		    "from_button_id": "button.mobeffects",
+		    "to_button_id": "button.menu_continue",
+		    "mapping_type": "global"
+	    }
+    ],
+    "close_on_player_hurt": true,
+    "$screen_content": "mob_effect.main_screen"
+  }
+}

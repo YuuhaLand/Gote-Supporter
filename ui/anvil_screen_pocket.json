@@ -1,0 +1,83 @@
+/*********************************************
+          Gote-Supporter by Yuka0745
+*********************************************/
+{
+  "multiline_text_edit_control@common.multiline_text_edit_box": {
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [
+      142,
+      45
+    ],
+    "property_bag": {
+      "#property_field": "#item_name"
+    },
+    "max_length": 100,
+    "$text_edit_binding_name": "#text_box_item_name"
+  },
+  "anvil_title_and_text_panel": {
+    "type": "panel",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "controls": [
+      {
+        "multiline_text_edit_control@anvil_pocket.multiline_text_edit_control": {
+          "offset": [ 0, 8 ]
+        }
+      }
+    ]
+  },
+  "title_label@anvil_pocket.generic_label": {
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "text": ""
+  },
+  "anvil_contents_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "red_cost@anvil_pocket.cost_label": {
+          "offset": [ 40, -50 ],
+          "color": "$anvil_cost_fail_text_color",
+          "bindings": [
+            {
+              "binding_name": "#cost_text",
+              "binding_name_override": "#text"
+            },
+            {
+              "binding_name": "#cost_text_red",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "green_cost@anvil_pocket.cost_label": {
+          "offset": [ 40, 20 ],
+          "color": "$anvil_cost_success_text_color",
+          "bindings": [
+            {
+              "binding_name": "#cost_text",
+              "binding_name_override": "#text"
+            },
+            {
+              "binding_name": "#cost_text_green",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "slots_panel@anvil_pocket.slots_panel": {
+          "offset": [ 0, -2 ]
+        }
+      },
+      {
+        "anvil_title_and_text_panel@anvil_pocket.anvil_title_and_text_panel": {
+          "offset": [ 0, -50 ]
+        }
+      }
+    ]
+  }
+}
