@@ -208,49 +208,6 @@
         }
       },
       {
-        "padding_15": {
-          "type": "panel", 
-          "size": [ "100%", 2 ]
-        }
-      },
-      {
-        "storage_application_warning": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
-          "size": [ "100%", "100%c" ],
-          "ignored": "(not $storage_location_switch_enabled)",
-          "bindings": [
-            {
-              "binding_name": "#storage_location_radio_package",
-              "binding_name_override": "#visible"
-            }
-          ],
-          "controls": [
-            {
-              "ms_warning": {
-                "type": "image",
-                "texture": "textures/ui/ms_warning",
-                "size": [ 16, 16 ]
-              }
-            },
-            {
-              "padding": {
-                "type": "panel",
-                "size": [ 2, 0 ]
-              }
-            },
-            {
-              "label_text": {
-                "type": "label",
-                "size": [ "fill", "default" ],
-                "color": "$c_color_format",
-                "text": "現在、Gote-SupporterのConfigを変更できません。 ファイルストレージの場所が「アプリケーション」に設定されているため、Gote-SupporterのConfigファイルにアクセスできません。 ファイルストレージの場所を「外部」に設定すると、Configにアクセスできるようになります。"
-              }
-            }
-          ]
-        }
-      },
-      {
         "padding_2": {
           "type": "input_panel", 
           "size": [ "100%", 5 ],

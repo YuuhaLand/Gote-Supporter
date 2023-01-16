@@ -77,9 +77,6 @@
           },
           {
             "player_renderer@chest.player_renderer": {}
-          },
-          {
-            "delital_panel@crafting.delital_panel": {}
           }
         ]
       }

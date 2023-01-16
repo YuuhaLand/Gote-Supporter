@@ -18,9 +18,6 @@
             "player_renderer@chest.player_renderer": {
               "offset": [ -160, 0 ]
             }
-          },
-          {
-            "delital_panel@crafting.delital_panel": {}
           }
         ]
       }

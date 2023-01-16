@@ -25,16 +25,8 @@
     "renderer": "inventory_item_renderer",
   	"size": [ 30, 30 ],
     "ignored": "(not $show_recoverycompass)",
-    "$item_id_aux": 42598400,
-
-    "variables": [
-      {
-        "requires": "($recoverycompass_type = 1)",
-        "$item_id_aux": 44171264
-      }
-    ],
     "property_bag": {
-      "#item_id_aux": "$item_id_aux"
+      "#item_id_aux": 42663936
     }
   },
 

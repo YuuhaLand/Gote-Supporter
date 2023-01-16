@@ -13,9 +13,6 @@
             "status_bar@crafting.status_bar": {
               "bindings": []
             }
-          },
-          {
-            "delital_panel@crafting.delital_panel": {}
           }
         ]
       }

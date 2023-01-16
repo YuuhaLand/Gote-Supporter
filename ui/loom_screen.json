@@ -19,9 +19,6 @@ Do not use for other packs without permission.
             "player_renderer@chest.player_renderer": {
               "offset": [ -195, 0 ]
             }
-          },
-          {
-            "delital_panel@crafting.delital_panel": {}
           }
         ]
       }
