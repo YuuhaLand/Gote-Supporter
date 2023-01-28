@@ -25,8 +25,9 @@
     "renderer": "inventory_item_renderer",
   	"size": [ 30, 30 ],
     "ignored": "(not $show_recoverycompass)",
+    "$item_id_aux": 42598400,
     "property_bag": {
-      "#item_id_aux": 42663936
+      "#item_id_aux": "$item_id_aux"
     }
   },
 
@@ -298,7 +299,6 @@
       { "hotbar_slot_button@gui_hotbar_slot_button_prototype": {} }
     ]
   },
-  /*
 
   "exp_progress_bar_and_hotbar": {
     "controls": [
@@ -485,7 +485,7 @@
     "$text_color": "$jukebox_text_color",
     "$text_binding": "#jukebox_text",
     "offset": [ 0, -59 ]
-  },*/
+  },
   
   "root_panel": {
     "modifications": [

@@ -143,6 +143,11 @@ packinfo.f6=...And more!
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v146.u1=Experience bars and levels are now displayed in creative as well.
+packinfo.v146.u2=When connected to Realm, the pause screen squawk button is now placed next to the feed screen.
+packinfo.v146.u3=Fixed a problem with items not displaying in storage in settings.
+packinfo.v146.u4=Fixed an issue where the title text on the How to Play screen was ".title".
+
 packinfo.v145.u1=The Tab button on the chat screen can now be placed alongside the "Chat Settings" button.
 packinfo.v145.u2=The Tab button on the command block screen has been moved up.
 packinfo.v145.u3=Realm's feed screen has been redesigned with a social networking-like UI.

@@ -102,8 +102,8 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "v1.4.5",
-  "$gote_ver2": "1.4.5",
+  "$gote_ver": "v1.4.6",
+  "$gote_ver2": "1.4.6",
   "$gote_supporter_enabled": true,
   "$is_yukandows_server": false, 
   "$is_iroiro_server2": false,

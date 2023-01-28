@@ -208,6 +208,12 @@
         }
       },
       {
+        "padding_15": {
+          "type": "panel", 
+          "size": [ "100%", 2 ]
+        }
+      },
+      {
         "padding_2": {
           "type": "input_panel", 
           "size": [ "100%", 5 ],

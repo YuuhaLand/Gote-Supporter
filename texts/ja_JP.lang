@@ -166,6 +166,11 @@ packinfo.f6=...などなど!!
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
 
+packinfo.v146.u1=クリエイティブでも経験値バーとレベルが表示されるようにしました。
+packinfo.v146.u2=Realmに接続している時は、ポーズ画面のスクショボタンをフィード画面の横に配置するようにしました。
+packinfo.v146.u3=設定のストレージで項目が表示されない問題を修正しました。
+packinfo.v146.u4=遊び方画面のタイトルの文字が「.title」になっていた問題を修正しました。
+
 packinfo.v145.u1=チャット画面のTabボタンを「チャット設定」ボタンと並べて配置できるようになりました。
 packinfo.v145.u2=コマンドブロック画面のTabボタンが上に移動されました。
 packinfo.v145.u3=Realmのフィード画面をSNSのようなUIに一新しました。
