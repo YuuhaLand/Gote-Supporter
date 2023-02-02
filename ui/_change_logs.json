@@ -6,6 +6,20 @@
     "size": [ "100%", "100%c" ],
     "controls": [
       {
+        "v147@tabbed_upsell.version_section": {
+          "$version": "v1.4.7",
+          "$details_controls": [
+            { "date@tabbed_upsell.text": { "text": "2023/02/02" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "fp1_@ir2.features_text_with_bubble":{"$text":"packinfo.v147.u1"}},
+            { "fp2_@ir2.features_text_with_bubble":{"$text":"packinfo.v147.u2"}},
+            { "fp3_@ir2.features_text_with_bubble":{"$text":"packinfo.v147.u3"}},
+            { "fp4_@ir2.features_text_with_bubble":{"$text":"packinfo.v147.u4"}},
+            { "fp5_@ir2.features_text_with_bubble":{"$text":"packinfo.v147.u5"}}
+          ]
+        }
+      },
+      {
         "v146@tabbed_upsell.version_section": {
           "$version": "v1.4.6",
           "$details_controls": [

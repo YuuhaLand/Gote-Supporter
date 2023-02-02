@@ -1,6 +1,3 @@
-/*********************************************
-          Gote-Supporter by Yuka0745
-*********************************************/
 {
   "toggle@common_toggles.light_text_toggle": {
     "$checked_control": "common_toggles.toggle_unchecked",

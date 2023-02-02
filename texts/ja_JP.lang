@@ -1,5 +1,6 @@
-﻿pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by Yuka0745
-
+﻿pack.name=ごてサポーター v1.4.7
+pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by Yuka0745
+pack.name.nover=§l§aごて§bサポーター
 
 
 accessibility.disableTTS=§eテキスト読み上げ無効	#
@@ -166,6 +167,12 @@ packinfo.f6=...などなど!!
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
 
+packinfo.v147.u1=クリエイティブで経験値バーとレベルは表示されなくなりました。 申し訳ないです。
+packinfo.v147.u2=パック情報画面のボタンにアイコンを追加しました。
+packinfo.v147.u3=パック情報画面に「つくったひと」と、「ライセンス」を追加しました。
+packinfo.v147.u4=パック情報画面の一部の文字列がWindowsの日本語でもクラシックフォントで表示されるようになりました。
+packinfo.v147.u5=Gote-Supporterがワールドに適用されていると、Gote-Supporter Configの設定が失われる問題を修正しました。
+
 packinfo.v146.u1=クリエイティブでも経験値バーとレベルが表示されるようにしました。
 packinfo.v146.u2=Realmに接続している時は、ポーズ画面のスクショボタンをフィード画面の横に配置するようにしました。
 packinfo.v146.u3=設定のストレージで項目が表示されない問題を修正しました。
@@ -307,3 +314,25 @@ packinfo.readme.text11=このパックの紹介動画などを製作すること
 packinfo.readme.text12=《あなたは以下のことができません》
 packinfo.readme.text14=このパックを二次配布すること
 packinfo.readme.text15=このパックを自作のものと主張すること
+
+##つくったひと
+packinfo.about_author.title=つくったひと
+packinfo.about_author.text1=Yuka0745 / YukaYama0311
+packinfo.about_author.text2=ごて鯖を運営したりアドオン作ったりしている者。
+packinfo.about_author.text3=いつもダラダラマイクラしかやってない女です。
+packinfo.about_author.text4=JSON UIは趣味で好きなように作ってます。
+packinfo.about_author.text5=プログラミングはヘタクソ。
+packinfo.about_author.text6=新しいことを覚えるのが苦手。
+packinfo.about_author.text7=マイクラ歴は8年くらい。
+packinfo.about_author.text8=日本一のRealmサーバー「彩」の運営も努めてます。
+packinfo.about_author.text9=Realmには8000人以上のメンバーがいるとても賑やかなサーバーです!
+packinfo.about_author.text10=ぜひ来てみてね。
+packinfo.about_author.text11=ごて鯖 Discord
+packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
+packinfo.about_author.text13=ごて鯖 Realm
+packinfo.about_author.text14=§aごて鯖のDiscordで確認してね。
+packinfo.about_author.text15=「彩」 Discord
+packinfo.about_author.text16=§adiscord.gg/WqsPrrxuU6
+
+##ライセンス
+packinfo.licence.title=ライセンス

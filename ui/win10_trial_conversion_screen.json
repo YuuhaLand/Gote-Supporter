@@ -1,7 +1,16 @@
-/*********************************************
-          Gote-Supporter by Yuka0745
-*********************************************/
 {
-  "namespace": "win10_trial_conversion",
-  "win10_trial_conversion_panel@tabbed_upsell.tabbed_upseel_screen_panel": {}
+  "namespace":"win10_trial_conversion",
+
+  "win10_trial_conversion_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      }
+    ],
+    "force_render_below": false,
+    "$screen_content": "tabbed_upsell.root_panel",
+    "$screen_bg_content": "tabbed_upsell.black"
+  }
 }

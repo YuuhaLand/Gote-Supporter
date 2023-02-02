@@ -1,6 +1,3 @@
-/*********************************************
-          Gote-Supporter by Yuka0745
-*********************************************/
 {
   "namespace": "tabbed_upsell",
 
@@ -26,6 +23,67 @@
   "indexs_panel": {
     "type": "stack_panel",
     "size": [ "100%", "100%c" ]
+  },
+
+  "index_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "$button_label|default": "",
+    "$button_icon|default": "textures/blocks/stone",
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 20 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "image": {
+                "type": "image",
+                "texture": "$button_icon",
+                "size": [ 20, 20 ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 2, 0 ]
+              }
+            },
+            {
+              "label_panel": {
+                "type": "panel",
+                "size": [ "default", 20 ],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "size": [ "default", 10 ],
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "text": "$button_label",
+                      "color": "$text_color"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/chevron_new_white_right",
+          "color": "$text_color",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -5, 0 ],
+          "size": [ 11, 11 ]
+        }
+      }
+    ]
   },
 
   "version_toggle_button_content": {
@@ -118,7 +176,8 @@
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
     "size": [ "100%", "default" ],
-    "shadow": true
+    "shadow": true,
+    "font_type": "smooth"
   },
   
   "playsound_play": {
@@ -188,31 +247,55 @@
       }
     ]
   },
-  
-  "dlga@common_toggles.light_text_toggle": {
-    "$radio_toggle_group": true,
-    "$toggle_focus_enabled": true,
-    "$binding_type": "global",
-    "$binding_condition": "once"
+
+  "page01@ir2.dlga": {
+    "$toggle_name":"page_about"
+  },
+  "page02@ir2.dlga": {
+    "$toggle_name":"page_features"
+  },
+  "page03@ir2.dlga": {
+    "$toggle_name":"page_update"
+  },
+  "page04@ir2.dlga": {
+    "$toggle_name":"page_caution"
+  },
+  "page05@ir2.dlga": {
+    "$toggle_name":"page_music"
+  },
+  "page06@ir2.dlga": {
+    "$toggle_name":"page_readme"
+  },
+  "page07@ir2.dlga": {
+    "$toggle_name":"page_author"
+  },
+  "page08@ir2.dlga": {
+    "$toggle_name":"page_licence"
   },
 
-  "page01@tabbed_upsell.dlga": {
-    "$toggle_name":"page_iti"
+  "page01_c@ir2.dlga_c": {
+    "$toggle_name":"page_about"
   },
-  "page02@tabbed_upsell.dlga": {
-    "$toggle_name":"page_ni"
+  "page02_c@ir2.dlga_c": {
+    "$toggle_name":"page_features"
   },
-  "page03@tabbed_upsell.dlga": {
-    "$toggle_name":"page_san"
+  "page03_c@ir2.dlga_c": {
+    "$toggle_name":"page_update"
   },
-  "page04@tabbed_upsell.dlga": {
-    "$toggle_name":"page_yon"
+  "page04_c@ir2.dlga_c": {
+    "$toggle_name":"page_caution"
   },
-  "page05@tabbed_upsell.dlga": {
-    "$toggle_name":"page_go"
+  "page05_c@ir2.dlga_c": {
+    "$toggle_name":"page_music"
   },
-  "page06@tabbed_upsell.dlga": {
-    "$toggle_name":"page_roku"
+  "page06_c@ir2.dlga_c": {
+    "$toggle_name":"page_readme"
+  },
+  "page07_c@ir2.dlga_c": {
+    "$toggle_name":"page_author"
+  },
+  "page08_c@ir2.dlga_c": {
+    "$toggle_name":"page_licence"
   },
   
   "left_panel": {
@@ -254,7 +337,16 @@
                       "text": "§l§aCreated by\n§dYuka0745",
                       "font_scale_factor": 1.50,
                       "offset": [ 0, 0 ],
-                      "shadow": true
+                      "shadow": true,
+                      "font_type": "#font_type",
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "font_property_panel",
+                          "source_property_name": "#font_type",
+                          "target_property_name": "#font_type"
+                        }
+                      ]
                     }
                   }
                 ]
@@ -274,7 +366,16 @@
           "type": "label",
           "text": "§l§bTwitter:",
           "font_scale_factor": 1.50,
-          "shadow": true
+          "shadow": true,
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       },
       {
@@ -282,7 +383,16 @@
           "type": "label",
           "text": "§etwitter.com/gotemba912",
           "font_scale_factor": 1.0,
-          "shadow": true
+          "shadow": true,
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       },
       {
@@ -296,7 +406,16 @@
           "type": "label",
           "text": "§l§cYoutube:",
           "font_scale_factor": 1.50,
-          "shadow": true
+          "shadow": true,
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       },
       {
@@ -304,7 +423,16 @@
           "type": "label",
           "text": "§eyoutube.com/c/yuka0745",
           "font_scale_factor": 1.0,
-          "shadow": true
+          "shadow": true,
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       },
       {
@@ -318,7 +446,16 @@
           "type": "label",
           "text": "§l§fGitHub:",
           "font_scale_factor": 1.50,
-          "shadow": true
+          "shadow": true,
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       },
       {
@@ -326,7 +463,16 @@
           "type": "label",
           "text": "§egithub.com/gotemba912",
           "font_scale_factor": 1.0,
-          "shadow": true
+          "shadow": true,
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       }
     ]
@@ -342,151 +488,145 @@
         "mokuji_panel@tabbed_upsell.indexs_panel": {
           "controls": [
             {
-              "mokuji_panel@tabbed_upsell.indexs_panel": {
-                "controls": [
-                  {
-                    "mokuji_panel@tabbed_upsell.indexs_panel": {
-                      "controls": [
-                        {
-                          "mokuji_panel@tabbed_upsell.indexs_panel": {
-                            "controls": [
-                              {
-                                "mokuji_panel@tabbed_upsell.indexs_panel": {
-                                  "controls": [
-                                    {
-                                      "mokuji_panel@tabbed_upsell.indexs_panel": {
-                                        "controls": [
-                                          {"fh2@how_to_play_common.header":{"$text":"packinfo.mokuji.title"}},
-                                          { "index_text01@tabbed_upsell.text": { "text": "packinfo.mokuji.text1" }},
-                                          { "index_text02@tabbed_upsell.text": { "text": "packinfo.mokuji.text2" }},
-                                          {
-                                            "padding_01": {
-                                              "type": "panel",
-                                              "size": [ 0, 10 ]
-                                            }
-                                          },
-                                          {
-                                            "page011@tabbed_upsell.page01": {
-                                              "size": [ "100%", 25 ],
-                                              "$toggle_view_binding_name": "page_itia",
-                                              "$button_content": "pause.feedback_icon",
-                                              "$toggle_group_forced_index": 100,
-                                              "$button_text": "packinfo.about.title"
-                                            }
-                                          },
-                                          {
-                                            "page061@tabbed_upsell.page06": {
-                                              "size": [ "100%", 25 ],
-                                              "$toggle_view_binding_name": "page_rokua",
-                                              "$button_content": "pause.feedback_icon",
-                                              "$toggle_group_forced_index": 100,
-                                              "$button_text": "packinfo.readme.title"
-                                            }
-                                          },
-                                          {
-                                            "page021@tabbed_upsell.page02": {
-                                              "size": [ "100%", 25 ],
-                                              "$toggle_view_binding_name": "page_nia",
-                                              "$button_content": "pause.feedback_icon",
-                                              "$toggle_group_forced_index": 100,
-                                              "$button_text": "packinfo.features.title"
-                                            }
-                                          },
-                                          {
-                                            "page031@tabbed_upsell.page03": {
-                                              "size": [ "100%", 25 ],
-                                              "$toggle_view_binding_name": "page_sana",
-                                              "$button_content": "pause.feedback_icon",
-                                              "$toggle_group_forced_index": 100,
-                                              "$button_text": "packinfo.update.title"
-                                            }
-                                          },
-                                          {
-                                            "page041@tabbed_upsell.page04": {
-                                              "size": [ "100%", 25 ],
-                                              "$toggle_view_binding_name": "page_yona",
-                                              "$button_content": "pause.feedback_icon",
-                                              "$toggle_group_forced_index": 100,
-                                              "$button_text": "packinfo.caution.title"
-                                            }
-                                          },
-                                          {
-                                            "page051@tabbed_upsell.page05": {
-                                              "size": [ "100%", 25 ],
-                                              "$toggle_view_binding_name": "page_goa",
-                                              "$button_content": "pause.feedback_icon",
-                                              "$toggle_group_forced_index": 100,
-                                              "$button_text": "packinfo.music.title"
-                                            }
-                                          }
-                                        ],
-                                        "bindings": [
-                                          {
-                                            "binding_type": "view",
-                                            "source_control_name": "page_rokua",
-                                            "source_property_name": "(not #toggle_state)",
-                                            "target_property_name": "#visible"
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  ],
-                                  "bindings": [
-                                    {
-                                      "binding_type": "view",
-                                      "source_control_name": "page_goa",
-                                      "source_property_name": "(not #toggle_state)",
-                                      "target_property_name": "#visible"
-                                    }
-                                  ]
-                                }
-                              }
-                            ],
-                            "bindings": [
-                              {
-                                "binding_type": "view",
-                                "source_control_name": "page_yona",
-                                "source_property_name": "(not #toggle_state)",
-                                "target_property_name": "#visible"
-                              }
-                            ]
-                          }
-                        }
-                      ],
-                      "bindings": [
-                        {
-                          "binding_type": "view",
-                          "source_control_name": "page_sana",
-                          "source_property_name": "(not #toggle_state)",
-                          "target_property_name": "#visible"
-                        }
-                      ]
-                    }
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_type": "view",
-                    "source_control_name": "page_nia",
-                    "source_property_name": "(not #toggle_state)",
-                    "target_property_name": "#visible"
-                  }
-                ]
+              "about_button@tabbed_upsell.page01_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_about",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.about.title",
+                "$button_icon": "textures/ui/info_icon"
+              }
+            },
+            {
+              "author_button@tabbed_upsell.page07_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_author",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.about_author.title",
+                "$button_icon": "textures/ui/creator_glyph_color"
+              }
+            },
+            {
+              "readme_button@tabbed_upsell.page06_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_readme",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.readme.title",
+                "$button_icon": "textures/ui/icon_saleribbon"
+              }
+            },
+            {
+              "features_buton@tabbed_upsell.page02_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_features",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.features.title",
+                "$button_icon": "textures/ui/sidebar_icons/star"
+              }
+            },
+            {
+              "update_button@tabbed_upsell.page03_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_update",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.update.title",
+                "$button_icon": "textures/ui/jump_boost_effect"
+              }
+            },
+            {
+              "licence_button@tabbed_upsell.page08_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_licence",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.licence.title",
+                "$button_icon": "textures/ui/lock_color"
+              }
+            },
+            {
+              "caution_button@tabbed_upsell.page04_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_caution",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.caution.title",
+                "$button_icon": "textures/ui/infobulb"
+              }
+            },
+            {
+              "music_button@tabbed_upsell.page05_c": {
+                "size": [ "100%", 25 ],
+                "$toggle_view_binding_name": "page_music",
+                "$button_content": "tabbed_upsell.index_toggle_button_content",
+                "$toggle_group_forced_index": 100,
+                "$button_label": "packinfo.music.title",
+                "$button_icon": "textures/blocks/noteblock"
               }
             }
           ],
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_itia",
-              "source_property_name": "(not #toggle_state)",
+              "source_control_name": "page_about",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_about"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_features",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_features"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_update",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_update"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_caution",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_caution"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_music",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_music"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_readme",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_readme"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_author",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_author"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "page_licence",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#page_licence"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not (#page_about or #page_features or #page_update or #page_caution or #page_music or #page_readme or #page_author or #page_licence))",
               "target_property_name": "#visible"
             }
           ]
         }
       },
       {
-        "iti_page@tabbed_upsell.indexs_panel": {
+        "about_page@tabbed_upsell.indexs_panel": {
           "controls": [
             {
               "page01@tabbed_upsell.page01": {
@@ -515,7 +655,7 @@
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_itia",
+              "source_control_name": "page_about",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }
@@ -523,7 +663,7 @@
         }
       },
       {
-        "ni_page@tabbed_upsell.indexs_panel": {
+        "features_page@tabbed_upsell.indexs_panel": {
           "controls": [
             {
               "page02@tabbed_upsell.page02": {
@@ -553,7 +693,7 @@
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_nia",
+              "source_control_name": "page_features",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }
@@ -561,7 +701,7 @@
         }
       },
       {
-        "san_page@tabbed_upsell.indexs_panel": {
+        "update_page@tabbed_upsell.indexs_panel": {
           "controls": [
             {
               "page03@tabbed_upsell.page03": {
@@ -591,7 +731,7 @@
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_sana",
+              "source_control_name": "page_update",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }
@@ -599,7 +739,7 @@
         }
       },
       {
-        "yon_page@tabbed_upsell.indexs_panel": {
+        "caution_page@tabbed_upsell.indexs_panel": {
           "controls": [
             {
               "page04@tabbed_upsell.page04": {
@@ -627,7 +767,7 @@
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_yona",
+              "source_control_name": "page_caution",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }
@@ -635,7 +775,7 @@
         }
       },
       {
-        "go_page@tabbed_upsell.indexs_panel": {
+        "music_page@tabbed_upsell.indexs_panel": {
           "controls": [
             {
               "page05@tabbed_upsell.page05": {
@@ -723,7 +863,7 @@
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_goa",
+              "source_control_name": "page_music",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }
@@ -731,7 +871,7 @@
         }
       },
       {
-        "yroku_page@tabbed_upsell.indexs_panel": {
+        "readme_page@tabbed_upsell.indexs_panel": {
           "controls": [
             {
               "page06@tabbed_upsell.page06": {
@@ -758,13 +898,109 @@
             { "fm11@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text10"}},
             { "fm12@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text11"}},
             { "fm13@how_to_play_common.header": { "$text":"packinfo.readme.text12" }},
-            { "fm15@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text14"}},
             { "fm16@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text15"}}
           ],
           "bindings": [
             {
               "binding_type": "view",
-              "source_control_name": "page_rokua",
+              "source_control_name": "page_readme",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "author_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page07@tabbed_upsell.page07": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "header@how_to_play_common.header": { "$text":"packinfo.about_author.title" }},
+            { "howtoplay_0@tabbed_upsell.text": {"text": "packinfo.about_author.text1", "font_type": "MinecraftTen"}},
+            { "howtoplay_1@tabbed_upsell.text": {"text": "packinfo.about_author.text2"}},
+            { "howtoplay_2@tabbed_upsell.text": {"text": "packinfo.about_author.text3"}},
+            { "howtoplay_3@tabbed_upsell.text": {"text": "packinfo.about_author.text4"}},
+            { "howtoplay_4@tabbed_upsell.text": {"text": "packinfo.about_author.text5"}},
+            { "howtoplay_5@tabbed_upsell.text": {"text": "packinfo.about_author.text6"}},
+            { "howtoplay_6@tabbed_upsell.text": {"text": "packinfo.about_author.text7"}},
+            { "howtoplay_7@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_8@tabbed_upsell.text": {"text": "packinfo.about_author.text8"}},
+            { "howtoplay_9@tabbed_upsell.text": {"text": "packinfo.about_author.text9"}},
+            { "howtoplay_10@tabbed_upsell.text": {"text": "packinfo.about_author.text10"}},
+            { "howtoplay_11@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_12@tabbed_upsell.text": {"text": "packinfo.about_author.text11"}},
+            { "howtoplay_13@tabbed_upsell.text": {"text": "packinfo.about_author.text12"}},
+            { "howtoplay_14@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_15@tabbed_upsell.text": {"text": "packinfo.about_author.text13"}},
+            { "howtoplay_16@tabbed_upsell.text": {"text": "packinfo.about_author.text14"}},
+            { "howtoplay_17@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_18@tabbed_upsell.text": {"text": "packinfo.about_author.text15"}},
+            { "howtoplay_19@tabbed_upsell.text": {"text": "packinfo.about_author.text16"}}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_author",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "licence_page@tabbed_upsell.indexs_panel": {
+          "controls": [
+            {
+              "page08@tabbed_upsell.page08": {
+                "size": [ 70, 20 ],
+                "$checked_control": "common_toggles.toggle_unchecked",
+                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+            
+                "$button_text": "packinfo.back",
+                "$toggle_default_state": true,
+                "$toggle_group_forced_index": 0,
+
+                "$template_toggle": "ir2.close_toggle"
+              }
+            },
+            { "header@how_to_play_common.header": { "$text":"packinfo.licence.title" }},
+            { "howtoplay_0@tabbed_upsell.text": {"text": "MIT License"}},
+            { "howtoplay_1@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_2@tabbed_upsell.text": {"text": "Copyright (c) 2023 Yuka0745"}},
+            { "howtoplay_3@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_4@tabbed_upsell.text": {"text": "Permission is hereby granted, free of charge, to any person obtaining a copy"}},
+            { "howtoplay_5@tabbed_upsell.text": {"text": "of this software and associated documentation files (the \"Software\"), to deal"}},
+            { "howtoplay_6@tabbed_upsell.text": {"text": "in the Software without restriction, including without limitation the rights"}},
+            { "howtoplay_7@tabbed_upsell.text": {"text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"}},
+            { "howtoplay_8@tabbed_upsell.text": {"text": "copies of the Software, and to permit persons to whom the Software is"}},
+            { "howtoplay_9@tabbed_upsell.text": {"text": "furnished to do so, subject to the following conditions:"}},
+            { "howtoplay_10@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_11@tabbed_upsell.text": {"text": "The above copyright notice and this permission notice shall be included in all"}},
+            { "howtoplay_12@tabbed_upsell.text": {"text": "copies or substantial portions of the Software."}},
+            { "howtoplay_13@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_14@tabbed_upsell.text": {"text": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"}},
+            { "howtoplay_15@tabbed_upsell.text": {"text": "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"}},
+            { "howtoplay_16@tabbed_upsell.text": {"text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE"}},
+            { "howtoplay_17@tabbed_upsell.text": {"text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"}},
+            { "howtoplay_18@tabbed_upsell.text": {"text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"}},
+            { "howtoplay_19@tabbed_upsell.text": {"text": "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE"}},
+            { "howtoplay_20@tabbed_upsell.text": {"text": "SOFTWARE."}}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_licence",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }
@@ -806,7 +1042,16 @@
                 "type": "label",
                 "text": "('§l§aGote§d-§bSupporter\n§l§6Ver ' + $gote_ver2)",
                 "shadow": true,
-                "font_size": "large"
+                "font_size": "large",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
               }
             }
           ]
@@ -878,28 +1123,32 @@
         "1": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun1"
+          "text": "ir2.jsonUIWarning.honbun1",
+          "font_type": "smooth"
         }
       },
       {
         "2": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun2"
+          "text": "ir2.jsonUIWarning.honbun2",
+          "font_type": "smooth"
         }
       },
       {
         "3": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun3"
+          "text": "ir2.jsonUIWarning.honbun3",
+          "font_type": "smooth"
         }
       },
       {
         "4": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun4"
+          "text": "ir2.jsonUIWarning.honbun4",
+          "font_type": "smooth"
         }
       }
     ]
@@ -1012,20 +1261,46 @@
             }
           ]
         }
+      },
+      {
+        "font_property_panel": {
+          "type": "panel",
+          "size": [ 0, 0 ],
+          "property_bag": {
+            "#font_type": "classic"
+          }
+        }
       }
     ]
   },
 
-  "tabbed_upseel_screen_panel@common.base_screen": {
-    "$screen_bg_content": "tabbed_upsell.black",
-    "$screen_content": "tabbed_upsell.root_panel",
-	  "button_mappings": [
+  "tabbed_upsell_screen": {
+    "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
         "to_button_id": "button.menu_exit",
         "mapping_type": "global"
       }
-    ]
+    ],
+    "$screen_animations": [
+      "@common.screen_exit_animation_push_offset",
+      "@common.screen_exit_animation_pop_offset",
+      "@common.screen_entrance_animation_push_offset",
+      "@common.screen_entrance_animation_pop_offset",
+      "@common.screen_exit_animation_push_fade",
+      "@common.screen_exit_animation_pop_fade",
+      "@common.screen_entrance_animation_push_fade",
+      "@common.screen_entrance_animation_pop_fade"
+    ],
+    "$background_animations": [
+      "@common.screen_exit_animation_push_alpha",
+      "@common.screen_exit_animation_pop_alpha",
+      "@common.screen_entrance_animation_push_alpha",
+      "@common.screen_entrance_animation_pop_alpha"
+    ],
+    "force_render_below": false,
+    "$screen_content": "tabbed_upsell.root_panel",
+    "$screen_bg_content": "tabbed_upsell.black"
   },
 
   "black": {

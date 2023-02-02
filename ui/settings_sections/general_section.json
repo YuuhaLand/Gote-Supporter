@@ -1,6 +1,3 @@
-/*********************************************
-          Gote-Supporter by Yuka0745
-*********************************************/
 {
   "gamertag_controls/sign_out": {
     "ignored": "(not $is_pregame or $requires_xbl_signin_to_play)"

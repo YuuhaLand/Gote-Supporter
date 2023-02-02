@@ -1,5 +1,6 @@
-﻿pack.description=You can conveniently enjoy your Minecraft life.   Created by Yuka0745
-
+﻿pack.name=Gote-Supporter v1.4.7
+pack.description=You can conveniently enjoy your Minecraft life.   Created by Yuka0745
+packname.nover=§l§aGote§d-§bSupporter
 
 accessibility.disableTTS=§eText To Speech disabled	#
 accessibility.enableTTS=§eText To Speech enabled	#
@@ -143,6 +144,12 @@ packinfo.f6=...And more!
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v147.u1=The experience bar and level are no longer displayed in Creative. Our apologies.
+packinfo.v147.u2=Added icons to buttons on the pack information screen.
+packinfo.v147.u3=Added "About Creator" and "License" to the pack information screen.
+packinfo.v147.u4=Some text on the pack information screen is now displayed in classic font in Windows Japanese.
+packinfo.v147.u5=Fixed a problem in which Gote-Supporter Config settings were lost when Gote-Supporter was applied to a world.
+
 packinfo.v146.u1=Experience bars and levels are now displayed in creative as well.
 packinfo.v146.u2=When connected to Realm, the pause screen squawk button is now placed next to the feed screen.
 packinfo.v146.u3=Fixed a problem with items not displaying in storage in settings.
@@ -283,3 +290,26 @@ packinfo.readme.text11=Producing a video introducing this pack.
 packinfo.readme.text12=《You CAN'T do the following》
 packinfo.readme.text14=Secondary distribution of this pack
 packinfo.readme.text15=Claiming this pack as your own work
+
+##つくったひと
+
+packinfo.about_author.title=Creator info
+packinfo.about_author.text1=Yuka0745 / YukaYama0311
+packinfo.about_author.text2=A person who is managing Gote-Server and making add-ons.
+packinfo.about_author.text3=I'm a woman who always only plays lazy mike.
+packinfo.about_author.text4=I make JSON UI as I like as a hobby.
+packinfo.about_author.text5=I'm terrible at programming.
+packinfo.about_author.text6=I'm not good at learning new things.
+packinfo.about_author.text7=I have about 8 years of experience in Minecraft.
+packinfo.about_author.text8=I'm also manage "Cai Server", the best Realm server in Japan.
+packinfo.about_author.text9=Realm is a very busy server with over 8000 members!
+packinfo.about_author.text10=Please come and visit us!
+packinfo.about_author.text11=Gote-Server Discord (Japanese)
+packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
+packinfo.about_author.text13=Gote-Server Realm
+packinfo.about_author.text14=§a Check the Discord for Gote-Server.
+packinfo.about_author.text15=Cai Server Discord (Japanese)
+packinfo.about_author.text16=§adiscord.gg/WqsPrrxuU6
+
+##ライセンス
+packinfo.licence.title=Licence

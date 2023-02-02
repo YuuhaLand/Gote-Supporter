@@ -1,6 +1,3 @@
-/*********************************************
-          Gote-Supporter by Yuka0745
-*********************************************/
 
 
 /*********************************************
@@ -36,7 +33,7 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   true = show (Default)
   false = hidden
   ************************************/
-  "$hud_compass": true,
+  "$hud_compass|default": true,
 
 
   /************************************
@@ -50,7 +47,7 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   true = show
   false = hidden (default)
   ************************************/
-  "$show_recoverycompass": false,
+  "$show_recoverycompass|default": false,
   
 
   /************************************
@@ -62,7 +59,7 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   "top" = displayed alongside chat buttons, etc. above (default)
   "right" = displayed in the lower right corner
   ************************************/
-  "$f1_f8_location": "top",
+  "$f1_f8_location|default": "top",
   
 
   /************************************
@@ -74,19 +71,19 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   true = show
   false = hidden (default)
   ************************************/
-  "$show_hotbar_navigator": false,
+  "$show_hotbar_navigator|default": false,
 
 
   /************************************
   チャット画面のTabキーの配置
   "vertical" = 右下に並べて配置
-  "horizontal" = 
+  "horizontal" = 下のチャット設定ボタンなどと並べて表示
 
   Placement of the Tab key on the Chat Screen
   "vertical" = Place them side by side in the lower right corner
   "horizontal" = Placed alongside Chat Setting buttons, etc.
   ************************************/
-  "$chat_tab_button_type": "vertical",
+  "$chat_tab_button_type|default": "vertical",
 
 
 
@@ -102,8 +99,8 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "v1.4.6",
-  "$gote_ver2": "1.4.6",
+  "$gote_ver": "v1.4.7",
+  "$gote_ver2": "1.4.7",
   "$gote_supporter_enabled": true,
   "$is_yukandows_server": false, 
   "$is_iroiro_server2": false,

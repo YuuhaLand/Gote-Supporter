@@ -14,7 +14,6 @@
 ・このパックの紹介動画などを製作すること
 
 《あなたは以下のことができません》:
-・このパックを二次配布すること
 ・このパックを自作のものと主張すること
 
 
@@ -36,5 +35,4 @@ If you use this pack, please adhere strictly to the following.
 
 《You CAN'T do the following》:
 
-・Secondary distribution of this pack
 ・Claiming this pack as your own work
