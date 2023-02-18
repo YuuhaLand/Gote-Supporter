@@ -1,7 +1,7 @@
 {
   "ui_defs": [
-    "ui/ir2_assets.json",
-    "ui/settings_sections/gote_section.json",
-    "ui/_change_logs.json"
+    "ui/_change_logs.json",
+    "ui/_gote_assets.json",
+    "ui/settings_sections/gote_section.json"
   ]
 }

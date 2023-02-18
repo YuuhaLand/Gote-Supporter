@@ -9,7 +9,7 @@
         "value": [
           {
             "permission_blocks_button2@how_to_play.permission_blocks_button": {
-              "ignored": false,
+              "ignored": "$education_edition",
               "$toggle_group_forced_index": 1000
             }
           }
@@ -32,6 +32,17 @@
       }
     ],
     "controls": [
+      {
+        "paragraph_1@how_to_play_common.paragraph": {
+          "ignored": "(not $education_edition)",
+          "$text": "howtoplay.permissionBlocks.text.1"
+        }
+      },
+      {
+        "padding_1@how_to_play_common.padding": {
+          "ignored": "(not $education_edition)"
+        }
+      },
       {
         "header_1@how_to_play_common.header": {
           "$text": "howtoplay.permissionBlocks.title.1"

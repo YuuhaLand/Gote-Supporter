@@ -329,7 +329,7 @@
     ]
   },
 
-  "dlga@common_toggles.light_content_toggle": {
+  "swtich_toggle@common_toggles.light_content_toggle": {
     "$toggle_name":"newline_chat",
     "$radio_toggle_group": true,
     "$toggle_focus_enabled": true,
@@ -337,7 +337,7 @@
     "$binding_condition": "once"
   },
 
-  "editup_button@chat.dlga": {
+  "editup_button@chat.swtich_toggle": {
     "$toggle_view_binding_name": "newline_chat",
     "$toggle_group_forced_index": 100,
 
@@ -357,7 +357,7 @@
     ]
   },
 
-  "editdown_button@chat.dlga": {
+  "editdown_button@chat.swtich_toggle": {
     "$checked_control": "common_toggles.toggle_unchecked",
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
     "$toggle_default_state": true,

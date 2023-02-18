@@ -85,8 +85,6 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   ************************************/
   "$chat_tab_button_type|default": "vertical",
 
-
-
   // 設定は以上です!
   // That's it for the setup!
 
@@ -99,12 +97,10 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "v1.4.7",
-  "$gote_ver2": "1.4.7",
+  "$gote_ver": "v1.5.0",
+  "$gote_ver2": "1.5.0",
   "$gote_supporter_enabled": true,
-  "$is_yukandows_server": false, 
-  "$is_iroiro_server2": false,
-  "$is_ohara_city": false,
+  "$is_gote_server": false, 
   "$is_saishoku_server": false
   /////////////////////////////////////////////
 }

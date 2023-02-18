@@ -1,13 +1,13 @@
 {
   "namespace": "tabbed_upsell",
 
-  "jsonui_warning_dlga@ir2.dlga": {
+  "jsonui_warning_swtich_toggle@gtb.swtich_toggle": {
     "$toggle_name": "jsonui_warning"
   },
-  "jsonui_warning_dlga_c@ir2.dlga_c": {
+  "jsonui_warning_swtich_toggle_c@gtb.swtich_toggle_c": {
     "$toggle_name": "jsonui_warning"
   },
-  "jsonui_warning_dlga_close@ir2.close_dlga_esc": {
+  "jsonui_warning_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
     "$toggle_name": "jsonui_warning"
   },
 
@@ -138,7 +138,8 @@
           "size": [ "100%", 20 ],
           "$button_content": "tabbed_upsell.version_toggle_button_content",
           "$toggle_name": "$version",
-          "$toggle_view_binding_name": "$version"
+          "$toggle_view_binding_name": "$version",
+          "$toggle_sound": true
         }
       },
       {
@@ -248,59 +249,59 @@
     ]
   },
 
-  "page01@ir2.dlga": {
+  "page01@gtb.swtich_toggle": {
     "$toggle_name":"page_about"
   },
-  "page02@ir2.dlga": {
+  "page02@gtb.swtich_toggle": {
     "$toggle_name":"page_features"
   },
-  "page03@ir2.dlga": {
+  "page03@gtb.swtich_toggle": {
     "$toggle_name":"page_update"
   },
-  "page04@ir2.dlga": {
+  "page04@gtb.swtich_toggle": {
     "$toggle_name":"page_caution"
   },
-  "page05@ir2.dlga": {
+  "page05@gtb.swtich_toggle": {
     "$toggle_name":"page_music"
   },
-  "page06@ir2.dlga": {
+  "page06@gtb.swtich_toggle": {
     "$toggle_name":"page_readme"
   },
-  "page07@ir2.dlga": {
+  "page07@gtb.swtich_toggle": {
     "$toggle_name":"page_author"
   },
-  "page08@ir2.dlga": {
+  "page08@gtb.swtich_toggle": {
     "$toggle_name":"page_licence"
   },
 
-  "page01_c@ir2.dlga_c": {
+  "page01_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_about"
   },
-  "page02_c@ir2.dlga_c": {
+  "page02_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_features"
   },
-  "page03_c@ir2.dlga_c": {
+  "page03_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_update"
   },
-  "page04_c@ir2.dlga_c": {
+  "page04_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_caution"
   },
-  "page05_c@ir2.dlga_c": {
+  "page05_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_music"
   },
-  "page06_c@ir2.dlga_c": {
+  "page06_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_readme"
   },
-  "page07_c@ir2.dlga_c": {
+  "page07_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_author"
   },
-  "page08_c@ir2.dlga_c": {
+  "page08_c@gtb.swtich_toggle_c": {
     "$toggle_name":"page_licence"
   },
   
   "left_panel": {
     "type": "stack_panel",
-    "size": [ "50% - 12px", "100%c + 20px" ],
+    "size": [ "50% - 12px", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "controls": [
@@ -638,7 +639,8 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.about.title" }},
@@ -675,18 +677,19 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.features.title" }},
             { "text01@tabbed_upsell.text": { "text": "packinfo.features.text1" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "fp1_@ir2.features_text_with_bubble":{"$text":"packinfo.f1"}},
-            { "fp2_@ir2.features_text_with_bubble":{"$text":"packinfo.f2"}},
-            { "fp3_@ir2.features_text_with_bubble":{"$text":"packinfo.f3"}},
-            { "fp4_@ir2.features_text_with_bubble":{"$text":"packinfo.f4"}},
-            { "fp5_@ir2.features_text_with_bubble":{"$text":"packinfo.f5"}},
-            { "fp6_@ir2.features_text_with_bubble":{"$text":"packinfo.f6"}},
+            { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.f1"}},
+            { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.f2"}},
+            { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.f3"}},
+            { "fp4_@gtb.features_text_with_bubble":{"$text":"packinfo.f4"}},
+            { "fp5_@gtb.features_text_with_bubble":{"$text":"packinfo.f5"}},
+            { "fp6_@gtb.features_text_with_bubble":{"$text":"packinfo.f6"}},
             { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
             { "text02@tabbed_upsell.text": { "text": "packinfo.features.text2" }}
           ],
@@ -713,7 +716,8 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.update.title" }},
@@ -751,7 +755,8 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.caution.title" }},
@@ -759,7 +764,6 @@
             { "text02@tabbed_upsell.text": { "text": "packinfo.caution.text2" }},
             { "text03@tabbed_upsell.text": { "text": "packinfo.caution.text3" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text05@tabbed_upsell.text": { "text": "packinfo.caution.text4" }},
             { "text06@tabbed_upsell.text": { "text": "packinfo.caution.text5" }},
             { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
             { "text08@tabbed_upsell.text": { "text": "packinfo.caution.text6" }}
@@ -787,7 +791,8 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.music.title" }},
@@ -883,22 +888,23 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "fm2@how_to_play_common.header": { "$text":"packinfo.readme.title" }},
             { "fm3@tabbed_upsell.text": { "text":"packinfo.readme.text1" }},
             { "fm4@tabbed_upsell.text": { "text":"packinfo.readme.text2" }},
             { "fm5@how_to_play_common.header": { "$text":"packinfo.readme.text4" }},
-            { "fm6@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text5"}},
-            { "fm7@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text6"}},
-            { "fm8@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text7"}},
-            { "fm9@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text8"}},
-            { "fm10@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text9"}},
-            { "fm11@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text10"}},
-            { "fm12@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text11"}},
+            { "fm6@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text5"}},
+            { "fm7@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text6"}},
+            { "fm8@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text7"}},
+            { "fm9@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text8"}},
+            { "fm10@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text9"}},
+            { "fm11@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text10"}},
+            { "fm12@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text11"}},
             { "fm13@how_to_play_common.header": { "$text":"packinfo.readme.text12" }},
-            { "fm16@ir2.features_text_with_bubble":{"$text":"packinfo.readme.text15"}}
+            { "fm16@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text15"}}
           ],
           "bindings": [
             {
@@ -923,7 +929,8 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "header@how_to_play_common.header": { "$text":"packinfo.about_author.title" }},
@@ -971,7 +978,8 @@
                 "$toggle_default_state": true,
                 "$toggle_group_forced_index": 0,
 
-                "$template_toggle": "ir2.close_toggle"
+                "$template_toggle": "gtb.close_toggle",
+                "$return_sound": true
               }
             },
             { "header@how_to_play_common.header": { "$text":"packinfo.licence.title" }},
@@ -1123,7 +1131,7 @@
         "1": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun1",
+          "text": "gtb.jsonUIWarning.honbun1",
           "font_type": "smooth"
         }
       },
@@ -1131,7 +1139,7 @@
         "2": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun2",
+          "text": "gtb.jsonUIWarning.honbun2",
           "font_type": "smooth"
         }
       },
@@ -1139,7 +1147,7 @@
         "3": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun3",
+          "text": "gtb.jsonUIWarning.honbun3",
           "font_type": "smooth"
         }
       },
@@ -1147,7 +1155,7 @@
         "4": {
           "type": "label",
           "size": [ "100%", "default" ],
-          "text": "ir2.jsonUIWarning.honbun4",
+          "text": "gtb.jsonUIWarning.honbun4",
           "font_type": "smooth"
         }
       }
@@ -1167,7 +1175,7 @@
     "$always_handle_scrolling": false
   },
 
-  "jsonui_warning_okbutton@tabbed_upsell.jsonui_warning_dlga": {
+  "jsonui_warning_okbutton@tabbed_upsell.jsonui_warning_swtich_toggle": {
     "$checked_control": "common_toggles.toggle_unchecked",
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
 
@@ -1182,10 +1190,10 @@
   },
 
 
-  "dialog1@ir2.dummy_dialog_one": {
+  "dialog1@gtb.dummy_dialog_one": {
     "layer": 503,
     "size": [ "80%", "80%" ],
-    "$text_name": "ir2.jsonUIWarning.title",
+    "$text_name": "gtb.jsonUIWarning.title",
     "$child_control": "tabbed_upsell.jsonui_warning_text_scroll",
     "$bottom_button_panel": "tabbed_upsell.jsonui_warning_okbutton",
     "bindings": [
@@ -1211,7 +1219,7 @@
         }
       },
       {
-        "jsonui_warning_button@tabbed_upsell.jsonui_warning_dlga_c": {
+        "jsonui_warning_button@tabbed_upsell.jsonui_warning_swtich_toggle_c": {
           "size": [ 25, 25 ],
           "offset": [ -5, 25 ],
           "anchor_from": "top_right",
@@ -1241,7 +1249,7 @@
               }
             },
             {
-              "jsonui_warning_dlga_close@tabbed_upsell.jsonui_warning_dlga_close": {
+              "jsonui_warning_swtich_toggle_close@tabbed_upsell.jsonui_warning_swtich_toggle_close": {
                 "layer": 502,
                 "size": [ "100%", "100%" ],
                 "$toggle_default_state": true,
@@ -1306,7 +1314,7 @@
   "black": {
     "type": "image",
     "size": [ "100%", "100%" ],
-    "texture": "textures/ui/parau_bind",
+    "texture": "textures/ui/yume_dream",
     "fill": true
   }
 }

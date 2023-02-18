@@ -83,26 +83,28 @@ tile.bubble_column.name=Bubble Column
 
 ## フィードバックサイト
 
-ir2.gts.gotofeedback=Open Feedback site? Your browser will launch.
-ir2.pocket.waring=Some Gote-Supporter features are not supported by Pocket UI.
-ir2.worldFolderPath.worldFolder=World Folder Location
-ir2.worldFolderPath.cantget=Could not be obtained.
-ir2.previewWarning.title=Warning
-ir2.previewWarning.honbun1=You have enabled Gote-Supporter in the beta version of Minecraft.
-ir2.previewWarning.honbun2=Gote-Supporter does not fully support the beta version of Minecraft.
-ir2.previewWarning.honbun3=This may cause problems such as crashes and UI layout collapses.
-ir2.previewWarning.honbun4=Please understand this in advance.
+gtb.gts.gotofeedback=Open Feedback site? Your browser will launch.
+gtb.pocket.waring=Some Gote-Supporter features are not supported by Pocket UI.
+gtb.worldFolderPath.worldFolder=World Folder Location
+gtb.worldFolderPath.cantget=Could not be obtained.
+gtb.worldFolderPath.cantget.tooltip=The folder location cannot be retrieved because there are no thumbnails for the world. Once the world is loaded, the folder location can be retrieved.
 
-ir2.jsonUIWarning.title=Important JSON UI Warning
-ir2.jsonUIWarning.honbun1=Resource packs that modify the screen UI, including Gote-Supporter, are modified using "JSON UI".
-ir2.jsonUIWarning.honbun2=Minecraft is progressively rolling out a new UI engine, Ore UI, which is the successor to JSON UI.
-ir2.jsonUIWarning.honbun3=§l§cGote-Supporter features may not be available in the future due to future updates.
-ir2.jsonUIWarning.honbun4=*The Ore UI is already implemented in the Achievements screen, world creation screen, etc. and cannot currently be changed from the resource pack.
+gtb.previewWarning.title=Warning
+gtb.previewWarning.honbun1=You have enabled Gote-Supporter in the beta version of Minecraft.
+gtb.previewWarning.honbun2=Gote-Supporter does not fully support the beta version of Minecraft.
+gtb.previewWarning.honbun3=This may cause problems such as crashes and UI layout collapses.
+gtb.previewWarning.honbun4=Please understand this in advance.
 
-ir2.memoScreen.title=Temporary Note
-ir2.memoScreen.body1=Here you can write temporary notes.
-ir2.memoScreen.body2=It will be deleted when you exit the world!
-ir2.memoScreen.placeHolderText=Please note that what you write here will not be saved.
+gtb.jsonUIWarning.title=Important JSON UI Warning
+gtb.jsonUIWarning.honbun1=Resource packs that modify the screen UI, including Gote-Supporter, are modified using "JSON UI".
+gtb.jsonUIWarning.honbun2=Minecraft is progressively rolling out a new UI engine, Ore UI, which is the successor to JSON UI.
+gtb.jsonUIWarning.honbun3=§l§cGote-Supporter features may not be available in the future due to future updates.
+gtb.jsonUIWarning.honbun4=*The Ore UI is already implemented in the Achievements screen, world creation screen, etc. and cannot currently be changed from the resource pack.
+
+gtb.memoScreen.title=Temporary Note
+gtb.memoScreen.body1=Here you can write temporary notes.
+gtb.memoScreen.body2=It will be deleted when you exit the world!
+gtb.memoScreen.placeHolderText=Please note that what you write here will not be saved.
 
 ## Gote-Supporter Info 画面のテキスト
 
@@ -143,6 +145,16 @@ packinfo.f6=...And more!
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v150.u1=Changed the pack icon.
+packinfo.v150.u2=The background of the pack info screen has been changed.
+packinfo.v150.u3=Minecraft Education (1.19.50+) is now supported.
+packinfo.v150.u4=Pressing the Tab key on the keyboard in the HUD now brings up the player list.
+packinfo.v150.u5=A "+" is now displayed on blocks with data copied in inventory.
+packinfo.v150.u6=The close button on the title screen no longer appears on iOS.
+packinfo.v150.u7=The vanilla button is now used on the title screen.
+packinfo.v150.u8=The size of the warning window that can be displayed from the title screen when Gote-Supporter is applied to the Preview version has been increased.
+packinfo.v150.u9=Fixed a problem in which a warning about copying was still displayed in the "Precautions" section of the pack info screen.
 
 packinfo.v147.u1=The experience bar and level are no longer displayed in Creative. Our apologies.
 packinfo.v147.u2=Added icons to buttons on the pack information screen.

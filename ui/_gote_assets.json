@@ -1,5 +1,5 @@
 {
-  "namespace": "ir2",
+  "namespace": "gtb",
 
   "features_text_with_bubble": {
     "type": "stack_panel",
@@ -79,7 +79,7 @@
     ]
   },
 
-  "close_dlga_esc@common.toggle": {
+  "close_swtich_toggle_esc@common.toggle": {
     "sound_volume": 0,
     "$radio_toggle_group": true,
     "$toggle_focus_enabled": false,
@@ -106,7 +106,7 @@
 
 
 
-  "dlga@common_toggles.light_text_toggle": {
+  "swtich_toggle@common_toggles.light_text_toggle": {
     "$radio_toggle_group": true,
     "$toggle_focus_enabled": true,
     "$binding_type": "global",
@@ -116,7 +116,7 @@
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover"
   },
 
-  "dlga_c@common_toggles.light_content_toggle": {
+  "swtich_toggle_c@common_toggles.light_content_toggle": {
     "$radio_toggle_group": true,
     "$toggle_focus_enabled": true,
     "$binding_type": "global",
@@ -126,7 +126,7 @@
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover"
   },
 
-  "dlga_label": {
+  "swtich_toggle_label": {
     "type": "label",
     "size": [ "100% - 2px", "default" ],
     "offset": [ 2, 0 ],
@@ -185,7 +185,7 @@
    "$bottom_button_panel": "common.empty_panel",
    "controls": [
      {
-       "common_panel@ir2.dialog_common_panel": { "$dialog_background": "common.dialog_background_hollow_2" }
+       "common_panel@gtb.dialog_common_panel": { "$dialog_background": "common.dialog_background_hollow_2" }
      },
      {
        "title_label@common_dialogs.title_label": {}
@@ -225,7 +225,7 @@
    "$bottom_button_panel": "common.empty_panel",
    "controls": [
      {
-       "common_panel@ir2.dialog_common_panel": { "$dialog_background": "common.dialog_background_hollow_1" }
+       "common_panel@gtb.dialog_common_panel": { "$dialog_background": "common.dialog_background_hollow_1" }
      },
      {
        "title_label@common_dialogs.title_label": {}

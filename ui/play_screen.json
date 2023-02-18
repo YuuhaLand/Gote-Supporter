@@ -132,13 +132,6 @@
     "alpha": 0.7
   },
 
-  "common_tab_navigation_panel_layout": {
-    "type": "stack_panel",
-    "orientation": "vertical",
-    "size": [ "100% + 2px", "100%" ],
-    "ttsSectionContainer": true
-  },
-  
   "tab_panel@common_tabs.tab_panel": {
     "$offset": [ 0, 0 ],
     "variables": [
@@ -1311,7 +1304,8 @@
                 "$toggle_name": "worlds_selector_tab",
                 "$toggle_view_binding_name": "worlds_world_tab",
                 "$toggle_group_forced_index": 0,
-                "$button_text": "playscreen.worlds"
+                "$button_text": "playscreen.worlds",
+                "$toggle_sound": true
               }
             },
             {
@@ -1324,7 +1318,8 @@
                 "$toggle_name": "worlds_selector_tab",
                 "$toggle_view_binding_name": "worlds_realms_tab",
                 "$toggle_group_forced_index": 1,
-                "$button_text": "Realms"
+                "$button_text": "Realms",
+                "$toggle_sound": true
               }
             }
           ]
@@ -1425,7 +1420,8 @@
                       "$toggle_name": "friends_selector_tab",
                       "$toggle_view_binding_name": "friends_friends_tab",
                       "$toggle_group_forced_index": 0,
-                      "$button_text": "networkWorld.friends_label"
+                      "$button_text": "networkWorld.friends_label",
+                      "$toggle_sound": true
                     }
                   },
                   {
@@ -1439,7 +1435,8 @@
                       "$toggle_name": "friends_selector_tab",
                       "$toggle_view_binding_name": "friends_realm_tab",
                       "$toggle_group_forced_index": 1,
-                      "$button_text": "Realms"
+                      "$button_text": "Realms",
+                      "$toggle_sound": true
                     }
                   },
                   {
@@ -1459,7 +1456,8 @@
                       "$toggle_name": "friends_selector_tab",
                       "$toggle_view_binding_name": "friends_lan_tab",
                       "$toggle_group_forced_index": 2,
-                      "$button_text": "LAN"
+                      "$button_text": "LAN",
+                      "$toggle_sound": true
                     }
                   }
                 ]

@@ -1,4 +1,18 @@
 {
+  "namespace": "world_section",
+
+  "empty_world_folder_tooltip@common.static_tooltip_popup_with_image_and_text": {
+    "size": [ "100% - 4px", "100%cm + 8px" ],
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "$tooltip_panel_offset": [ 0, -40 ],
+    "$tooltip_popup_image": "textures/ui/infobulb",
+    "$tooltip_button_binding_type": "global",
+    "$tooltip_button_collection_name": "",
+    "$tooltip_text_binding_name": "gtb.worldFolderPath.cantget.tooltip",
+    "$tooltip_chevron_anchor": "bottom_left",
+    "$tooltip_popup_chevron_offset": [ "40%x", "100%y - 3px" ]
+  },
 
   "game_section": {
     "modifications": [
@@ -27,7 +41,7 @@
                       {
                         "colon": {
                           "type": "label",
-                          "text": ": ",
+                          "text": "  ",
                           "color": "$body_text_color"
                         }
                       },
@@ -56,82 +70,113 @@
                       {
                         "text": {
                           "type": "label",
-                          "text": "ir2.worldFolderPath.worldFolder",
+                          "text": "gtb.worldFolderPath.worldFolder",
                           "color": "$body_text_color"
                         }
-                      },
+                      }
+                    ]
+                  }
+                },
+                {
+                  "folder_label_panel": {
+                    "type": "stack_panel",
+                    "size": [ "100%", "100%c" ],
+                    "controls": [
                       {
-                        "colon": {
+                        "folder_label": {
                           "type": "label",
-                          "text": ":",
-                          "color": "$body_text_color"
+                          "text": "#text",
+                          "font_type": "smooth",
+                          "hide_hyphen": true,
+                          "color": "$body_text_color",
+                          "size": [ "100%", "default" ],
+                          "bindings": [
+                            {
+                              "binding_type": "view",
+                              "resolve_sibling_scope": true,
+                              "source_control_name": "folder_property_panel",
+                              "source_property_name": "#folder_path",
+                              "target_property_name": "#text"
+                            },
+                            {
+                              "binding_type": "view",
+                              "resolve_sibling_scope": true,
+                              "source_control_name": "folder_property_panel",
+                              "source_property_name": "#is_not_empty_world_icon",
+                              "target_property_name": "#visible"
+                            }
+                          ]
                         }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "folder_label": {
-                    "type": "label",
-                    "text": "#text",
-                    "font_type": "smooth",
-                    "hide_hyphen": true,
-                    "ignored": "$pocket_edition",
-                    "color": "$body_text_color",
-                    "size": [ "100%", "default" ],
-                    "bindings": [
-                      {
-                        "binding_name": "#world_texture_name"
                       },
                       {
-                        "binding_type": "view",
-                        "source_property_name": "(#world_texture_name - 'world_icon.jpeg')",
-                        "target_property_name": "#text"
+                        "folder_label_empty": {
+                          "type": "button",
+                          "size": [ "100%", 10 ],
+                          "hover_control": "hover",
+                          "pressed_control": "pressed",
+                          "controls": [
+                            {
+                              "label": {
+                                "type": "label",
+                                "text": "gtb.worldFolderPath.cantget",
+                                "font_type": "smooth",
+                                "color": "$body_text_color",
+                                "size": [ "100%", 10 ]
+                              }
+                            },
+                            {
+                              "hover@world_section.empty_world_folder_tooltip": {}
+                            },
+                            {
+                              "pressed@world_section.empty_world_folder_tooltip": {}
+                            }
+                          ],
+                          "bindings": [
+                            {
+                              "binding_type": "view",
+                              "resolve_sibling_scope": true,
+                              "source_control_name": "folder_property_panel",
+                              "source_property_name": "#is_empty_world_icon",
+                              "target_property_name": "#visible"
+                            }
+                          ]
+                        }
                       },
                       {
-                        "binding_type": "view",
-                        "source_property_name": "(not (#world_texture_name = 'textures/ui/CreateNewWorld'))",
-                        "target_property_name": "#visible"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "folder_label_pocket": {
-                    "type": "label",
-                    "text": "#text",
-                    "font_type": "smooth",
-                    "hide_hyphen": true,
-                    "ignored": "(not $pocket_edition)",
-                    "color": "$body_text_color",
-                    "size": [ "100%", "default" ],
-                    "bindings": [
-                      {
-                        "binding_name": "#world_texture_name",
-                        "binding_name_override": "#text"
-                      },
-                      {
-                        "binding_type": "view",
-                        "source_property_name": "(not #world_texture_name = 'textures/ui/CreateNewWorld')",
-                        "target_property_name": "#visible"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "folder_label_cant_get": {
-                    "type": "label",
-                    "text": "ir2.worldFolderPath.cantget",
-                    "color": "$body_text_color",
-                    "size": [ "100%", "default" ],
-                    "bindings": [
-                      {
-                        "binding_name": "#world_texture_name"
-                      },
-                      {
-                        "binding_type": "view",
-                        "source_property_name": "(#world_texture_name = 'textures/ui/CreateNewWorld')",
-                        "target_property_name": "#visible"
+                        "folder_property_panel": {
+                          "type": "panel",
+                          "size": [ 0, 0 ],
+                          "bindings": [
+                            {
+                              "binding_name": "#world_texture_name"
+                            },
+                            {
+                              "binding_name": "#world_texture_locationtype"
+                            },
+                            {
+                              "ignored": "(not $pocket_edition)",
+                              "binding_type": "view",
+                              "source_property_name": "#world_texture_name",
+                              "target_property_name": "#folder_path"
+                            },
+                            {
+                              "ignored": "$pocket_edition",
+                              "binding_type": "view",
+                              "source_property_name": "(#world_texture_name - 'world_icon.jpeg')",
+                              "target_property_name": "#folder_path"
+                            },
+                            {
+                              "binding_type": "view",
+                              "source_property_name": "(not (#world_texture_locationtype = 'RawPath'))",
+                              "target_property_name": "#is_empty_world_icon"
+                            },
+                            {
+                              "binding_type": "view",
+                              "source_property_name": "(#world_texture_locationtype = 'RawPath')",
+                              "target_property_name": "#is_not_empty_world_icon"
+                            }
+                          ]
+                        }
                       }
                     ]
                   }

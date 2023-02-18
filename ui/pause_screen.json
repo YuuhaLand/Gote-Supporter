@@ -1,28 +1,31 @@
 {
   "namespace": "pause",
 
-  "feedback_dialog_dlga@ir2.dlga": {
+  "feedback_dialog_swtich_toggle@gtb.swtich_toggle": {
     "$toggle_name": "open_feedback_dialog"
   },
-  "feedback_dialog_dlga_c@ir2.dlga_c": {
+  "feedback_dialog_swtich_toggle_c@gtb.swtich_toggle_c": {
     "$toggle_name": "open_feedback_dialog"
   },
-  "quit_dialog_dlga@ir2.dlga": {
+  "quit_dialog_swtich_toggle@gtb.swtich_toggle": {
     "$toggle_name": "quit_dialog"
   },
-  "feedback_dialog_dlga_close@ir2.close_dlga_esc": {
-    "$toggle_name": "open_feedback_dialog"
-  },
-  "quit_dialog_dlga_close@ir2.close_dlga_esc": {
+  "quit_dialog_dlga@gtb.swtich_toggle": {
     "$toggle_name": "quit_dialog"
   },
-  "note_dialog_dlga@ir2.dlga": {
+  "feedback_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
+    "$toggle_name": "open_feedback_dialog"
+  },
+  "quit_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
+    "$toggle_name": "quit_dialog"
+  },
+  "note_dialog_swtich_toggle@gtb.swtich_toggle": {
     "$toggle_name": "note_screen"
   },
-  "note_dialog_dlga_c@ir2.dlga_c": {
+  "note_dialog_swtich_toggle_c@gtb.swtich_toggle_c": {
     "$toggle_name": "note_screen"
   },
-  "note_dialog_dlga_close@ir2.close_dlga_esc": {
+  "note_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
     "$toggle_name": "note_screen"
   },
 
@@ -335,7 +338,7 @@
 
   "note_icon_button": {
     "type": "panel",
-    "$button_tts_header": "ir2.memoScreen.title",
+    "$button_tts_header": "gtb.memoScreen.title",
     "controls": [
       { "note_button_dialog@pause.note_button_dialog": {
         "$focus_id": "note_button_focus"
@@ -470,15 +473,15 @@
     ]
   },
 
-  "feedback_button_dialog@pause.feedback_dialog_dlga_c": {
+  "feedback_button_dialog@pause.feedback_dialog_swtich_toggle_c": {
     "size": [ 24, 24 ],
     "$toggle_view_binding_name": "open_feedback_dialog",
     "$button_content": "pause.feedback_icon",
     "$toggle_group_forced_index": 100
   },
 
-  "feedback_dialoglabel@ir2.dlga_label": {
-    "text": "ir2.gts.gotofeedback"
+  "feedback_dialoglabel@gtb.swtich_toggle_label": {
+    "text": "gtb.gts.gotofeedback"
   },
 
   "feedback_dialog_open@common_buttons.light_text_button": {
@@ -489,6 +492,8 @@
     "property_bag": {
       "#hyperlink": "https://aka.ms/minecraftfb"
     },
+    
+    "$yes_sound": true,
 
     "$focus_id": "fb_ok",
     "$focus_override_down": "fb_cancel",
@@ -497,13 +502,15 @@
     "$focus_override_right": "FOCUS_OVERRIDE_STOP"
   },
 
-  "feedback_dialog_ok@pause.feedback_dialog_dlga": {
+  "feedback_dialog_ok@pause.feedback_dialog_swtich_toggle": {
     "$checked_control": "common_toggles.toggle_unchecked",
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
 
     "$button_text": "gui.close",
     "$toggle_default_state": true,
     "$toggle_group_forced_index": 0,
+    
+    "$return_sound": true,
 
     "$focus_id": "fb_cancel",
     "$focus_override_down": "fb_ok",
@@ -515,7 +522,7 @@
 
 
 
-  "quit_dialoglabel@ir2.dlga_label": {
+  "quit_dialoglabel@gtb.swtich_toggle_label": {
     "text": "deathScreen.quit.confirmToMainMenuWarning"
   },
 
@@ -524,6 +531,8 @@
     "$button_text": "gui.ok",
     "anchor_to": "top_left",
     "anchor_from": "top_left",
+    
+    "$yes_sound": true,
 
     "$focus_id": "quit_ok",
     "$focus_override_down": "quit_cancel",
@@ -533,13 +542,15 @@
   },
 
 
-  "quit_dialog_cancel@pause.quit_dialog_dlga": {
+  "quit_dialog_cancel@pause.quit_dialog_swtich_toggle": {
     "$checked_control": "common_toggles.toggle_unchecked",
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
 
     "$button_text": "gui.cancel",
     "$toggle_default_state": true,
     "$toggle_group_forced_index": 0,
+    
+    "$return_sound": true,
 
     "$focus_id": "quit_cancel",
     "$focus_override_down": "quit_ok",
@@ -548,7 +559,7 @@
     "$focus_override_right": "FOCUS_OVERRIDE_STOP"
   },
 
-  "dialog1@ir2.dummy_dialog_two": {
+  "dialog1@gtb.dummy_dialog_two": {
     "layer": 503,
     "size": [ 214, 175 ],
     "$text_name": "options.goToFeedbackWebsite",
@@ -565,7 +576,7 @@
     ]
   },
 
-  "dialog2@ir2.dummy_dialog_two": {
+  "dialog2@gtb.dummy_dialog_two": {
     "layer": 503,
     "size": [ 214, 175 ],
     "$text_name": "deathScreen.quit.confirm",
@@ -582,7 +593,7 @@
     ]
   },
 
-  "note_button_dialog@pause.note_dialog_dlga_c": {
+  "note_button_dialog@pause.note_dialog_swtich_toggle_c": {
     "size": [ 24, 24 ],
     "$toggle_view_binding_name": "note_screen",
     "$button_content": "pause.book_and_quil",
@@ -592,7 +603,7 @@
   "memo_screen@common_dialogs.main_panel_no_buttons": {
     "layer": 503,
     "size": [ "80%", "80%" ],
-    "$text_name": "ir2.memoScreen.title",
+    "$text_name": "gtb.memoScreen.title",
     "$show_close_button": false,
     "$child_control": "pause.memo_screen_content",
     "bindings": [
@@ -616,7 +627,7 @@
           "size": [ "100%", 10 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
-          "text": "ir2.memoScreen.body1"
+          "text": "gtb.memoScreen.body1"
         }
       },
       {
@@ -627,7 +638,7 @@
           "offset": [ 0, 10 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
-          "text": "ir2.memoScreen.body2"
+          "text": "gtb.memoScreen.body2"
         }
       },
       {
@@ -636,7 +647,7 @@
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "max_length": 65535,
-          "$place_holder_text": "ir2.memoScreen.placeHolderText",
+          "$place_holder_text": "gtb.memoScreen.placeHolderText",
           "$text_box_name": "memo_text_edit"
         }
       },
@@ -745,7 +756,7 @@
         }
       },
       {
-        "quit_button@pause.quit_dialog_dlga": {
+        "quit_button@pause.quit_dialog_swtich_toggle": {
           "size": [ "100%", 28 ],
           "$toggle_view_binding_name": "quit_dialog",
           "$button_text": "pauseScreen.quit",
@@ -777,7 +788,7 @@
                   }
                 },
                 {
-                  "quit_dialog_dlga_close@pause.quit_dialog_dlga_close": {
+                  "quit_dialog_swtich_toggle_close@pause.quit_dialog_swtich_toggle_close": {
                     "layer": 502,
                     "size": [ "100%", "100%" ],
                     "$toggle_default_state": true,
@@ -801,7 +812,7 @@
           {
             "feedback_dialog_screen": {
               "type": "panel",
-              "ignored": "($education_edition or $is_iroiro_server2 or $is_yukandows_server or $is_saishoku_server)",
+              "ignored": "($education_edition or $is_gote_server or $is_saishoku_server)",
               "size": [ "100%", "100%" ],
               "controls": [
                 {
@@ -814,7 +825,7 @@
                   }
                 },
                 {
-                  "feedback_dialog_dlga_close@pause.feedback_dialog_dlga_close": {
+                  "feedback_dialog_swtich_toggle_close@pause.feedback_dialog_swtich_toggle_close": {
                     "layer": 502,
                     "size": [ "100%", "100%" ],
                     "$toggle_default_state": true,
@@ -851,7 +862,7 @@
                   }
                 },
                 {
-                  "note_dialog_dlga_close@pause.note_dialog_dlga_close": {
+                  "note_dialog_swtich_toggle_close@pause.note_dialog_swtich_toggle_close": {
                     "layer": 502,
                     "size": [ "100%", "100%" ],
                     "$toggle_default_state": true,

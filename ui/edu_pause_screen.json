@@ -1,0 +1,87 @@
+{
+  "namespace": "edu_pause",
+  
+  "edu_game_menu_content": {
+    "modifications": [
+      {
+        "control_name": "divider2",
+        "operation": "insert_after",
+        "value": [
+          {
+            "temp_note_button@pause.note_dialog_swtich_toggle": {
+              "size": [ "100%", 18 ],
+              "$toggle_view_binding_name": "note_screen",
+              "$toggle_group_forced_index": 100,
+              "focus_change_right": "profile_button",
+              "$button_text": "gtb.memoScreen.title"
+            }
+          },
+          { "vertical_padding_gote1@edu_pause.vertical_padding": {} },
+          {
+            "pack_info_button@pause.buy_button": {
+              "size": [ "100%", 18 ],
+              "focus_change_right": "profile_button",
+              "$button_text": "Gote-Supporter Info",
+              "ignored": false,
+              "bindings": []
+            }
+          },
+          {
+            "divider_gote1@edu_common.horizontal_divider": {
+              "size": [ "100%", 10 ],
+              "$alpha": 0.8
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "pause_screen_content": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "memo_screen_screen": {
+              "type": "panel",
+              "ignored": false,
+              "size": [ "100%", "100%" ],
+              "controls": [
+                {
+                  "scrool@common.scrolling_panel": {
+                    "type": "scroll_view",
+                    "size": [ "100%", "100%" ],
+                    "layer": 501,
+                    "$scrolling_content": "common.empty_panel",
+                    "$show_background": false
+                  }
+                },
+                {
+                  "note_dialog_swtich_toggle_close@pause.note_dialog_swtich_toggle_close": {
+                    "layer": 502,
+                    "size": [ "100%", "100%" ],
+                    "$toggle_default_state": true,
+                    "$toggle_group_forced_index": 0
+                  }
+                },
+                {
+                  "memo_screen@pause.memo_screen": {}
+                }
+              ],
+              "bindings": [
+                {
+                  "binding_type": "view",
+                  "source_control_name": "note_screen",
+                  "source_property_name": "#toggle_state",
+                  "target_property_name": "#visible"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -101,31 +101,33 @@ options.gote.show_recoverycompass=HUDのコンパスにリカバリーコンパ�
 options.gote.f1_f8_location=HUDのF1/F8ボタンの位置(タッチ)
 options.gote.show_hotbar_navigator=HUDのホットバーナビゲーターの表示(タッチ)
 options.gote.chat_tab_button_type=チャット画面のTabキーの配置
+options.gote.is_creator_mode=クリエイター モード
 
 ## フィードバックサイト
 
-ir2.gts.gotofeedback=フィードバックのサイトを開きますか? ブラウザが起動します。
-ir2.pocket.waring=一部の Gote-Supporter の機能は Pocket UI に対応しておりません。
+gtb.gts.gotofeedback=フィードバックのサイトを開きますか? ブラウザが起動します。
+gtb.pocket.waring=一部の Gote-Supporter の機能は Pocket UI に対応しておりません。
 
-ir2.worldFolderPath.worldFolder=ワールドのフォルダーの場所
-ir2.worldFolderPath.cantget=取得できませんでした。
+gtb.worldFolderPath.worldFolder=ワールドのフォルダーの場所
+gtb.worldFolderPath.cantget=取得できませんでした。
+gtb.worldFolderPath.cantget.tooltip=ワールドのサムネイルが無いため、フォルダーの場所を取得できません。 一度ワールドを読み込むと、フォルダーの場所を取得できるようになります。
 
-ir2.previewWarning.title=ご注意
-ir2.previewWarning.honbun1=あなたはベータ版のMinecraftでGote-Supporterを有効化しています。
-ir2.previewWarning.honbun2=Gote-Supporterは、ベータ版Minecraftを完全にサポートしておりません。
-ir2.previewWarning.honbun3=クラッシュやUIレイアウト崩壊などの問題が発生する可能性があります。
-ir2.previewWarning.honbun4=予めご了承ください。
+gtb.previewWarning.title=ご注意
+gtb.previewWarning.honbun1=あなたはベータ版のMinecraftでGote-Supporterを有効化しています。
+gtb.previewWarning.honbun2=Gote-Supporterは、ベータ版Minecraftを完全にサポートしておりません。
+gtb.previewWarning.honbun3=クラッシュやUIレイアウト崩壊などの問題が発生する可能性があります。
+gtb.previewWarning.honbun4=予めご了承ください。
 
-ir2.jsonUIWarning.title=JSON UIに関する重要な警告
-ir2.jsonUIWarning.honbun1=Gote-Supporterを含む、画面のUIを変更するリソースパックは、「JSON UI」を使って変更しています。
-ir2.jsonUIWarning.honbun2=Minecraftでは、JSON UIの後継となる新しいUIエンジン「Ore UI」を順次展開しており、
-ir2.jsonUIWarning.honbun3=§l§c今後Gote-Supporterの機能が今後のアップデートにより使用できなくなる可能性があります。
-ir2.jsonUIWarning.honbun4=※Ore UI は既に実績画面、ワールド作成画面などに実装されており、現状リソースパックからの変更はできません。
+gtb.jsonUIWarning.title=JSON UIに関する重要な警告
+gtb.jsonUIWarning.honbun1=Gote-Supporterを含む、画面のUIを変更するリソースパックは、「JSON UI」を使って変更しています。
+gtb.jsonUIWarning.honbun2=Minecraftでは、JSON UIの後継となる新しいUIエンジン「Ore UI」を順次展開しており、
+gtb.jsonUIWarning.honbun3=§l§c今後Gote-Supporterの機能が今後のアップデートにより使用できなくなる可能性があります。
+gtb.jsonUIWarning.honbun4=※Ore UI は既に実績画面、ワールド作成画面などに実装されており、現状リソースパックからの変更はできません。
 
-ir2.memoScreen.title=一時メモ
-ir2.memoScreen.body1=ここでは一時的なメモを書くことができます。
-ir2.memoScreen.body2=書いた内容はワールドを抜けると破棄されます!
-ir2.memoScreen.placeHolderText=ここに書いた内容は保存されませんのでご注意ください。
+gtb.memoScreen.title=一時メモ
+gtb.memoScreen.body1=ここでは一時的なメモを書くことができます。
+gtb.memoScreen.body2=書いた内容はワールドを抜けると破棄されます!
+gtb.memoScreen.placeHolderText=ここに書いた内容は保存されませんのでご注意ください。
 
 ## Gote-Supporter Info 画面のテキスト
 
@@ -166,6 +168,16 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v150.u1=パックのアイコンを変更しました。
+packinfo.v150.u2=パック情報画面の背景を変更しました。
+packinfo.v150.u3=Minecraft Education (1.19.50+)に対応するようになりました。
+packinfo.v150.u4=HUDでキーボードのTabキーを押すと、プレイヤーリストが表示されるようになりました。
+packinfo.v150.u5=インベントリでデータコピーしたブロックに「＋」が表示されるようになりました。
+packinfo.v150.u6=iOSでタイトル画面の閉じるボタンが表示されなくなりました。
+packinfo.v150.u7=タイトル画面でバニラのボタンを使うようになりました。
+packinfo.v150.u8=Preview版にごてサポを入れた時にタイトル画面から表示できる警告ウィンドウのサイズを大きくしました。
+packinfo.v150.u9=パック情報画面の「注意事項」にコピーする際の警告が表示されたままだった問題を修正しました。
 
 packinfo.v147.u1=クリエイティブで経験値バーとレベルは表示されなくなりました。 申し訳ないです。
 packinfo.v147.u2=パック情報画面のボタンにアイコンを追加しました。

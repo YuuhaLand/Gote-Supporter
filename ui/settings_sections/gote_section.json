@@ -264,7 +264,6 @@
           "enabled": false
         }
       },
-
       {
         "padding_3": {
           "type": "input_panel", 
