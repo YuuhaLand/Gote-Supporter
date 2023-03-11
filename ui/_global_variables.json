@@ -1,5 +1,3 @@
-
-
 /*********************************************
 Gote-Supporter Config
 
@@ -10,6 +8,7 @@ Gote-Supporter Config
 なお、設定を適用するには、入っているワールドをリログするか、マイクラを再起動してください。
 
 項目を誤って設定してしまうと、Gote-Supporterが正常に機能しなくなる可能性があります!
+https://github.com/Gotemba912/Gote-Supporter/wiki/Config(Japanese)
 
 ★★★
 
@@ -20,6 +19,7 @@ Each setting has a written description, so please read it and set it.
 To apply the settings, please relog the world you are in or restart Minecraft.
 
 If an item is incorrectly set, Gote-Supporter may not function properly!
+https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
 *********************************************/
 
 
@@ -85,6 +85,42 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   ************************************/
   "$chat_tab_button_type|default": "vertical",
 
+
+  /************************************
+  Gote-Supporterで一新したプレイ画面
+  true = 有効化
+  false = 無効化(バニラの画面を使います)
+
+  Newly redesigned play screen with Gote-Supporter
+  true = enable
+  false = disable (use vanilla screen)
+  ************************************/
+  "$new_play_screen|default": true,
+
+
+  /************************************
+  プレイ画面のワールドタブとフレンドタブでタブ分けする
+  true = 有効化
+  false = 無効化(バニラの画面を使います)
+
+  Use tabbed view in the world tab and friends tab on the play screen
+  true = enable
+  false = disable (use vanilla screen)
+  ************************************/
+  "$play_screen_tab|default": true,
+
+
+  /************************************
+  インベントリ画面でItem ID Auxを表示する(JSON UIクリエイター向け)
+  true = 有効化
+  false = 無効化(デフォルト)
+
+  Display Item ID Aux on inventory screen (for JSON UI creators)
+  true = enable
+  false = disable (default)
+  ************************************/
+  "$show_item_id_aux|default": false,
+
   // 設定は以上です!
   // That's it for the setup!
 
@@ -97,10 +133,11 @@ If an item is incorrectly set, Gote-Supporter may not function properly!
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "v1.5.0",
-  "$gote_ver2": "1.5.0",
+  "$gote_ver": "1.5.1",
   "$gote_supporter_enabled": true,
   "$is_gote_server": false, 
-  "$is_saishoku_server": false
+  "$is_saishoku_server": false,
+  "$quit_button_enabled|default": true,
+  "$minecraft_feedback_button_visible|default": true
   /////////////////////////////////////////////
 }

@@ -1,4 +1,116 @@
 {
+  "highlight_slot_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "highlight@common.highlight_slot": {
+          "controls": [
+            {
+              "hover_text_panel": {
+                "type": "panel",
+                "$hover_text_binding_name|default": "#hover_text",
+                "controls": [
+                  {
+                    "hover_text@common.hover_text": {
+                      "layer": 29,
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "resolve_sibling_scope": true,
+                          "source_control_name": "hover_property_panel",
+                          "source_property_name": "#hover_text_data",
+                          "target_property_name": "#hover_text"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "hover_property_panel": {
+                      "type": "panel",
+                      "size": [ 0, 0 ],
+                      "bindings": [
+                        {
+                          "binding_name": "#item_id_aux",
+                          "binding_type": "collection",
+                          "binding_collection_name": "$item_collection_name"
+                        },
+                        {
+                          "binding_name": "$hover_text_binding_name",
+                          "binding_type": "collection",
+                          "binding_collection_name": "$item_collection_name"
+                        },
+                        {
+                          "ignored": "(not $show_item_id_aux)",
+                          "binding_type": "view",
+                          "source_property_name": "($hover_text_binding_name + '§r\n§aItem ID Aux: ' + #item_id_aux)",
+                          "target_property_name": "#hover_text_data"
+                        },
+                        {
+                          "ignored": "$show_item_id_aux",
+                          "binding_type": "view",
+                          "source_property_name": "$hover_text_binding_name",
+                          "target_property_name": "#hover_text_data"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "$hover_text_binding_name",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$item_collection_name"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(not ($hover_text_binding_name = ''))",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "bundle_tooltip@common.bundle_tooltip": {
+                "layer": 29,
+                "$hover_text_binding_name|default": "#hover_text",
+                "bindings": [
+                  {
+                    "binding_name": "$hover_text_binding_name",
+                    "binding_name_override": "#hover_text",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$item_collection_name"
+                  },
+                  {
+                    "binding_name": "#hover_items_id",
+                    "binding_name_override": "#hover_items_id",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$item_collection_name"
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#show_persistent_bundle_hover_text",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "white_border@common.white_border_slot": {
+          "bindings": [
+            {
+              "binding_name": "#show_persistent_bundle_hover_text",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "container_item": {
     "modifications": [
       {

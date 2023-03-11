@@ -1,16 +1,6 @@
 {
   "namespace": "tabbed_upsell",
 
-  "jsonui_warning_swtich_toggle@gtb.swtich_toggle": {
-    "$toggle_name": "jsonui_warning"
-  },
-  "jsonui_warning_swtich_toggle_c@gtb.swtich_toggle_c": {
-    "$toggle_name": "jsonui_warning"
-  },
-  "jsonui_warning_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
-    "$toggle_name": "jsonui_warning"
-  },
-
   "warning_icon": {
     "type": "image",
     "texture": "textures/ui/ErrorGlyph",
@@ -71,17 +61,6 @@
             }
           ]
         }
-      },
-      {
-        "dropdown_chevron": {
-          "type": "image",
-          "texture": "textures/ui/chevron_new_white_right",
-          "color": "$text_color",
-          "anchor_from": "right_middle",
-          "anchor_to": "right_middle",
-          "offset": [ -5, 0 ],
-          "size": [ 11, 11 ]
-        }
       }
     ]
   },
@@ -117,7 +96,8 @@
       {
         "dropdown_chevron": {
           "type": "image",
-          "texture": "textures/ui/dropdown_chevron",
+          "texture": "textures/ui/chevron_white_down",
+          "color": "$text_color",
           "anchor_from": "right_middle",
           "anchor_to": "right_middle",
           "offset": [ -5, 0 ],
@@ -134,7 +114,7 @@
     "$details_controls|default": [],
     "controls": [
       {
-        "toggle_button@common_toggles.light_content_toggle": {
+        "toggle_button@common_toggles.dark_content_toggle": {
           "size": [ "100%", 20 ],
           "$button_content": "tabbed_upsell.version_toggle_button_content",
           "$toggle_name": "$version",
@@ -143,16 +123,20 @@
         }
       },
       {
-        "padding_1": {
-          "type": "panel",
-          "size": [ 0, 3 ]
-        }
-      },
-      {
         "details_panel": {
-          "type": "stack_panel",
-          "size": [ "100%", "100%c" ],
-          "controls": "$details_controls",
+          "type": "image",
+          "size": [ "100%", "100%c + 5px" ],
+          "texture": "textures/ui/menubackground",
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "size": [ "100% - 4px", "100%c" ],
+                "layer": 10,
+                "controls": "$details_controls"
+              }
+            }
+          ],
           "bindings": [
             {
               "binding_type": "view",
@@ -178,7 +162,7 @@
     "anchor_to": "left_middle",
     "size": [ "100%", "default" ],
     "shadow": true,
-    "font_type": "smooth"
+    "font_type": "unicode"
   },
   
   "playsound_play": {
@@ -249,231 +233,87 @@
     ]
   },
 
-  "page01@gtb.swtich_toggle": {
-    "$toggle_name":"page_about"
-  },
-  "page02@gtb.swtich_toggle": {
-    "$toggle_name":"page_features"
-  },
-  "page03@gtb.swtich_toggle": {
-    "$toggle_name":"page_update"
-  },
-  "page04@gtb.swtich_toggle": {
-    "$toggle_name":"page_caution"
-  },
-  "page05@gtb.swtich_toggle": {
-    "$toggle_name":"page_music"
-  },
-  "page06@gtb.swtich_toggle": {
-    "$toggle_name":"page_readme"
-  },
-  "page07@gtb.swtich_toggle": {
-    "$toggle_name":"page_author"
-  },
-  "page08@gtb.swtich_toggle": {
-    "$toggle_name":"page_licence"
-  },
-
-  "page01_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_about"
-  },
-  "page02_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_features"
-  },
-  "page03_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_update"
-  },
-  "page04_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_caution"
-  },
-  "page05_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_music"
-  },
-  "page06_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_readme"
-  },
-  "page07_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_author"
-  },
-  "page08_c@gtb.swtich_toggle_c": {
-    "$toggle_name":"page_licence"
+  "tab_selector@common_toggles.light_content_toggle": {
+    "size": [ "100%", 30 ],
+    "$toggle_name": "navigation_tab",
+    "$radio_toggle_group": true,
+    "$button_content": "tabbed_upsell.index_toggle_button_content"
   },
   
   "left_panel": {
     "type": "stack_panel",
-    "size": [ "50% - 12px", "100%c" ],
+    "size": [ "100%", "100%c + 10px" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "controls": [
       {
-        "aoreimu_icon_panel": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
-          "size": [ "100%", 70 ],
-          "offset": [ 0, 0 ],
-          "controls": [
-            {
-              "aoreimu_icon": {
-                "type": "image",
-                "texture": "textures/ui/aoreimu",
-                "size": [ 60, 60 ],
-                "anchor_from": "top_left",
-                "anchor_to": "top_left"
-              }
-            },
-            {
-              "padding": {
-                "type": "panel",
-                "size": [ 4, 0 ]
-              }
-            },
-            {
-              "texts": {
-                "type": "stack_panel",
-                "size": [ "100%", "100%c" ],
-                "controls": [
-                  {
-                    "created_by_yuka0745": {
-                      "type": "label",
-                      "text": "§l§aCreated by\n§dYuka0745",
-                      "font_scale_factor": 1.50,
-                      "offset": [ 0, 0 ],
-                      "shadow": true,
-                      "font_type": "#font_type",
-                      "bindings": [
-                        {
-                          "binding_type": "view",
-                          "source_control_name": "font_property_panel",
-                          "source_property_name": "#font_type",
-                          "target_property_name": "#font_type"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "padding_01": {
+        "header_padding": {
           "type": "panel",
           "size": [ 0, 10 ]
         }
       },
       {
-        "twitter": {
-          "type": "label",
-          "text": "§l§bTwitter:",
-          "font_scale_factor": 1.50,
-          "shadow": true,
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+        "about_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_about",
+          "$toggle_group_forced_index": 0,
+          "$button_label": "packinfo.about.title",
+          "$button_icon": "textures/ui/info_icon"
         }
       },
       {
-        "twitter_url": {
-          "type": "label",
-          "text": "§etwitter.com/gotemba912",
-          "font_scale_factor": 1.0,
-          "shadow": true,
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+        "author_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_author",
+          "$toggle_group_forced_index": 1,
+          "$button_label": "packinfo.about_author.title",
+          "$button_icon": "textures/ui/creator_glyph_color"
         }
       },
       {
-        "padding_02": {
-          "type": "panel",
-          "size": [ 0, 10 ]
+        "readme_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_readme",
+          "$toggle_group_forced_index": 2,
+          "$button_label": "packinfo.readme.title",
+          "$button_icon": "textures/ui/icon_saleribbon"
         }
       },
       {
-        "youtube": {
-          "type": "label",
-          "text": "§l§cYoutube:",
-          "font_scale_factor": 1.50,
-          "shadow": true,
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+        "features_buton@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_features",
+          "$toggle_group_forced_index": 3,
+          "$button_label": "packinfo.features.title",
+          "$button_icon": "textures/ui/filledStar"
         }
       },
       {
-        "youtube_url": {
-          "type": "label",
-          "text": "§eyoutube.com/c/yuka0745",
-          "font_scale_factor": 1.0,
-          "shadow": true,
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+        "update_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_update",
+          "$toggle_group_forced_index": 4,
+          "$button_label": "packinfo.update.title",
+          "$button_icon": "textures/ui/jump_boost_effect"
         }
       },
       {
-        "padding_03": {
-          "type": "panel",
-          "size": [ 0, 10 ]
+        "licence_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_licence",
+          "$toggle_group_forced_index": 5,
+          "$button_label": "packinfo.licence.title",
+          "$button_icon": "textures/ui/lock_color"
         }
       },
       {
-        "github": {
-          "type": "label",
-          "text": "§l§fGitHub:",
-          "font_scale_factor": 1.50,
-          "shadow": true,
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+        "caution_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_caution",
+          "$toggle_group_forced_index": 6,
+          "$button_label": "packinfo.caution.title",
+          "$button_icon": "textures/ui/infobulb"
         }
       },
       {
-        "github_url": {
-          "type": "label",
-          "text": "§egithub.com/gotemba912",
-          "font_scale_factor": 1.0,
-          "shadow": true,
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+        "music_button@tabbed_upsell.tab_selector": {
+          "$toggle_view_binding_name": "page_music",
+          "$toggle_group_forced_index": 7,
+          "$button_label": "packinfo.music.title",
+          "$button_icon": "textures/blocks/noteblock"
         }
       }
     ]
@@ -481,168 +321,20 @@
 
   "right_panel": {
     "type": "stack_panel",
-    "size": [ "100% - 6px", "100%c + 20px" ],
+    "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "controls": [
       {
-        "mokuji_panel@tabbed_upsell.indexs_panel": {
-          "controls": [
-            {
-              "about_button@tabbed_upsell.page01_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_about",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.about.title",
-                "$button_icon": "textures/ui/info_icon"
-              }
-            },
-            {
-              "author_button@tabbed_upsell.page07_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_author",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.about_author.title",
-                "$button_icon": "textures/ui/creator_glyph_color"
-              }
-            },
-            {
-              "readme_button@tabbed_upsell.page06_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_readme",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.readme.title",
-                "$button_icon": "textures/ui/icon_saleribbon"
-              }
-            },
-            {
-              "features_buton@tabbed_upsell.page02_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_features",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.features.title",
-                "$button_icon": "textures/ui/sidebar_icons/star"
-              }
-            },
-            {
-              "update_button@tabbed_upsell.page03_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_update",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.update.title",
-                "$button_icon": "textures/ui/jump_boost_effect"
-              }
-            },
-            {
-              "licence_button@tabbed_upsell.page08_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_licence",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.licence.title",
-                "$button_icon": "textures/ui/lock_color"
-              }
-            },
-            {
-              "caution_button@tabbed_upsell.page04_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_caution",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.caution.title",
-                "$button_icon": "textures/ui/infobulb"
-              }
-            },
-            {
-              "music_button@tabbed_upsell.page05_c": {
-                "size": [ "100%", 25 ],
-                "$toggle_view_binding_name": "page_music",
-                "$button_content": "tabbed_upsell.index_toggle_button_content",
-                "$toggle_group_forced_index": 100,
-                "$button_label": "packinfo.music.title",
-                "$button_icon": "textures/blocks/noteblock"
-              }
-            }
-          ],
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "page_about",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_about"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_features",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_features"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_update",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_update"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_caution",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_caution"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_music",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_music"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_readme",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_readme"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_author",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_author"
-            },
-            {
-              "binding_type": "view",
-              "source_control_name": "page_licence",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#page_licence"
-            },
-            {
-              "binding_type": "view",
-              "source_property_name": "(not (#page_about or #page_features or #page_update or #page_caution or #page_music or #page_readme or #page_author or #page_licence))",
-              "target_property_name": "#visible"
-            }
-          ]
+        "header": {
+          "type": "input_panel",
+          "focus_enabled": true,
+          "size": [ "100%", 1 ]
         }
       },
       {
         "about_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page01@tabbed_upsell.page01": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.about.title" }},
             { "text01@tabbed_upsell.text": { "text": "packinfo.about.text1" }},
             { "text02@tabbed_upsell.text": { "text": "packinfo.about.text2" }},
@@ -667,20 +359,6 @@
       {
         "features_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page02@tabbed_upsell.page02": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.features.title" }},
             { "text01@tabbed_upsell.text": { "text": "packinfo.features.text1" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
@@ -706,20 +384,6 @@
       {
         "update_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page03@tabbed_upsell.page03": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.update.title" }},
             { "text01@tabbed_upsell.text": { "text": "packinfo.update.text1" }},
             {
@@ -745,20 +409,6 @@
       {
         "caution_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page04@tabbed_upsell.page04": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.caution.title" }},
             { "text01@tabbed_upsell.text": { "text": "packinfo.caution.text1" }},
             { "text02@tabbed_upsell.text": { "text": "packinfo.caution.text2" }},
@@ -766,7 +416,46 @@
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
             { "text06@tabbed_upsell.text": { "text": "packinfo.caution.text5" }},
             { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text08@tabbed_upsell.text": { "text": "packinfo.caution.text6" }}
+            { "text08@tabbed_upsell.text": { "text": "packinfo.caution.text6" }},
+            { "padding03": { "type": "panel", "size": [ 0, 10 ] }},
+            {
+              "1": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "text": "gtb.jsonUIWarning.honbun1",
+                "shadow": true,
+                "font_type": "unicode"
+              }
+            },
+            {
+              "2": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "text": "gtb.jsonUIWarning.honbun2",
+                "shadow": true,
+                "font_type": "unicode"
+              }
+            },
+            {
+              "3": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "text": "gtb.jsonUIWarning.honbun3",
+                "shadow": true,
+                "font_type": "unicode"
+              }
+            },
+            {
+              "4": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "text": "gtb.jsonUIWarning.honbun4",
+                "shadow": true,
+                "font_type": "unicode"
+              }
+            },
+            { "padding04": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text09@tabbed_upsell.text": { "text": "gtb.helpwarning.text1" }}
           ],
           "bindings": [
             {
@@ -781,20 +470,6 @@
       {
         "music_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page05@tabbed_upsell.page05": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "fh2@how_to_play_common.header": { "$text":"packinfo.music.title" }},
             { "text01@tabbed_upsell.text": { "text": "packinfo.music.text1" }},
             { "text02@tabbed_upsell.text": { "text": "packinfo.music.text2" }},
@@ -878,20 +553,6 @@
       {
         "readme_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page06@tabbed_upsell.page06": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "fm2@how_to_play_common.header": { "$text":"packinfo.readme.title" }},
             { "fm3@tabbed_upsell.text": { "text":"packinfo.readme.text1" }},
             { "fm4@tabbed_upsell.text": { "text":"packinfo.readme.text2" }},
@@ -919,21 +580,115 @@
       {
         "author_page@tabbed_upsell.indexs_panel": {
           "controls": [
+            { "header@how_to_play_common.header": { "$text":"packinfo.about_author.title" }},
             {
-              "page07@tabbed_upsell.page07": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
+              "aoreimu_icon_panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100%", 70 ],
+                "offset": [ 0, 0 ],
+                "controls": [
+                  {
+                    "aoreimu_icon": {
+                      "type": "image",
+                      "texture": "textures/ui/aoreimu",
+                      "size": [ 60, 60 ],
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 4, 0 ]
+                    }
+                  },
+                  {
+                    "texts": {
+                      "type": "stack_panel",
+                      "size": [ "fill", "100%c" ],
+                      "controls": [
+                        {
+                          "by_yuka0745": {
+                            "type": "label",
+                            "text": "§l§aby §dYukaYama0311",
+                            "font_scale_factor": 1.50,
+                            "offset": [ 0, 0 ],
+                            "shadow": true,
+                            "font_type": "#font_type",
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "font_property_panel",
+                                "source_property_name": "#font_type",
+                                "target_property_name": "#font_type"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "padding_01": {
+                            "type": "panel",
+                            "size": [ 0, 10 ]
+                          }
+                        },
+                        {
+                          "twitter_url": {
+                            "type": "label",
+                            "text": "§l§bTwitter:§r §etwitter.com/gotemba912",
+                            "font_scale_factor": 1.0,
+                            "shadow": true,
+                            "font_type": "#font_type",
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "font_property_panel",
+                                "source_property_name": "#font_type",
+                                "target_property_name": "#font_type"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "youtube_url": {
+                            "type": "label",
+                            "text": "§l§cYoutube:§r §eyoutube.com/c/yuka0745",
+                            "font_scale_factor": 1.0,
+                            "shadow": true,
+                            "font_type": "#font_type",
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "font_property_panel",
+                                "source_property_name": "#font_type",
+                                "target_property_name": "#font_type"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "github_url": {
+                            "type": "label",
+                            "text": "§l§fGitHub:§r §egithub.com/gotemba912",
+                            "font_scale_factor": 1.0,
+                            "shadow": true,
+                            "font_type": "#font_type",
+                            "bindings": [
+                              {
+                                "binding_type": "view",
+                                "source_control_name": "font_property_panel",
+                                "source_property_name": "#font_type",
+                                "target_property_name": "#font_type"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             },
-            { "header@how_to_play_common.header": { "$text":"packinfo.about_author.title" }},
             { "howtoplay_0@tabbed_upsell.text": {"text": "packinfo.about_author.text1", "font_type": "MinecraftTen"}},
             { "howtoplay_1@tabbed_upsell.text": {"text": "packinfo.about_author.text2"}},
             { "howtoplay_2@tabbed_upsell.text": {"text": "packinfo.about_author.text3"}},
@@ -968,24 +723,10 @@
       {
         "licence_page@tabbed_upsell.indexs_panel": {
           "controls": [
-            {
-              "page08@tabbed_upsell.page08": {
-                "size": [ 70, 20 ],
-                "$checked_control": "common_toggles.toggle_unchecked",
-                "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-            
-                "$button_text": "packinfo.back",
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0,
-
-                "$template_toggle": "gtb.close_toggle",
-                "$return_sound": true
-              }
-            },
             { "header@how_to_play_common.header": { "$text":"packinfo.licence.title" }},
             { "howtoplay_0@tabbed_upsell.text": {"text": "MIT License"}},
             { "howtoplay_1@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_2@tabbed_upsell.text": {"text": "Copyright (c) 2023 Yuka0745"}},
+            { "howtoplay_2@tabbed_upsell.text": {"text": "Copyright (c) 2023 YukaYama0311"}},
             { "howtoplay_3@tabbed_upsell.text": {"text": ""}},
             { "howtoplay_4@tabbed_upsell.text": {"text": "Permission is hereby granted, free of charge, to any person obtaining a copy"}},
             { "howtoplay_5@tabbed_upsell.text": {"text": "of this software and associated documentation files (the \"Software\"), to deal"}},
@@ -1014,6 +755,13 @@
             }
           ]
         }
+      },
+      {
+        "footer": {
+          "type": "input_panel",
+          "focus_enabled": true,
+          "size": [ "100%", 20 ]
+        }
       }
     ]
   },
@@ -1024,187 +772,80 @@
     "size": [ "100%", "100%" ],
     "controls": [
       {
-        "title_panel": {
+        "selector_and_main_content": {
           "type": "stack_panel",
           "orientation": "horizontal",
-          "anchor_from": "top_middle",
-          "anchor_to": "top_middle",
-          "size": [ "100%c", 35 ],
-          "offset": [ 0, 3 ],
+          "size": [ "100% - 4px", "100% + 1px" ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
           "controls": [
             {
-              "pack_icon":{
-                "type": "image",
-                "texture": "textures/ui/gote_support_icon",
-                "size": [ 35, 35 ]
-              }
-            },
-            {
-              "padding": {
+              "tab_selector_panel": {
                 "type": "panel",
-                "size": [ 4, 0 ]
+                "size": [ 135, "100%" ],
+                "controls": [
+                  {
+                    "tab_selector@common.scrolling_panel": {
+                      "$show_background": false,
+                      "size": [ "100%", "100% - 2px"],
+                      
+                      "$scrolling_content": "tabbed_upsell.left_panel",
+                      "$scroll_size": [ "4px", "100% - 2px" ],
+                      "$scrolling_panel_size": [ "100% - 2px", "100%" ],
+                      "$always_handle_scrolling": false
+                    }
+                  }
+                ]
               }
             },
             {
-              "title_text": {
-                "type": "label",
-                "text": "('§l§aGote§d-§bSupporter\n§l§6Ver ' + $gote_ver2)",
-                "shadow": true,
-                "font_size": "large",
-                "font_type": "#font_type",
-                "bindings": [
+              "padding1": {
+                "type": "panel",
+                "size": [ 1, 0 ]
+              }
+            },
+            {
+              "divider": {
+                "type": "image",
+                "size": [ 3, "100%" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "layer": 10,
+                "offset": [ 0, 0 ],
+                "texture": "textures/ui/HowToPlayDivider"
+              }
+            },
+            {
+              "padding2": {
+                "type": "panel",
+                "size": [ 1, 0 ]
+              }
+            },
+            {
+              "main_content_panel": {
+                "type": "panel",
+                "size": [ "fill", "100%" ],
+                "controls": [
                   {
-                    "binding_type": "view",
-                    "source_control_name": "font_property_panel",
-                    "source_property_name": "#font_type",
-                    "target_property_name": "#font_type"
+                    "main_content@common.scrolling_panel": {
+                      "$show_background": false,
+                      "size": [ "100%", "100% - 2px"],
+                      
+                      "$scrolling_content": "tabbed_upsell.right_panel",
+                      "$scroll_size": [ "4px", "100% - 2px" ],
+                      "$scrolling_panel_size": [ "100% - 2px", "100%" ],
+                      "$always_handle_scrolling": false
+                    }
                   }
                 ]
               }
             }
           ]
         }
-      },
-      {
-        "info_line": {
-          "type": "image",
-          "texture": "textures/ui/info_line",
-          "anchor_from": "top_middle",
-          "anchor_to": "top_middle",
-          "size": [ "100%", 4 ],
-          "layer": 1,
-          "offset": [ 0, 41 ]
-        }
-      },
-      {
-        "info_line_v": {
-          "type": "image",
-          "texture": "textures/ui/info_line_v",
-          "anchor_from": "top_middle",
-          "anchor_to": "top_middle",
-          "size": [ 4, "100% - 44px" ],
-          "layer": 2,
-          "offset": [ 0, 44 ]
-        }
-      },
-      {
-        "left_panel@common.scrolling_panel": {
-          "$show_background": false,
-          "size": [ "50% - 4px", "100% - 46px" ],
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          
-          "$scrolling_content": "tabbed_upsell.left_panel",
-          "$scrolling_panel_size": [ "100%", "100%" ],
-          "$scroll_size": [ "4px", "100% - 2px" ],
-          "$always_handle_scrolling": false,
-          "offset": [ 2, 46 ]
-        }
-      },
-      {
-        "right_panel@common.scrolling_panel": {
-          "$show_background": false,
-          "size": [ "50% - 4px", "100% - 46px" ],
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          
-          "$scrolling_content": "tabbed_upsell.right_panel",
-          "$scrolling_panel_size": [ "100%", "100%" ],
-          "$scroll_size": [ "4px", "100% - 2px" ],
-          "$always_handle_scrolling": false,
-          "offset": [ 0, 46 ]
-        }
       }
     ]
   },
 
-
-
-  "jsonui_warning_text": {
-    "type": "stack_panel",
-    "size": [ "100% - 2px", "default" ],
-    "offset": [ 2, 0 ],
-    "anchor_from":"top_left",
-    "anchor_to":"top_left",
-    "controls": [
-      {
-        "1": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "text": "gtb.jsonUIWarning.honbun1",
-          "font_type": "smooth"
-        }
-      },
-      {
-        "2": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "text": "gtb.jsonUIWarning.honbun2",
-          "font_type": "smooth"
-        }
-      },
-      {
-        "3": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "text": "gtb.jsonUIWarning.honbun3",
-          "font_type": "smooth"
-        }
-      },
-      {
-        "4": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "text": "gtb.jsonUIWarning.honbun4",
-          "font_type": "smooth"
-        }
-      }
-    ]
-  },
-
-  "jsonui_warning_text_scroll@common.scrolling_panel": {
-    "$show_background": false,
-    "size": [ "100% - 4px", "100%" ],
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [ 2, 0 ],
-    
-    "$scrolling_content": "tabbed_upsell.jsonui_warning_text",
-    "$scrolling_panel_size": [ "100%", "100%" ],
-    "$scroll_size": [ "4px", "100% - 2px" ],
-    "$always_handle_scrolling": false
-  },
-
-  "jsonui_warning_okbutton@tabbed_upsell.jsonui_warning_swtich_toggle": {
-    "$checked_control": "common_toggles.toggle_unchecked",
-    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-
-    "$button_text": "gui.ok",
-    "$toggle_default_state": true,
-    "$toggle_group_forced_index": 0,
-
-    "$focus_override_down": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_up": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
-  },
-
-
-  "dialog1@gtb.dummy_dialog_one": {
-    "layer": 503,
-    "size": [ "80%", "80%" ],
-    "$text_name": "gtb.jsonUIWarning.title",
-    "$child_control": "tabbed_upsell.jsonui_warning_text_scroll",
-    "$bottom_button_panel": "tabbed_upsell.jsonui_warning_okbutton",
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "jsonui_warning",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
 
   "root_panel": {
     "type": "panel",
@@ -1213,61 +854,9 @@
       {
         "root_panel@common.fullscreen_header": {
           "$back_button_has_title": true,
-          "$button_text": "§l§1Gote-Supporter §4Info",
+          "$button_text": "('§l§1Gote-Supporter §4v' + $gote_ver)",
           "$child_control": "tabbed_upsell.main_panel",
           "layer": 10
-        }
-      },
-      {
-        "jsonui_warning_button@tabbed_upsell.jsonui_warning_swtich_toggle_c": {
-          "size": [ 25, 25 ],
-          "offset": [ -5, 25 ],
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "$button_content": "tabbed_upsell.warning_icon",
-          "$toggle_view_binding_name": "jsonui_warning",
-          "$toggle_group_forced_index": 100,
-          "layer": 100
-        }
-      },
-      {
-        "jsonui_warning_popup": {
-          "type": "image",
-          "texture": "textures/ui/White",
-          "alpha": 0.8,
-          "color": [ 0, 0, 0 ],
-          "layer": 409,
-          "size": [ "100%", "100%" ],
-          "controls": [
-            {
-              "scrool@common.scrolling_panel": {
-                "type": "scroll_view",
-                "size": [ "100%", "100%" ],
-                "layer": 501,
-                "$scrolling_content": "common.empty_panel",
-                "$show_background": false
-              }
-            },
-            {
-              "jsonui_warning_swtich_toggle_close@tabbed_upsell.jsonui_warning_swtich_toggle_close": {
-                "layer": 502,
-                "size": [ "100%", "100%" ],
-                "$toggle_default_state": true,
-                "$toggle_group_forced_index": 0
-              }
-            },
-            {
-              "dialog1@tabbed_upsell.dialog1": {}
-            }
-          ],
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "jsonui_warning",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#visible"
-            }
-          ]
         }
       },
       {
@@ -1288,6 +877,18 @@
         "from_button_id": "button.menu_cancel",
         "to_button_id": "button.menu_exit",
         "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_tab_left",
+        "to_button_id": "button.menu_tab_left",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_tab_right",
+        "to_button_id": "button.menu_tab_right",
+        "mapping_type": "global",
+        "scope": "view"
       }
     ],
     "$screen_animations": [

@@ -34,45 +34,15 @@
   },
 
   "quit_button@common_buttons.light_content_button": {
-    "$pressed_button_name": "button.menu_exit",
+	  "anchor_from": "top_left",
+    "anchor_to": "top_left",
     "size": [ 25, 25 ],
+    "offset": [ 5, 5 ],
+    "ignored": "$is_ios",
+    "$pressed_button_name": "button.menu_exit",
     "$button_content": "start.quit_icon",
     "$button_tts_header": "accessibility.button.exit"
   },
-
-  "pack_info_button@common_buttons.light_content_button": {
-    "$pressed_button_name": "button.menu_buy_game",
-    "size": [ 25, 25 ],
-    "$button_content": "start.info_icon",
-    "$button_tts_header": "manifestvalidation.title"
-  },
-
-  "buttons_panel":{
-    "type": "stack_panel",
-	  "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "size": [ 51, 25 ],
-    "offset": [ 5, 5 ],
-	  "controls":[
-      {
-        "quit_button@start.quit_button":{
-          "ignored": "$is_ios"
-        }
-      },
-      {
-        "padding": {
-          "type": "panel",
-          "size": [ 0, 1 ],
-          "ignored": "$is_ios"
-        }
-      },
-      {
-        "pack_info_button@start.pack_info_button": {}
-      }
-	  ]
-  },
-
-  
 
   "upper_online_buttons_panel/stacked_column/gamertag_pic_and_label": {
     "ignored": true
@@ -83,7 +53,7 @@
     "orientation": "horizontal",
     "ignored": "$education_edition",
     "size": [ "100%c", 24 ],
-    "offset": [ 0, -60 ],
+    "offset": [ 0, "-25%" ],
     "anchor_from": "bottom_left",
     "anchor_to": "bottom_left",
     "controls": [
@@ -173,7 +143,7 @@
           "anchor_to": "top_left",
           "size": [ "default", 10 ],
           "offset": [ 0, -10 ],
-          "text": "Gote-Supporter: ©Yuka0745 "
+          "text": "Gote-Supporter: ©Yuka0311"
         }
       },
       {
@@ -217,7 +187,7 @@
           "anchor_to": "top_right",
           "size": [ "default", 10 ],
           "offset": [ 0, -10 ],
-          "text": "('Gote-Supporter ' + $gote_ver)"
+          "text": "('Gote-Supporter v' + $gote_ver)"
         }
       },
       {
@@ -358,8 +328,45 @@
       }
     ]
   },
-
-
+  
+  "lower_online_buttons_panel/stacked_column": {
+    "modifications": [
+      {
+        "control_name": "achievements_btn",
+        "operation": "insert_after",
+        "value": [
+          {
+            "pack_info_padding": {
+              "type": "panel",
+              "size": [ 3, "100%" ]
+            }
+          },
+          {
+            "pack_info_btn@start.column_frame": {
+              "size": [ 28, 32 ],
+              "controls": [
+                {
+                  "pack_info_icon_button": {
+                    "type": "panel",
+                    "$button_tts_header": "manifestvalidation.title",
+                    "controls": [
+                      {
+                        "pack_info_button@common_buttons.light_content_button": {
+                          "size": [ 24, 24 ],
+                          "$button_content": "start.info_icon",
+                          "$pressed_button_name": "button.menu_buy_game"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
 
   
   "start_screen_content": {
@@ -369,7 +376,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "buttons_panel@start.buttons_panel": {}
+            "quit_button@start.quit_button": {}
           },
           {
             "gamertag_icon@start.gamertag_icon": {}

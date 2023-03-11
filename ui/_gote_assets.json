@@ -26,7 +26,7 @@
           "type": "label",
           "text": "$text",
           "shadow": true,
-          "font_type": "smooth",
+          "font_type": "unicode",
           "size": [ "100% - 10px", "default" ]
         }
       }

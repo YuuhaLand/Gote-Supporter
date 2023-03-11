@@ -1,5 +1,5 @@
 ﻿pack.name=ごてサポーター v1.4.7
-pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by Yuka0745
+pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by YukaYama0311
 pack.name.nover=§l§aごて§bサポーター
 
 
@@ -121,13 +121,15 @@ gtb.previewWarning.honbun4=予めご了承ください。
 gtb.jsonUIWarning.title=JSON UIに関する重要な警告
 gtb.jsonUIWarning.honbun1=Gote-Supporterを含む、画面のUIを変更するリソースパックは、「JSON UI」を使って変更しています。
 gtb.jsonUIWarning.honbun2=Minecraftでは、JSON UIの後継となる新しいUIエンジン「Ore UI」を順次展開しており、
-gtb.jsonUIWarning.honbun3=§l§c今後Gote-Supporterの機能が今後のアップデートにより使用できなくなる可能性があります。
-gtb.jsonUIWarning.honbun4=※Ore UI は既に実績画面、ワールド作成画面などに実装されており、現状リソースパックからの変更はできません。
+gtb.jsonUIWarning.honbun3=§l§c今後Gote-Supporterの機能が今後のアップデートにより 使用できなくなる可能性があります。
+gtb.jsonUIWarning.honbun4=※Ore UIは既に実績画面、ワールド作成画面などに実装されており、 現状リソースパックからの変更はできません。
 
 gtb.memoScreen.title=一時メモ
 gtb.memoScreen.body1=ここでは一時的なメモを書くことができます。
 gtb.memoScreen.body2=書いた内容はワールドを抜けると破棄されます!
 gtb.memoScreen.placeHolderText=ここに書いた内容は保存されませんのでご注意ください。
+
+gtb.helpwarning.text1=このアドオンに対するヘルプは一切受けません。
 
 ## Gote-Supporter Info 画面のテキスト
 
@@ -148,7 +150,7 @@ packinfo.about.text2=ビヘイビアパックを一切使わないので、マ�
 packinfo.about.text3=(参加するサーバーがグローバルリソースを禁止にしていた場合は Gote-Supporter を使用することはできません。)
 packinfo.about.text4=このパックは MCPEDL で公開されています!
 packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
-packinfo.about.text6=Yuka0745 のアドオンのディスコードサーバーに参加すると、 Gote-Supporter のバグ報告をしたりできます!
+packinfo.about.text6=YukaYama0311 のアドオンのディスコードサーバーに参加すると、 Gote-Supporter のバグ報告をしたりできます!
 packinfo.about.text7=§adiscord.gg/ZcCnXYEFc2
 
 ## 特徴
@@ -168,6 +170,14 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v151.u1=パック情報画面を見やすく改良しました。
+packinfo.v151.u2=Configで、「一新した遊ぶ画面」と、「遊ぶ画面のタブビュー」を無効化できるようになりました。
+packinfo.v151.u3=JSON UIクリエイター向けの「Item ID Aux」の値をインベントリ画面で表示できるようになりました。 Configで有効化できます。
+packinfo.v151.u4=スタート画面のパック情報画面を開くボタンが左下のボタンと並べて表示されるようになりました。
+packinfo.v151.u5=一新した遊ぶ画面で「ワールドのインポート」が表示されていなかった問題を修正しました。
+packinfo.v151.u6=スタート画面のゲーマータグとゲーマーアイコンが左下のボタンと重なる可能性がある問題を修正しました。
+packinfo.v151.u7=パック設定画面から採掘テクスチャや望遠鏡テクスチャを元に戻す設定を削除しました。
 
 packinfo.v150.u1=パックのアイコンを変更しました。
 packinfo.v150.u2=パック情報画面の背景を変更しました。
@@ -302,9 +312,9 @@ packinfo.caution.title=注意事項
 packinfo.caution.text1=このパックは、日本製のパックです。
 packinfo.caution.text2=英語への翻訳には DeepL Translate を使用しています。
 packinfo.caution.text3=予めご了承ください。
-packinfo.caution.text4=このパックの一部をコピーして自分のパックに組み込みたい場合、 Yuka0745 までお願いします。
+packinfo.caution.text4=このパックの一部をコピーして自分のパックに組み込みたい場合、 YukaYama0311 までお願いします。
 packinfo.caution.text5=このパックを自作発言しないでください。
-packinfo.caution.text6=このパックを使用したことにより発生したいかなる障害を齎したとしても、主 Yuka0745 は一切の責任を負いかねます。
+packinfo.caution.text6=このパックを使用したことにより発生したいかなる障害を齎したとしても、主 YukaYama0311 は一切の責任を負いかねます。
 
 ## サウンド鑑賞
 packinfo.music.title=サウンド鑑賞
@@ -329,16 +339,16 @@ packinfo.readme.text15=このパックを自作のものと主張すること
 
 ##つくったひと
 packinfo.about_author.title=つくったひと
-packinfo.about_author.text1=Yuka0745 / YukaYama0311
-packinfo.about_author.text2=ごて鯖を運営したりアドオン作ったりしている者。
-packinfo.about_author.text3=いつもダラダラマイクラしかやってない女です。
+packinfo.about_author.text1=YukaYama0311 / Yuka0745
+packinfo.about_author.text2=Minecraft統合版を中心に活動しているマインクラフター。
+packinfo.about_author.text3=趣味でアドオン作っています。
 packinfo.about_author.text4=JSON UIは趣味で好きなように作ってます。
 packinfo.about_author.text5=プログラミングはヘタクソ。
 packinfo.about_author.text6=新しいことを覚えるのが苦手。
 packinfo.about_author.text7=マイクラ歴は8年くらい。
 packinfo.about_author.text8=日本一のRealmサーバー「彩」の運営も努めてます。
-packinfo.about_author.text9=Realmには8000人以上のメンバーがいるとても賑やかなサーバーです!
-packinfo.about_author.text10=ぜひ来てみてね。
+packinfo.about_author.text9=Realmには9000人以上のメンバーがいるとても賑やかなサーバーです!
+packinfo.about_author.text10=§l§cもうすぐ１００００人！！ §6ぜひ来てみてね！！
 packinfo.about_author.text11=ごて鯖 Discord
 packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
 packinfo.about_author.text13=ごて鯖 Realm

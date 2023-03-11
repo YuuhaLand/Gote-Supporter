@@ -1,5 +1,5 @@
 ﻿pack.name=Gote-Supporter v1.4.7
-pack.description=You can conveniently enjoy your Minecraft life.   Created by Yuka0745
+pack.description=You can conveniently enjoy your Minecraft life.   Created by YukaYama0311
 packname.nover=§l§aGote§d-§bSupporter
 
 accessibility.disableTTS=§eText To Speech disabled	#
@@ -106,6 +106,8 @@ gtb.memoScreen.body1=Here you can write temporary notes.
 gtb.memoScreen.body2=It will be deleted when you exit the world!
 gtb.memoScreen.placeHolderText=Please note that what you write here will not be saved.
 
+gtb.helpwarning.text1=We do not accept any help for this add-on.
+
 ## Gote-Supporter Info 画面のテキスト
 
 packinfo.back=<- Back
@@ -125,7 +127,7 @@ packinfo.about.text2=It does not use any behavior packs and can be used in multi
 packinfo.about.text3=(Gote-Supporter cannot be used if the participating server has denied global resources.)
 packinfo.about.text4=This pack is available on MCPEDL!
 packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
-packinfo.about.text6=Join Yuka0745's add-on Discord server and report bugs in Gote-Supporter!
+packinfo.about.text6=Join YukaYama0311's add-on Discord server and report bugs in Gote-Supporter!
 packinfo.about.text7=§adiscord.gg/ZcCnXYEFc2
 
 ## 特徴
@@ -145,6 +147,14 @@ packinfo.f6=...And more!
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v151.u1=The pack information screen has been improved for easier viewing.
+packinfo.v151.u2=With Config, you can now disable the "redesigned play screen" and the "tabbed view of the play screen".
+packinfo.v151.u3=The value of "Item ID Aux" for JSON UI creators can now be displayed on the inventory screen, and can be enabled in Config.
+packinfo.v151.u4=The button to open the pack information screen on the start screen now appears alongside the button on the lower left.
+packinfo.v151.u5=Fixed a problem in which "Import World" was not displayed on the redesigned play screen.
+packinfo.v151.u6=Fixed an issue where the gamer tag and gamer icon on the start screen could overlap with the bottom left button.
+packinfo.v151.u7=Removed the setting to vanilla mining textures and spyglass textures from the pack settings screen.
 
 packinfo.v150.u1=Changed the pack icon.
 packinfo.v150.u2=The background of the pack info screen has been changed.
@@ -277,9 +287,9 @@ packinfo.caution.title=Precautions
 packinfo.caution.text1=This pack is made in Japan.
 packinfo.caution.text2=For translation into English, we use DeepL Translate.
 packinfo.caution.text3=Please understand this in advance.
-packinfo.caution.text4=If you would like to copy any part of this pack and incorporate it into your own pack, please contact Yuka0745.
+packinfo.caution.text4=If you would like to copy any part of this pack and incorporate it into your own pack, please contact YukaYama0311.
 packinfo.caution.text5=Do not claim this add-on as your own.
-packinfo.caution.text6=Yuka0745 is not responsible for any damage caused by the use of this pack.
+packinfo.caution.text6=YukaYama0311 is not responsible for any damage caused by the use of this pack.
 
 ## サウンド鑑賞
 packinfo.music.title=Music Listen
@@ -306,16 +316,16 @@ packinfo.readme.text15=Claiming this pack as your own work
 ##つくったひと
 
 packinfo.about_author.title=Creator info
-packinfo.about_author.text1=Yuka0745 / YukaYama0311
-packinfo.about_author.text2=A person who is managing Gote-Server and making add-ons.
-packinfo.about_author.text3=I'm a woman who always only plays lazy mike.
+packinfo.about_author.text1=YukaYama0311 / Yuka0745
+packinfo.about_author.text2=Minecrafter, mainly active in Minecraft integrated version.
+packinfo.about_author.text3=I make add-ons as a hobby.
 packinfo.about_author.text4=I make JSON UI as I like as a hobby.
 packinfo.about_author.text5=I'm terrible at programming.
 packinfo.about_author.text6=I'm not good at learning new things.
 packinfo.about_author.text7=I have about 8 years of experience in Minecraft.
-packinfo.about_author.text8=I'm also manage "Cai Server", the best Realm server in Japan.
-packinfo.about_author.text9=Realm is a very busy server with over 8000 members!
-packinfo.about_author.text10=Please come and visit us!
+packinfo.about_author.text8=I am an operator of Cai Server, the most popular Realm server in Japan!
+packinfo.about_author.text9=Realm is a very busy server with over 9,000 members!
+packinfo.about_author.text10=§l§c10,000 people coming soon!! §6Please join us!
 packinfo.about_author.text11=Gote-Server Discord (Japanese)
 packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
 packinfo.about_author.text13=Gote-Server Realm

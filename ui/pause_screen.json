@@ -702,66 +702,53 @@
   },
 
 
+  "menu_background/button_panel/quit_button": {
+    "ignored": true
+  },
 
   "menu_background/button_panel": {
-    "controls": [
-      { "return_to_game_button@pause.return_to_game_button": {} },
-      { "return@pause.vertical_padding": {} },
+    "modifications": [
       {
-        "feed_button@pause.feed_and_screenshot_buttons": {
-          "bindings": [
-            {
-              "binding_name": "#show_clubs",
-              "binding_name_override": "#visible",
-              "binding_type": "global"
+        "control_name": "return",
+        "operation": "insert_after",
+        "value": [
+          {
+            "feed_button@pause.feed_and_screenshot_buttons": {
+              "bindings": [
+                {
+                  "binding_name": "#show_clubs",
+                  "binding_name_override": "#visible",
+                  "binding_type": "global"
+                }
+              ]
             }
-          ]
-        }
+          },
+          {
+            "feed@pause.vertical_padding": {    
+              "bindings": [
+                {
+                  "binding_name": "#show_clubs",
+                  "binding_name_override": "#visible",
+                  "binding_type": "global"
+                }
+              ]
+            }
+          }
+        ]
       },
       {
-        "feed@pause.vertical_padding": {    
-          "bindings": [
-            {
-              "binding_name": "#show_clubs",
-              "binding_name_override": "#visible",
-              "binding_type": "global"
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "quit_button_2@pause.quit_dialog_swtich_toggle": {
+              "size": [ "100%", 28 ],
+              "$toggle_view_binding_name": "quit_dialog",
+              "$button_text": "pauseScreen.quit",
+              "$toggle_group_forced_index": 100
             }
-          ]
-        }
-      },
-      { "settings_button@pause.settings_button": {} },
-      { "settings@pause.vertical_padding": {} },
-      { "buy_button@pause.buy_button": {} },
-      {
-        "buy@pause.vertical_padding": {
-          "bindings": [
-            {
-              "binding_name": "#is_trial_version",
-              "binding_name_override": "#visible",
-              "binding_type": "global"
-            }
-          ]
-        }
-      },
-      { "store_button_panel@pause.store_button_panel": {} },
-      {
-        "server@pause.vertical_padding": {
-          "bindings": [
-            {
-              "binding_name": "#store_button_visible",
-              "binding_name_override": "#visible",
-              "binding_type": "global"
-            }
-          ]
-        }
-      },
-      {
-        "quit_button@pause.quit_dialog_swtich_toggle": {
-          "size": [ "100%", 28 ],
-          "$toggle_view_binding_name": "quit_dialog",
-          "$button_text": "pauseScreen.quit",
-          "$toggle_group_forced_index": 100
-        }
+          }
+        ]
       }
     ]
   },
