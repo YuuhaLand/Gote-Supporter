@@ -8,6 +8,8 @@ Gote-Supporter Config
 なお、設定を適用するには、入っているワールドをリログするか、マイクラを再起動してください。
 
 項目を誤って設定してしまうと、Gote-Supporterが正常に機能しなくなる可能性があります!
+
+各設定項目については↓をご覧ください!!
 https://github.com/Gotemba912/Gote-Supporter/wiki/Config(Japanese)
 
 ★★★
@@ -24,116 +26,20 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
 
 
 {
-  /************************************
-  HUDにコンパスと時計を表示
-  true = 表示 (デフォルト)
-  false = 非表示
-
-  Display compass and clock on HUD
-  true = show (Default)
-  false = hidden
-  ************************************/
   "$hud_compass|default": true,
-
-
-  /************************************
-  HUDのコンパスにリカバリーコンパスを追加(ベータ!)
-  これはゲームのクラッシュをもたらす可能性があります!
-  true = 表示
-  false = 非表示 (デフォルト)
-
-  Add recovery compass to HUD compass (beta!).
-  This could result in game crashes!
-  true = show
-  false = hidden (default)
-  ************************************/
   "$show_recoverycompass|default": false,
-  
-
-  /************************************
-  HUDのF1/F8ボタンの位置(タッチ)
-  "top" = 上のチャットボタンなどと並べて表示 (デフォルト)
-  "right" = 右下に表示
-
-  Location of F1/F8 buttons on HUD (Touch)
-  "top" = displayed alongside chat buttons, etc. above (default)
-  "right" = displayed in the lower right corner
-  ************************************/
   "$f1_f8_location|default": "top",
-  
-
-  /************************************
-  HUDのホットバーナビゲーターの表示(タッチ)
-  true = 表示
-  false = 非表示 (デフォルト)
-
-  Show HUD hotbar navigator (touch)
-  true = show
-  false = hidden (default)
-  ************************************/
   "$show_hotbar_navigator|default": false,
-
-
-  /************************************
-  チャット画面のTabキーの配置
-  "vertical" = 右下に並べて配置
-  "horizontal" = 下のチャット設定ボタンなどと並べて表示
-
-  Placement of the Tab key on the Chat Screen
-  "vertical" = Place them side by side in the lower right corner
-  "horizontal" = Placed alongside Chat Setting buttons, etc.
-  ************************************/
   "$chat_tab_button_type|default": "vertical",
-
-
-  /************************************
-  Gote-Supporterで一新したプレイ画面
-  true = 有効化
-  false = 無効化(バニラの画面を使います)
-
-  Newly redesigned play screen with Gote-Supporter
-  true = enable
-  false = disable (use vanilla screen)
-  ************************************/
   "$new_play_screen|default": true,
-
-
-  /************************************
-  プレイ画面のワールドタブとフレンドタブでタブ分けする
-  true = 有効化
-  false = 無効化(バニラの画面を使います)
-
-  Use tabbed view in the world tab and friends tab on the play screen
-  true = enable
-  false = disable (use vanilla screen)
-  ************************************/
   "$play_screen_tab|default": true,
-
-
-  /************************************
-  インベントリ画面でItem ID Auxを表示する(JSON UIクリエイター向け)
-  true = 有効化
-  false = 無効化(デフォルト)
-
-  Display Item ID Aux on inventory screen (for JSON UI creators)
-  true = enable
-  false = disable (default)
-  ************************************/
   "$show_item_id_aux|default": false,
-
-  // 設定は以上です!
-  // That's it for the setup!
-
-
-
-
-
 
 
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.5.1",
+  "$gote_ver": "1.5.2",
   "$gote_supporter_enabled": true,
   "$is_gote_server": false, 
   "$is_saishoku_server": false,

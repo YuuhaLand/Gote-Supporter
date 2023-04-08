@@ -10,7 +10,7 @@ book.toggleLightMode=ライトモード
 
 map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s	#
 
-permissions.chatmute=§cこのサーバーで発言する権限がありません。ホスト又は管理者によって「mute」アビリティを付与されています。	#
+permissions.chatmute=§cこのサーバーで発言する権限がありません。	#
 commands.generic.unknown=選択されたコマンド"%s"は存在しないか、実行するための権限がありません。	#
 commands.generic.syntax=コマンドの構文が間違っています: %1$s>>%2$s<<%3$s	#
 ## >
@@ -19,14 +19,13 @@ commands.generic.parameter.invalid=パラメータが無効です: '%1$s'	#
 commands.generic.num.invalid=指定された数値は無効です: '%1$s'	#
 commands.generic.num.tooBig=指定された数値"%s"は大きすぎます。%s以下の数値を指定してください	#
 commands.generic.num.tooSmall=指定された数値"%s" は小さすぎます。%s以上の数値を指定してください	#
-commands.generic.permission.selector=権限が不十分なため、2人以上をターゲットにすることができません。	#
+commands.generic.permission.selector=権限が不十分なため、セレクターを使用することができません。	#
 commands.kick.no.host=ゲームからホストを追放することはできません。	#
 commands.kick.no.teacher=ゲームから教師を追放することはできません。	#
 
 chat.newline=改行テキスト
 
-enchantment.level.32767=最大値
-container.shulkerboxContains=他にも %d 個のアイテムが含まれている	#
+container.shulkerboxContains=その他 %d 個...	#
 networkWorld.realmsHashPlaceholder=招待コードを入力...	#
 networkWold.joinByCodeHelpText=https://realms.gg/>><<	#
 ## >
@@ -40,7 +39,7 @@ disconnectionScreen.cantConnect=世界に接続できませんでした	#
 disconnectionScreen.sessionNotFound=世界のセッションが見つかりませんでした。	#
 disconnectionScreen.serverFull=このサーバーに接続しているプレイヤーの数が最大値に達しているため、接続できませんでした。	#
 disconnectionScreen.serverFull.title=サーバーが満員です	#
-disconnectionScreen.notAllowed=このサーバーへのアクセスが拒否されました。	#
+disconnectionScreen.notAllowed=このサーバーへのアクセスが拒否されました。 一度追放された場合、ホストが開き直さない限り入れません。	#
 disconnectionScreen.nowifi=「モバイルデータを使用」がオフになっているため、Wi-Fiに接続しないとサーバーに接続できません。
 xbox.disconectionscreen.accessDenied=アクセスが拒否されました。 ホストがあなたをブロック又はBANした可能性があります。
 
@@ -49,7 +48,7 @@ tile.movingBlock.name=移動中のブロック
 tile.info_update.name=アップデート情報
 tile.info_update2.name=アップデート情報2
 tile.glowingobsidian.name=発光する黒曜石
-tile.end_gateway.name=エンドクリスタル
+tile.end_gateway.name=エンドゲートウェイ
 tile.frosted_ice.name=曇らされた氷
 tile.frame.name=枠
 tile.dark_oak_door=黒樫のドア
@@ -102,6 +101,9 @@ options.gote.f1_f8_location=HUDのF1/F8ボタンの位置(タッチ)
 options.gote.show_hotbar_navigator=HUDのホットバーナビゲーターの表示(タッチ)
 options.gote.chat_tab_button_type=チャット画面のTabキーの配置
 options.gote.is_creator_mode=クリエイター モード
+options.gote.new_play_screen=Gote-Supporterで一新したプレイ画面
+options.gote.play_screen_tab=プレイ画面のワールドタブとフレンドタブでタブ分けする
+options.gote.show_item_id_aux=インベントリ画面でItem ID Auxを表示する(JSON UIクリエイター向け)
 
 ## フィードバックサイト
 
@@ -170,6 +172,12 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v152.u1=マイクラv1.18.12で起こっていたいくつかのバグを直しました。
+packinfo.v152.u2=マイクラv1.19.80以降からバニラでフィードバックサイトに飛ぶ前の確認が表示されるに伴いごてサポで実装していた確認メッセージを削除しました。
+packinfo.v152.u3=マイクラv1.19.70以降で「Item ID Aux」を表示するとチップが重なるバグを直しました。
+packinfo.v152.u4=Tabキープレイヤーリストで、未サインイン勢のNintendoSwitchユーザーやLANなどは別のアイコンで表示されるようになりました。
+packinfo.v152.u5=Configの_global_variables.jsonから各設定項目の説明を削除しました。 設定項目の説明はGote-Supporter Wikiをご覧ください。
 
 packinfo.v151.u1=パック情報画面を見やすく改良しました。
 packinfo.v151.u2=Configで、「一新した遊ぶ画面」と、「遊ぶ画面のタブビュー」を無効化できるようになりました。

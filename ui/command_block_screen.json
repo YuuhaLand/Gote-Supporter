@@ -352,7 +352,7 @@
     ]
   },
 
-  "command_block_screen_content/background_divider/header_buttons_stack_panel": {
+  "command_block_screen_content": {
     "modifications": [
       {
         "array_name": "controls",
@@ -363,6 +363,7 @@
               "type": "stack_panel",
               "orientation": "horizontal",
               "size": [ 76, 16 ],
+              "offset": [ 109, -89 ],
               "layer": 18,
               "controls": [
                 {

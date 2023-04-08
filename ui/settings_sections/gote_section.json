@@ -265,6 +265,34 @@
         }
       },
       {
+        "new_play_screen@settings_common.option_toggle": {
+          "$option_label": "options.gote.new_play_screen",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$new_play_screen",
+          "$toggle_name": "new_play_screen",
+          "enabled": false
+        }
+      },
+      {
+        "play_screen_tab@settings_common.option_toggle": {
+          "$option_label": "options.gote.play_screen_tab",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$play_screen_tab",
+          "$toggle_name": "play_screen_tab",
+          "enabled": false
+        }
+      },
+      {
+        "show_item_id_aux@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_item_id_aux",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_item_id_aux",
+          "$toggle_name": "show_item_id_aux",
+          "enabled": false
+        }
+      },
+
+      {
         "padding_3": {
           "type": "input_panel", 
           "size": [ "100%", 10 ],

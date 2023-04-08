@@ -1,20 +1,11 @@
 {
   "namespace": "pause",
 
-  "feedback_dialog_swtich_toggle@gtb.swtich_toggle": {
-    "$toggle_name": "open_feedback_dialog"
-  },
-  "feedback_dialog_swtich_toggle_c@gtb.swtich_toggle_c": {
-    "$toggle_name": "open_feedback_dialog"
-  },
   "quit_dialog_swtich_toggle@gtb.swtich_toggle": {
     "$toggle_name": "quit_dialog"
   },
   "quit_dialog_dlga@gtb.swtich_toggle": {
     "$toggle_name": "quit_dialog"
-  },
-  "feedback_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
-    "$toggle_name": "open_feedback_dialog"
   },
   "quit_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
     "$toggle_name": "quit_dialog"
@@ -324,18 +315,6 @@
     ]
   },
 
-  "feedback_icon_button": {
-    "type": "panel",
-    "$button_tts_header": "accessibility.start.feedback",
-    "controls": [
-      { "feedback_button_dialog@pause.feedback_button_dialog": {
-        "ignored": "$education_edition",
-        "$focus_override_left": "FOCUS_OVERRIDE_STOP"
-        }
-      }
-    ]
-  },
-
   "note_icon_button": {
     "type": "panel",
     "$button_tts_header": "gtb.memoScreen.title",
@@ -472,54 +451,6 @@
       }
     ]
   },
-
-  "feedback_button_dialog@pause.feedback_dialog_swtich_toggle_c": {
-    "size": [ 24, 24 ],
-    "$toggle_view_binding_name": "open_feedback_dialog",
-    "$button_content": "pause.feedback_icon",
-    "$toggle_group_forced_index": 100
-  },
-
-  "feedback_dialoglabel@gtb.swtich_toggle_label": {
-    "text": "gtb.gts.gotofeedback"
-  },
-
-  "feedback_dialog_open@common_buttons.light_text_button": {
-    "$pressed_button_name": "button.menu_open_uri",
-    "$button_text": "hudScreen.tooltip.open",
-    "anchor_to": "top_left",
-    "anchor_from": "top_left",
-    "property_bag": {
-      "#hyperlink": "https://aka.ms/minecraftfb"
-    },
-    
-    "$yes_sound": true,
-
-    "$focus_id": "fb_ok",
-    "$focus_override_down": "fb_cancel",
-    "$focus_override_up": "fb_cencel",
-    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
-  },
-
-  "feedback_dialog_ok@pause.feedback_dialog_swtich_toggle": {
-    "$checked_control": "common_toggles.toggle_unchecked",
-    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-
-    "$button_text": "gui.close",
-    "$toggle_default_state": true,
-    "$toggle_group_forced_index": 0,
-    
-    "$return_sound": true,
-
-    "$focus_id": "fb_cancel",
-    "$focus_override_down": "fb_ok",
-    "$focus_override_up": "fb_ok",
-    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
-  },
-
-
 
 
   "quit_dialoglabel@gtb.swtich_toggle_label": {
@@ -790,43 +721,6 @@
                 {
                   "binding_type": "view",
                   "source_control_name": "quit_dialog",
-                  "source_property_name": "#toggle_state",
-                  "target_property_name": "#visible"
-                }
-              ]
-            }
-          },
-          {
-            "feedback_dialog_screen": {
-              "type": "panel",
-              "ignored": "($education_edition or $is_gote_server or $is_saishoku_server)",
-              "size": [ "100%", "100%" ],
-              "controls": [
-                {
-                  "scrool@common.scrolling_panel": {
-                    "type": "scroll_view",
-                    "size": [ "100%", "100%" ],
-                    "layer": 501,
-                    "$scrolling_content": "common.empty_panel",
-                    "$show_background": false
-                  }
-                },
-                {
-                  "feedback_dialog_swtich_toggle_close@pause.feedback_dialog_swtich_toggle_close": {
-                    "layer": 502,
-                    "size": [ "100%", "100%" ],
-                    "$toggle_default_state": true,
-                    "$toggle_group_forced_index": 0
-                  }
-                },
-                {
-                  "dialog1@pause.dialog1": {}
-                }
-              ],
-              "bindings": [
-                {
-                  "binding_type": "view",
-                  "source_control_name": "open_feedback_dialog",
                   "source_property_name": "#toggle_state",
                   "target_property_name": "#visible"
                 }

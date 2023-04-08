@@ -148,6 +148,12 @@ packinfo.f6=...And more!
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v152.u1=Fixed some bugs that were happening in Minecraft v1.18.12.
+packinfo.v152.u2=Since Minecraft v1.19.80, a confirmation message is displayed before going to the feedback site in vanilla, and the confirmation message implemented in GoteSupport has been removed.
+packinfo.v152.u3=Fixed a bug that caused chips to overlap when displaying "Item ID Aux" in Minecraft v1.19.70 or later.
+packinfo.v152.u4=In the Tab Keepers list, unsigned NintendoSwitch users and LANs are now shown with different icons.
+packinfo.v152.u5=Removed the description of each setting item from "_global_variables.json" of Config. Please refer to the Gote-Supporter Wiki for the explanation of configuration items.
+
 packinfo.v151.u1=The pack information screen has been improved for easier viewing.
 packinfo.v151.u2=With Config, you can now disable the "redesigned play screen" and the "tabbed view of the play screen".
 packinfo.v151.u3=The value of "Item ID Aux" for JSON UI creators can now be displayed on the inventory screen, and can be enabled in Config.

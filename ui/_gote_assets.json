@@ -131,7 +131,8 @@
     "size": [ "100% - 2px", "default" ],
     "offset": [ 2, 0 ],
     "anchor_from":"top_left",
-    "anchor_to":"top_left"
+    "anchor_to":"top_left",
+    "layer": 505
   },
 
   

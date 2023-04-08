@@ -228,8 +228,24 @@
     "ignored": true
   },
 
-  "edit_world_manipulation_buttons/padding": {
-    "ignored": false
+  "edit_world_manipulation_buttons": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", 30 ],
+    "controls": [
+      {
+        "export@world_section.export_world_button": {}
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [ 1, 0 ]
+        }
+      },
+      {
+        "delete@world_section.delete_world_button": {}
+      }
+    ]
   },
 
   "export_world_button@settings_common.action_button": {
