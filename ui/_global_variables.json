@@ -34,12 +34,17 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   "$new_play_screen|default": true,
   "$play_screen_tab|default": true,
   "$show_item_id_aux|default": false,
+  "$play_screen_doubleclick|default": true,
+  "$playerlist_key|default": "tab",
+
+
+  "$rc_item_id_aux": 42729472, //リカバリーコンパスのItem ID Aux
 
 
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.5.2",
+  "$gote_ver": "1.6.0",
   "$gote_supporter_enabled": true,
   "$is_gote_server": false, 
   "$is_saishoku_server": false,

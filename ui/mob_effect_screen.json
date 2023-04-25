@@ -5,102 +5,6 @@
     "offset": [ 4, 4 ],
     "controls": [
       {
-        "ch1@how_to_play_common.header": {
-          "$text": "サバイバル ステータス"
-        }
-      },
-      {
-        "hpt": {
-          "type": "label",
-          "size": [ "100%", 10 ],
-          "color": "$main_header_text_color",
-          "text": "HP"
-        }
-      },
-      {
-        "heart_renderer": {
-          "type": "panel",
-          "size": [ 1, 10 ],
-          "controls": [
-            {
-              "hr": {
-                "type": "custom",
-                "renderer": "heart_renderer"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "padding01": {
-          "type": "panel",
-          "size": [ 0, 5 ]
-        }
-      },
-      {
-        "hgt": {
-          "type": "label",
-          "size": [ "100%", 10 ],
-          "color": "$main_header_text_color",
-          "text": "空腹度"
-        }
-      },
-      {
-        "hunger_renderer": {
-          "type": "panel",
-          "size": [ 1, 10 ],
-          "controls": [
-            {
-              "hr": {
-                "type": "custom",
-                "offset": [ 80, 0 ],
-                "renderer": "hunger_renderer"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "padding02": {
-          "type": "panel",
-          "size": [ 0, 5 ]
-        }
-      },
-      {
-        "art": {
-          "type": "label",
-          "size": [ "100%", 10 ],
-          "color": "$main_header_text_color",
-          "text": "防具による防御度"
-        }
-      },
-      {
-        "armor_renderer": {
-          "type": "panel",
-          "size": [ 1, 10 ],
-          "controls": [
-            {
-              "hr": {
-                "type": "custom",
-                "offset": [ 0, 11 ],
-                "renderer": "armor_renderer"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "padding03": {
-          "type": "panel",
-          "size": [ 0, 5 ]
-        }
-      },
-      {
-        "ch1_@how_to_play_common.header": {
-          "$text": "エフェクト ステータス"
-        }
-      },
-      {
         "meg": {
           "type": "panel",
           "size": [ "100%", "100%c" ],
@@ -114,13 +18,14 @@
         }
       },
       {
-        "padding04": {
+        "padding": {
           "type": "panel",
           "size": [ 0, 10 ]
         }
       }
     ]
   },
+
   "scroll@common.scrolling_panel": {
     "$show_background": false,
     "$scrolling_content": "mob_effect.main_content",
@@ -128,6 +33,7 @@
     "$scroll_size": [ "4px", "100% - 2px" ],
     "$always_handle_scrolling": true
   },
+  
   "main_screen": {
     "type": "panel",
     "controls": [
@@ -137,7 +43,7 @@
           "anchor_from": "center",
           "anchor_to": "center",
           "size": [ "75%", "75%" ],
-          "$text_name": "プレイヤー ステータス",
+          "$text_name": "key.mobEffects",
           "$panel_indent_size": [ "100% - 16px", "100% - 31px" ],
           "$custom_background": "dialog_background_hollow_3",
           "controls": [

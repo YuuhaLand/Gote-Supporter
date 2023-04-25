@@ -104,6 +104,8 @@ options.gote.is_creator_mode=クリエイター モード
 options.gote.new_play_screen=Gote-Supporterで一新したプレイ画面
 options.gote.play_screen_tab=プレイ画面のワールドタブとフレンドタブでタブ分けする
 options.gote.show_item_id_aux=インベントリ画面でItem ID Auxを表示する(JSON UIクリエイター向け)
+options.gote.playerlist_key=HUDのプレイヤーリストのキー
+options.gote.play_screen_doubleclick=プレイ画面のワールドのボタンをダブルクリックしないと入れないようにする
 
 ## フィードバックサイト
 
@@ -132,6 +134,12 @@ gtb.memoScreen.body2=書いた内容はワールドを抜けると破棄され�
 gtb.memoScreen.placeHolderText=ここに書いた内容は保存されませんのでご注意ください。
 
 gtb.helpwarning.text1=このアドオンに対するヘルプは一切受けません。
+
+
+
+
+
+
 
 ## Gote-Supporter Info 画面のテキスト
 
@@ -172,6 +180,17 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v160.u1=フィード画面に新しい投稿には「新規」が表示されるようになりました。
+packinfo.v160.u2=フィード画面の背景を不透明にしました。
+packinfo.v160.u3=フィード画面のアバターアイコンを丸い形になるようにしました。
+packinfo.v160.u4=Tabキー プレイヤーリストのコンフィグでキーをF10キーに変えれるようになりました。
+packinfo.v160.u5=モブエフェクト画面からサバイバルステータスを削除して全言語に対応しました。
+packinfo.v160.u6=サウンド鑑賞の音楽名を正式名称に直しました。
+packinfo.v160.u7=サウンド鑑賞にワイルドアップデートの音楽を追加しました(今更(?))
+packinfo.v160.u8=パック情報画面に「よくある質問」を追加しました。
+packinfo.v160.u9=チャットのコマンドでコマンド候補をクリック/タッチで保管できるようになりました。
+packinfo.v160.u10=プレイ画面のワールドやフレンドなどのボタンがダブルクリックしないと参加できないようになりました (Configで元に戻せます。)
 
 packinfo.v152.u1=マイクラv1.18.12で起こっていたいくつかのバグを直しました。
 packinfo.v152.u2=マイクラv1.19.80以降からバニラでフィードバックサイトに飛ぶ前の確認が表示されるに伴いごてサポで実装していた確認メッセージを削除しました。
@@ -366,3 +385,26 @@ packinfo.about_author.text16=§adiscord.gg/WqsPrrxuU6
 
 ##ライセンス
 packinfo.licence.title=ライセンス
+
+##よくある質問
+packinfo.faq.title=よくある質問
+packinfo.faq.text1=ここではGote-Supporterに関するよくある質問が見れます!
+
+packinfo.faq.q1.q=Q. このパックはワールドのリソースパックに適用して良い?
+packinfo.faq.q1.a=A. もちろんです! このパックは自由にワールド或いはサーバーのリソースパックに適用できます!
+packinfo.faq.q2.q=Q. なんか他のアドオンと相性悪いからちょっといじってもいい?
+packinfo.faq.q2.a=A. もちろんです! このパックは自由に改変してどうぞ!
+packinfo.faq.q3.q=Q. このパックのあの機能を私のパックに組み込んでそれを配布して良い?
+packinfo.faq.q3.a=A. もちろんです! 私のコードがあなたのパック開発に役立つことができれば嬉しいです! ちなみに配布するときは説明欄とかにコピーしたことを明記してね!
+packinfo.faq.q4.q=Q. このパックをYoutubeとかで紹介したい!
+packinfo.faq.q4.a=A. 大歓迎です! お友達などにじゃんじゃん紹介してください!
+packinfo.faq.q5.q=Q. とある鯖に入ったらごてサポが勝手に無効になったんだけど...
+packinfo.faq.q5.a=A. 鯖によって、グローバルリソースを禁止にしている鯖があります。そのような鯖ではごてサポを使うことはできません。
+packinfo.faq.q6.q=Q. バグを見つけた! どこに報告すれば良い?
+packinfo.faq.q6.a=A. バグを見つけたらDiscordサーバーにてご報告お願いします!
+packinfo.faq.q7.q=Q. このパックの制作に協力したい!
+packinfo.faq.q7.a=A. 申し訳ないです。 私は制作協力を受けません。 私は一人で気ままに作っていってるので（）
+packinfo.faq.q8.q=Q. なぜぽまえはこのパックをオープンソース化しているの? お金儲けはしないん?
+packinfo.faq.q8.a=A. 私はこのパックなどをオープンソース化して誰でも私のパックのコードを活用できるようにしています。 どこかの知らない場所で私のコードが使われてても嫌な思いはしないです。 むしろ嬉しい() あとお金儲けはしたくないです。 私はLinkvertiseとかad.flyが大嫌いなので() 余談だけど、マイクラのアドオンはマーケットプレイスのやつ以外全部オープンソースだと思う。 なぜなら、誰でもコードを覗くことができてしまうから。 難読化することはできるけど、復号も簡単にできてしまうし...。 あくまで私の意見なのでお気になさらず。
+packinfo.faq.q9.q=Q. YukaYama0311にアドオン制作を依頼したいです。
+packinfo.faq.q9.a=A. 2023年4月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。

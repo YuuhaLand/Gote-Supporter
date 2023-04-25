@@ -133,7 +133,7 @@
     "type": "panel",
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
-    "size": [ "100%-2px", 10 ],
+    "size": [ "100%", 10 ],
     "controls": [
       {
         "gote-supporter_version": {
@@ -142,30 +142,70 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "size": [ "default", 10 ],
-          "offset": [ 0, -10 ],
-          "text": "Gote-Supporter: ©Yuka0311"
+          "offset": [ 0, -12 ],
+          "text": "Gote-Supporter by ©YukaYama0311",
+          "layer": 1,
+          "controls": [
+            {
+              "label_background": {
+                "type": "image",
+                "texture": "textures/ui/White",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "offset": [ 3, -1 ],
+                "alpha": 0.6,
+                "color": [ 0, 0, 0 ],
+                "size": [ "100% + 4px", "100% + 2px" ],
+                "layer": -5
+              }
+            }
+          ]
         }
       },
       {
         "minecraft_version": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
+          "type": "panel",
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "size": [ "100%c", 10 ],
           "controls": [
             {
-              "minecraft": {
-                "type": "label",
-                "color": "$main_header_text_color",
-                "text": "Minecraft: "
+              "minecraft_version": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "size": [ "default", 10 ],
+                "layer": 2,
+                "controls": [
+                  {
+                    "minecraft": {
+                      "type": "label",
+                      "color": "$main_header_text_color",
+                      "text": "Minecraft by "
+                    }
+                  },
+                  {
+                    "mc_ver": {
+                      "type": "label",
+                      "color": "$main_header_text_color",
+                      "text": "menu.copyright"
+                    }
+                  }
+                ]
               }
             },
             {
-              "mc_ver": {
-                "type": "label",
-                "color": "$main_header_text_color",
-                "text": "menu.copyright"
+              "label_background": {
+                "type": "image",
+                "texture": "textures/ui/White",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ -1, -1 ],
+                "alpha": 0.6,
+                "color": [ 0, 0, 0 ],
+                "size": [ "100%sm + 4px", "100%sm + 2px" ],
+                "layer": 1
               }
             }
           ]
@@ -186,35 +226,57 @@
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "size": [ "default", 10 ],
-          "offset": [ 0, -10 ],
-          "text": "('Gote-Supporter v' + $gote_ver)"
+          "offset": [ 0, -12 ],
+          "text": "('Gote-Supporter v' + $gote_ver)",
+          "layer": 1,
+          "controls": [
+            {
+              "label_background": {
+                "type": "image",
+                "texture": "textures/ui/White",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "offset": [ 3, -1 ],
+                "alpha": 0.6,
+                "color": [ 0, 0, 0 ],
+                "size": [ "100% + 4px", "100% + 2px" ],
+                "layer": -5
+              }
+            }
+          ]
         }
       },
       {
-        "minecraft_version": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
+        "gote-minecraft_version": {
+          "type": "label",
+          "color": "$main_header_text_color",
           "anchor_from": "top_right",
           "anchor_to": "top_right",
-          "size": [ "100%c", 10 ],
-          "controls": [
+          "size": [ "default", 10 ],
+          "text": "#text",
+          "layer": 1,
+          "bindings": [
             {
-              "minecraft": {
-                "type": "label",
-                "color": "$main_header_text_color",
-                "text": "Minecraft "
-              }
+              "binding_name": "#version"
             },
             {
-              "mc_ver": {
-                "type": "label",
-                "color": "$main_header_text_color",
-                "text": "#version",
-                "bindings": [
-                  {
-                    "binding_name": "#version"
-                  }
-                ]
+              "binding_type": "view",
+              "source_property_name": "('Minecraft ' + #version)",
+              "target_property_name": "#text"
+            }
+          ],
+          "controls": [
+            {
+              "label_background": {
+                "type": "image",
+                "texture": "textures/ui/White",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "offset": [ 3, -1 ],
+                "alpha": 0.6,
+                "color": [ 0, 0, 0 ],
+                "size": [ "100% + 4px", "100% + 2px" ],
+                "layer": -5
               }
             }
           ]

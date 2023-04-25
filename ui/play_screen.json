@@ -1592,5 +1592,160 @@
         }
       }
     ]
+  },
+
+
+  //ダブルクリックしないとワールドに入れないようにする
+
+  "local_world_item_button": {
+    "$button_mappings|default": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "focused"
+      }
+    ],
+    "variables": [
+      {
+        "requires": "$play_screen_doubleclick",
+        "$button_mappings": [
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "double_pressed"
+          },
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "button.dummy",
+            "mapping_type": "pressed"
+          },
+          {
+            "from_button_id": "button.menu_ok",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "focused"
+          }
+        ]
+      }
+    ],
+    "button_mappings": "$button_mappings"
+  },
+
+  "legacy_world_item_button": {
+    "$button_mappings|default": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "focused"
+      }
+    ],
+    "variables": [
+      {
+        "requires": "$play_screen_doubleclick",
+        "$button_mappings": [
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "double_pressed"
+          },
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "button.dummy",
+            "mapping_type": "pressed"
+          },
+          {
+            "from_button_id": "button.menu_ok",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "focused"
+          }
+        ]
+      }
+    ],
+    "button_mappings": "$button_mappings"
+  },
+
+  "realms_world_item_button": {
+    "$button_mappings|default": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "focused"
+      }
+    ],
+    "variables": [
+      {
+        "requires": "$play_screen_doubleclick",
+        "$button_mappings": [
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "double_pressed"
+          },
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "button.dummy",
+            "mapping_type": "pressed"
+          },
+          {
+            "from_button_id": "button.menu_ok",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "focused"
+          }
+        ]
+      }
+    ],
+    "button_mappings": "$button_mappings"
+  },
+
+  "network_world_item_button": {
+    "$button_mappings|default": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "focused"
+      }
+    ],
+    "variables": [
+      {
+        "requires": "$play_screen_doubleclick",
+        "$button_mappings": [
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "double_pressed"
+          },
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "button.dummy",
+            "mapping_type": "pressed"
+          },
+          {
+            "from_button_id": "button.menu_ok",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "focused"
+          }
+        ]
+      }
+    ],
+    "button_mappings": "$button_mappings"
   }
 }

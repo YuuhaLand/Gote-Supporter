@@ -46,6 +46,11 @@ options.gote.show_recoverycompass=Add recovery compass to HUD compass (beta!)
 options.gote.f1_f8_location=Location of F1/F8 buttons on HUD (Touch)
 options.gote.show_hotbar_navigator=Show HUD hotbar navigator (touch)
 options.gote.chat_tab_button_type=Placement of the Tab key on the Chat Screen
+options.gote.new_play_screen=New play screen with Gote-Supporter
+options.gote.play_screen_tab=Separate tabs in the world tab and friends tab on the play screen.
+options.gote.show_item_id_aux=Display Item ID Aux on inventory screen (for JSON UI creators)
+options.gote.playerlist_key=HUD player list key
+options.gote.play_screen_doubleclick=Make it so that you have to double click on the world button on the play screen to enter.
 
 
 item.spawn_egg.name=Empty Spawn Egg
@@ -147,6 +152,15 @@ packinfo.f6=...And more!
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v160.u1=New posts now display "New" on the feed screen.
+packinfo.v160.u2=The background of the feed screen is now opaque.
+packinfo.v160.u3=The avatar icon on the feed screen is now round.
+packinfo.v160.u4=The Tab key player list can now be changed to the F10 key in the Config.
+packinfo.v160.u5=Removed Survival Status from the Mob Effects screen and added support for all languages.
+packinfo.v160.u6=Changed Music Listen music names to official soundtrack names.
+packinfo.v160.u7=Added Wild Update music to Music Listen.
+packinfo.v160.u8=Added "FaQ" to the Pack Info screen.
 
 packinfo.v152.u1=Fixed some bugs that were happening in Minecraft v1.18.12.
 packinfo.v152.u2=Since Minecraft v1.19.80, a confirmation message is displayed before going to the feedback site in vanilla, and the confirmation message implemented in GoteSupport has been removed.
@@ -341,3 +355,26 @@ packinfo.about_author.text16=§adiscord.gg/WqsPrrxuU6
 
 ##ライセンス
 packinfo.licence.title=Licence
+
+##よくある質問
+packinfo.faq.title=FaQ
+packinfo.faq.text1=Here you can see frequently asked questions about Gote-Supporter!
+
+packinfo.faq.q1.q=Can this pack be applied to the world resource pack?
+packinfo.faq.q1.a=Of course! You can freely apply this pack to any world or server resource pack!
+packinfo.faq.q2.q=Can I edit it a bit because it doesn't work well with some other add-ons?
+packinfo.faq.q2.a=Of course! Feel free to modify this pack!
+packinfo.faq.q3.q=Can I incorporate that feature of this pack into my pack and distribute it?
+packinfo.faq.q3.a=Of course! I would be happy if my code can help you develop your packs! By the way, when you distribute it, please mention that you copied it in the description or something!
+packinfo.faq.q4.q=I want to show this pack on Youtube or something!
+packinfo.faq.q4.a=You are more than welcome! Please feel free to introduce us to your friends and family!
+packinfo.faq.q5.q=I entered a certain server and Gote-Supporter disabled itself...
+packinfo.faq.q5.a=Some servers prohibit global resources. Gote-Supporter cannot be used on such servers.
+packinfo.faq.q6.q=I found a bug! Where do I report it?
+packinfo.faq.q6.a=If you find a bug, please report it on the Discord server!
+packinfo.faq.q7.q=I want to help create this pack!
+packinfo.faq.q7.a=I am sorry. I do not accept production cooperation. I'm making it on my own and at my own leisure.
+packinfo.faq.q8.q=Why are you open sourcing this pack? Don't you want to make money?
+packinfo.faq.q8.a=I am open sourcing this pack and others so that anyone can take advantage of my pack code. I don't feel bad if my code is used in some unknown place. I am rather happy about it. I also don't want to make money. I hate Linkvertise and ad.fly. As a side note, I think all the add-ons for Minecraft are open source, except for the marketplace ones. Because anyone can peek at the code. It can be obfuscated, but it can also be easily decrypted. That's just my opinion, so please don't mind me.
+packinfo.faq.q9.q=I would like to request YukaYama0311 to create an add-on.
+packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create add-ons. I can teach you how to make one, but I'm a §l§cquite bad at teaching people,§r so you may not understand.

@@ -273,6 +273,24 @@
     ]
   },
   
+  "auto_complete_panel_contents_with_item/autocomplete_button": {
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_name": "#auto_complete_text",
+        "binding_collection_name": "auto_complete"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not #auto_complete_text = '')",
+        "target_property_name": "#visible"
+      },
+      {
+        "binding_type": "collection_details",
+        "binding_collection_name": "auto_complete"
+      }
+    ]
+  },
 
   "text_edit_box": {
     "anchor_from": "bottom_left",

@@ -244,6 +244,36 @@
       }
     ]
   },
+  "pvp2.aerie": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/aerie",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.firebugs": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/firebugs",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.labyrinthine": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/labyrinthine",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
 
   //nether
 
@@ -551,6 +581,16 @@
     "sounds": [
       {
         "name": "sounds/music/game/records/otherside",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.5": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/5",
         "stream": true,
         "volume": 1.0
       }

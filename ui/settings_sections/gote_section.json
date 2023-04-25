@@ -291,6 +291,24 @@
           "enabled": false
         }
       },
+      {
+        "play_screen_doubleclick@settings_common.option_toggle": {
+          "$option_label": "options.gote.play_screen_doubleclick",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$play_screen_doubleclick",
+          "$toggle_name": "play_screen_doubleclick",
+          "enabled": false
+        }
+      },
+      {
+        "playerlist_key@settings_common.option_text_edit": {
+          "$option_label": "options.gote.playerlist_key",
+          "$option_binding_name": "",
+          "$default_value": "$playerlist_key",
+          "$text_box_name": "playerlist_key",
+          "enabled": false
+        }
+      },
 
       {
         "padding_3": {

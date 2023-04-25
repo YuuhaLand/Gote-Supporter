@@ -146,6 +146,16 @@
                     "binding_collection_name": "comment_collection",
                     "binding_name_override": "#visible"
                   }
+                ],
+                "controls": [
+                  {
+                    "waku": {
+                      "type": "image",
+                      "size": [ "100%", "100%" ],
+                      "texture": "textures/ui/feed_abatar",
+                      "layer": 2
+                    }
+                  }
                 ]
               }
             },
@@ -475,6 +485,16 @@
                     "binding_type": "collection",
                     "binding_collection_name": "comment_collection",
                     "binding_name_override": "#visible"
+                  }
+                ],
+                "controls": [
+                  {
+                    "waku": {
+                      "type": "image",
+                      "size": [ "100%", "100%" ],
+                      "texture": "textures/ui/feed_abatar",
+                      "layer": 2
+                    }
                   }
                 ]
               }

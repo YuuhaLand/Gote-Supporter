@@ -24,9 +24,8 @@
     "renderer": "inventory_item_renderer",
   	"size": [ 30, 30 ],
     "ignored": "(not $show_recoverycompass)",
-    "$item_id_aux": 42598400,
     "property_bag": {
-      "#item_id_aux": "$item_id_aux"
+      "#item_id_aux": "$rc_item_id_aux"
     }
   },
 
@@ -508,10 +507,23 @@
               "default_control": "default",
               "hover_control": "hover",
               "pressed_control": "pressed",
+
+              "$button_binding|default": "button.scoreboard",
+
+              "variables": [
+                {
+                  "requires": "($playerlist_key = 'tab')",
+                  "$button_binding": "button.scoreboard"
+                },
+                {
+                  "requires": "($playerlist_key = 'f10')",
+                  "$button_binding": "button.hide_tooltips"
+                }
+              ],
               "button_mappings": [
                 {
-                  "from_button_id": "button.scoreboard",
-                  "to_button_id": "buttom.scoreboard",
+                  "from_button_id": "$button_binding",
+                  "to_button_id": "button.dummy",
                   "mapping_type": "global"
                 }
               ],

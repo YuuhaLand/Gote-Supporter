@@ -6,6 +6,25 @@
     "size": [ "100%", "100%c" ],
     "controls": [
       {
+        "v160@tabbed_upsell.version_section": {
+          "$version": "v1.6.0",
+          "$details_controls": [
+            { "date@tabbed_upsell.text": { "text": "2023/04/25" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u1"}},
+            { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u2"}},
+            { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u3"}},
+            { "fp4_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u4"}},
+            { "fp5_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u5"}},
+            { "fp6_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u6"}},
+            { "fp7_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u7"}},
+            { "fp8_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u8"}},
+            { "fp9_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u9"}},
+            { "fp10_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u10"}}
+          ]
+        }
+      },
+      {
         "v152@tabbed_upsell.version_section": {
           "$version": "v1.5.2",
           "$details_controls": [

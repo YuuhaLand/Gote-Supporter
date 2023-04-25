@@ -391,6 +391,16 @@
                     "binding_collection_name": "feed_collection",
                     "binding_name_override": "#visible"
                   }
+                ],
+                "controls": [
+                  {
+                    "waku": {
+                      "type": "image",
+                      "size": [ "100%", "100%" ],
+                      "texture": "textures/ui/feed_abatar",
+                      "layer": 2
+                    }
+                  }
                 ]
               }
             },
@@ -407,25 +417,44 @@
                 "controls": [
                   {
                     "gamertag_and_date": {
-                      "type": "label",
-                      "text": "#text",
-                      "color": "$f_color_format",
-                      "size": [ "default", 10 ],
-                      "bindings": [
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": [ "100%", 13 ],
+                      "$is_unviewed_post": "#unviewed_post_badge_visible",
+                      "controls": [
                         {
-                          "binding_name": "#gamertag",
-                          "binding_type": "collection",
-                          "binding_collection_name": "feed_collection"
+                          "gamertag_and_date": {
+                            "type": "label",
+                            "text": "#text",
+                            "color": "$f_color_format",
+                            "size": [ "default", 10 ],
+                            "bindings": [
+                              {
+                                "binding_name": "#gamertag",
+                                "binding_type": "collection",
+                                "binding_collection_name": "feed_collection"
+                              },
+                              {
+                                "binding_name": "#time_since_feed_post",
+                                "binding_type": "collection",
+                                "binding_collection_name": "feed_collection"
+                              },
+                              {
+                                "binding_type": "view",
+                                "source_property_name": "(#gamertag + '  §7' + #time_since_feed_post)",
+                                "target_property_name": "#text"
+                              }
+                            ]
+                          }
                         },
                         {
-                          "binding_name": "#time_since_feed_post",
-                          "binding_type": "collection",
-                          "binding_collection_name": "feed_collection"
+                          "paddding": {
+                            "type": "panel",
+                            "size": [ 3, 0 ]
+                          }
                         },
                         {
-                          "binding_type": "view",
-                          "source_property_name": "(#gamertag + '  §7' + #time_since_feed_post)",
-                          "target_property_name": "#text"
+                          "unviewed_post_badge@feed_common.unviewed_post_badge": {}
                         }
                       ]
                     }
@@ -722,7 +751,7 @@
     "type": "image",
     "size": [ "100%", "100%" ],
     "texture": "textures/ui/White",
-    "color": [ 0.0, 0.0, 0.0 ],
-    "alpha": 0.7
+    "color": [ 0.192, 0.200, 0.220 ],
+    "alpha": 1
   }
 }
