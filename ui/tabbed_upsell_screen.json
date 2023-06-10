@@ -667,6 +667,10 @@
             {"m23@tabbed_upsell.play_sound_panel":{"$sound_name":"谷岡久美 - Floating Dream","$sound_id":"pvp2.floating_dream","$sound_vol":1.0,"$is_music":true}},
             {"m24@tabbed_upsell.play_sound_panel":{"$sound_name":"谷岡久美 - Comforting Memories","$sound_id":"pvp2.comforting_memories","$sound_vol":1.0,"$is_music":true}},
             {"m13@tabbed_upsell.play_sound_panel":{"$sound_name":"谷岡久美 - An Ordinary Day","$sound_id":"pvp2.an_ordinary_day","$sound_vol":1.0,"$is_music":true}},
+            {"m_v120_1@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Echo in the Wind","$sound_id":"pvp2.echo_in_the_wind","$sound_vol":1.0,"$is_music":true}},
+            {"m_v120_2@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - A Familiar Room","$sound_id":"pvp2.a_familiar_room","$sound_vol":1.0,"$is_music":true}},
+            {"m_v120_3@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Bromeliad","$sound_id":"pvp2.bromeliad","$sound_vol":1.0,"$is_music":true}},
+            {"m_v120_4@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Crescent Dunes","$sound_id":"pvp2.crescent_dunes","$sound_vol":1.0,"$is_music":true}},
             { "fh5@how_to_play_common.header": { "$text":"dimension.dimensionName1" }},
             {"m25@tabbed_upsell.play_sound_panel":{"$sound_name":"C418 - Concrete Halls","$sound_id":"pvp2.nether1","$sound_vol":1.0,"$is_music":true}},
             {"m26@tabbed_upsell.play_sound_panel":{"$sound_name":"C418 - Dead Voxel","$sound_id":"pvp2.nether2","$sound_vol":1.0,"$is_music":true}},
@@ -705,7 +709,8 @@
             {"m54@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_wait.desc","$sound_id":"pvp2.wait","$sound_vol":1.0,"$is_music":true}},
             {"m55@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_pigstep.desc","$sound_id":"pvp2.pigstep","$sound_vol":1.0,"$is_music":true}},
             {"m56@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_otherside.desc","$sound_id":"pvp2.otherside","$sound_vol":1.0,"$is_music":true}},
-            {"m57@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_5.desc","$sound_id":"pvp2.5","$sound_vol":1.0,"$is_music":true}}
+            {"m57@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_5.desc","$sound_id":"pvp2.5","$sound_vol":1.0,"$is_music":true}},
+            {"m_relic@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_relic.desc","$sound_id":"pvp2.relic","$sound_vol":1.0,"$is_music":true}}
           ],
           "bindings": [
             {

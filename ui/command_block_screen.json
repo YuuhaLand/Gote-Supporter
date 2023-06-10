@@ -363,7 +363,9 @@
               "type": "stack_panel",
               "orientation": "horizontal",
               "size": [ 76, 16 ],
-              "offset": [ 109, -89 ],
+              "offset": [ "-10%", 4 ],
+              "anchor_from": "top_right",
+              "anchor_to": "top_right",
               "layer": 18,
               "controls": [
                 {

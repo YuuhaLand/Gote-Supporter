@@ -6,8 +6,6 @@ pack.name.nover=§l§aごて§bサポーター
 accessibility.disableTTS=§eテキスト読み上げ無効	#
 accessibility.enableTTS=§eテキスト読み上げ有効	#
 
-book.toggleLightMode=ライトモード
-
 map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s	#
 
 permissions.chatmute=§cこのサーバーで発言する権限がありません。	#
@@ -180,6 +178,14 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v161.u1=大幅に変更されたUI(プレイ画面、フィード画面、本と羽ペン画面)はそれぞれ独立したパックに移動されました。
+packinfo.v161.u2=プレイ画面の移動に伴い、一新されたプレイ画面やタブ分けされたプレイ画面を使用するかのConfigを削除しました。
+packinfo.v161.u3=スタート画面でイベントが開催するときに表示されるボタンがゲーマーアイコンとゲーマータグ表示と重なるバグを直しました。
+packinfo.v161.u4=コマンドブロック画面でTabボタンが画面サイズによってズレるバグを直しました。
+packinfo.v161.u5=サウンド鑑賞に「旅路と物語」の音楽を追加しました。
+packinfo.v161.u6=マイクラv1.18.12で、一時メモのテキストが薄くなっていたバグを直しました。
+packinfo.v161.u7=Chromebookで、ごてサポ情報画面が開けないバグを直しました。
 
 packinfo.v160.u1=フィード画面に新しい投稿には「新規」が表示されるようになりました。
 packinfo.v160.u2=フィード画面の背景を不透明にしました。
@@ -374,8 +380,8 @@ packinfo.about_author.text5=プログラミングはヘタクソ。
 packinfo.about_author.text6=新しいことを覚えるのが苦手。
 packinfo.about_author.text7=マイクラ歴は8年くらい。
 packinfo.about_author.text8=日本一のRealmサーバー「彩」の運営も努めてます。
-packinfo.about_author.text9=Realmには9000人以上のメンバーがいるとても賑やかなサーバーです!
-packinfo.about_author.text10=§l§cもうすぐ１００００人！！ §6ぜひ来てみてね！！
+packinfo.about_author.text9=Realmには10,000人以上のメンバーがいるとても賑やかなサーバーです!
+packinfo.about_author.text10=§l§cＲｅａｌｍメンバー １０,０００人突破！！ §6ぜひ来てみてね！！
 packinfo.about_author.text11=ごて鯖 Discord
 packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
 packinfo.about_author.text13=ごて鯖 Realm

@@ -45,27 +45,25 @@
   },
 
   "upper_online_buttons_panel/stacked_column/gamertag_pic_and_label": {
-    "ignored": true
-  },
-
-  "gamertag_icon": {
-    "type": "stack_panel",
-    "orientation": "horizontal",
     "ignored": "$education_edition",
     "size": [ "100%c", 24 ],
-    "offset": [ 0, "-25%" ],
-    "anchor_from": "bottom_left",
-    "anchor_to": "bottom_left",
     "controls": [
+      {
+        "spacer_0": {
+          "type": "panel",
+          "size": [ 10, 0 ]
+        }
+      },
       {
         "gamerpic_with_border": {
           "type": "panel",
-          "size": [ "100%c", "100%" ],
+          "size": [ 24, 24 ],
           "controls": [
             {
               "gamerpic": {
                 "type": "image",
-                "size": [ 24, 24 ],
+                "size": [ 22, 22 ],
+                "offset": [ 0, 4 ],
                 "layer": 1,
                 "bindings": [
                   {
@@ -76,38 +74,39 @@
                     "binding_name": "#gamerpic_texture_location_type",
                     "binding_name_override": "#texture_file_system"
                   }
+                ],
+                "controls": [
+                  {
+                    "border_white@common.focus_border_white": {
+                      "layer": 3,
+                      "size": [ 24, 24 ]
+                    }
+                  }
                 ]
-              }
-            },
-            {
-              "border_white@common.focus_border_white": {
-                "layer": 3,
-                "size": [ 24, 24 ]
               }
             }
           ]
         }
       },
       {
-        "spacer": {
+        "spacer_2": {
           "type": "panel",
-          "size": [ 1, 0 ]
+          "size": [ 5, 0 ]
         }
       },
       {
         "label_panel": {
           "type": "panel",
-          "size": [ "100%c", "100%" ],
+          "size": [ "fill", 24 ],
           "controls": [
             {
               "gamertag_label": {
                 "type": "label",
                 "color": "$main_header_text_color",
-                "layer": 1,
                 "text": "#gamertag_label",
-                "locked_alpha": 0.5,
-                "size": [ "default", "100%" ],
-                "offset": [ 0, "25%" ],
+                "size": [ "default", 10 ],
+                "offset": [ 0, 4 ],
+                "shadow": true,
                 "bindings": [
                   {
                     "binding_name": "#gamertag_label"
@@ -127,6 +126,9 @@
     ]
   },
 
+  "upper_online_buttons_panel": {
+    "bindings": []
+  },
 
 
   "copyright2": {
@@ -429,7 +431,6 @@
       }
     ]
   },
-
   
   "start_screen_content": {
     "modifications": [
@@ -439,9 +440,6 @@
         "value": [
           {
             "quit_button@start.quit_button": {}
-          },
-          {
-            "gamertag_icon@start.gamertag_icon": {}
           },
           {
             "preview_warning_button@start.preview_warning_swtich_toggle_c": {

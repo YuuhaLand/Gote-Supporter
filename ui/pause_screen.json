@@ -558,6 +558,7 @@
           "size": [ "100%", 10 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
+          "layer": 3,
           "text": "gtb.memoScreen.body1"
         }
       },
@@ -569,6 +570,7 @@
           "offset": [ 0, 10 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
+          "layer": 3,
           "text": "gtb.memoScreen.body2"
         }
       },

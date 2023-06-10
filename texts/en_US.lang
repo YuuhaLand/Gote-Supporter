@@ -7,7 +7,7 @@ accessibility.enableTTS=§eText To Speech enabled	#
 
 permissions.chatmute=Oops! You are not authorized to speak on this server.	#
 
-book.toggleLightMode=Light Mode
+
 
 map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s	#
 
@@ -153,6 +153,14 @@ packinfo.f6=...And more!
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v161.u1=The heavily modified UI (play screen, feed screen, book and quill screen) have been moved to their own independent packs.
+packinfo.v161.u2=With the move of the play screen, the Config to use the redesigned play screen or tabbed play screen has been removed.
+packinfo.v161.u3=Fixed a bug where the button displayed when an event is held on the start screen overlapped with the gamer icon and the gamertag display.
+packinfo.v161.u4=Fixed a bug that the Tab button on the command block screen was misaligned depending on the screen size.
+packinfo.v161.u5=Added music from "Trails & Tales" to Sound Appreciation.
+packinfo.v161.u6=Fixed a bug in Minecraft v1.18.12 where the text in temporary notes was fading.
+packinfo.v161.u7=Fixed a bug that prevented the Gote-Supporter Info screen from opening on Chromebook.
+
 packinfo.v160.u1=New posts now display "New" on the feed screen.
 packinfo.v160.u2=The background of the feed screen is now opaque.
 packinfo.v160.u3=The avatar icon on the feed screen is now round.
@@ -161,6 +169,8 @@ packinfo.v160.u5=Removed Survival Status from the Mob Effects screen and added s
 packinfo.v160.u6=Changed Music Listen music names to official soundtrack names.
 packinfo.v160.u7=Added Wild Update music to Music Listen.
 packinfo.v160.u8=Added "FaQ" to the Pack Info screen.
+packinfo.v160.u9=Command suggestions in chat commands can now be completed by clicking/touching on them.
+packinfo.v160.u10=World, friends, and other buttons on the play screen now require double-clicking to join (can be undone via Config).
 
 packinfo.v152.u1=Fixed some bugs that were happening in Minecraft v1.18.12.
 packinfo.v152.u2=Since Minecraft v1.19.80, a confirmation message is displayed before going to the feedback site in vanilla, and the confirmation message implemented in GoteSupport has been removed.
@@ -343,9 +353,9 @@ packinfo.about_author.text4=I make JSON UI as I like as a hobby.
 packinfo.about_author.text5=I'm terrible at programming.
 packinfo.about_author.text6=I'm not good at learning new things.
 packinfo.about_author.text7=I have about 8 years of experience in Minecraft.
-packinfo.about_author.text8=I am an operator of Cai Server, the most popular Realm server in Japan!
-packinfo.about_author.text9=Realm is a very busy server with over 9,000 members!
-packinfo.about_author.text10=§l§c10,000 people coming soon!! §6Please join us!
+packinfo.about_author.text8=I am a staff of Cai Server, the most popular Realm server in Japan!
+packinfo.about_author.text9=Realm is a very busy server with over 10,000 members!
+packinfo.about_author.text10=§l§cRealm reaches 10,000 members!! §6Please join us!
 packinfo.about_author.text11=Gote-Server Discord (Japanese)
 packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
 packinfo.about_author.text13=Gote-Server Realm
