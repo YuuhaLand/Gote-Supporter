@@ -877,10 +877,7 @@
             { "howtoplay_13@tabbed_upsell.text": {"text": "packinfo.about_author.text12"}},
             { "howtoplay_14@tabbed_upsell.text": {"text": ""}},
             { "howtoplay_15@tabbed_upsell.text": {"text": "packinfo.about_author.text13"}},
-            { "howtoplay_16@tabbed_upsell.text": {"text": "packinfo.about_author.text14"}},
-            { "howtoplay_17@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_18@tabbed_upsell.text": {"text": "packinfo.about_author.text15"}},
-            { "howtoplay_19@tabbed_upsell.text": {"text": "packinfo.about_author.text16"}}
+            { "howtoplay_16@tabbed_upsell.text": {"text": "packinfo.about_author.text14"}}
           ],
           "bindings": [
             {
@@ -916,7 +913,9 @@
             { "howtoplay_17@tabbed_upsell.text": {"text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"}},
             { "howtoplay_18@tabbed_upsell.text": {"text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"}},
             { "howtoplay_19@tabbed_upsell.text": {"text": "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE"}},
-            { "howtoplay_20@tabbed_upsell.text": {"text": "SOFTWARE."}}
+            { "howtoplay_20@tabbed_upsell.text": {"text": "SOFTWARE."}},
+            { "howtoplay_21@tabbed_upsell.text": {"text": ""}},
+            { "howtoplay_22@tabbed_upsell.text": {"text": "長々しい英語が続きましたが、つまり...\nこのパックは商用利用、個人利用かかわらず、自由にコピー・再配布・改造してもいいよ～。\nその代わり、何か起こっても責任はとれないよ～\nということです。"}}
           ],
           "bindings": [
             {

@@ -2,22 +2,8 @@
 pack.description=You can conveniently enjoy your Minecraft life.   Created by YukaYama0311
 packname.nover=§l§aGote§d-§bSupporter
 
-accessibility.disableTTS=§eText To Speech disabled	#
-accessibility.enableTTS=§eText To Speech enabled	#
-
-permissions.chatmute=Oops! You are not authorized to speak on this server.	#
-
-
 
 map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s	#
-
-disconnectionScreen.title=Connection error!
-disconnectionScreen.sessionNotFound=No world session was found.	#
-disconnectionScreen.notAllowed=Access to this server has been denied.	#
-xbox.disconectionscreen.accessDenied=Access denied. The host may have blocked or banned you.
-
-createWorldScreen.gameMode.spectator=Spectator
-createWorldScreen.gameMode.hardcore=hardcore
 
 craftingScreen.tab.none=None
 
@@ -25,16 +11,19 @@ chat.newline=Newline
 chat.textbox.place=Message
 cmd.textbox.place=Enter your command input here
 
-qs.video=Quick Video Settings
-qs.accessibility=Quick Accessibility Settings
-qs.chat=Chat Settings
-qs.chatonly=This feature only supports chat settings
-chat.settingsPlus=Quick Settings
+disconnectionScreen.sessionNotFound.reason=That world may already be closed.
 
-options.screenShake=Enable "/camerashake"
+disconnectionScreen.disconnected.reason1=The host may have closed the world
+disconnectionScreen.disconnected.reason2=or the Internet connection may be unstable.
+disconnectionScreen.disconnected.reason3=It is also possible that the server has shut down/crashed.
+
+disconnectionScreen.notAllowed.reason1=Once you are kicked out of a world,
+disconnectionScreen.notAllowed.reason2=you cannot participate unless the host reopens the world.
+
+xbox.disconectionscreen.accessDenied.reason=Your host may have blocked you.
+
 options.quick=Quick
 options.quickTitle=Quick Settings
-options.touch.canSwitch=Touch is also available on Nintendo Switch. However, this setting is usually hidden, If you participate in the world where you applied "Gote-Supporter", this item will be displayed and you will be able to change settings.
 
 options.gote.label1=Here you can check the Config of Gote-Supporter.
 options.gote.label2=Gote-Supporter settings cannot be changed from here.
@@ -52,39 +41,6 @@ options.gote.show_item_id_aux=Display Item ID Aux on inventory screen (for JSON 
 options.gote.playerlist_key=HUD player list key
 options.gote.play_screen_doubleclick=Make it so that you have to double click on the world button on the play screen to enter.
 
-
-item.spawn_egg.name=Empty Spawn Egg
-
-tile.reserved6.name=Reserved6
-tile.movingBlock.name=Moving Block
-tile.info_update.name=Info Update
-tile.info_update2.name=Info Update2
-tile.glowingobsidian.name=Glowing Obsidian
-tile.end_gateway.name=End Gateway
-tile.frosted_ice.name=Frosted Ice
-tile.frame.name=Frame
-tile.dark_oak_door=Dark Oak Door
-tile.acacia_door=Acacia Door
-tile.jungle_door=Jungle Door
-tile.spruce_door=Spruce Door
-tile.daylight_detector_inverted.name=Daylight Sensor Inverted
-tile.wall_banner.name=Wall Banner
-tile.double_wooden_slab_oak.name=Double Wooden Slab Oak
-tile.unpowered_comparator.name=Unpowered comparator
-tile.powered_comparator.name=Powered comparator
-tile.skull.name=Skull
-tile.carrots.name=Carrots
-tile.flower_pot.name=Flower Pot
-tile.lit_redstone_lamp.name=Lit Redstone Lamp
-tile.end_portal.name=End Portal
-tile.unpowered_repeater.name=Unpowered Repeater
-tile.powered_repeater.name=Powered Repeater
-tile.lit_redstone_ore.name=Lit Redstone Ore
-tile.lava.name=Lava
-tile.wooden_door.name=Wooden Door
-tile.pistonArmCollision.name=Piston Arm Collision
-tile.stickyPistonArmCollision.name=Sticky Piston Arm Collision
-tile.bubble_column.name=Bubble Column
 
 ## フィードバックサイト
 
@@ -152,6 +108,11 @@ packinfo.f6=...And more!
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v162.u1=Nice "Condition" and "Redstone" toggle buttons on the command block.
+packinfo.v162.u2=The "Exit Game" button on the start screen has been removed.
+packinfo.v162.u3=Added explanations to some errors on the screen when disconnected.
+packinfo.v162.u4=A bug that prevented pressing the vertical tab button on the chat screen while entering a command has been fixed.
 
 packinfo.v161.u1=The heavily modified UI (play screen, feed screen, book and quill screen) have been moved to their own independent packs.
 packinfo.v161.u2=With the move of the play screen, the Config to use the redesigned play screen or tabbed play screen has been removed.
@@ -333,14 +294,13 @@ packinfo.readme.text1=Thank you for downloading Gote-Supporter.
 packinfo.readme.text2=If you use this pack, you must strictly adhere to the following
 packinfo.readme.text4=《You can do the following》
 packinfo.readme.text5=To use this pack as a reference for creating your own packs.
-packinfo.readme.text6=To modify this pack for personal use.
+packinfo.readme.text6=To modify this pack.
 packinfo.readme.text7=Copying parts of this pack into other packs.
 packinfo.readme.text8=Distributing packs that contain material copied from this pack.(It must be clearly stated that it was copied from Gote-Supporter.)
 packinfo.readme.text9=Modifying this pack to maintain compatibility with other packs.
 packinfo.readme.text10=Apply this pack to a world or server resource pack.
 packinfo.readme.text11=Producing a video introducing this pack.
 packinfo.readme.text12=《You CAN'T do the following》
-packinfo.readme.text14=Secondary distribution of this pack
 packinfo.readme.text15=Claiming this pack as your own work
 
 ##つくったひと
@@ -355,13 +315,11 @@ packinfo.about_author.text6=I'm not good at learning new things.
 packinfo.about_author.text7=I have about 8 years of experience in Minecraft.
 packinfo.about_author.text8=I am a staff of Cai Server, the most popular Realm server in Japan!
 packinfo.about_author.text9=Realm is a very busy server with over 10,000 members!
-packinfo.about_author.text10=§l§cRealm reaches 10,000 members!! §6Please join us!
+packinfo.about_author.text10=§l§cServer ends at the end of August. オレンジThank you for 6 years!
 packinfo.about_author.text11=Gote-Server Discord (Japanese)
 packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
 packinfo.about_author.text13=Gote-Server Realm
 packinfo.about_author.text14=§a Check the Discord for Gote-Server.
-packinfo.about_author.text15=Cai Server Discord (Japanese)
-packinfo.about_author.text16=§adiscord.gg/WqsPrrxuU6
 
 ##ライセンス
 packinfo.licence.title=Licence

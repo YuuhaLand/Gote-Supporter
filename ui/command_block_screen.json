@@ -1,6 +1,47 @@
 {
   "namespace": "command_block",
 
+  "java_toggle@common_toggles.light_content_toggle": {
+    "$checked_control": "common_toggles.toggle_unchecked",
+    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+    "size": [ "100%", "30px" ],
+    "$radio_toggle_group": true,
+
+    "$toggle_state_binding_name|default": "$option_binding_name",
+    "$toggle_enabled_binding_type|default": "global",
+    "$toggle_name": "$toggle_state_binding_name",
+    "$button_content": "command_block.java_toggle_content",
+    "$button_text|default": "",
+
+    "$binding_type": "global",
+    "$binding_condition": "once"
+  },
+
+  "java_toggle_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "buttonlabel": {
+          "type": "label",
+          "size": [ "100% - 14px", 10 ],
+          "text": "$button_text",
+          "color": "$text_color"
+        }
+      },
+      {
+        "switch_yajirusi": {
+          "type": "image",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -8, 0 ],
+          "size": [ 16, 11 ],
+          "texture": "textures/ui/switch_toggle"
+        }
+      }
+    ]
+  },
+
   "tab_button_panel": {
     "type": "panel",
     "size": [ 35, 20 ],
@@ -114,7 +155,7 @@
         }
       },
       {
-        "conditional@settings.toggle": {
+        "conditional@command_block.java_toggle": {
           "$toggle_name":"#command_conditional_mode",
           "$button_text": "commandBlockScreen.condition.unconditional",
           "$option_binding_name": "#command_conditional_mode",
@@ -132,7 +173,7 @@
         }
       },
       {
-        "unconditional@settings.toggle": {
+        "unconditional@command_block.java_toggle": {
           "$toggle_name":"#command_unconditional_mode",
           "$button_text": "commandBlockScreen.condition.conditional",
           "$option_binding_name": "#command_unconditional_mode",
@@ -165,7 +206,7 @@
         }
       },
       {
-        "need@settings.toggle": {
+        "need@command_block.java_toggle": {
           "$toggle_name":"#command_needs_redstone_mode",
           "$button_text": "commandBlockScreen.redstone.always_on",
           "$option_binding_name": "#command_needs_redstone_mode",
@@ -183,7 +224,7 @@
         }
       },
       {
-        "always@settings.toggle": {
+        "always@command_block.java_toggle": {
           "$toggle_name":"#command_always_on_mode",
           "$button_text": "commandBlockScreen.redstone.needs_redstone",
           "$option_binding_name": "#command_always_on_mode",

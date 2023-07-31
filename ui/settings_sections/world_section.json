@@ -32,28 +32,18 @@
                     "size": [ "100%", 10 ],
                     "controls": [
                       {
-                        "text": {
-                          "type": "label",
-                          "text": "storageManager.version",
-                          "color": "$body_text_color"
-                        }
-                      },
-                      {
-                        "colon": {
-                          "type": "label",
-                          "text": "  ",
-                          "color": "$body_text_color"
-                        }
-                      },
-                      {
                         "version": {
                           "type": "label",
                           "text": "#text",
                           "color": "$body_text_color",
                           "bindings": [
                             {
-                              "binding_name": "#minimum_template_version",
-                              "binding_name_override": "#text"
+                              "binding_name": "#minimum_template_version"
+                            },
+                            {
+                              "binding_type": "view",
+                              "source_property_name": "('%storageManager.version: v' + #minimum_template_version)",
+                              "target_property_name": "#text"
                             }
                           ]
                         }

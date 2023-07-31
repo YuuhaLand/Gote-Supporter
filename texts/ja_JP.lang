@@ -3,77 +3,25 @@ pack.description=マイライフをより豊かにできるユーザー補助ツ
 pack.name.nover=§l§aごて§bサポーター
 
 
-accessibility.disableTTS=§eテキスト読み上げ無効	#
-accessibility.enableTTS=§eテキスト読み上げ有効	#
-
 map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s	#
-
-permissions.chatmute=§cこのサーバーで発言する権限がありません。	#
-commands.generic.unknown=選択されたコマンド"%s"は存在しないか、実行するための権限がありません。	#
-commands.generic.syntax=コマンドの構文が間違っています: %1$s>>%2$s<<%3$s	#
-## >
-commands.generic.disabled=§cこの世界ではチートが有効化されていないため、チートコマンドは使用できません。	#
-commands.generic.parameter.invalid=パラメータが無効です: '%1$s'	#
-commands.generic.num.invalid=指定された数値は無効です: '%1$s'	#
-commands.generic.num.tooBig=指定された数値"%s"は大きすぎます。%s以下の数値を指定してください	#
-commands.generic.num.tooSmall=指定された数値"%s" は小さすぎます。%s以上の数値を指定してください	#
-commands.generic.permission.selector=権限が不十分なため、セレクターを使用することができません。	#
-commands.kick.no.host=ゲームからホストを追放することはできません。	#
-commands.kick.no.teacher=ゲームから教師を追放することはできません。	#
 
 chat.newline=改行テキスト
 
 container.shulkerboxContains=その他 %d 個...	#
-networkWorld.realmsHashPlaceholder=招待コードを入力...	#
-networkWold.joinByCodeHelpText=https://realms.gg/>><<	#
-## >
 
 chat.textbox.place=メッセージを入力
-cmd.textbox.place=コマンドをここに入力してください。
+cmd.textbox.place=コマンドを入力
 
-disconnectionScreen.title=接続エラー!
-disconnectionScreen.disconnected=サーバーとの接続が切断されました	#
-disconnectionScreen.cantConnect=世界に接続できませんでした	#
-disconnectionScreen.sessionNotFound=世界のセッションが見つかりませんでした。	#
-disconnectionScreen.serverFull=このサーバーに接続しているプレイヤーの数が最大値に達しているため、接続できませんでした。	#
-disconnectionScreen.serverFull.title=サーバーが満員です	#
-disconnectionScreen.notAllowed=このサーバーへのアクセスが拒否されました。 一度追放された場合、ホストが開き直さない限り入れません。	#
-disconnectionScreen.nowifi=「モバイルデータを使用」がオフになっているため、Wi-Fiに接続しないとサーバーに接続できません。
-xbox.disconectionscreen.accessDenied=アクセスが拒否されました。 ホストがあなたをブロック又はBANした可能性があります。
+disconnectionScreen.sessionNotFound.reason=そのワールドはもう既に閉じられているのかもしれません。
 
-tile.reserved6.name=予約済み6
-tile.movingBlock.name=移動中のブロック
-tile.info_update.name=アップデート情報
-tile.info_update2.name=アップデート情報2
-tile.glowingobsidian.name=発光する黒曜石
-tile.end_gateway.name=エンドゲートウェイ
-tile.frosted_ice.name=曇らされた氷
-tile.frame.name=枠
-tile.dark_oak_door=黒樫のドア
-tile.acacia_door=アカシアのドア
-tile.jungle_door=ジャングルのドア
-tile.spruce_door=トウヒのドア
-tile.daylight_detector_inverted.name=反転した日照センサー
-tile.wall_banner.name=壁につけられた旗
-tile.double_wooden_slab_oak.name=重なった木のハーフブロック
-tile.unpowered_comparator.name=レッドストーンコンパレーター(パワーなし)
-tile.powered_comparator.name=レッドストーンコンパレーター(パワーあり)
-tile.skull.name=頭
-tile.carrots.name=人参
-tile.flower_pot.name=植木鉢
-tile.lit_redstone_lamp.name=点灯したレッドストーンランプ
-tile.end_portal.name=エンドポータル
-tile.unpowered_repeater.name=レッドストーンリピーター(パワーなし)
-tile.powered_repeater.name=レッドストーンリピーター(パワーあり)
-tile.lit_redstone_ore.name=点灯したレッドストーン鉱石
-tile.lava.name=溶岩
-tile.wooden_door.name=木のドア
-tile.pistonArmCollision.name=ピストンアーム衝突
-tile.stickyPistonArmCollision.name=粘着ピストンアーム衝突
-tile.bubble_column.name=気泡塔
+disconnectionScreen.disconnected.reason1=ホストがワールドを閉じたか、
+disconnectionScreen.disconnected.reason2=インターネット接続が不安定な可能性があります。
+disconnectionScreen.disconnected.reason3=また、サーバーがシャットダウン・クラッシュした可能性もあります。
 
-item.spyglass.name=望遠鏡	#
-item.muttonCooked.name=ジンギスカン	#
+disconnectionScreen.notAllowed.reason1=一度ワールドから追放されると、
+disconnectionScreen.notAllowed.reason2=ホストがワールドを開き直さない限り参加できません。
+
+xbox.disconectionscreen.accessDenied.reason=ホストがあなたをブロックした可能性があります。
 
 feed.daysAgo=%d 日前	#
 feed.report_xbox=Xbox Live に報告	#
@@ -81,12 +29,8 @@ feed.report_club=クラブ管理者に報告	#
 
 craftingScreen.tab.none=不明のタブ
 
-options.renderDistance=描画距離	#
-options.screenShake=/camerashake が有効	#
 options.quick=クイック
 options.quickTitle=クイック設定
-options.spyglassdampen=望遠鏡の減衰	#
-options.touch.canSwitch=タッチは、Nintendo Switchでも使用可能です。しかし、通常、この設定は非表示になっていますが、Nintendo Switchで「Gote-Supporter」を適用した世界に参加すると、この項目が表示され、設定変更が可能になります。
 
 options.gote.label1=ここではGote-SupporterのConfigを確認することができます。
 options.gote.label2=ここからGote-Supporterの設定を変更することはできません。
@@ -178,6 +122,11 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v162.u1=コマンドブロックの「条件」と「レッドストーン」のトグルボタンを良い感じにしました。
+packinfo.v162.u2=スタート画面の「ゲームを終了」ボタンを消しました。
+packinfo.v162.u3=切断されたときの画面の一部のエラーに説明を追加しました。
+packinfo.v162.u4=チャット画面の垂直方向タブボタンで、コマンドの入力中に押せないバグを直しました。
 
 packinfo.v161.u1=大幅に変更されたUI(プレイ画面、フィード画面、本と羽ペン画面)はそれぞれ独立したパックに移動されました。
 packinfo.v161.u2=プレイ画面の移動に伴い、一新されたプレイ画面やタブ分けされたプレイ画面を使用するかのConfigを削除しました。
@@ -360,14 +309,13 @@ packinfo.readme.text1=「Gote-Supporter」をダウンロードしていただ�
 packinfo.readme.text2=もしこのパックを使用する場合は、以下のことを厳守してください。
 packinfo.readme.text4=《あなたは以下のことができます》
 packinfo.readme.text5=このパックを参考にして自分のパックの作成に役立てること
-packinfo.readme.text6=このパックを個人目的で改変すること
+packinfo.readme.text6=このパックを改変すること
 packinfo.readme.text7=このパックの一部を他のパックにコピーすること
 packinfo.readme.text8=このパックからコピーされた物を含むパックを配布すること(Gote-Supporterからコピーしたことを明記する必要があります)
 packinfo.readme.text9=他のパックとの互換性維持のためにこのパックを改変すること
 packinfo.readme.text10=このパックをワールドあるいはサーバーのリソースパックに適用すること
 packinfo.readme.text11=このパックの紹介動画などを製作すること
 packinfo.readme.text12=《あなたは以下のことができません》
-packinfo.readme.text14=このパックを二次配布すること
 packinfo.readme.text15=このパックを自作のものと主張すること
 
 ##つくったひと
@@ -381,17 +329,14 @@ packinfo.about_author.text6=新しいことを覚えるのが苦手。
 packinfo.about_author.text7=マイクラ歴は8年くらい。
 packinfo.about_author.text8=日本一のRealmサーバー「彩」の運営も努めてます。
 packinfo.about_author.text9=Realmには10,000人以上のメンバーがいるとても賑やかなサーバーです!
-packinfo.about_author.text10=§l§cＲｅａｌｍメンバー １０,０００人突破！！ §6ぜひ来てみてね！！
+packinfo.about_author.text10=§l§c8月いっぱいで運営終了 §66年間ありがとうございました！
 packinfo.about_author.text11=ごて鯖 Discord
 packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
 packinfo.about_author.text13=ごて鯖 Realm
 packinfo.about_author.text14=§aごて鯖のDiscordで確認してね。
-packinfo.about_author.text15=「彩」 Discord
-packinfo.about_author.text16=§adiscord.gg/WqsPrrxuU6
 
 ##ライセンス
 packinfo.licence.title=ライセンス
-
 ##よくある質問
 packinfo.faq.title=よくある質問
 packinfo.faq.text1=ここではGote-Supporterに関するよくある質問が見れます!

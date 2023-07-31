@@ -33,17 +33,6 @@
     "size": [ 13, 20 ]
   },
 
-  "quit_button@common_buttons.light_content_button": {
-	  "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "size": [ 25, 25 ],
-    "offset": [ 5, 5 ],
-    "ignored": "$is_ios",
-    "$pressed_button_name": "button.menu_exit",
-    "$button_content": "start.quit_icon",
-    "$button_tts_header": "accessibility.button.exit"
-  },
-
   "upper_online_buttons_panel/stacked_column/gamertag_pic_and_label": {
     "ignored": "$education_edition",
     "size": [ "100%c", 24 ],
@@ -166,48 +155,25 @@
       },
       {
         "minecraft_version": {
-          "type": "panel",
+          "type": "label",
+          "color": "$main_header_text_color",
           "anchor_from": "top_left",
           "anchor_to": "top_left",
-          "size": [ "100%c", 10 ],
+          "size": [ "default", 10 ],
+          "text": "Minecraft by %menu.copyright",
+          "layer": 1,
           "controls": [
-            {
-              "minecraft_version": {
-                "type": "stack_panel",
-                "orientation": "horizontal",
-                "anchor_from": "top_left",
-                "anchor_to": "top_left",
-                "size": [ "default", 10 ],
-                "layer": 2,
-                "controls": [
-                  {
-                    "minecraft": {
-                      "type": "label",
-                      "color": "$main_header_text_color",
-                      "text": "Minecraft by "
-                    }
-                  },
-                  {
-                    "mc_ver": {
-                      "type": "label",
-                      "color": "$main_header_text_color",
-                      "text": "menu.copyright"
-                    }
-                  }
-                ]
-              }
-            },
             {
               "label_background": {
                 "type": "image",
                 "texture": "textures/ui/White",
-                "anchor_from": "top_left",
-                "anchor_to": "top_left",
-                "offset": [ -1, -1 ],
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "offset": [ 3, -1 ],
                 "alpha": 0.6,
                 "color": [ 0, 0, 0 ],
-                "size": [ "100%sm + 4px", "100%sm + 2px" ],
-                "layer": 1
+                "size": [ "100% + 4px", "100% + 2px" ],
+                "layer": -5
               }
             }
           ]
@@ -438,9 +404,6 @@
         "array_name": "controls",
         "operation": "insert_front",
         "value": [
-          {
-            "quit_button@start.quit_button": {}
-          },
           {
             "preview_warning_button@start.preview_warning_swtich_toggle_c": {
               "ignored": "(not $pre_release or $education_edition)",

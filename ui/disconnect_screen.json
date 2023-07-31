@@ -1,0 +1,264 @@
+{
+  "namespace": "disconnect",
+	
+  "ds_text": {
+    "type": "label",
+    "color": "$loading_text_color",
+    "size": [ "100%", 10 ],
+    "text_alignment": "center",
+    "layer": 2,
+    "shadow": true
+  },
+
+  "disconnect_screen_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ]
+  },
+
+  "title_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "disconnect": {
+          "type": "panel",
+          "controls": [
+            {
+              "disconnect_text": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "offset": [ 0, -40 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "controls": [
+                  {
+                    "text1@disconnect.ds_text": {
+                      "text": "disconnectionScreen.disconnected"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 1, 10 ]
+                    }
+                  },
+                  {
+                    "text2@disconnect.ds_text": {
+                      "text": "disconnectionScreen.disconnected.reason1"
+                    }
+                  },
+                  {
+                    "text3@disconnect.ds_text": {
+                      "text": "disconnectionScreen.disconnected.reason2"
+                    }
+                  },
+                  {
+                    "text4@disconnect.ds_text": {
+                      "text": "disconnectionScreen.disconnected.reason3"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#disconnect_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#disconnect_text",
+              "target_property_name": "#error_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#error_text = 'disconnectionScreen.disconnected')",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "notallow": {
+          "type": "panel",
+          "controls": [
+            {
+              "disconnect_text": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "offset": [ 0, -40 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "controls": [
+                  {
+                    "text1@disconnect.ds_text": {
+                      "text": "disconnectionScreen.notAllowed"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 1, 10 ]
+                    }
+                  },
+                  {
+                    "text2@disconnect.ds_text": {
+                      "text": "disconnectionScreen.notAllowed.reason1"
+                    }
+                  },
+                  {
+                    "text3@disconnect.ds_text": {
+                      "text": "disconnectionScreen.notAllowed.reason2"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#disconnect_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#disconnect_text",
+              "target_property_name": "#error_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#error_text = 'disconnectionScreen.notAllowed')",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "accessDenied": {
+          "type": "panel",
+          "controls": [
+            {
+              "disconnect_text": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "offset": [ 0, -40 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "controls": [
+                  {
+                    "text1@disconnect.ds_text": {
+                      "text": "xbox.disconectionscreen.accessDenied"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 1, 10 ]
+                    }
+                  },
+                  {
+                    "text2@disconnect.ds_text": {
+                      "text": "xbox.disconectionscreen.accessDenied.reason"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#disconnect_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#disconnect_text",
+              "target_property_name": "#error_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#error_text = 'xbox.disconectionscreen.accessDenied')",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "sessionNotFound": {
+          "type": "panel",
+          "controls": [
+            {
+              "disconnect_text": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "offset": [ 0, -40 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "controls": [
+                  {
+                    "text1@disconnect.ds_text": {
+                      "text": "disconnectionScreen.sessionNotFound"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 1, 10 ]
+                    }
+                  },
+                  {
+                    "text2@disconnect.ds_text": {
+                      "text": "disconnectionScreen.sessionNotFound.reason"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#disconnect_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#disconnect_text",
+              "target_property_name": "#error_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#error_text = 'disconnectionScreen.sessionNotFound')",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "normal": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            { "disconnect_title_text@disconnect.disconnect_title_text": {} },
+            { "disconnect_text@disconnect.disconnect_text": {} }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#disconnect_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "#disconnect_text",
+              "target_property_name": "#error_text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#error_text = 'disconnectionScreen.disconnected') or (#error_text = 'disconnectionScreen.notAllowed') or (#error_text = 'xbox.disconectionscreen.accessDenied') or (#error_text = 'disconnectionScreen.sessionNotFound')))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
