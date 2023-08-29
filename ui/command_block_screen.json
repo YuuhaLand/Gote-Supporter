@@ -49,7 +49,7 @@
     "$buttontext|default": "Tab",
     "controls": [
       {
-        "arrow_up@chat.editup": {
+        "arrow_up@chat.arrow_up": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
           "offset": [ 3, 0 ],
@@ -57,7 +57,7 @@
         }
       },
       {
-        "arrow_down@chat.editdown": {
+        "arrow_down@chat.arrow_down": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
           "offset": [ 3, 0 ],
@@ -72,7 +72,26 @@
           "anchor_from": "right_middle",
           "anchor_to": "right_middle",
           "text_alignment": "right",
-          "offset": [ -3, 0 ]
+          "offset": [ -3, 0 ],
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "resolve_sibling_scope": true,
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
+        }
+      },
+      {
+        "font_property_panel": {
+          "type": "panel",
+          "size": [ 0, 0 ],
+          "property_bag": {
+            "#font_type": "classic"
+          }
         }
       }
     ]

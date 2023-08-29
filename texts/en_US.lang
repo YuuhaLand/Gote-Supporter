@@ -88,8 +88,6 @@ packinfo.about.text2=It does not use any behavior packs and can be used in multi
 packinfo.about.text3=(Gote-Supporter cannot be used if the participating server has denied global resources.)
 packinfo.about.text4=This pack is available on MCPEDL!
 packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
-packinfo.about.text6=Join YukaYama0311's add-on Discord server and report bugs in Gote-Supporter!
-packinfo.about.text7=§adiscord.gg/ZcCnXYEFc2
 
 ## 特徴
 
@@ -99,9 +97,9 @@ packinfo.features.text2=See more features at MCPEDL or on our blog Introducing G
 
 packinfo.f1=You don't have to make a clock and compass for survival!
 packinfo.f2=Item names can be newlined in an anvil!
-packinfo.f3=You can press the F1 and F8 keys on the play screen and the Tab key on the chat screen on your phone!
+packinfo.f3=You can check the world version!
 packinfo.f4=You can create a world template!
-packinfo.f5=Maximum frame rate setting can be changed!
+packinfo.f5=Press the Tab key to display the player list like the Java Edition! (keyboard only)
 packinfo.f6=...And more!
 
 ## アップデート情報
@@ -313,13 +311,8 @@ packinfo.about_author.text4=I make JSON UI as I like as a hobby.
 packinfo.about_author.text5=I'm terrible at programming.
 packinfo.about_author.text6=I'm not good at learning new things.
 packinfo.about_author.text7=I have about 8 years of experience in Minecraft.
-packinfo.about_author.text8=I am a staff of Cai Server, the most popular Realm server in Japan!
-packinfo.about_author.text9=Realm is a very busy server with over 10,000 members!
-packinfo.about_author.text10=§l§cServer ends at the end of August. オレンジThank you for 6 years!
-packinfo.about_author.text11=Gote-Server Discord (Japanese)
-packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
-packinfo.about_author.text13=Gote-Server Realm
-packinfo.about_author.text14=§a Check the Discord for Gote-Server.
+packinfo.about_author.text8=Gote-Server Discord (Japanese)
+packinfo.about_author.text9=§adiscord.gg/tzU7R5NMnu
 
 ##ライセンス
 packinfo.licence.title=Licence

@@ -24,10 +24,18 @@
       {
         "texts": {
           "type": "label",
-          "text": "$text",
+          "text": "('§　%' + $text)",
           "shadow": true,
-          "font_type": "unicode",
-          "size": [ "100% - 10px", "default" ]
+          "size": [ "100% - 10px", "default" ],
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
         }
       }
     ]

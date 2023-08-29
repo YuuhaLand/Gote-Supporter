@@ -1,33 +1,17 @@
 {
   "namespace": "chat",
 
-  "arrow_up1": {
+  "arrow_up": {
     "type": "image",
-    "texture": "textures/ui/arrow_up1",
-    "color": "$text_color",
-    "layer": 3,
-    "size": [ 7, 16 ]
-  },
-
-  "arrow_down1": {
-    "type": "image",
-    "texture": "textures/ui/arrow_down1",
-    "color": "$text_color",
-    "layer": 3,
-    "size": [ 7, 16 ]
-  },
-  
-  "editup": {
-    "type": "image",
-    "texture": "textures/ui/editup",
+    "texture": "textures/ui/arrow_up_gs",
     "color": "$text_color",
     "layer": 3,
     "size": [ 5, 8 ]
   },
   
-  "editdown": {
+  "arrow_down": {
     "type": "image",
-    "texture": "textures/ui/editdown",
+    "texture": "textures/ui/arrow_down_gs",
     "color": "$text_color",
     "layer": 3,
     "size": [ 5, 8 ]
@@ -40,7 +24,7 @@
     "$buttontext|default": "Tab",
     "controls": [
       {
-        "arrow_up@arrow_up1": {
+        "arrow_up@chat.arrow_up": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
           "offset": [ 3, 0 ],
@@ -48,7 +32,7 @@
         }
       },
       {
-        "arrow_down@arrow_down1": {
+        "arrow_down@chat.arrow_down": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
           "offset": [ 3, 0 ],
@@ -63,7 +47,26 @@
           "anchor_from": "right_middle",
           "anchor_to": "right_middle",
           "text_alignment": "right",
-          "offset": [ -3, 0 ]
+          "offset": [ -3, 0 ],
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "resolve_sibling_scope": true,
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
+        }
+      },
+      {
+        "font_property_panel": {
+          "type": "panel",
+          "size": [ 0, 0 ],
+          "property_bag": {
+            "#font_type": "classic"
+          }
         }
       }
     ]
@@ -76,31 +79,49 @@
     "$buttontext|default": "Tab",
     "controls": [
       {
-        "arrow_up@editup": {
+        "arrow_up@chat.arrow_up": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
-          "offset": [ 3, 0 ],
+          "offset": [ 5, 0 ],
           "ignored": "(not $is_up)"
         }
       },
       {
-        "arrow_down@editdown": {
+        "arrow_down@chat.arrow_down": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
-          "offset": [ 3, 0 ],
+          "offset": [ 5, 0 ],
           "ignored": "$is_up"
         }
       },
       {
         "text": {
           "type": "label",
-          "text": "$buttontext",
+          "text": "('§　' + $buttontext)",
           "color": "$text_color",
           "anchor_from": "right_middle",
           "anchor_to": "right_middle",
-          "font_type": "unicode",
           "text_alignment": "right",
-          "offset": [ -3, 0 ]
+          "offset": [ -4, 0 ],
+          "font_type": "#font_type",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "resolve_sibling_scope": true,
+              "source_control_name": "font_property_panel",
+              "source_property_name": "#font_type",
+              "target_property_name": "#font_type"
+            }
+          ]
+        }
+      },
+      {
+        "font_property_panel": {
+          "type": "panel",
+          "size": [ 0, 0 ],
+          "property_bag": {
+            "#font_type": "classic"
+          }
         }
       }
     ]
@@ -192,7 +213,7 @@
     "anchor_to": "bottom_right",
     "size": [ 15, 50 ],
 	  "offset": [ 0, -85],
-    "ignored": "($chat_tab_button_type = 'horizontal')",
+    "ignored": "(($chat_tab_button_type = 'horizontal') or $revival_for_2023_db)",
     "controls":[
 	    {"chat_autocompleteback_button@chat.chat_autocompleteback_button":{}},
 	    {"chat_autocomplete_button@chat.chat_autocomplete_button":{}},
@@ -236,7 +257,7 @@
     "$binding_condition": "once"
   },
 
-  "editup_button@chat.swtich_toggle": {
+  "arrow_up_button@chat.swtich_toggle": {
     "$toggle_view_binding_name": "newline_chat",
     "$toggle_group_forced_index": 100,
 
@@ -244,7 +265,7 @@
     "anchor_to": "bottom_left",
     "size": [ 16, 27 ],
 
-    "$button_content": "chat.editup",
+    "$button_content": "chat.arrow_up",
     "$button_tts_header": "テキストボックスを拡大する",
     "bindings": [
       {
@@ -256,7 +277,7 @@
     ]
   },
 
-  "editdown_button@chat.swtich_toggle": {
+  "arrow_down_button@chat.swtich_toggle": {
     "$checked_control": "common_toggles.toggle_unchecked",
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
     "$toggle_default_state": true,
@@ -265,7 +286,7 @@
     "anchor_to": "bottom_left",
     "size": [ 16, 27 ],
 
-    "$button_content": "chat.editdown",
+    "$button_content": "chat.arrow_down",
     "$button_tts_header": "テキストボックスを縮小する",
     "bindings": [
       {
@@ -455,7 +476,7 @@
     "size": [ 55, 27 ]
   },
 
-  "dummy_editup_button@chat.dummy_button": {
+  "dummy_arrow_up_button@chat.dummy_button": {
     "size": [ 15, 27 ]
   },
 
@@ -480,7 +501,7 @@
 	    {"chat_previous_button@chat.dummy_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
 	    {"chat_up_button@chat.dummy_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
       { "newline_text_edit_box@chat.newline_text_edit_box": {} },
-      { "editup_button@chat.dummy_editup_button": { } },
+      { "arrow_up_button@chat.dummy_arrow_up_button": { } },
       { "send_button2@chat.dummy_send_button": { "offset": [ -20, 0 ] } }
     ]
   },
@@ -495,8 +516,8 @@
 	    {"chat_previous_button@chat.chat_previous_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
 	    {"chat_up_button@chat.chat_up_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
       { "text_box@chat.text_edit_box": { } },
-      { "editup_button@chat.editup_button": { } },
-      { "editdown_button@chat.editdown_button": { } },
+      { "arrow_up_button@chat.arrow_up_button": { } },
+      { "arrow_down_button@chat.arrow_down_button": { } },
       { "send_button2@chat.send_button": { "offset": [ -20, 0 ] } }
     ]
   },  

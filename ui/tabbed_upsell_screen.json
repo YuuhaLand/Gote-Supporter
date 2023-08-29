@@ -79,15 +79,17 @@
             {
               "gotesupporter": {
                 "type": "label",
-                "text": "Gote-Supporter ",
-                "color": "$text_color"
-              }
-            },
-            {
-              "versions": {
-                "type": "label",
-                "text": "$version",
-                "color": "$text_color"
+                "text": "('Gote-Supporter ' + $version)",
+                "color": "$text_color",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
               }
             }
           ]
@@ -121,9 +123,17 @@
             {
               "title": {
                 "type": "label",
-                "text": "($question + '.q')",
-                "font_type": "unicode",
-                "color": "$text_color"
+                "text": "('§　%' +$question + '.q')",
+                "color": "$text_color",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
               }
             }
           ]
@@ -219,7 +229,7 @@
                 "layer": 10,
                 "controls": [
                   {
-                    "anser@tabbed_upsell.text": { "text": "($question + '.a')" }
+                    "anser@tabbed_upsell.text": { "$text": "($question + '.a')" }
                   }
                 ]
               }
@@ -250,7 +260,17 @@
     "anchor_to": "left_middle",
     "size": [ "100%", "default" ],
     "shadow": true,
-    "font_type": "unicode"
+    "text": "('§　%' + $text)",
+    "$text|default": "",
+    "font_type": "#font_type",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "font_property_panel",
+        "source_property_name": "#font_type",
+        "target_property_name": "#font_type"
+      }
+    ]
   },
   
   "playsound_play": {
@@ -432,15 +452,12 @@
         "about_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fh2@how_to_play_common.header": { "$text":"packinfo.about.title" }},
-            { "text01@tabbed_upsell.text": { "text": "packinfo.about.text1" }},
-            { "text02@tabbed_upsell.text": { "text": "packinfo.about.text2" }},
-            { "text04@tabbed_upsell.text": { "text": "packinfo.about.text3" }},
+            { "text01@tabbed_upsell.text": { "$text": "packinfo.about.text1" }},
+            { "text02@tabbed_upsell.text": { "$text": "packinfo.about.text2" }},
+            { "text04@tabbed_upsell.text": { "$text": "packinfo.about.text3" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text05@tabbed_upsell.text": { "text": "packinfo.about.text4" }},
-            { "text06@tabbed_upsell.text": { "text": "packinfo.about.text5" }},
-            { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text07@tabbed_upsell.text": { "text": "packinfo.about.text6" }},
-            { "text08@tabbed_upsell.text": { "text": "packinfo.about.text7" }}
+            { "text05@tabbed_upsell.text": { "$text": "packinfo.about.text4" }},
+            { "text06@tabbed_upsell.text": { "$text": "packinfo.about.text5" }}
           ],
           "bindings": [
             {
@@ -456,7 +473,7 @@
         "features_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fh2@how_to_play_common.header": { "$text":"packinfo.features.title" }},
-            { "text01@tabbed_upsell.text": { "text": "packinfo.features.text1" }},
+            { "text01@tabbed_upsell.text": { "$text": "packinfo.features.text1" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.f1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.f2"}},
@@ -465,7 +482,7 @@
             { "fp5_@gtb.features_text_with_bubble":{"$text":"packinfo.f5"}},
             { "fp6_@gtb.features_text_with_bubble":{"$text":"packinfo.f6"}},
             { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text02@tabbed_upsell.text": { "text": "packinfo.features.text2" }}
+            { "text02@tabbed_upsell.text": { "$text": "packinfo.features.text2" }}
           ],
           "bindings": [
             {
@@ -481,7 +498,7 @@
         "update_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fh2@how_to_play_common.header": { "$text":"packinfo.update.title" }},
-            { "text01@tabbed_upsell.text": { "text": "packinfo.update.text1" }},
+            { "text01@tabbed_upsell.text": { "$text": "packinfo.update.text1" }},
             {
               "padding_1": {
                 "type": "panel",
@@ -506,7 +523,7 @@
         "faq_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fm2@how_to_play_common.header": { "$text":"packinfo.faq.title" }},
-            { "text01@tabbed_upsell.text": { "text": "packinfo.faq.text1" }},
+            { "text01@tabbed_upsell.text": { "$text": "packinfo.faq.text1" }},
             {
               "padding_1": {
                 "type": "panel",
@@ -573,13 +590,13 @@
         "caution_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fh2@how_to_play_common.header": { "$text":"packinfo.caution.title" }},
-            { "text01@tabbed_upsell.text": { "text": "packinfo.caution.text1" }},
-            { "text02@tabbed_upsell.text": { "text": "packinfo.caution.text2" }},
-            { "text03@tabbed_upsell.text": { "text": "packinfo.caution.text3" }},
+            { "text01@tabbed_upsell.text": { "$text": "packinfo.caution.text1" }},
+            { "text02@tabbed_upsell.text": { "$text": "packinfo.caution.text2" }},
+            { "text03@tabbed_upsell.text": { "$text": "packinfo.caution.text3" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text06@tabbed_upsell.text": { "text": "packinfo.caution.text5" }},
+            { "text06@tabbed_upsell.text": { "$text": "packinfo.caution.text5" }},
             { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text08@tabbed_upsell.text": { "text": "packinfo.caution.text6" }},
+            { "text08@tabbed_upsell.text": { "$text": "packinfo.caution.text6" }},
             { "padding03": { "type": "panel", "size": [ 0, 10 ] }},
             {
               "1": {
@@ -618,7 +635,7 @@
               }
             },
             { "padding04": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text09@tabbed_upsell.text": { "text": "gtb.helpwarning.text1" }}
+            { "text09@tabbed_upsell.text": { "$text": "gtb.helpwarning.text1" }}
           ],
           "bindings": [
             {
@@ -634,9 +651,9 @@
         "music_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fh2@how_to_play_common.header": { "$text":"packinfo.music.title" }},
-            { "text01@tabbed_upsell.text": { "text": "packinfo.music.text1" }},
-            { "text02@tabbed_upsell.text": { "text": "packinfo.music.text2" }},
-            { "text03@tabbed_upsell.text": { "text": "packinfo.music.text3" }},
+            { "text01@tabbed_upsell.text": { "$text": "packinfo.music.text1" }},
+            { "text02@tabbed_upsell.text": { "$text": "packinfo.music.text2" }},
+            { "text03@tabbed_upsell.text": { "$text": "packinfo.music.text3" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
             { "fh3@how_to_play_common.header": { "$text":"accessibility.screenName.start" }},
             {"m1@tabbed_upsell.play_sound_panel":{"$sound_name":"C418 - Mutation","$sound_id":"pvp2.menu1","$sound_vol":1.0,"$is_music":true}},
@@ -726,8 +743,8 @@
         "readme_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "fm2@how_to_play_common.header": { "$text":"packinfo.readme.title" }},
-            { "fm3@tabbed_upsell.text": { "text":"packinfo.readme.text1" }},
-            { "fm4@tabbed_upsell.text": { "text":"packinfo.readme.text2" }},
+            { "fm3@tabbed_upsell.text": { "$text":"packinfo.readme.text1" }},
+            { "fm4@tabbed_upsell.text": { "$text":"packinfo.readme.text2" }},
             { "fm5@how_to_play_common.header": { "$text":"packinfo.readme.text4" }},
             { "fm6@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text5"}},
             { "fm7@gtb.features_text_with_bubble":{"$text":"packinfo.readme.text6"}},
@@ -783,7 +800,7 @@
                         {
                           "by_yuka0745": {
                             "type": "label",
-                            "text": "§l§aby §dYukaYama0311",
+                            "text": "§l§dYukaYama0311 §r- §2ゆかやまさん",
                             "font_scale_factor": 1.50,
                             "offset": [ 0, 0 ],
                             "shadow": true,
@@ -807,7 +824,7 @@
                         {
                           "twitter_url": {
                             "type": "label",
-                            "text": "§l§bTwitter:§r §etwitter.com/gotemba912",
+                            "text": "§l§8X:§r §etwitter.com/gotemba912",
                             "font_scale_factor": 1.0,
                             "shadow": true,
                             "font_type": "#font_type",
@@ -861,23 +878,16 @@
                 ]
               }
             },
-            { "howtoplay_0@tabbed_upsell.text": {"text": "packinfo.about_author.text1", "font_type": "MinecraftTen"}},
-            { "howtoplay_1@tabbed_upsell.text": {"text": "packinfo.about_author.text2"}},
-            { "howtoplay_2@tabbed_upsell.text": {"text": "packinfo.about_author.text3"}},
-            { "howtoplay_3@tabbed_upsell.text": {"text": "packinfo.about_author.text4"}},
-            { "howtoplay_4@tabbed_upsell.text": {"text": "packinfo.about_author.text5"}},
-            { "howtoplay_5@tabbed_upsell.text": {"text": "packinfo.about_author.text6"}},
-            { "howtoplay_6@tabbed_upsell.text": {"text": "packinfo.about_author.text7"}},
-            { "howtoplay_7@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_8@tabbed_upsell.text": {"text": "packinfo.about_author.text8"}},
-            { "howtoplay_9@tabbed_upsell.text": {"text": "packinfo.about_author.text9"}},
-            { "howtoplay_10@tabbed_upsell.text": {"text": "packinfo.about_author.text10"}},
-            { "howtoplay_11@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_12@tabbed_upsell.text": {"text": "packinfo.about_author.text11"}},
-            { "howtoplay_13@tabbed_upsell.text": {"text": "packinfo.about_author.text12"}},
-            { "howtoplay_14@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_15@tabbed_upsell.text": {"text": "packinfo.about_author.text13"}},
-            { "howtoplay_16@tabbed_upsell.text": {"text": "packinfo.about_author.text14"}}
+            { "howtoplay_0@tabbed_upsell.text": {"$text": "packinfo.about_author.text1", "font_type": "MinecraftTen"}},
+            { "howtoplay_1@tabbed_upsell.text": {"$text": "packinfo.about_author.text2"}},
+            { "howtoplay_2@tabbed_upsell.text": {"$text": "packinfo.about_author.text3"}},
+            { "howtoplay_3@tabbed_upsell.text": {"$text": "packinfo.about_author.text4"}},
+            { "howtoplay_4@tabbed_upsell.text": {"$text": "packinfo.about_author.text5"}},
+            { "howtoplay_5@tabbed_upsell.text": {"$text": "packinfo.about_author.text6"}},
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}},
+            { "howtoplay_7@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_8@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}},
+            { "howtoplay_9@tabbed_upsell.text": {"$text": "packinfo.about_author.text9"}}
           ],
           "bindings": [
             {
@@ -893,29 +903,29 @@
         "licence_page@tabbed_upsell.indexs_panel": {
           "controls": [
             { "header@how_to_play_common.header": { "$text":"packinfo.licence.title" }},
-            { "howtoplay_0@tabbed_upsell.text": {"text": "MIT License"}},
-            { "howtoplay_1@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_2@tabbed_upsell.text": {"text": "Copyright (c) 2023 YukaYama0311"}},
-            { "howtoplay_3@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_4@tabbed_upsell.text": {"text": "Permission is hereby granted, free of charge, to any person obtaining a copy"}},
-            { "howtoplay_5@tabbed_upsell.text": {"text": "of this software and associated documentation files (the \"Software\"), to deal"}},
-            { "howtoplay_6@tabbed_upsell.text": {"text": "in the Software without restriction, including without limitation the rights"}},
-            { "howtoplay_7@tabbed_upsell.text": {"text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"}},
-            { "howtoplay_8@tabbed_upsell.text": {"text": "copies of the Software, and to permit persons to whom the Software is"}},
-            { "howtoplay_9@tabbed_upsell.text": {"text": "furnished to do so, subject to the following conditions:"}},
-            { "howtoplay_10@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_11@tabbed_upsell.text": {"text": "The above copyright notice and this permission notice shall be included in all"}},
-            { "howtoplay_12@tabbed_upsell.text": {"text": "copies or substantial portions of the Software."}},
-            { "howtoplay_13@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_14@tabbed_upsell.text": {"text": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"}},
-            { "howtoplay_15@tabbed_upsell.text": {"text": "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"}},
-            { "howtoplay_16@tabbed_upsell.text": {"text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE"}},
-            { "howtoplay_17@tabbed_upsell.text": {"text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"}},
-            { "howtoplay_18@tabbed_upsell.text": {"text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"}},
-            { "howtoplay_19@tabbed_upsell.text": {"text": "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE"}},
-            { "howtoplay_20@tabbed_upsell.text": {"text": "SOFTWARE."}},
-            { "howtoplay_21@tabbed_upsell.text": {"text": ""}},
-            { "howtoplay_22@tabbed_upsell.text": {"text": "長々しい英語が続きましたが、つまり...\nこのパックは商用利用、個人利用かかわらず、自由にコピー・再配布・改造してもいいよ～。\nその代わり、何か起こっても責任はとれないよ～\nということです。"}}
+            { "howtoplay_0@tabbed_upsell.text": {"$text": "MIT License"}},
+            { "howtoplay_1@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_2@tabbed_upsell.text": {"$text": "Copyright (c) 2023 YukaYama0311"}},
+            { "howtoplay_3@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_4@tabbed_upsell.text": {"$text": "Permission is hereby granted, free of charge, to any person obtaining a copy"}},
+            { "howtoplay_5@tabbed_upsell.text": {"$text": "of this software and associated documentation files (the \"Software\"), to deal"}},
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "in the Software without restriction, including without limitation the rights"}},
+            { "howtoplay_7@tabbed_upsell.text": {"$text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"}},
+            { "howtoplay_8@tabbed_upsell.text": {"$text": "copies of the Software, and to permit persons to whom the Software is"}},
+            { "howtoplay_9@tabbed_upsell.text": {"$text": "furnished to do so, subject to the following conditions:"}},
+            { "howtoplay_10@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_11@tabbed_upsell.text": {"$text": "The above copyright notice and this permission notice shall be included in all"}},
+            { "howtoplay_12@tabbed_upsell.text": {"$text": "copies or substantial portions of the Software."}},
+            { "howtoplay_13@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_14@tabbed_upsell.text": {"$text": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"}},
+            { "howtoplay_15@tabbed_upsell.text": {"$text": "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"}},
+            { "howtoplay_16@tabbed_upsell.text": {"$text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE"}},
+            { "howtoplay_17@tabbed_upsell.text": {"$text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"}},
+            { "howtoplay_18@tabbed_upsell.text": {"$text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"}},
+            { "howtoplay_19@tabbed_upsell.text": {"$text": "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE"}},
+            { "howtoplay_20@tabbed_upsell.text": {"$text": "SOFTWARE."}},
+            { "howtoplay_21@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_22@tabbed_upsell.text": {"$text": "長々しい英語が続きましたが、つまり...\nこのパックは商用利用、個人利用かかわらず、自由にコピー・再配布・改造してもいいよ～。\nその代わり、何か起こっても責任はとれないよ～\nということです。"}}
           ],
           "bindings": [
             {

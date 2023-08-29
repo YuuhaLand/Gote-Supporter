@@ -252,6 +252,73 @@
       }
     ]
   },
+  
+  "copyright": {
+    "type": "panel",
+    "controls" : [
+      {
+        "label": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "layer": 2,
+          "text": "menu.copyright",
+          "size": [ "default", 10 ],
+          "max_size": [ "100%", "100%" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      }
+    ]
+  },
+
+  "development_version": {
+    "type": "panel",
+    "controls": [
+      {
+        "label": { 
+          "type": "label",
+          "color": "$main_header_text_color",
+          "layer": 2,
+          "text": "#development_version",
+          "size": [ "default", 10 ],
+          "max_size": [ "100%", "100%" ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "bindings": [
+            {
+              "binding_name": "#development_version"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "version": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ "50%", "100%" ],
+    "controls": [
+      {
+        "label": {            
+          "type": "label",
+          "color": "$main_header_text_color",
+          "layer": 2,
+          "text": "#version",
+          "size": [ "default", 10 ],
+          "max_size": [ "100%", "100%" ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_name": "#version"
+            }
+          ]
+        }
+      }
+    ]
+  },
 
   "text_panel": {
     "type": "panel",
@@ -261,15 +328,44 @@
     "anchor_to": "bottom_middle",
     "controls": [
       {
-        "copyright2@start.copyright2": {}
-      },
-      {
-        "development_version@start.development_version": {
-          "ignored": "$is_publish"
+        "2023": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "ignored": "$revival_for_2023",
+          "controls": [
+            {
+              "copyright2@start.copyright2": {}
+            },
+            {
+              "development_version@start.development_version": {
+                "ignored": "$is_publish"
+              }
+            },
+            {
+              "ver_texts@start.ver_texts": {}
+            }
+          ]
         }
       },
       {
-        "ver_texts@start.ver_texts": {}
+        "2020": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "ignored": "(not $revival_for_2023)",
+          "controls": [
+            {
+              "copyright@start.copyright": {}
+            },
+            {
+              "development_version@start.development_version": {
+                "ignored": "$is_publish"
+              }
+            },
+            {
+              "version@start.version": {}
+            }
+          ]
+        }
       }
     ]
   },

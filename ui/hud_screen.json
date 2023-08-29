@@ -77,14 +77,6 @@
     "texture": "textures/ui/f8button"
   },
 
-  "f1_button_image_small@hud.f1_button_image": {
-    "texture": "textures/ui/f1button_small"
-  },
-
-  "f8_button_image_small@hud.f1_button_image": {
-    "texture": "textures/ui/f8button_small"
-  },
-
   "migi_button_image@hud.f1_button_image": {
     "texture": "textures/ui/hotbar_migi"
   },
@@ -140,6 +132,14 @@
     "type": "panel",
     "size": [ "100%", "100%" ],
     "layer": 100,
+    "ignored": "($f1_f8_location = 'none')",
+    "bindings": [
+      {
+        "binding_name": "#inventory_touch_button",
+        "binding_name_override": "#visible",
+        "binding_type": "global"
+      }
+    ],
     "controls": [
       {
         "right": {
@@ -158,13 +158,6 @@
                   {
                     "f1_button_image@hud.f1_button_image": {}
                   }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#inventory_touch_button",
-                    "binding_name_override": "#visible",
-                    "binding_type": "global"
-                  }
                 ]
               }
             },
@@ -178,13 +171,6 @@
                 "controls": [
                   {
                     "f8_button_image@hud.f8_button_image": {}
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#inventory_touch_button",
-                    "binding_name_override": "#visible",
-                    "binding_type": "global"
                   }
                 ]
               }
@@ -207,14 +193,7 @@
                 "offset": [ -36, 1 ],
                 "controls": [
                   {
-                    "f1_button_image@hud.f1_button_image_small": {}
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#inventory_touch_button",
-                    "binding_name_override": "#visible",
-                    "binding_type": "global"
+                    "f1_button_image@hud.f1_button_image": {}
                   }
                 ]
               }
@@ -228,14 +207,7 @@
                 "offset": [ 36, 1 ],
                 "controls": [
                   {
-                    "f8_button_image@hud.f8_button_image_small": {}
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#inventory_touch_button",
-                    "binding_name_override": "#visible",
-                    "binding_type": "global"
+                    "f8_button_image@hud.f8_button_image": {}
                   }
                 ]
               }

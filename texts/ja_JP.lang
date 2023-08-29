@@ -102,8 +102,6 @@ packinfo.about.text2=ビヘイビアパックを一切使わないので、マ�
 packinfo.about.text3=(参加するサーバーがグローバルリソースを禁止にしていた場合は Gote-Supporter を使用することはできません。)
 packinfo.about.text4=このパックは MCPEDL で公開されています!
 packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
-packinfo.about.text6=YukaYama0311 のアドオンのディスコードサーバーに参加すると、 Gote-Supporter のバグ報告をしたりできます!
-packinfo.about.text7=§adiscord.gg/ZcCnXYEFc2
 
 ## 特徴
 
@@ -113,15 +111,18 @@ packinfo.features.text2=その他の特徴は MCPEDL またはブログの Gote-
 
 packinfo.f1=サバイバルでは時計とコンパスは作らなくてもOK!
 packinfo.f2=金床でアイテム名を改行できる!
-packinfo.f3=スマホでプレイ画面で F1 や F8 キー、そしてチャット画面で Tab キーが押せる!
+packinfo.f3=ワールドのバージョンを確認できる!
 packinfo.f4=ワールドのテンプレートを作れる!
-packinfo.f5=最大フレームレート設定を変更できる!
+packinfo.f5=Tabキーを押すとJava版のようなプレイヤーリストを表示できる!(キーボードのみ)
 packinfo.f6=...などなど!!
 
 ## アップデート情報
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v163.u1=タッチ操作のF1とF8のボタンテクスチャを1.20.30以降のテクスチャに変更しました。
+packinfo.v163.u2=1.20.30以降でパック情報画面の文字が見ずらくなるバグを直しました。
 
 packinfo.v162.u1=コマンドブロックの「条件」と「レッドストーン」のトグルボタンを良い感じにしました。
 packinfo.v162.u2=スタート画面の「ゲームを終了」ボタンを消しました。
@@ -327,13 +328,8 @@ packinfo.about_author.text4=JSON UIは趣味で好きなように作ってます
 packinfo.about_author.text5=プログラミングはヘタクソ。
 packinfo.about_author.text6=新しいことを覚えるのが苦手。
 packinfo.about_author.text7=マイクラ歴は8年くらい。
-packinfo.about_author.text8=日本一のRealmサーバー「彩」の運営も努めてます。
-packinfo.about_author.text9=Realmには10,000人以上のメンバーがいるとても賑やかなサーバーです!
-packinfo.about_author.text10=§l§c8月いっぱいで運営終了 §66年間ありがとうございました！
-packinfo.about_author.text11=ごて鯖 Discord
-packinfo.about_author.text12=§adiscord.gg/tzU7R5NMnu
-packinfo.about_author.text13=ごて鯖 Realm
-packinfo.about_author.text14=§aごて鯖のDiscordで確認してね。
+packinfo.about_author.text8=ごて鯖 Discord
+packinfo.about_author.text9=§adiscord.gg/tzU7R5NMnu
 
 ##ライセンス
 packinfo.licence.title=ライセンス

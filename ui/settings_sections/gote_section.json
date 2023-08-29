@@ -60,7 +60,7 @@
                       "anchor_from": "top_left",
                       "anchor_to": "top_left",
                       "text": "$text",
-                      "$text": "('Gote-Supporter ' + $gote_ver)",
+                      "$text": "('Gote-Supporter v' + $gote_ver)",
                       "layer": 1,
                       
                       "variables": [
@@ -144,7 +144,19 @@
           "anchor_to": "top_left",
           "color": "$body_text_color",
           "size": [ "100%", "default" ],
-          "text": "('Gote-Supporter ' + $gote_ver)"
+          "text": "('Gote-Supporter v' + $gote_ver)"
+        }
+      },
+      {
+        "revival_for_2023": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$d_color_format",
+          "size": [ "100%", "default" ],
+          "text": "§l«REVIVAL FOR 2023»",
+          "ignored": "(not $revival_for_2023)"
         }
       },
       {

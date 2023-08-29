@@ -36,17 +36,20 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   "$playerlist_key|default": "tab",
 
 
-  "$rc_item_id_aux": 42729472, //リカバリーコンパスのItem ID Aux
+  "$rc_item_id_aux|default": 42729472, //リカバリーコンパスのItem ID Aux
 
 
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.2",
+  "$gote_ver": "1.6.3",
   "$gote_supporter_enabled": true,
   "$is_gote_server": false, 
   "$is_saishoku_server": false,
   "$quit_button_enabled|default": true,
-  "$minecraft_feedback_button_visible|default": true
+  "$minecraft_feedback_button_visible|default": true,
+  /////////////////////////////////////////////
+  "$revival_for_2023|default": false,
+  "$revival_for_2023_db|default": false
   /////////////////////////////////////////////
 }
