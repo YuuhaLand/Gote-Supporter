@@ -42,7 +42,7 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.3",
+  "$gote_ver": "1.6.4",
   "$gote_supporter_enabled": true,
   "$is_gote_server": false, 
   "$is_saishoku_server": false,

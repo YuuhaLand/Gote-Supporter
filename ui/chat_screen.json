@@ -82,7 +82,7 @@
         "arrow_up@chat.arrow_up": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
-          "offset": [ 5, 0 ],
+          "offset": [ 3, 0 ],
           "ignored": "(not $is_up)"
         }
       },
@@ -90,7 +90,7 @@
         "arrow_down@chat.arrow_down": {
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
-          "offset": [ 5, 0 ],
+          "offset": [ 3, 0 ],
           "ignored": "$is_up"
         }
       },
@@ -102,7 +102,7 @@
           "anchor_from": "right_middle",
           "anchor_to": "right_middle",
           "text_alignment": "right",
-          "offset": [ -4, 0 ],
+          "offset": [ -3, 0 ],
           "font_type": "#font_type",
           "bindings": [
             {

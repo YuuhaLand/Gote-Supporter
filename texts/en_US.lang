@@ -107,6 +107,13 @@ packinfo.f6=...And more!
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v164.u1=We have cut off support for Minecraft v1.18.12. We cannot guarantee that it will work with 1.18.12 in the future.
+packinfo.v164.u2=Fixed a bug in the horizontal chat screen tab button where the text was not aligned correctly.
+packinfo.v164.u3=Removed VSYNC setting from video settings. (As it will be added by default in v1.20.30)
+
+packinfo.v163.u1=Changed F1 and F8 button textures for touch operation to those of 1.20.30 or later.
+packinfo.v163.u2=A bug that made the text on the pack information screen difficult to read after 1.20.30 has been fixed.
+
 packinfo.v162.u1=Nice "Condition" and "Redstone" toggle buttons on the command block.
 packinfo.v162.u2=The "Exit Game" button on the start screen has been removed.
 packinfo.v162.u3=Added explanations to some errors on the screen when disconnected.
