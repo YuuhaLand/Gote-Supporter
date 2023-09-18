@@ -77,6 +77,10 @@ gtb.memoScreen.placeHolderText=ここに書いた内容は保存されません�
 
 gtb.helpwarning.text1=このアドオンに対するヘルプは一切受けません。
 
+gtb.playercount.text1=オンラインのプレイヤー:
+gtb.playercount.text2=人
+gtb.playercount.text2.one=人
+
 
 
 
@@ -120,6 +124,8 @@ packinfo.f6=...などなど!!
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v165.u1=ポーズ画面とTabキープレイヤーリストに現在のオンラインのプレイヤー数を表示するようになりました。
 
 packinfo.v164.u1=マイクラv1.18.12のサポートを切りました。 今後は1.18.12で動くことが保証できません。
 packinfo.v164.u2=横方向のチャット画面タブボタンで文字の配置がおかしいバグを直しました。

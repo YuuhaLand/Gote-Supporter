@@ -222,60 +222,130 @@
     ]
   },
 
-  "players_label": {
-    "type": "label",
-    "text": "#worldname",
-    "size": [ "100%", "default" ],
-    "color": "$main_header_text_color",
-    "layer": 2,
-    "bindings": [
+  "players_label": { //他ワールド・アドオンとの互換性維持のためにワールド名ラベルにぶちこんでるのです
+    "text": "",
+    "size": [ "100%", "100%c" ],
+    "controls": [
       {
-        "binding_name": "#worldname"
+        "stack": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "world_name": {
+                "type": "label",
+                "text": "#worldname",
+                "size": [ "100%", "default" ],
+                "color": "$main_header_text_color",
+                "layer": 2,
+                "bindings": [
+                  {
+                    "binding_name": "#worldname"
+                  }
+                ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 0, 5 ]
+              }
+            },
+            {
+              "player_count_panel": {
+                "type": "panel",
+                "size": [ "100%", 15 ],
+                "clips_children": true,
+                "controls": [
+                  {
+                    "players_grid_count": {
+                      "type": "grid",
+                      "size": [ "100%", "default" ],
+                      "grid_item_template": "pause.player_count_label",
+                      "grid_dimension_binding": "#players_grid_dimension",
+                      "collection_name": "players_collection",
+                      "anchor_to": "bottom_left",
+                      "anchor_from": "bottom_left",
+                      "bindings": [
+                        {
+                          "binding_name": "#players_grid_dimension",
+                          "binding_condition": "always"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ]
   },
 
-  "player_list": {
+
+  
+  "player_count_label": {
     "type": "stack_panel",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "size": [ "100%", "100%c" ],
-    "focus_container": true,
-    "use_last_focus": true,
-    "$focus_nagivation_mode_right": "contained",
+    "horizontal": "horizontal",
+    "size": [ "100%", 15 ],
     "controls": [
       {
-        "vertical_padding_0@pause.vertical_padding": {
-          "size": [ 0, 4 ]
+        "one": {
+          "type": "label",
+          "size": [ "100%", 15 ],
+          "text": "#text",
+          "color": "$main_header_text_color",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "players_collection"
+            },
+            {
+              "binding_type": "collection",
+              "binding_collection_name": "players_collection",
+              "binding_name": "#collection_index"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('%gtb.playercount.text1 ' + (#collection_index + 1) + '%gtb.playercount.text2.one')",
+              "target_property_name": "#text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#collection_index = 0)",
+              "target_property_name": "#visible"
+            }
+          ]
         }
       },
       {
-        "players_label@pause.players_label": {
-          "ignored": "$education_edition"
-        }
-      },
-      {
-        "vertical_padding_2@pause.vertical_padding": {
-          "size": [ 0, 3 ],
-          "ignored": "$education_edition"
-        }
-      },
-      { "players_grid_panel@pause.players_grid": {} },
-      {
-        "vertical_padding_3@pause.vertical_padding": {
-          "size": [ 0, 3 ]
-        }
-      },
-      { "invite_players_button_panel@pause.invite_players_button_panel": {} },
-      {
-        "vertical_padding_4@pause.vertical_padding": {
-          "size": [ 0, 3 ]
-        }
-      },
-      { "disconnected_from_multiplayer_label_panel@pause.disconnected_from_multiplayer_label_panel": {} },
-      {
-        "vertical_padding_5@pause.vertical_padding": {
-          "size": [ 0, 1 ]
+        "two": {
+          "type": "label",
+          "size": [ "100%", 15 ],
+          "text": "#text",
+          "color": "$main_header_text_color",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "players_collection"
+            },
+            {
+              "binding_type": "collection",
+              "binding_collection_name": "players_collection",
+              "binding_name": "#collection_index"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('%gtb.playercount.text1 ' + (#collection_index + 1) + '%gtb.playercount.text2')",
+              "target_property_name": "#text"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not (#collection_index = 0))",
+              "target_property_name": "#visible"
+            }
+          ]
         }
       }
     ]

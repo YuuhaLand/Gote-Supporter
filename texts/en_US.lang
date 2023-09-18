@@ -69,6 +69,11 @@ gtb.memoScreen.placeHolderText=Please note that what you write here will not be 
 
 gtb.helpwarning.text1=We do not accept any help for this add-on.
 
+gtb.playercount.text1=§
+gtb.playercount.text2=§z Players Online
+gtb.playercount.text2.one=§z Player Online
+
+
 ## Gote-Supporter Info 画面のテキスト
 
 packinfo.back=<- Back
@@ -106,6 +111,8 @@ packinfo.f6=...And more!
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v165.u1=Pause screen and Tab key player list now show the number of players currently online.
 
 packinfo.v164.u1=We have cut off support for Minecraft v1.18.12. We cannot guarantee that it will work with 1.18.12 in the future.
 packinfo.v164.u2=Fixed a bug in the horizontal chat screen tab button where the text was not aligned correctly.

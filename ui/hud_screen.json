@@ -555,8 +555,41 @@
                           "anchor_to": "top_middle",
                           "controls": [
                             {
+                              "player_count": {
+                                "type": "image",
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_middle",
+                                "size": [ "100%", 12 ],
+                                "clips_children": true,
+                                "texture": "textures/ui/White",
+                                "color": [ 0, 0, 0 ],
+                                "alpha": 0.3,
+                                "controls": [
+                                  {
+                                    "players_grid_count": {
+                                      "type": "grid",
+                                      "size": [ "100%", "default" ],
+                                      "grid_item_template": "hud.player_count_label",
+                                      "grid_dimension_binding": "#players_grid_dimension",
+                                      "collection_name": "players_collection",
+                                      "anchor_to": "bottom_left",
+                                      "anchor_from": "bottom_left",
+                                      "bindings": [
+                                        {
+                                          "binding_name": "#players_grid_dimension",
+                                          "binding_condition": "always"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
                               "player_list_scrolling_panel@common.scrolling_panel": {
-                                "size": [ "100%", "100% - 4px" ],
+                                "anchor_from": "bottom_middle",
+                                "anchor_to": "bottom_middle",
+                                "size": [ "100%", "100% - 16px" ],
                                 "$show_background": false,
                                 "$scrolling_content": "hud.player_grid",
                                 "$always_handle_scrolling": true
@@ -579,6 +612,49 @@
             }
           }
         ]
+      }
+    ]
+  },
+
+  
+  "player_count_label": {
+    "type": "panel",
+    "size": [ "100%", 12 ],
+    "controls": [
+      {
+        "glyph_inventory": {
+          "type": "image",
+          "offset": [ 2, 0 ],
+          "size": [ 5, 5 ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "texture": "textures/ui/glyph_inventory"
+        }
+      },
+      {
+        "label": {
+          "type": "label",
+          "size": [ "100% - 9px", 10 ],
+          "text": "#text",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "players_collection"
+            },
+            {
+              "binding_type": "collection",
+              "binding_collection_name": "players_collection",
+              "binding_name": "#collection_index"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('§z' + (#collection_index + 1) + '§z')",
+              "target_property_name": "#text"
+            }
+          ]
+        }
       }
     ]
   },
