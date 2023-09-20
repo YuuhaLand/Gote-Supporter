@@ -125,6 +125,8 @@ packinfo.f6=...などなど!!
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
 
+packinfo.v166.u1=Tabキープレイヤーリストのゲーマータグが見ずらいバグを直しました。
+
 packinfo.v165.u1=ポーズ画面とTabキープレイヤーリストに現在のオンラインのプレイヤー数を表示するようになりました。
 
 packinfo.v164.u1=マイクラv1.18.12のサポートを切りました。 今後は1.18.12で動くことが保証できません。
@@ -331,15 +333,13 @@ packinfo.readme.text15=このパックを自作のものと主張すること
 
 ##つくったひと
 packinfo.about_author.title=つくったひと
-packinfo.about_author.text1=YukaYama0311 / Yuka0745
+packinfo.about_author.text1=YuuhaLand / YukaYama0311 / Yuka0745 
 packinfo.about_author.text2=Minecraft統合版を中心に活動しているマインクラフター。
 packinfo.about_author.text3=趣味でアドオン作っています。
 packinfo.about_author.text4=JSON UIは趣味で好きなように作ってます。
 packinfo.about_author.text5=プログラミングはヘタクソ。
 packinfo.about_author.text6=新しいことを覚えるのが苦手。
 packinfo.about_author.text7=マイクラ歴は8年くらい。
-packinfo.about_author.text8=ごて鯖 Discord
-packinfo.about_author.text9=§adiscord.gg/tzU7R5NMnu
 
 ##ライセンス
 packinfo.licence.title=ライセンス

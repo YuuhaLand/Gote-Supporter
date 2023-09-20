@@ -7,6 +7,15 @@
     "controls": [
       {
         "v165@tabbed_upsell.version_section": {
+          "$version": "v1.6.6",
+          "$details_controls": [
+            { "date@tabbed_upsell.text": { "text": "2023/09/20" }},
+            { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v166.u1"}}
+          ]
+        }
+      },
+      {
+        "v165@tabbed_upsell.version_section": {
           "$version": "v1.6.5",
           "$details_controls": [
             { "date@tabbed_upsell.text": { "text": "2023/09/18" }},

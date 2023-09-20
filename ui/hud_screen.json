@@ -418,15 +418,19 @@
       {
         "player_name": {
           "type": "label",
-          "text": "#gamertag",
+          "text": "#text",
           "size": [ "fill", 10 ],
-          "font_type": "unicode",
 
           "bindings": [
             {
               "binding_name": "#gamertag",
               "binding_type": "collection",
               "binding_collection_name": "players_collection"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('§　' + #gamertag)",
+              "target_property_name": "#text"
             }
           ]
         }

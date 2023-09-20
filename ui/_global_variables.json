@@ -42,12 +42,9 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.5",
+  "$gote_ver": "1.6.6",
   "$gote_supporter_enabled": true,
-  "$is_gote_server": false, 
-  "$is_saishoku_server": false,
-  "$quit_button_enabled|default": true,
-  "$minecraft_feedback_button_visible|default": true,
+  "$is_goteserver|default": false, 
   /////////////////////////////////////////////
   "$revival_for_2023|default": false,
   "$revival_for_2023_db|default": false

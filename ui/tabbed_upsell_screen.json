@@ -800,7 +800,7 @@
                         {
                           "by_yuka0745": {
                             "type": "label",
-                            "text": "§l§dYukaYama0311 §r- §2ゆかやまさん",
+                            "text": "§l§dYukaYama0311 §r- §2ゆうはらんど",
                             "font_scale_factor": 1.50,
                             "offset": [ 0, 0 ],
                             "shadow": true,
@@ -884,10 +884,7 @@
             { "howtoplay_3@tabbed_upsell.text": {"$text": "packinfo.about_author.text4"}},
             { "howtoplay_4@tabbed_upsell.text": {"$text": "packinfo.about_author.text5"}},
             { "howtoplay_5@tabbed_upsell.text": {"$text": "packinfo.about_author.text6"}},
-            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}},
-            { "howtoplay_7@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_8@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}},
-            { "howtoplay_9@tabbed_upsell.text": {"$text": "packinfo.about_author.text9"}}
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}}
           ],
           "bindings": [
             {
