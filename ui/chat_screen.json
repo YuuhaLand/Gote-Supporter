@@ -207,13 +207,14 @@
       }
     ]
   },
+
   "chat_autocomplete_panel":{
     "type":"panel",
 	  "anchor_from": "bottom_right",
     "anchor_to": "bottom_right",
     "size": [ 15, 50 ],
 	  "offset": [ 0, -85],
-    "ignored": "(($chat_tab_button_type = 'horizontal') or $revival_for_2023_db)",
+    "ignored": "(($chat_tab_button_type = 'horizontal') or ($chat_tab_button_type = 'none'))",
     "controls":[
 	    {"chat_autocompleteback_button@chat.chat_autocompleteback_button":{}},
 	    {"chat_autocomplete_button@chat.chat_autocomplete_button":{}},
@@ -496,10 +497,10 @@
         }
       },
       { "chat_settings@chat.dummy_button": { } },
-	    {"chat_autocompleteback_button@chat.dummy_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
-	    {"chat_autocomplete_button@chat.dummy_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
-	    {"chat_previous_button@chat.dummy_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
-	    {"chat_up_button@chat.dummy_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
+	    {"chat_autocompleteback_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    {"chat_autocomplete_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    {"chat_previous_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    {"chat_up_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
       { "newline_text_edit_box@chat.newline_text_edit_box": {} },
       { "arrow_up_button@chat.dummy_arrow_up_button": { } },
       { "send_button2@chat.dummy_send_button": { "offset": [ -20, 0 ] } }
@@ -511,10 +512,10 @@
       { "keyboard_button@chat.keyboard_button": {} },
       { "host_main_button@host_options.host_main_button": { "ignored": "$is_pregame" } },
       { "chat_settings@chat.chat_settings_button": { } },
-	    {"chat_autocompleteback_button@chat.chat_autocompleteback_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
-	    {"chat_autocomplete_button@chat.chat_autocomplete_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
-	    {"chat_previous_button@chat.chat_previous_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
-	    {"chat_up_button@chat.chat_up_button":{ "ignored":"(not ($chat_tab_button_type = 'horizontal'))" }},
+	    {"chat_autocompleteback_button@chat.chat_autocompleteback_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    {"chat_autocomplete_button@chat.chat_autocomplete_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    {"chat_previous_button@chat.chat_previous_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    {"chat_up_button@chat.chat_up_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
       { "text_box@chat.text_edit_box": { } },
       { "arrow_up_button@chat.arrow_up_button": { } },
       { "arrow_down_button@chat.arrow_down_button": { } },

@@ -1,5 +1,5 @@
 ﻿pack.name=ごてサポーター v1.4.7
-pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by YukaYama0311
+pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by YuuhaLand
 pack.name.nover=§l§aごて§bサポーター
 
 
@@ -59,10 +59,8 @@ gtb.worldFolderPath.cantget=取得できませんでした。
 gtb.worldFolderPath.cantget.tooltip=ワールドのサムネイルが無いため、フォルダーの場所を取得できません。 一度ワールドを読み込むと、フォルダーの場所を取得できるようになります。
 
 gtb.previewWarning.title=ご注意
-gtb.previewWarning.honbun1=あなたはベータ版のMinecraftでGote-Supporterを有効化しています。
-gtb.previewWarning.honbun2=Gote-Supporterは、ベータ版Minecraftを完全にサポートしておりません。
-gtb.previewWarning.honbun3=クラッシュやUIレイアウト崩壊などの問題が発生する可能性があります。
-gtb.previewWarning.honbun4=予めご了承ください。
+gtb.previewWarning.honbun1=Preview版マイクラでGote-Supporterを適用するとクラッシュやUI崩壊の可能性があります。
+gtb.previewWarning.honbun2=あらかじめご了承ください m(_ _)m
 
 gtb.jsonUIWarning.title=JSON UIに関する重要な警告
 gtb.jsonUIWarning.honbun1=Gote-Supporterを含む、画面のUIを変更するリソースパックは、「JSON UI」を使って変更しています。
@@ -105,7 +103,7 @@ packinfo.about.text1=このリソースパックは、マイクラに様々な�
 packinfo.about.text2=ビヘイビアパックを一切使わないので、マルチプレイヤーやサーバーなどでも使えます!
 packinfo.about.text3=(参加するサーバーがグローバルリソースを禁止にしていた場合は Gote-Supporter を使用することはできません。)
 packinfo.about.text4=このパックは MCPEDL で公開されています!
-packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
+packinfo.about.text5=何かバグあったらこのディスコ鯖で報告お願いします!
 
 ## 特徴
 
@@ -120,10 +118,88 @@ packinfo.f4=ワールドのテンプレートを作れる!
 packinfo.f5=Tabキーを押すとJava版のようなプレイヤーリストを表示できる!(キーボードのみ)
 packinfo.f6=...などなど!!
 
+## 注意事項
+packinfo.caution.title=注意事項
+packinfo.caution.text1=このパックは、日本製のパックです。
+packinfo.caution.text2=英語への翻訳には DeepL Translate を使用しています。
+packinfo.caution.text3=予めご了承ください。
+packinfo.caution.text4=このパックの一部をコピーして自分のパックに組み込みたい場合、 YuuhaLand までお願いします。
+packinfo.caution.text5=このパックを自作発言しないでください。
+packinfo.caution.text6=このパックを使用したことにより発生したいかなる障害を齎したとしても、主 YuuhaLand は一切の責任を負いかねます。
+
+## サウンド鑑賞
+packinfo.music.title=サウンド鑑賞
+packinfo.music.text1=このセクションでは、 Minecraft 内での BGM を鑑賞することができます!
+packinfo.music.text2=息抜きにどうぞ!!
+packinfo.music.text3=この画面を閉じても音楽は流れたままになります。
+
+packinfo.readme.title=必ずお読みください
+packinfo.readme.text1=「Gote-Supporter」をダウンロードしていただきありがとうございます。
+packinfo.readme.text2=もしこのパックを使用する場合は、以下のことを厳守してください。
+packinfo.readme.text4=《あなたは以下のことができます》
+packinfo.readme.text5=このパックを参考にして自分のパックの作成に役立てること
+packinfo.readme.text6=このパックを改変すること
+packinfo.readme.text7=このパックの一部を他のパックにコピーすること
+packinfo.readme.text8=このパックからコピーされた物を含むパックを配布すること(Gote-Supporterからコピーしたことを明記する必要があります)
+packinfo.readme.text9=他のパックとの互換性維持のためにこのパックを改変すること
+packinfo.readme.text10=このパックをワールドあるいはサーバーのリソースパックに適用すること
+packinfo.readme.text11=このパックの紹介動画などを製作すること
+packinfo.readme.text12=《あなたは以下のことができません》
+packinfo.readme.text15=このパックを自作のものと主張すること
+
+##つくったひと
+packinfo.about_author.title=つくったひと
+packinfo.about_author.text1=Minecraft統合版を中心に活動しているマインクラフター。
+packinfo.about_author.text2=趣味でアドオン作っています。
+packinfo.about_author.text3=JSON UIは趣味で好きなように作ってます。
+packinfo.about_author.text4=プログラミングはヘタクソ。
+packinfo.about_author.text5=新しいことを覚えるのが苦手。
+packinfo.about_author.text6=マイクラ歴は7年くらい。
+packinfo.about_author.text7=私は英語を自分で喋れないので、DeepLやGoogle翻訳を使います。
+packinfo.about_author.text8=また、アドオン作成依頼やプロジェクトなどへの招待は一切受けません。
+packinfo.about_author.text9=あと、私は教えるのがかなりヘタクソなので教えるのは多分出来ないです。()
+
+##ライセンス
+packinfo.licence.title=ライセンス
+##よくある質問
+packinfo.faq.title=よくある質問
+packinfo.faq.text1=ここではGote-Supporterに関するよくある質問が見れます!
+
+packinfo.faq.q1.q=Q. このパックはワールドのリソースパックに適用して良い?
+packinfo.faq.q1.a=A. もちろんです! このパックは自由にワールド或いはサーバーのリソースパックに適用できます!
+packinfo.faq.q2.q=Q. なんか他のアドオンと相性悪いからちょっといじってもいい?
+packinfo.faq.q2.a=A. もちろんです! このパックは自由に改変してどうぞ!
+packinfo.faq.q3.q=Q. このパックのあの機能を私のパックに組み込んでそれを配布して良い?
+packinfo.faq.q3.a=A. もちろんです! 私のコードがあなたのパック開発に役立つことができれば嬉しいです! ちなみに配布するときは説明欄とかにコピーしたことを明記してね!
+packinfo.faq.q4.q=Q. このパックをYoutubeとかで紹介したい!
+packinfo.faq.q4.a=A. 大歓迎です! お友達などにじゃんじゃん紹介してください!
+packinfo.faq.q5.q=Q. とある鯖に入ったらごてサポが勝手に無効になったんだけど...
+packinfo.faq.q5.a=A. 鯖によって、グローバルリソースを禁止にしている鯖があります。そのような鯖ではごてサポを使うことはできません。
+packinfo.faq.q6.q=Q. バグを見つけた! どこに報告すれば良い?
+packinfo.faq.q6.a=A. バグを見つけたらDiscordサーバーにてご報告お願いします!
+packinfo.faq.q7.q=Q. このパックの制作に協力したい!
+packinfo.faq.q7.a=A. 申し訳ないです。 私は制作協力を受けません。 私は一人で気ままに作っていってるので（）
+packinfo.faq.q8.q=Q. なぜぽまえはこのパックをオープンソース化しているの? お金儲けはしないん?
+packinfo.faq.q8.a=A. 私はこのパックなどをオープンソース化して誰でも私のパックのコードを活用できるようにしています。 どこかの知らない場所で私のコードが使われてても嫌な思いはしないです。 むしろ嬉しい() あとお金儲けはしたくないです。 私はLinkvertiseとかad.flyが大嫌いなので() 余談だけど、マイクラのアドオンはマーケットプレイスのやつ以外全部オープンソースだと思う。 なぜなら、誰でもコードを覗くことができてしまうから。 難読化することはできるけど、復号も簡単にできてしまうし...。 あくまで私の意見なのでお気になさらず。
+packinfo.faq.q9.q=Q. YuuhaLandにアドオン制作を依頼したいです。
+packinfo.faq.q9.a=A. 2023年12月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。
+
+
 ## アップデート情報
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v167.u1=ビデオ設定にVSYNC設定を復活させました。
+packinfo.v167.u2=他のアドオンと競合してポーズ画面の本当に終了しますかメッセージが出てきて詰むバグを直しました。
+packinfo.v167.u3=パック情報画面からライセンス欄を消しました(ライセンスはパックのフォルダにあるよ)
+packinfo.v167.u4=Gote-Supporterから「item ID Aux表示機能」を消しました。
+packinfo.v167.u5=Preview版でGote-Supporterを入れた時にスタート画面に出る注意表記を消しました。
+packinfo.v167.u6=チャット画面のTabボタンと、HUDのF1/F8をConfigで非表示にできるようになりました。
+packinfo.v167.u7=HUDのF1/F8や、ホットバーの矢印ボタンが操作ボタンカスタマイズ画面で設定画面よりも上に表示されるバグを直しました。
+packinfo.v167.u8=NPC画面でHPバーが表示されないバグを直しました。
+packinfo.v167.u9=パック適用時にエラーが表示されるバグを直しました。
+packinfo.v167.u10=パック情報画面にバグ報告Discordリンクを追加しました。
 
 packinfo.v166.u1=Tabキープレイヤーリストのゲーマータグが見ずらいバグを直しました。
 
@@ -301,67 +377,3 @@ packinfo.v110.u2=ポーズ画面でlistスコアボードが未設定時に自�
 packinfo.v110.u3=英語の翻訳がおかしい問題を修正
 
 packinfo.v100.u1=初リリース。
-
-## 注意事項
-packinfo.caution.title=注意事項
-packinfo.caution.text1=このパックは、日本製のパックです。
-packinfo.caution.text2=英語への翻訳には DeepL Translate を使用しています。
-packinfo.caution.text3=予めご了承ください。
-packinfo.caution.text4=このパックの一部をコピーして自分のパックに組み込みたい場合、 YukaYama0311 までお願いします。
-packinfo.caution.text5=このパックを自作発言しないでください。
-packinfo.caution.text6=このパックを使用したことにより発生したいかなる障害を齎したとしても、主 YukaYama0311 は一切の責任を負いかねます。
-
-## サウンド鑑賞
-packinfo.music.title=サウンド鑑賞
-packinfo.music.text1=このセクションでは、 Minecraft 内での BGM を鑑賞することができます!
-packinfo.music.text2=息抜きにどうぞ!!
-packinfo.music.text3=この画面を閉じても音楽は流れたままになります。
-
-packinfo.readme.title=必ずお読みください
-packinfo.readme.text1=「Gote-Supporter」をダウンロードしていただきありがとうございます。
-packinfo.readme.text2=もしこのパックを使用する場合は、以下のことを厳守してください。
-packinfo.readme.text4=《あなたは以下のことができます》
-packinfo.readme.text5=このパックを参考にして自分のパックの作成に役立てること
-packinfo.readme.text6=このパックを改変すること
-packinfo.readme.text7=このパックの一部を他のパックにコピーすること
-packinfo.readme.text8=このパックからコピーされた物を含むパックを配布すること(Gote-Supporterからコピーしたことを明記する必要があります)
-packinfo.readme.text9=他のパックとの互換性維持のためにこのパックを改変すること
-packinfo.readme.text10=このパックをワールドあるいはサーバーのリソースパックに適用すること
-packinfo.readme.text11=このパックの紹介動画などを製作すること
-packinfo.readme.text12=《あなたは以下のことができません》
-packinfo.readme.text15=このパックを自作のものと主張すること
-
-##つくったひと
-packinfo.about_author.title=つくったひと
-packinfo.about_author.text1=YuuhaLand / YukaYama0311 / Yuka0745 
-packinfo.about_author.text2=Minecraft統合版を中心に活動しているマインクラフター。
-packinfo.about_author.text3=趣味でアドオン作っています。
-packinfo.about_author.text4=JSON UIは趣味で好きなように作ってます。
-packinfo.about_author.text5=プログラミングはヘタクソ。
-packinfo.about_author.text6=新しいことを覚えるのが苦手。
-packinfo.about_author.text7=マイクラ歴は8年くらい。
-
-##ライセンス
-packinfo.licence.title=ライセンス
-##よくある質問
-packinfo.faq.title=よくある質問
-packinfo.faq.text1=ここではGote-Supporterに関するよくある質問が見れます!
-
-packinfo.faq.q1.q=Q. このパックはワールドのリソースパックに適用して良い?
-packinfo.faq.q1.a=A. もちろんです! このパックは自由にワールド或いはサーバーのリソースパックに適用できます!
-packinfo.faq.q2.q=Q. なんか他のアドオンと相性悪いからちょっといじってもいい?
-packinfo.faq.q2.a=A. もちろんです! このパックは自由に改変してどうぞ!
-packinfo.faq.q3.q=Q. このパックのあの機能を私のパックに組み込んでそれを配布して良い?
-packinfo.faq.q3.a=A. もちろんです! 私のコードがあなたのパック開発に役立つことができれば嬉しいです! ちなみに配布するときは説明欄とかにコピーしたことを明記してね!
-packinfo.faq.q4.q=Q. このパックをYoutubeとかで紹介したい!
-packinfo.faq.q4.a=A. 大歓迎です! お友達などにじゃんじゃん紹介してください!
-packinfo.faq.q5.q=Q. とある鯖に入ったらごてサポが勝手に無効になったんだけど...
-packinfo.faq.q5.a=A. 鯖によって、グローバルリソースを禁止にしている鯖があります。そのような鯖ではごてサポを使うことはできません。
-packinfo.faq.q6.q=Q. バグを見つけた! どこに報告すれば良い?
-packinfo.faq.q6.a=A. バグを見つけたらDiscordサーバーにてご報告お願いします!
-packinfo.faq.q7.q=Q. このパックの制作に協力したい!
-packinfo.faq.q7.a=A. 申し訳ないです。 私は制作協力を受けません。 私は一人で気ままに作っていってるので（）
-packinfo.faq.q8.q=Q. なぜぽまえはこのパックをオープンソース化しているの? お金儲けはしないん?
-packinfo.faq.q8.a=A. 私はこのパックなどをオープンソース化して誰でも私のパックのコードを活用できるようにしています。 どこかの知らない場所で私のコードが使われてても嫌な思いはしないです。 むしろ嬉しい() あとお金儲けはしたくないです。 私はLinkvertiseとかad.flyが大嫌いなので() 余談だけど、マイクラのアドオンはマーケットプレイスのやつ以外全部オープンソースだと思う。 なぜなら、誰でもコードを覗くことができてしまうから。 難読化することはできるけど、復号も簡単にできてしまうし...。 あくまで私の意見なのでお気になさらず。
-packinfo.faq.q9.q=Q. YukaYama0311にアドオン制作を依頼したいです。
-packinfo.faq.q9.a=A. 2023年4月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。

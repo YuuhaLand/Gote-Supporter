@@ -1,10 +1,8 @@
 {
+  "namespace": "general_section",
+
   "gamertag_controls/sign_out": {
     "ignored": "(not $is_pregame or $requires_xbl_signin_to_play)"
-  },
-
-  "video_section/max_framerate_slider": {
-    "ignored": false
   },
 
   "accessibility_button@settings_common.section_toggle_base": {
@@ -230,6 +228,17 @@
                   "binding_name_override": "#visible"
                 }
               ]
+            }
+          },
+          {
+            "vsync_dropdown@settings_common.option_dropdown": {
+              "$option_label": "options.vsync",
+              "$dropdown_content": "general_section.vysnc_dropdown_content",
+              "$dropdown_area": "content_area",
+              "$dropdown_name": "vsync_dropdown",
+              "$options_dropdown_toggle_label_binding": "#vsync_dropdown_toggle_label",
+              "$option_enabled_binding_name": "#vsync_dropdown_enabled",
+              "$dropdown_scroll_content_size": [ "100%", "200%" ]
             }
           }
         ]

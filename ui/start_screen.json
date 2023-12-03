@@ -1,17 +1,6 @@
 ﻿{
   "namespace": "start",
 
-  "preview_warning_swtich_toggle@gtb.swtich_toggle": {
-    "$toggle_name": "preview_warning"
-  },
-  "preview_warning_swtich_toggle_c@gtb.swtich_toggle_c": {
-    "$toggle_name": "preview_warning"
-  },
-  "preview_warning_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
-    "$toggle_name": "preview_warning"
-  },
-
-
   "quit_icon": {
     "type": "image",
     "texture": "textures/ui/cancel",
@@ -24,13 +13,6 @@
     "texture": "textures/ui/info_icon",
     "layer": 3,
     "size": [ 16, 16 ]
-  },
-
-  "warning_icon": {
-    "type": "image",
-    "texture": "textures/ui/WarningGlyph",
-    "layer": 3,
-    "size": [ 13, 20 ]
   },
 
   "upper_online_buttons_panel/stacked_column/gamertag_pic_and_label": {
@@ -252,73 +234,6 @@
       }
     ]
   },
-  
-  "copyright": {
-    "type": "panel",
-    "controls" : [
-      {
-        "label": {
-          "type": "label",
-          "color": "$main_header_text_color",
-          "layer": 2,
-          "text": "menu.copyright",
-          "size": [ "default", 10 ],
-          "max_size": [ "100%", "100%" ],
-          "anchor_from": "top_left",
-          "anchor_to": "top_left"
-        }
-      }
-    ]
-  },
-
-  "development_version": {
-    "type": "panel",
-    "controls": [
-      {
-        "label": { 
-          "type": "label",
-          "color": "$main_header_text_color",
-          "layer": 2,
-          "text": "#development_version",
-          "size": [ "default", 10 ],
-          "max_size": [ "100%", "100%" ],
-          "anchor_from": "center",
-          "anchor_to": "center",
-          "bindings": [
-            {
-              "binding_name": "#development_version"
-            }
-          ]
-        }
-      }
-    ]
-  },
-
-  "version": {
-    "type": "panel",
-    "anchor_from": "top_right",
-    "anchor_to": "top_right",
-    "size": [ "50%", "100%" ],
-    "controls": [
-      {
-        "label": {            
-          "type": "label",
-          "color": "$main_header_text_color",
-          "layer": 2,
-          "text": "#version",
-          "size": [ "default", 10 ],
-          "max_size": [ "100%", "100%" ],
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "bindings": [
-            {
-              "binding_name": "#version"
-            }
-          ]
-        }
-      }
-    ]
-  },
 
   "text_panel": {
     "type": "panel",
@@ -328,132 +243,19 @@
     "anchor_to": "bottom_middle",
     "controls": [
       {
-        "2023": {
-          "type": "panel",
-          "size": [ "100%", "100%" ],
-          "ignored": "$revival_for_2023",
-          "controls": [
-            {
-              "copyright2@start.copyright2": {}
-            },
-            {
-              "development_version@start.development_version": {
-                "ignored": "$is_publish"
-              }
-            },
-            {
-              "ver_texts@start.ver_texts": {}
-            }
-          ]
+        "copyright2@start.copyright2": {}
+      },
+      {
+        "development_version@start.development_version": {
+          "ignored": "$is_publish"
         }
       },
       {
-        "2020": {
-          "type": "panel",
-          "size": [ "100%", "100%" ],
-          "ignored": "(not $revival_for_2023)",
-          "controls": [
-            {
-              "copyright@start.copyright": {}
-            },
-            {
-              "development_version@start.development_version": {
-                "ignored": "$is_publish"
-              }
-            },
-            {
-              "version@start.version": {}
-            }
-          ]
-        }
+        "ver_texts@start.ver_texts": {}
       }
     ]
   },
 
-  "preview_warning_text": {
-    "type": "stack_panel",
-    "size": [ "100% - 2px", "default" ],
-    "offset": [ 2, 0 ],
-    "anchor_from":"top_left",
-    "anchor_to":"top_left",
-    "controls": [
-      {
-        "1": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "font_type": "smooth",
-          "text": "gtb.previewWarning.honbun1"
-        }
-      },
-      {
-        "2": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "font_type": "smooth",
-          "text": "gtb.previewWarning.honbun2"
-        }
-      },
-      {
-        "3": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "font_type": "smooth",
-          "text": "gtb.previewWarning.honbun3"
-        }
-      },
-      {
-        "4": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "font_type": "smooth",
-          "text": "gtb.previewWarning.honbun4"
-        }
-      }
-    ]
-  },
-
-  "preview_warning_text_scroll@common.scrolling_panel": {
-    "$show_background": false,
-    "size": [ "100% - 4px", "100%" ],
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [ 2, 0 ],
-    
-    "$scrolling_content": "start.preview_warning_text",
-    "$scrolling_panel_size": [ "100%", "100%" ],
-    "$scroll_size": [ "4px", "100% - 2px" ],
-    "$always_handle_scrolling": true
-  },
-
-  "preview_warning_okbutton@start.preview_warning_swtich_toggle": {
-    "$checked_control": "common_toggles.toggle_unchecked",
-    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
-
-    "$button_text": "gui.ok",
-    "$toggle_default_state": true,
-    "$toggle_group_forced_index": 0,
-
-    "$focus_override_down": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_up": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
-  },
-
-  "dialog1@gtb.dummy_dialog_one": {
-    "layer": 503,
-    "size": [ "60%", "60%" ],
-    "$text_name": "gtb.previewWarning.title",
-    "$child_control": "start.preview_warning_text_scroll",
-    "$bottom_button_panel": "start.preview_warning_okbutton",
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "preview_warning",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
   
   "lower_online_buttons_panel/stacked_column": {
     "modifications": [
@@ -485,66 +287,6 @@
                       }
                     ]
                   }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    ]
-  },
-  
-  "start_screen_content": {
-    "modifications": [
-      {
-        "array_name": "controls",
-        "operation": "insert_front",
-        "value": [
-          {
-            "preview_warning_button@start.preview_warning_swtich_toggle_c": {
-              "ignored": "(not $pre_release or $education_edition)",
-              "size": [ 25, 25 ],
-              "offset": [ -5, 5 ],
-              "anchor_from": "top_right",
-              "anchor_to": "top_right",
-              "$button_content": "start.warning_icon",
-              "$toggle_view_binding_name": "preview_warning",
-              "$toggle_group_forced_index": 100
-            }
-          },
-          {
-            "preview_warning_popup": {
-              "type": "panel",
-              "ignored": "(not $pre_release or $education_edition)",
-              "size": [ "100%", "100%" ],
-              "controls": [
-                {
-                  "scrool@common.scrolling_panel": {
-                    "type": "scroll_view",
-                    "size": [ "100%", "100%" ],
-                    "layer": 501,
-                    "$scrolling_content": "common.empty_panel",
-                    "$show_background": false
-                  }
-                },
-                {
-                  "preview_warning_swtich_toggle_close@start.preview_warning_swtich_toggle_close": {
-                    "layer": 502,
-                    "size": [ "100%", "100%" ],
-                    "$toggle_default_state": true,
-                    "$toggle_group_forced_index": 0
-                  }
-                },
-                {
-                  "dialog1@start.dialog1": {}
-                }
-              ],
-              "bindings": [
-                {
-                  "binding_type": "view",
-                  "source_control_name": "preview_warning",
-                  "source_property_name": "#toggle_state",
-                  "target_property_name": "#visible"
                 }
               ]
             }

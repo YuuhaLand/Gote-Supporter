@@ -705,7 +705,7 @@
   },
 
 
-  "menu_background/button_panel/quit_button": {
+  "quit_button": {
     "ignored": true
   },
 
@@ -727,7 +727,7 @@
             }
           },
           {
-            "feed@pause.vertical_padding": {    
+            "feed_padding@pause.vertical_padding": {    
               "bindings": [
                 {
                   "binding_name": "#show_clubs",
@@ -767,6 +767,7 @@
               "type": "panel",
               "size": [ "100%", "100%" ],
               "ignored": "$education_edition",
+              "visible": false,
               "controls": [
                 {
                   "scrool@common.scrolling_panel": {
@@ -802,7 +803,7 @@
           {
             "memo_screen_screen": {
               "type": "panel",
-              "ignored": false,
+              "visible": false,
               "size": [ "100%", "100%" ],
               "controls": [
                 {

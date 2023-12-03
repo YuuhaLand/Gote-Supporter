@@ -1,23 +1,21 @@
 {
   "format_version": 1,
   "header": {
-    "description": "マイクライフをより豊かにできるユーザー補助ツールです!\nCreated by YukaYama0311",
-    "name": "Gote-Supporter v1.6.6",
+    "description": "マイクライフをより豊かにできるユーザー補助ツールです!\nCreated by YuuhaLand",
+    "name": "Gote-Supporter v1.6.7",
     "uuid": "3f6ab53c-3e23-4f01-a8a6-0d9dcca5f205",
-    "version": [ 1, 6, 6 ]
+    "version": [ 1, 6, 7 ]
   },
   "modules": [
     {
       "description": "ユーザー補助パック きっかけはサバイバルしてる時に「ほってる間にカウントダウン表示したいな」と思い始めた。 Gote-Supporterの初期名は「ユーザー補助パック」。",
       "type": "resources",
       "uuid": "bc5dca4a-6176-438c-aca8-67c0dfd578fa",
-      "version": [ 1, 6, 6 ]
+      "version": [ 1, 6, 7 ]
     }
   ],
   "metadata": {
-    "authors": [ "YukaYama0311" ],
-    "url": "https://github.com/Gotemba912/Gote-Supporter/",
-    "license": "Licence"
+    "url": "https://github.com/Gotemba912/Gote-Supporter/"
   },
   "settings": [
     {
@@ -33,7 +31,17 @@
     {
       "type": "label",
       "name": "text_03",
-      "text": "Gote-Supporter by ©YukaYama0311\n\nMade in Japan."
+      "text": "Gote-Supporter by ©YuuhaLand\n\nMade in Japan.\n"
+    },
+    {
+      "type": "label",
+      "name": "text_04",
+      "text": "バグ報告は以下までよろしくね！！\nBug reports should be sent to.\n"
+    },
+    {
+      "type": "label",
+      "name": "text_05",
+      "text": "§adiscord.gg/skX9YHp4fC"
     }
   ]
 }

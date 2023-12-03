@@ -35,6 +35,7 @@
     "size": "$size",
     "offset": [ 1, -1 ],
     "ignored": "(not $hud_compass)",
+    "layer": 30,
     "variables": [
       {
         "requires": "$show_recoverycompass",
@@ -92,7 +93,7 @@
     "ignored": "(not $show_hotbar_navigator)",
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
-    "layer": 100,
+    "layer": 30,
     "controls": [
       {
         "migi@common.button": {
@@ -131,7 +132,7 @@
   "touch_buttons": {
     "type": "panel",
     "size": [ "100%", "100%" ],
-    "layer": 100,
+    "layer": 30,
     "ignored": "($f1_f8_location = 'none')",
     "bindings": [
       {

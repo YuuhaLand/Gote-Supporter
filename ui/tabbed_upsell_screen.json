@@ -401,17 +401,9 @@
         }
       },
       {
-        "licence_button@tabbed_upsell.tab_selector": {
-          "$toggle_view_binding_name": "page_licence",
-          "$toggle_group_forced_index": 5,
-          "$button_label": "packinfo.licence.title",
-          "$button_icon": "textures/ui/lock_color"
-        }
-      },
-      {
         "faq_button@tabbed_upsell.tab_selector": {
           "$toggle_view_binding_name": "page_faq",
-          "$toggle_group_forced_index": 6,
+          "$toggle_group_forced_index": 5,
           "$button_label": "packinfo.faq.title",
           "$button_icon": "textures/ui/Feedback"
         }
@@ -419,7 +411,7 @@
       {
         "caution_button@tabbed_upsell.tab_selector": {
           "$toggle_view_binding_name": "page_caution",
-          "$toggle_group_forced_index": 7,
+          "$toggle_group_forced_index": 6,
           "$button_label": "packinfo.caution.title",
           "$button_icon": "textures/ui/infobulb"
         }
@@ -457,7 +449,22 @@
             { "text04@tabbed_upsell.text": { "$text": "packinfo.about.text3" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
             { "text05@tabbed_upsell.text": { "$text": "packinfo.about.text4" }},
-            { "text06@tabbed_upsell.text": { "$text": "packinfo.about.text5" }}
+            { "text06@tabbed_upsell.text": { "$text": "§ahttps://mcpedl.com/gote-supporter/" }},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text05@tabbed_upsell.text": { "$text": "packinfo.about.text5" }},
+            { "text06@tabbed_upsell.text": { "$text": "§adiscord.gg/skX9YHp4fC" }},
+            { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
+            {
+              "preview_warning": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "ignored": "(not $pre_release)",
+                "controls": [
+                  { "text01@tabbed_upsell.text": { "$text": "gtb.previewWarning.honbun1" }},
+                  { "text02@tabbed_upsell.text": { "$text": "gtb.previewWarning.honbun2" }}
+                ]
+              }
+            }
           ],
           "bindings": [
             {
@@ -800,7 +807,7 @@
                         {
                           "by_yuka0745": {
                             "type": "label",
-                            "text": "§l§dYukaYama0311 §r- §2ゆうはらんど",
+                            "text": "§l§dYuuhaLand §r- §2ゆうはらんど",
                             "font_scale_factor": 1.50,
                             "offset": [ 0, 0 ],
                             "shadow": true,
@@ -878,56 +885,21 @@
                 ]
               }
             },
-            { "howtoplay_0@tabbed_upsell.text": {"$text": "packinfo.about_author.text1", "font_type": "MinecraftTen"}},
-            { "howtoplay_1@tabbed_upsell.text": {"$text": "packinfo.about_author.text2"}},
-            { "howtoplay_2@tabbed_upsell.text": {"$text": "packinfo.about_author.text3"}},
-            { "howtoplay_3@tabbed_upsell.text": {"$text": "packinfo.about_author.text4"}},
-            { "howtoplay_4@tabbed_upsell.text": {"$text": "packinfo.about_author.text5"}},
-            { "howtoplay_5@tabbed_upsell.text": {"$text": "packinfo.about_author.text6"}},
-            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}}
+            { "howtoplay_1@tabbed_upsell.text": {"$text": "packinfo.about_author.text1"}},
+            { "howtoplay_2@tabbed_upsell.text": {"$text": "packinfo.about_author.text2"}},
+            { "howtoplay_3@tabbed_upsell.text": {"$text": "packinfo.about_author.text3"}},
+            { "howtoplay_4@tabbed_upsell.text": {"$text": "packinfo.about_author.text4"}},
+            { "howtoplay_5@tabbed_upsell.text": {"$text": "packinfo.about_author.text5"}},
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text6"}},
+            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}},
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}},
+            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text9"}}
           ],
           "bindings": [
             {
               "binding_type": "view",
               "source_control_name": "page_author",
-              "source_property_name": "#toggle_state",
-              "target_property_name": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "licence_page@tabbed_upsell.indexs_panel": {
-          "controls": [
-            { "header@how_to_play_common.header": { "$text":"packinfo.licence.title" }},
-            { "howtoplay_0@tabbed_upsell.text": {"$text": "MIT License"}},
-            { "howtoplay_1@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_2@tabbed_upsell.text": {"$text": "Copyright (c) 2023 YukaYama0311"}},
-            { "howtoplay_3@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_4@tabbed_upsell.text": {"$text": "Permission is hereby granted, free of charge, to any person obtaining a copy"}},
-            { "howtoplay_5@tabbed_upsell.text": {"$text": "of this software and associated documentation files (the \"Software\"), to deal"}},
-            { "howtoplay_6@tabbed_upsell.text": {"$text": "in the Software without restriction, including without limitation the rights"}},
-            { "howtoplay_7@tabbed_upsell.text": {"$text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"}},
-            { "howtoplay_8@tabbed_upsell.text": {"$text": "copies of the Software, and to permit persons to whom the Software is"}},
-            { "howtoplay_9@tabbed_upsell.text": {"$text": "furnished to do so, subject to the following conditions:"}},
-            { "howtoplay_10@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_11@tabbed_upsell.text": {"$text": "The above copyright notice and this permission notice shall be included in all"}},
-            { "howtoplay_12@tabbed_upsell.text": {"$text": "copies or substantial portions of the Software."}},
-            { "howtoplay_13@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_14@tabbed_upsell.text": {"$text": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR"}},
-            { "howtoplay_15@tabbed_upsell.text": {"$text": "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"}},
-            { "howtoplay_16@tabbed_upsell.text": {"$text": "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE"}},
-            { "howtoplay_17@tabbed_upsell.text": {"$text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"}},
-            { "howtoplay_18@tabbed_upsell.text": {"$text": "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,"}},
-            { "howtoplay_19@tabbed_upsell.text": {"$text": "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE"}},
-            { "howtoplay_20@tabbed_upsell.text": {"$text": "SOFTWARE."}},
-            { "howtoplay_21@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_22@tabbed_upsell.text": {"$text": "長々しい英語が続きましたが、つまり...\nこのパックは商用利用、個人利用かかわらず、自由にコピー・再配布・改造してもいいよ～。\nその代わり、何か起こっても責任はとれないよ～\nということです。"}}
-          ],
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "page_licence",
               "source_property_name": "#toggle_state",
               "target_property_name": "#visible"
             }

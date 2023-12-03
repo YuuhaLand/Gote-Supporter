@@ -277,15 +277,6 @@
         }
       },
       {
-        "show_item_id_aux@settings_common.option_toggle": {
-          "$option_label": "options.gote.show_item_id_aux",
-          "$option_binding_name": "",
-          "$toggle_default_state": "$show_item_id_aux",
-          "$toggle_name": "show_item_id_aux",
-          "enabled": false
-        }
-      },
-      {
         "play_screen_doubleclick@settings_common.option_toggle": {
           "$option_label": "options.gote.play_screen_doubleclick",
           "$option_binding_name": "",

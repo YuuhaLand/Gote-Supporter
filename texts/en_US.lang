@@ -51,10 +51,8 @@ gtb.worldFolderPath.cantget=Could not be obtained.
 gtb.worldFolderPath.cantget.tooltip=The folder location cannot be retrieved because there are no thumbnails for the world. Once the world is loaded, the folder location can be retrieved.
 
 gtb.previewWarning.title=Warning
-gtb.previewWarning.honbun1=You have enabled Gote-Supporter in the beta version of Minecraft.
-gtb.previewWarning.honbun2=Gote-Supporter does not fully support the beta version of Minecraft.
-gtb.previewWarning.honbun3=This may cause problems such as crashes and UI layout collapses.
-gtb.previewWarning.honbun4=Please understand this in advance.
+gtb.previewWarning.honbun1=Applying Gote-Supporter in Minecraft Preview may cause crashes and UI collapse.
+gtb.previewWarning.honbun2=Please understand this in advance. m(_ _)m
 
 gtb.jsonUIWarning.title=Important JSON UI Warning
 gtb.jsonUIWarning.honbun1=Resource packs that modify the screen UI, including Gote-Supporter, are modified using "JSON UI".
@@ -92,7 +90,7 @@ packinfo.about.text1=This resource pack is a UI add-on that adds a variety of us
 packinfo.about.text2=It does not use any behavior packs and can be used in multiplayer, servers, etc.!
 packinfo.about.text3=(Gote-Supporter cannot be used if the participating server has denied global resources.)
 packinfo.about.text4=This pack is available on MCPEDL!
-packinfo.about.text5=§ahttps://mcpedl.com/gote-supporter/
+packinfo.about.text5=Please report any bugs on this Discord server!
 
 ## 特徴
 
@@ -107,10 +105,92 @@ packinfo.f4=You can create a world template!
 packinfo.f5=Press the Tab key to display the player list like the Java Edition! (keyboard only)
 packinfo.f6=...And more!
 
+## 注意事項
+packinfo.caution.title=Precautions
+packinfo.caution.text1=This pack is made in Japan.
+packinfo.caution.text2=For translation into English, we use DeepL Translate.
+packinfo.caution.text3=Please understand this in advance.
+packinfo.caution.text4=If you would like to copy any part of this pack and incorporate it into your own pack, please contact YukaYama0311.
+packinfo.caution.text5=Do not claim this add-on as your own.
+packinfo.caution.text6=YukaYama0311 is not responsible for any damage caused by the use of this pack.
+
+## サウンド鑑賞
+packinfo.music.title=Music Listen
+packinfo.music.text1=In this section you can listen to Minecraft background music!
+packinfo.music.text2=Take a break!
+packinfo.music.text3=Music will remain playing even if this screen is closed.
+
+## 必ずお読みください
+packinfo.readme.title=Read me!
+packinfo.readme.text1=Thank you for downloading Gote-Supporter.
+packinfo.readme.text2=If you use this pack, you must strictly adhere to the following
+packinfo.readme.text4=《You can do the following》
+packinfo.readme.text5=To use this pack as a reference for creating your own packs.
+packinfo.readme.text6=To modify this pack.
+packinfo.readme.text7=Copying parts of this pack into other packs.
+packinfo.readme.text8=Distributing packs that contain material copied from this pack.(It must be clearly stated that it was copied from Gote-Supporter.)
+packinfo.readme.text9=Modifying this pack to maintain compatibility with other packs.
+packinfo.readme.text10=Apply this pack to a world or server resource pack.
+packinfo.readme.text11=Producing a video introducing this pack.
+packinfo.readme.text12=《You CAN'T do the following》
+packinfo.readme.text15=Claiming this pack as your own work
+
+##つくったひと
+
+packinfo.about_author.title=Creator info
+packinfo.about_author.text1=Minecrafter, mainly active in Minecraft integrated version.
+packinfo.about_author.text2=I make add-ons as a hobby.
+packinfo.about_author.text3=I make JSON UI as I like as a hobby.
+packinfo.about_author.text4=I'm terrible at programming.
+packinfo.about_author.text5=I'm not good at learning new things.
+packinfo.about_author.text6=I have about 7 years of experience in Minecraft.
+packinfo.about_author.text7=I don't speak English myself, so I use DeepL or Google Translate.
+packinfo.about_author.text8=Also, we do not accept any requests to create add-ons and invitations to projects, etc.
+packinfo.about_author.text9=Also, I'm pretty terrible at teaching, so I probably can't teach.
+
+##ライセンス
+packinfo.licence.title=Licence
+
+##よくある質問
+packinfo.faq.title=FaQ
+packinfo.faq.text1=Here you can see frequently asked questions about Gote-Supporter!
+
+packinfo.faq.q1.q=Can this pack be applied to the world resource pack?
+packinfo.faq.q1.a=Of course! You can freely apply this pack to any world or server resource pack!
+packinfo.faq.q2.q=Can I edit it a bit because it doesn't work well with some other add-ons?
+packinfo.faq.q2.a=Of course! Feel free to modify this pack!
+packinfo.faq.q3.q=Can I incorporate that feature of this pack into my pack and distribute it?
+packinfo.faq.q3.a=Of course! I would be happy if my code can help you develop your packs! By the way, when you distribute it, please mention that you copied it in the description or something!
+packinfo.faq.q4.q=I want to show this pack on Youtube or something!
+packinfo.faq.q4.a=You are more than welcome! Please feel free to introduce us to your friends and family!
+packinfo.faq.q5.q=I entered a certain server and Gote-Supporter disabled itself...
+packinfo.faq.q5.a=Some servers prohibit global resources. Gote-Supporter cannot be used on such servers.
+packinfo.faq.q6.q=I found a bug! Where do I report it?
+packinfo.faq.q6.a=If you find a bug, please report it on the Discord server!
+packinfo.faq.q7.q=I want to help create this pack!
+packinfo.faq.q7.a=I am sorry. I do not accept production cooperation. I'm making it on my own and at my own leisure.
+packinfo.faq.q8.q=Why are you open sourcing this pack? Don't you want to make money?
+packinfo.faq.q8.a=I am open sourcing this pack and others so that anyone can take advantage of my pack code. I don't feel bad if my code is used in some unknown place. I am rather happy about it. I also don't want to make money. I hate Linkvertise and ad.fly. As a side note, I think all the add-ons for Minecraft are open source, except for the marketplace ones. Because anyone can peek at the code. It can be obfuscated, but it can also be easily decrypted. That's just my opinion, so please don't mind me.
+packinfo.faq.q9.q=I would like to request YukaYama0311 to create an add-on.
+packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create add-ons. I can teach you how to make one, but I'm a §l§cquite bad at teaching people,§r so you may not understand.
+
+
+
 ## アップデート情報
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v167.u1=The VSYNC setting has been restored to the video settings.
+packinfo.v167.u2=Fixed a bug that conflicts with other add-ons and causes the pause screen to get stuck with a message asking if you really want to exit.
+packinfo.v167.u3=The license field has been removed from the pack information screen (the license is in the folder of the pack).
+packinfo.v167.u4=The "item ID Aux display function" was removed from Gote-Supporter.
+packinfo.v167.u5=Removed the warning notice that appears on the start screen when Gote-Supporter is installed in the Preview version.
+packinfo.v167.u6=The Tab button on the chat screen and F1/F8 on the HUD can now be hidden by Config.
+packinfo.v167.u7=Fixed a bug that caused the F1/F8 on the HUD and the arrow buttons on the hotbar to appear above the settings screen on the operation button customization screen.
+packinfo.v167.u8=Fixed a bug where the HP bar was not displayed on the NPC screen.
+packinfo.v167.u9=Fixed a bug that caused an error to appear when applying packs.
+packinfo.v167.u10=Added bug report Discord link to the pack information screen.
 
 packinfo.v166.u1=Fixed a bug that made it difficult to see the gamertag in the tab key players list.
 
@@ -286,70 +366,3 @@ packinfo.v110.u2=Pause screen can display your profile when the list scoreboard 
 packinfo.v110.u3=Fixed an issue with incorrect English translation.
 
 packinfo.v100.u1=First release.
-
-## 注意事項
-packinfo.caution.title=Precautions
-packinfo.caution.text1=This pack is made in Japan.
-packinfo.caution.text2=For translation into English, we use DeepL Translate.
-packinfo.caution.text3=Please understand this in advance.
-packinfo.caution.text4=If you would like to copy any part of this pack and incorporate it into your own pack, please contact YukaYama0311.
-packinfo.caution.text5=Do not claim this add-on as your own.
-packinfo.caution.text6=YukaYama0311 is not responsible for any damage caused by the use of this pack.
-
-## サウンド鑑賞
-packinfo.music.title=Music Listen
-packinfo.music.text1=In this section you can listen to Minecraft background music!
-packinfo.music.text2=Take a break!
-packinfo.music.text3=Music will remain playing even if this screen is closed.
-
-## 必ずお読みください
-packinfo.readme.title=Read me!
-packinfo.readme.text1=Thank you for downloading Gote-Supporter.
-packinfo.readme.text2=If you use this pack, you must strictly adhere to the following
-packinfo.readme.text4=《You can do the following》
-packinfo.readme.text5=To use this pack as a reference for creating your own packs.
-packinfo.readme.text6=To modify this pack.
-packinfo.readme.text7=Copying parts of this pack into other packs.
-packinfo.readme.text8=Distributing packs that contain material copied from this pack.(It must be clearly stated that it was copied from Gote-Supporter.)
-packinfo.readme.text9=Modifying this pack to maintain compatibility with other packs.
-packinfo.readme.text10=Apply this pack to a world or server resource pack.
-packinfo.readme.text11=Producing a video introducing this pack.
-packinfo.readme.text12=《You CAN'T do the following》
-packinfo.readme.text15=Claiming this pack as your own work
-
-##つくったひと
-
-packinfo.about_author.title=Creator info
-packinfo.about_author.text1=YuuhaLand / YukaYama0311 / Yuka0745 
-packinfo.about_author.text2=Minecrafter, mainly active in Minecraft integrated version.
-packinfo.about_author.text3=I make add-ons as a hobby.
-packinfo.about_author.text4=I make JSON UI as I like as a hobby.
-packinfo.about_author.text5=I'm terrible at programming.
-packinfo.about_author.text6=I'm not good at learning new things.
-packinfo.about_author.text7=I have about 8 years of experience in Minecraft.
-
-##ライセンス
-packinfo.licence.title=Licence
-
-##よくある質問
-packinfo.faq.title=FaQ
-packinfo.faq.text1=Here you can see frequently asked questions about Gote-Supporter!
-
-packinfo.faq.q1.q=Can this pack be applied to the world resource pack?
-packinfo.faq.q1.a=Of course! You can freely apply this pack to any world or server resource pack!
-packinfo.faq.q2.q=Can I edit it a bit because it doesn't work well with some other add-ons?
-packinfo.faq.q2.a=Of course! Feel free to modify this pack!
-packinfo.faq.q3.q=Can I incorporate that feature of this pack into my pack and distribute it?
-packinfo.faq.q3.a=Of course! I would be happy if my code can help you develop your packs! By the way, when you distribute it, please mention that you copied it in the description or something!
-packinfo.faq.q4.q=I want to show this pack on Youtube or something!
-packinfo.faq.q4.a=You are more than welcome! Please feel free to introduce us to your friends and family!
-packinfo.faq.q5.q=I entered a certain server and Gote-Supporter disabled itself...
-packinfo.faq.q5.a=Some servers prohibit global resources. Gote-Supporter cannot be used on such servers.
-packinfo.faq.q6.q=I found a bug! Where do I report it?
-packinfo.faq.q6.a=If you find a bug, please report it on the Discord server!
-packinfo.faq.q7.q=I want to help create this pack!
-packinfo.faq.q7.a=I am sorry. I do not accept production cooperation. I'm making it on my own and at my own leisure.
-packinfo.faq.q8.q=Why are you open sourcing this pack? Don't you want to make money?
-packinfo.faq.q8.a=I am open sourcing this pack and others so that anyone can take advantage of my pack code. I don't feel bad if my code is used in some unknown place. I am rather happy about it. I also don't want to make money. I hate Linkvertise and ad.fly. As a side note, I think all the add-ons for Minecraft are open source, except for the marketplace ones. Because anyone can peek at the code. It can be obfuscated, but it can also be easily decrypted. That's just my opinion, so please don't mind me.
-packinfo.faq.q9.q=I would like to request YukaYama0311 to create an add-on.
-packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create add-ons. I can teach you how to make one, but I'm a §l§cquite bad at teaching people,§r so you may not understand.
