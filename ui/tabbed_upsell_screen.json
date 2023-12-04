@@ -446,14 +446,14 @@
             { "fh2@how_to_play_common.header": { "$text":"packinfo.about.title" }},
             { "text01@tabbed_upsell.text": { "$text": "packinfo.about.text1" }},
             { "text02@tabbed_upsell.text": { "$text": "packinfo.about.text2" }},
-            { "text04@tabbed_upsell.text": { "$text": "packinfo.about.text3" }},
+            { "text03@tabbed_upsell.text": { "$text": "packinfo.about.text3" }},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text05@tabbed_upsell.text": { "$text": "packinfo.about.text4" }},
-            { "text06@tabbed_upsell.text": { "$text": "§ahttps://mcpedl.com/gote-supporter/" }},
-            { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "text05@tabbed_upsell.text": { "$text": "packinfo.about.text5" }},
-            { "text06@tabbed_upsell.text": { "$text": "§adiscord.gg/skX9YHp4fC" }},
+            { "text04@tabbed_upsell.text": { "$text": "packinfo.about.text4" }},
+            { "text05@tabbed_upsell.text": { "$text": "§ahttps://mcpedl.com/gote-supporter/" }},
             { "padding02": { "type": "panel", "size": [ 0, 10 ] }},
+            { "text06@tabbed_upsell.text": { "$text": "packinfo.about.text5" }},
+            { "text07@tabbed_upsell.text": { "$text": "§adiscord.gg/skX9YHp4fC" }},
+            { "padding03": { "type": "panel", "size": [ 0, 10 ] }},
             {
               "preview_warning": {
                 "type": "stack_panel",
@@ -892,9 +892,9 @@
             { "howtoplay_5@tabbed_upsell.text": {"$text": "packinfo.about_author.text5"}},
             { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text6"}},
             { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}},
-            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}},
-            { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text9"}}
+            { "howtoplay_7@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}},
+            { "howtoplay_8@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}},
+            { "howtoplay_9@tabbed_upsell.text": {"$text": "packinfo.about_author.text9"}}
           ],
           "bindings": [
             {
