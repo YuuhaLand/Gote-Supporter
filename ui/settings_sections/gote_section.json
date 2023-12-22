@@ -230,6 +230,19 @@
         }
       },
 
+      {
+        "header_toggles": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$a_color_format",
+          "size": [ "100%", "default" ],
+          "font_scale_factor": 1.5,
+          "line_padding": 5,
+          "text": "§lトグル"
+        }
+      },
       
       {
         "hud_compass@settings_common.option_toggle": {
@@ -241,20 +254,29 @@
         }
       },
       {
-        "show_recoverycompass@settings_common.option_toggle": {
-          "$option_label": "options.gote.show_recoverycompass",
+        "start_screen_gamertag@settings_common.option_toggle": {
+          "$option_label": "options.gote.start_screen_gamertag",
           "$option_binding_name": "",
-          "$toggle_default_state": "$show_recoverycompass",
-          "$toggle_name": "show_recoverycompass",
+          "$toggle_default_state": "$start_screen_gamertag",
+          "$toggle_name": "start_screen_gamertag",
           "enabled": false
         }
       },
       {
-        "f1_f8_location@settings_common.option_text_edit": {
-          "$option_label": "options.gote.f1_f8_location",
+        "inventory_screen_statusbar@settings_common.option_toggle": {
+          "$option_label": "options.gote.inventory_screen_statusbar",
           "$option_binding_name": "",
-          "$default_value": "$f1_f8_location",
-          "$text_box_name": "f1_f8_location",
+          "$toggle_default_state": "$inventory_screen_statusbar",
+          "$toggle_name": "inventory_screen_statusbar",
+          "enabled": false
+        }
+      },
+      {
+        "chest_screen_paperdoll@settings_common.option_toggle": {
+          "$option_label": "options.gote.chest_screen_paperdoll",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$chest_screen_paperdoll",
+          "$toggle_name": "chest_screen_paperdoll",
           "enabled": false
         }
       },
@@ -268,20 +290,53 @@
         }
       },
       {
-        "chat_tab_button_type@settings_common.option_text_edit": {
-          "$option_label": "options.gote.chat_tab_button_type",
-          "$option_binding_name": "",
-          "$default_value": "$chat_tab_button_type",
-          "$text_box_name": "chat_tab_button_type",
-          "enabled": false
-        }
-      },
-      {
         "play_screen_doubleclick@settings_common.option_toggle": {
           "$option_label": "options.gote.play_screen_doubleclick",
           "$option_binding_name": "",
           "$toggle_default_state": "$play_screen_doubleclick",
           "$toggle_name": "play_screen_doubleclick",
+          "enabled": false
+        }
+      },
+      {
+        "show_recoverycompass@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_recoverycompass",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_recoverycompass",
+          "$toggle_name": "show_recoverycompass",
+          "enabled": false
+        }
+      },
+
+      {
+        "header_text": {
+          "type": "label",
+          "offset": [ 2, 0 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$a_color_format",
+          "size": [ "100%", "default" ],
+          "font_scale_factor": 1.5,
+          "line_padding": 5,
+          "text": "§lテキスト"
+        }
+      },
+
+      {
+        "f1_f8_location@settings_common.option_text_edit": {
+          "$option_label": "options.gote.f1_f8_location",
+          "$option_binding_name": "",
+          "$default_value": "$f1_f8_location",
+          "$text_box_name": "f1_f8_location",
+          "enabled": false
+        }
+      },
+      {
+        "chat_tab_button_type@settings_common.option_text_edit": {
+          "$option_label": "options.gote.chat_tab_button_type",
+          "$option_binding_name": "",
+          "$default_value": "$chat_tab_button_type",
+          "$text_box_name": "chat_tab_button_type",
           "enabled": false
         }
       },

@@ -7,6 +7,7 @@
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "size": [ 180, 20 ],
+    "ignored": "(not $inventory_screen_statusbar)",
     "controls": [
       {
         "heart_rend@hud.heart_renderer": {

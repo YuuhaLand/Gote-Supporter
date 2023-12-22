@@ -20,6 +20,15 @@
     ],
     "variables": [
       {
+        "requires": "($local_world_upload)",
+        "$pressed_button_name": "button.local_world_upload"
+      },
+      {
+        "requires": "(not $local_world_upload)",
+        "$pressed_button_name": "button.menu_start_local_world"
+      },
+      
+      {
         "requires": "$play_screen_doubleclick",
         "$button_mappings": [
           {

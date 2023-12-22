@@ -98,6 +98,7 @@
   },
 
   "upper_online_buttons_panel": {
+    "ignored": "(not $start_screen_gamertag)",
     "bindings": []
   },
 

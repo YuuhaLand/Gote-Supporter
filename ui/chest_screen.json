@@ -10,6 +10,7 @@
     "anchor_from": "center",
     "anchor_to": "center",
     "offset": [ -120, 0 ],
+    "ignored": "(not $chest_screen_paperdoll)",
     "controls": [
       {
         "player_renderer_panel": {

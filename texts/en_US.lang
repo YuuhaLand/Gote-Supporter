@@ -30,17 +30,18 @@ options.gote.label2=Gote-Supporter settings cannot be changed from here.
 options.gote.label3=Settings can be changed in the following files!
 options.gote.label4=When using the Gote-Supporter Config Pack, apply it on top of Gote-Supporter!
 options.gote.label5=Example:
+options.gote.toggles=Toggles
+options.gote.text=Text
 options.gote.hud_compass=Display compass and clock on HUD
 options.gote.show_recoverycompass=Add recovery compass to HUD compass (beta!)
 options.gote.f1_f8_location=Location of F1/F8 buttons on HUD (Touch)
 options.gote.show_hotbar_navigator=Show HUD hotbar navigator (touch)
 options.gote.chat_tab_button_type=Placement of the Tab key on the Chat Screen
-options.gote.new_play_screen=New play screen with Gote-Supporter
-options.gote.play_screen_tab=Separate tabs in the world tab and friends tab on the play screen.
-options.gote.show_item_id_aux=Display Item ID Aux on inventory screen (for JSON UI creators)
 options.gote.playerlist_key=HUD player list key
 options.gote.play_screen_doubleclick=Make it so that you have to double click on the world button on the play screen to enter.
-
+options.gote.start_screen_gamertag=Display your gamertag and icon on the start screen
+options.gote.chest_screen_paperdoll=Display your own dolls on chest screen, etc.
+options.gote.inventory_screen_statusbar=Display of HP, hunger level, etc. on inventory screen, etc.
 
 ## フィードバックサイト
 
@@ -180,6 +181,10 @@ packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create ad
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v168.u1=The gamertag on the start screen, the HP display on the inventory screen and other screens, and the doll display on the chest screen and other screens can now be hidden by Config.
+packinfo.v168.u2=Separate toggles and text in Config section of settings for easier viewing.
+packinfo.v168.u3=Fixed a bug that caused the world to be loaded when trying to replace the Realm world.
 
 packinfo.v167.u1=The VSYNC setting has been restored to the video settings.
 packinfo.v167.u2=Fixed a bug that conflicts with other add-ons and causes the pause screen to get stuck with a message asking if you really want to exit.

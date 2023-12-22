@@ -1,17 +1,17 @@
 {
+  "namespace": "anvil_pocket",
+
   "multiline_text_edit_control@common.multiline_text_edit_box": {
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
-    "size": [
-      142,
-      45
-    ],
+    "size": [ 142, 45 ],
+    "max_length": 100,
+    "$text_edit_binding_name": "#text_box_item_name",
     "property_bag": {
       "#property_field": "#item_name"
-    },
-    "max_length": 100,
-    "$text_edit_binding_name": "#text_box_item_name"
+    }
   },
+
   "anvil_title_and_text_panel": {
     "type": "panel",
     "anchor_from": "left_middle",
@@ -24,11 +24,13 @@
       }
     ]
   },
+
   "title_label@anvil_pocket.generic_label": {
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
     "text": ""
   },
+
   "anvil_contents_panel": {
     "type": "panel",
     "size": [ "100%", "100%" ],

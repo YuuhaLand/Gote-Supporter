@@ -37,17 +37,18 @@ options.gote.label2=ここからGote-Supporterの設定を変更することは�
 options.gote.label3=設定は以下のファイルで変更できます!
 options.gote.label4=Gote-Supporter Config Pack を使用する際は、Gote-Supporterの上に適用してください!
 options.gote.label5=例:
+options.gote.toggles=トグル
+options.gote.text=テキスト
 options.gote.hud_compass=HUDにコンパスと時計を表示
 options.gote.show_recoverycompass=HUDのコンパスにリカバリーコンパスを追加(ベータ!)
 options.gote.f1_f8_location=HUDのF1/F8ボタンの位置(タッチ)
 options.gote.show_hotbar_navigator=HUDのホットバーナビゲーターの表示(タッチ)
 options.gote.chat_tab_button_type=チャット画面のTabキーの配置
-options.gote.is_creator_mode=クリエイター モード
-options.gote.new_play_screen=Gote-Supporterで一新したプレイ画面
-options.gote.play_screen_tab=プレイ画面のワールドタブとフレンドタブでタブ分けする
-options.gote.show_item_id_aux=インベントリ画面でItem ID Auxを表示する(JSON UIクリエイター向け)
 options.gote.playerlist_key=HUDのプレイヤーリストのキー
 options.gote.play_screen_doubleclick=プレイ画面のワールドのボタンをダブルクリックしないと入れないようにする
+options.gote.start_screen_gamertag=スタート画面にゲーマータグとアイコンを表示
+options.gote.chest_screen_paperdoll=チェスト画面などに自分の人形を表示
+options.gote.inventory_screen_statusbar=インベントリ画面などにHPや空腹度などを表示
 
 ## フィードバックサイト
 
@@ -185,10 +186,18 @@ packinfo.faq.q9.q=Q. YuuhaLandにアドオン制作を依頼したいです。
 packinfo.faq.q9.a=A. 2023年12月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。
 
 
+
+
+
 ## アップデート情報
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+
+packinfo.v168.u1=スタート画面のゲーマータグ、インベントリ画面などのHP表示、チェスト画面などの人形表示をConfigで非表示にできるようになりました。
+packinfo.v168.u2=設定のConfig確認欄でトグルとテキストを分けて見やすくしました。
+packinfo.v168.u3=Realmのワールド置き換えしようとするとワールドに入っちゃうバグを直しました。
 
 packinfo.v167.u1=ビデオ設定にVSYNC設定を復活させました。
 packinfo.v167.u2=他のアドオンと競合してポーズ画面の本当に終了しますかメッセージが出てきて詰むバグを直しました。

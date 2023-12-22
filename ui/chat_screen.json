@@ -245,10 +245,6 @@
       }
     ]
   },
-  
-  "text_edit_box@common.text_edit_box": {
-	"$place_holder_text": "chat.textbox.place"
-  },
 
   "swtich_toggle@common_toggles.light_content_toggle": {
     "$toggle_name":"newline_chat",
