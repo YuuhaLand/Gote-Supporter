@@ -3,7 +3,7 @@ pack.description=You can conveniently enjoy your Minecraft life.   Created by Yu
 packname.nover=§l§aGote§d-§bSupporter
 
 
-map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s	#
+map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s§r	#
 
 craftingScreen.tab.none=None
 
@@ -42,6 +42,9 @@ options.gote.play_screen_doubleclick=Make it so that you have to double click on
 options.gote.start_screen_gamertag=Display your gamertag and icon on the start screen
 options.gote.chest_screen_paperdoll=Display your own dolls on chest screen, etc.
 options.gote.inventory_screen_statusbar=Display of HP, hunger level, etc. on inventory screen, etc.
+options.gote.show_gote_version=Gote-Supporter information is displayed on the start screen
+options.gote.show_build_number=Minecraft build number on Start screen
+options.gote.show_hotbar_number=Display numbers on hot bar
 
 ## フィードバックサイト
 
@@ -55,18 +58,11 @@ gtb.previewWarning.title=Warning
 gtb.previewWarning.honbun1=Applying Gote-Supporter in Minecraft Preview may cause crashes and UI collapse.
 gtb.previewWarning.honbun2=Please understand this in advance. m(_ _)m
 
-gtb.jsonUIWarning.title=Important JSON UI Warning
-gtb.jsonUIWarning.honbun1=Resource packs that modify the screen UI, including Gote-Supporter, are modified using "JSON UI".
-gtb.jsonUIWarning.honbun2=Minecraft is progressively rolling out a new UI engine, Ore UI, which is the successor to JSON UI.
-gtb.jsonUIWarning.honbun3=§l§cGote-Supporter features may not be available in the future due to future updates.
-gtb.jsonUIWarning.honbun4=*The Ore UI is already implemented in the Achievements screen, world creation screen, etc. and cannot currently be changed from the resource pack.
-
 gtb.memoScreen.title=Temporary Note
 gtb.memoScreen.body1=Here you can write temporary notes.
 gtb.memoScreen.body2=It will be deleted when you exit the world!
 gtb.memoScreen.placeHolderText=Please note that what you write here will not be saved.
 
-gtb.helpwarning.text1=We do not accept any help for this add-on.
 
 gtb.playercount.text1=§
 gtb.playercount.text2=§z Players Online
@@ -86,71 +82,66 @@ packinfo.mokuji.text2=On this screen you can see information about this pack.
 
 ## このパックについて
 
-packinfo.about.title=About this pack
-packinfo.about.text1=This resource pack is a UI add-on that adds a variety of useful features to Micra!
-packinfo.about.text2=It does not use any behavior packs and can be used in multiplayer, servers, etc.!
-packinfo.about.text3=(Gote-Supporter cannot be used if the participating server has denied global resources.)
-packinfo.about.text4=This pack is available on MCPEDL!
-packinfo.about.text5=Please report any bugs on this Discord server!
+packinfo.about.title=Welcome
+packinfo.about.text1=Thank you for downloading Gote-Supporter!
+packinfo.about.text2=This resource pack is a UI add-on that adds a bit of extra functionality to Minecraft!
+packinfo.about.text3=It does not use any behavior packs and can be used on all but a few servers and multiplayer!
+packinfo.about.text4=On this screen you can learn more about Gote-Supporter!
+packinfo.about.text5=This pack is presented in the following pages!
+packinfo.about.text6=ゆうはのブログ (Japanese)
+packinfo.about.text7=Github (Japanese)
+packinfo.about.text8=MCPEDL (English)
+packinfo.about.text9=If you find any bugs, please report them on the Discord Server below!
+
 
 ## 特徴
 
 packinfo.features.title=Features
-packinfo.features.text1=The main features of this pack are as follows! :
-packinfo.features.text2=See more features at MCPEDL or on our blog Introducing Gote-Supporter!
+packinfo.features.text1=This pack allows you to add a little extra functionality to your Minecraft.
+packinfo.features.text2=For example, HUD
+packinfo.features.text3=Compass and clock are displayed in the lower left corner of the screen. (They can also be hidden.)
+packinfo.features.text4=Pressing the Tab key displays the player list like the Java version. (Keyboard only)
+packinfo.features.text5=F1 and F8 can be pressed by touch. (Currently, you have to press with two fingers to get a response.)
+packinfo.features.text6=For example, inventory screen
+packinfo.features.text7=HP and hunger level are displayed at the bottom of the screen.
+packinfo.features.text8=You can see your doll display on the chest screen and other screens.
+packinfo.features.text9=A "+" icon will appear on items copied with the entire contents using Ctrl+mouse wheel.
+packinfo.features.text10=For example, chat screen
+packinfo.features.text11=There is a button on the phone where you can press the Tab and ↑↓ keys.
+packinfo.features.text12=Press the arrow button next to the input field to enlarge the field.
+packinfo.features.text13=Clicking on a candidate displayed while entering a command completes it.
+packinfo.features.text14=...and many other features.
+packinfo.features.text15=Some features can be hidden or customized by "Config".
+packinfo.features.text16=For details, open this URL with your browser!
+packinfo.features.text17=https://x.gd/mv2bI
 
-packinfo.f1=You don't have to make a clock and compass for survival!
-packinfo.f2=Item names can be newlined in an anvil!
-packinfo.f3=You can check the world version!
-packinfo.f4=You can create a world template!
-packinfo.f5=Press the Tab key to display the player list like the Java Edition! (keyboard only)
-packinfo.f6=...And more!
 
 ## 注意事項
 packinfo.caution.title=Precautions
 packinfo.caution.text1=This pack is made in Japan.
-packinfo.caution.text2=For translation into English, we use DeepL Translate.
-packinfo.caution.text3=Please understand this in advance.
-packinfo.caution.text4=If you would like to copy any part of this pack and incorporate it into your own pack, please contact YukaYama0311.
-packinfo.caution.text5=Do not claim this add-on as your own.
-packinfo.caution.text6=YukaYama0311 is not responsible for any damage caused by the use of this pack.
+packinfo.caution.text2=For translation into English, we use DeepL and Google Translate.
+packinfo.caution.text3=YuuhaLand is not responsible for any problems caused by the use of this pack.
+packinfo.caution.text4=I will not accept any support or contribution for this add-on.
 
 ## サウンド鑑賞
-packinfo.music.title=Music Listen
-packinfo.music.text1=In this section you can listen to Minecraft background music!
-packinfo.music.text2=Take a break!
-packinfo.music.text3=Music will remain playing even if this screen is closed.
-
-## 必ずお読みください
-packinfo.readme.title=Read me!
-packinfo.readme.text1=Thank you for downloading Gote-Supporter.
-packinfo.readme.text2=If you use this pack, you must strictly adhere to the following
-packinfo.readme.text4=《You can do the following》
-packinfo.readme.text5=To use this pack as a reference for creating your own packs.
-packinfo.readme.text6=To modify this pack.
-packinfo.readme.text7=Copying parts of this pack into other packs.
-packinfo.readme.text8=Distributing packs that contain material copied from this pack.(It must be clearly stated that it was copied from Gote-Supporter.)
-packinfo.readme.text9=Modifying this pack to maintain compatibility with other packs.
-packinfo.readme.text10=Apply this pack to a world or server resource pack.
-packinfo.readme.text11=Producing a video introducing this pack.
-packinfo.readme.text12=《You CAN'T do the following》
-packinfo.readme.text15=Claiming this pack as your own work
+packinfo.music.title=Music Appreciation Place
+packinfo.music.text1=Here you can appreciate the background music of Minecraft!
+packinfo.music.text2=The music will remain playing even if this screen is closed!
 
 ##つくったひと
 
 packinfo.about_author.title=Creator info
-packinfo.about_author.text1=Minecrafter, mainly active in Minecraft integrated version.
-packinfo.about_author.text2=I make add-ons as a hobby.
-packinfo.about_author.text3=I make JSON UI as I like as a hobby.
-packinfo.about_author.text4=I'm terrible at programming.
-packinfo.about_author.text5=I'm not good at learning new things.
-packinfo.about_author.text6=I have about 7 years of experience in Minecraft.
-packinfo.about_author.text7=I don't speak English myself, so I use DeepL or Google Translate.
-packinfo.about_author.text8=Also, we do not accept any requests to create add-ons and invitations to projects, etc.
-packinfo.about_author.text9=Also, I'm pretty terrible at teaching, so I probably can't teach.
+packinfo.about_author.text1=Japanese who is active mainly in the Minecraft integrated version.
+packinfo.about_author.text2=Commander Add-on Creator.
+packinfo.about_author.text3=I don't speak English.
+packinfo.about_author.text4=I hate cars and motorcycles in general.
+packinfo.about_author.text5=I play games almost exclusively Minecraft BE.
+packinfo.about_author.text6=Sometimes I play horror games or Tetris.
+packinfo.about_author.text7=Lately I have a tendency to revert back to the old UI for PC themes, Minecraft and the like.
+packinfo.about_author.text8=I don't speak English myself, so I use DeepL or Google Translate.
+packinfo.about_author.text9=Also, we do not accept any requests to create add-ons and invitations to projects, etc.
+packinfo.about_author.text10=Also, I'm pretty terrible at teaching, so I probably can't teach.
 
-##ライセンス
-packinfo.licence.title=Licence
 
 ##よくある質問
 packinfo.faq.title=FaQ
@@ -181,6 +172,14 @@ packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create ad
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v169.u1=Gote-Supporter information can now be hidden in Config on the Start screen.
+packinfo.v169.u2=Minecraft build number can now be displayed on the Start screen in Config.
+packinfo.v169.u3=Numbers can now be displayed on the hot bar in Config.
+packinfo.v169.u4=The Gote-Supporter Info screen has been rewritten for clarity.
+packinfo.v169.u5=Sound viewing field moved to audio settings.
+packinfo.v169.u6=Fixed a bug in Minecraft Education where "Save and Exit" was missing from the pause screen.
+packinfo.v169.u7=As of this version, Gote-Supporter will no longer support Minecraft Education.
 
 packinfo.v168.u1=The gamertag on the start screen, the HP display on the inventory screen and other screens, and the doll display on the chest screen and other screens can now be hidden by Config.
 packinfo.v168.u2=Separate toggles and text in Config section of settings for easier viewing.

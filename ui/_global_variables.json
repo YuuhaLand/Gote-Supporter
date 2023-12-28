@@ -27,22 +27,27 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
 
 {
   "$hud_compass|default": true,
-  "$show_recoverycompass|default": false,
-  "$f1_f8_location|default": "top",
-  "$show_hotbar_navigator|default": false,
-  "$chat_tab_button_type|default": "vertical",
-  "$play_screen_doubleclick|default": true,
-  "$playerlist_key|default": "tab",
   "$start_screen_gamertag|default": true,
-  "$chest_screen_paperdoll|default": true,
   "$inventory_screen_statusbar|default": true,
+  "$chest_screen_paperdoll|default": true,
+  "$show_hotbar_navigator|default": false,
+  "$show_hotbar_number|default": false,
+  "$show_gote_version|default": true,
+  "$show_build_number|default": false,
+  "$play_screen_doubleclick|default": true,
+  "$show_recoverycompass|default": false,
+
+  "$f1_f8_location|default": "top",
+  "$chat_tab_button_type|default": "vertical",
+  "$playerlist_key|default": "tab",
+
   "$rc_item_id_aux|default": 42795008, //リカバリーコンパスのItem ID Aux
 
 
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.8",
+  "$gote_ver": "1.6.9",
   "$gote_supporter_enabled": true,
   "$is_goteserver|default": false, 
   "$revival_for_2023|default": false,

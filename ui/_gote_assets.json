@@ -4,38 +4,37 @@
   "features_text_with_bubble": {
     "type": "stack_panel",
     "orientation": "horizontal",
-    "size": [ "100%", "100%c - 7px" ],
-    "min_size": [ "100%", 10 ],
+    "size": [ "100%", "100%c - 8px" ],
+    "min_size": [ "100%", 0 ],
     "$text|default": "",
     "controls": [
       {
         "bubble": {
-          "type": "image",
-          "texture": "textures/ui/bubble",
-          "size": [ 9, 9 ]
+          "type": "panel",
+          "size": [ 10, 10 ],
+          "controls": [
+            {
+              "texture": {
+                "type": "image",
+                "texture": "textures/ui/bubble",
+                "size": [ 9, 9 ]
+              }
+            }
+          ]
         }
       },
       {
         "padding": {
           "type": "panel",
-          "size": [ 5, 0 ]
+          "size": [ 3, 0 ]
         }
       },
       {
         "texts": {
           "type": "label",
-          "text": "('§　%' + $text)",
+          "text": "$text",
           "shadow": true,
-          "size": [ "100% - 10px", "default" ],
-          "font_type": "#font_type",
-          "bindings": [
-            {
-              "binding_type": "view",
-              "source_control_name": "font_property_panel",
-              "source_property_name": "#font_type",
-              "target_property_name": "#font_type"
-            }
-          ]
+          "size": [ "100% - 10px", "default" ]
         }
       }
     ]

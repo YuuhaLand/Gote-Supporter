@@ -263,6 +263,24 @@
         }
       },
       {
+        "show_gote_version@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_gote_version",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_gote_version",
+          "$toggle_name": "show_gote_version",
+          "enabled": false
+        }
+      },
+      {
+        "show_build_number@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_build_number",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_build_number",
+          "$toggle_name": "show_build_number",
+          "enabled": false
+        }
+      },
+      {
         "inventory_screen_statusbar@settings_common.option_toggle": {
           "$option_label": "options.gote.inventory_screen_statusbar",
           "$option_binding_name": "",
@@ -286,6 +304,15 @@
           "$option_binding_name": "",
           "$toggle_default_state": "$show_hotbar_navigator",
           "$toggle_name": "show_hotbar_navigator",
+          "enabled": false
+        }
+      },
+      {
+        "show_hotbar_number@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_hotbar_number",
+          "$option_binding_name": "",
+          "$toggle_default_state": "$show_hotbar_number",
+          "$toggle_name": "show_hotbar_number",
           "enabled": false
         }
       },

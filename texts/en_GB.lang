@@ -8,7 +8,7 @@ permissions.chatmute=Oops! You are not authorized to speak on this server.	#
 
 book.toggleLightMode=Light Mode
 
-map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s	#
+map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s§r	#
 
 disconnectionScreen.title=Connection error!
 disconnectionScreen.sessionNotFound=No world session was found.	#

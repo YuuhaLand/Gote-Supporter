@@ -260,6 +260,35 @@
                 ]
               }
             },
+            {
+              "slot_num": {
+                "type": "label",
+                "anchor_to": "top_left",
+                "anchor_from": "top_left",
+                "offset": [ 1.5, 0.5 ],
+                "shadow": true,
+                "text": "#text",
+                "font_scale_factor": 0.6,
+                "layer": 4,
+                "ignored": "(not $show_hotbar_number)",
+                "bindings": [
+                  {
+                    "binding_collection_name": "hotbar_items",
+                    "binding_type": "collection_details"
+                  },
+                  {
+                    "binding_type": "collection",
+                    "binding_name": "#collection_index",
+                    "binding_collection_name": "hotbar_items"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "('§7' + (#collection_index + 1) + '§z')",
+                    "target_property_name": "#text"
+                  }
+                ]
+              }
+            },
             { "hotbar_hint@edu_common.hotbar_hint": {} },
             {
               "item_dura@item_durability": {
@@ -325,6 +354,35 @@
                     "binding_name": "#inventory_stack_count",
                     "binding_type": "collection",
                     "binding_collection_name": "$stack_count_collection_name"
+                  }
+                ]
+              }
+            },
+            {
+              "slot_num": {
+                "type": "label",
+                "anchor_to": "top_left",
+                "anchor_from": "top_left",
+                "offset": [ 1.5, 0.5 ],
+                "shadow": true,
+                "text": "#text",
+                "font_type": "rune",
+                "font_scale_factor": 0.6,
+                "layer": 4,
+                "bindings": [
+                  {
+                    "binding_collection_name": "hotbar_items",
+                    "binding_type": "collection_details"
+                  },
+                  {
+                    "binding_type": "collection",
+                    "binding_name": "#collection_index",
+                    "binding_collection_name": "hotbar_items"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "('§7' + (#collection_index + 1) + '§z')",
+                    "target_property_name": "#text"
                   }
                 ]
               }

@@ -2,16 +2,16 @@
   "format_version": 1,
   "header": {
     "description": "マイクライフをより豊かにできるユーザー補助ツールです!\nCreated by YuuhaLand",
-    "name": "Gote-Supporter v1.6.8",
+    "name": "Gote-Supporter v1.6.9",
     "uuid": "3f6ab53c-3e23-4f01-a8a6-0d9dcca5f205",
-    "version": [ 1, 6, 8 ]
+    "version": [ 1, 6, 9 ]
   },
   "modules": [
     {
       "description": "ユーザー補助パック きっかけはサバイバルしてる時に「ほってる間にカウントダウン表示したいな」と思い始めた。 Gote-Supporterの初期名は「ユーザー補助パック」。",
       "type": "resources",
       "uuid": "bc5dca4a-6176-438c-aca8-67c0dfd578fa",
-      "version": [ 1, 6, 8 ]
+      "version": [ 1, 6, 9 ]
     }
   ],
   "metadata": {

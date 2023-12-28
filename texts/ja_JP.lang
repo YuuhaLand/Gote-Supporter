@@ -3,7 +3,7 @@ pack.description=マイライフをより豊かにできるユーザー補助ツ
 pack.name.nover=§l§aごて§bサポーター
 
 
-map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s	#
+map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s§r	#
 
 chat.newline=改行テキスト
 
@@ -49,6 +49,9 @@ options.gote.play_screen_doubleclick=プレイ画面のワールドのボタン�
 options.gote.start_screen_gamertag=スタート画面にゲーマータグとアイコンを表示
 options.gote.chest_screen_paperdoll=チェスト画面などに自分の人形を表示
 options.gote.inventory_screen_statusbar=インベントリ画面などにHPや空腹度などを表示
+options.gote.show_gote_version=スタート画面にGote-Supporterの情報を表示
+options.gote.show_build_number=スタート画面にマイクラのビルド番号を表示
+options.gote.show_hotbar_number=ホットバーに数字を表示
 
 ## フィードバックサイト
 
@@ -63,18 +66,10 @@ gtb.previewWarning.title=ご注意
 gtb.previewWarning.honbun1=Preview版マイクラでGote-Supporterを適用するとクラッシュやUI崩壊の可能性があります。
 gtb.previewWarning.honbun2=あらかじめご了承ください m(_ _)m
 
-gtb.jsonUIWarning.title=JSON UIに関する重要な警告
-gtb.jsonUIWarning.honbun1=Gote-Supporterを含む、画面のUIを変更するリソースパックは、「JSON UI」を使って変更しています。
-gtb.jsonUIWarning.honbun2=Minecraftでは、JSON UIの後継となる新しいUIエンジン「Ore UI」を順次展開しており、
-gtb.jsonUIWarning.honbun3=§l§c今後Gote-Supporterの機能が今後のアップデートにより 使用できなくなる可能性があります。
-gtb.jsonUIWarning.honbun4=※Ore UIは既に実績画面、ワールド作成画面などに実装されており、 現状リソースパックからの変更はできません。
-
 gtb.memoScreen.title=一時メモ
 gtb.memoScreen.body1=ここでは一時的なメモを書くことができます。
 gtb.memoScreen.body2=書いた内容はワールドを抜けると破棄されます!
 gtb.memoScreen.placeHolderText=ここに書いた内容は保存されませんのでご注意ください。
-
-gtb.helpwarning.text1=このアドオンに対するヘルプは一切受けません。
 
 gtb.playercount.text1=オンラインのプレイヤー:
 gtb.playercount.text2=人
@@ -99,69 +94,67 @@ packinfo.mokuji.text2=この画面ではこのパックの情報が見れます�
 
 ## このパックについて
 
-packinfo.about.title=このパックについて
-packinfo.about.text1=このリソースパックは、マイクラに様々な便利機能を追加する UI アドオンです!
-packinfo.about.text2=ビヘイビアパックを一切使わないので、マルチプレイヤーやサーバーなどでも使えます!
-packinfo.about.text3=(参加するサーバーがグローバルリソースを禁止にしていた場合は Gote-Supporter を使用することはできません。)
-packinfo.about.text4=このパックは MCPEDL で公開されています!
-packinfo.about.text5=何かバグあったらこのディスコ鯖で報告お願いします!
+packinfo.about.title=ようこそ
+packinfo.about.text1=Gote-Supporterをダウンロードしてくれてありがとうございます！
+packinfo.about.text2=このリソースパックは、マイクラにちょっとした機能を追加するUIアドオンです！
+packinfo.about.text3=ビヘイビアーパックを一切使わないため、一部を除くサーバーやマルチプレイなどでも利用できます！
+packinfo.about.text4=この画面ではGote-Supporterについてを知ることが出来ます！
+packinfo.about.text5=このパックは以下のページで紹介しています！
+packinfo.about.text6=ゆうはのブログ (日本語)
+packinfo.about.text7=Github (日本語)
+packinfo.about.text8=MCPEDL (英語)
+packinfo.about.text9=なにかバグを見つけちゃった場合は、以下のディスコ鯖で報告をお願いします！
 
 ## 特徴
 
 packinfo.features.title=特徴
-packinfo.features.text1=このパックの主な特徴は以下の通りです!:
-packinfo.features.text2=その他の特徴は MCPEDL またはブログの Gote-Supporter 紹介でご確認ください!
-
-packinfo.f1=サバイバルでは時計とコンパスは作らなくてもOK!
-packinfo.f2=金床でアイテム名を改行できる!
-packinfo.f3=ワールドのバージョンを確認できる!
-packinfo.f4=ワールドのテンプレートを作れる!
-packinfo.f5=Tabキーを押すとJava版のようなプレイヤーリストを表示できる!(キーボードのみ)
-packinfo.f6=...などなど!!
+packinfo.features.text1=このパックを使うと、マイクラにちょっとした機能を追加できます。
+packinfo.features.text2=例えば、HUDでは......。
+packinfo.features.text3=画面左下にコンパスと時計が表示されます。 (非表示にもできます)
+packinfo.features.text4=Tabキーを押すとJava版のようなプレイヤーリストが表示されます。 (キーボードのみ)
+packinfo.features.text5=タッチでF1,F8が押せます。 (現在2指で押さないと反応しない模様)
+packinfo.features.text6=インベントリ画面では......。
+packinfo.features.text7=画面下部にHPや空腹度などを表示します。
+packinfo.features.text8=チェスト画面などに自分の人形表示が見れます。
+packinfo.features.text9=Ctrl+マウスホイルで中身ごとコピーしたアイテムには「+」のアイコンが表示されます。
+packinfo.features.text10=チャット画面では......。
+packinfo.features.text11=スマホでもTab・↑↓キーが押せるボタンがあります。
+packinfo.features.text12=入力欄横の矢印ボタンを押すと、入力欄を拡大できます。
+packinfo.features.text13=コマンド入力中に表示される候補をクリックすると、その候補が補完されます。
+packinfo.features.text14=...などなど、色々な特徴があります。
+packinfo.features.text15=一部の特徴は、「Config」によって非表示にしたりカスタマイズができるようになっています。
+packinfo.features.text16=詳しくはコチラ！
+packinfo.features.text17=https://x.gd/woUY5
 
 ## 注意事項
-packinfo.caution.title=注意事項
+packinfo.caution.title=ご注意
 packinfo.caution.text1=このパックは、日本製のパックです。
-packinfo.caution.text2=英語への翻訳には DeepL Translate を使用しています。
-packinfo.caution.text3=予めご了承ください。
-packinfo.caution.text4=このパックの一部をコピーして自分のパックに組み込みたい場合、 YuuhaLand までお願いします。
-packinfo.caution.text5=このパックを自作発言しないでください。
-packinfo.caution.text6=このパックを使用したことにより発生したいかなる障害を齎したとしても、主 YuuhaLand は一切の責任を負いかねます。
+packinfo.caution.text2=英語への翻訳にはDeepLやGoogle翻訳を使用しています。
+packinfo.caution.text3=このパックを使用したことにより起こった問題について、YuuhaLandは一切の責任を負いかねます。
+packinfo.caution.text4=このアドオンに対するサポート・貢献は一切受けません。
+
 
 ## サウンド鑑賞
-packinfo.music.title=サウンド鑑賞
-packinfo.music.text1=このセクションでは、 Minecraft 内での BGM を鑑賞することができます!
-packinfo.music.text2=息抜きにどうぞ!!
-packinfo.music.text3=この画面を閉じても音楽は流れたままになります。
+packinfo.music.title=サウンド鑑賞場
+packinfo.music.text1=ここでは、 MinecraftのBGMを鑑賞することができます！
+packinfo.music.text2=この画面を閉じても音楽は流れたままになります！
 
-packinfo.readme.title=必ずお読みください
-packinfo.readme.text1=「Gote-Supporter」をダウンロードしていただきありがとうございます。
-packinfo.readme.text2=もしこのパックを使用する場合は、以下のことを厳守してください。
-packinfo.readme.text4=《あなたは以下のことができます》
-packinfo.readme.text5=このパックを参考にして自分のパックの作成に役立てること
-packinfo.readme.text6=このパックを改変すること
-packinfo.readme.text7=このパックの一部を他のパックにコピーすること
-packinfo.readme.text8=このパックからコピーされた物を含むパックを配布すること(Gote-Supporterからコピーしたことを明記する必要があります)
-packinfo.readme.text9=他のパックとの互換性維持のためにこのパックを改変すること
-packinfo.readme.text10=このパックをワールドあるいはサーバーのリソースパックに適用すること
-packinfo.readme.text11=このパックの紹介動画などを製作すること
-packinfo.readme.text12=《あなたは以下のことができません》
-packinfo.readme.text15=このパックを自作のものと主張すること
+
 
 ##つくったひと
 packinfo.about_author.title=つくったひと
-packinfo.about_author.text1=Minecraft統合版を中心に活動しているマインクラフター。
-packinfo.about_author.text2=趣味でアドオン作っています。
-packinfo.about_author.text3=JSON UIは趣味で好きなように作ってます。
-packinfo.about_author.text4=プログラミングはヘタクソ。
-packinfo.about_author.text5=新しいことを覚えるのが苦手。
-packinfo.about_author.text6=マイクラ歴は7年くらい。
-packinfo.about_author.text7=私は英語を自分で喋れないので、DeepLやGoogle翻訳を使います。
-packinfo.about_author.text8=また、アドオン作成依頼やプロジェクトなどへの招待は一切受けません。
-packinfo.about_author.text9=あと、私は教えるのがかなりヘタクソなので教えるのは多分出来ないです。()
+packinfo.about_author.text1=マイクラ統合版を中心に活動している日本人。
+packinfo.about_author.text2=コマンド・アドオン勢です。
+packinfo.about_author.text3=英語は喋れない。
+packinfo.about_author.text4=一般自動車、バイク、hikakin maniaがきらい。
+packinfo.about_author.text5=ゲームはほとんどマイクラ統合版ばっかりやってます。
+packinfo.about_author.text6=たまにホラゲーやテトリスとかもやるよ。
+packinfo.about_author.text7=最近、私はパソコンのテーマやマイクラとかのUIを昔のように戻すような傾向がある。
+packinfo.about_author.text8=私は英語を自分で喋れないので、DeepLやGoogle翻訳を使います。
+packinfo.about_author.text9=また、アドオン作成依頼やプロジェクトなどへの招待は一切受けません。
+packinfo.about_author.text10=あと、私は教えるのがかなりヘタクソなので教えるのは多分出来ないです。()
 
-##ライセンス
-packinfo.licence.title=ライセンス
+
 ##よくある質問
 packinfo.faq.title=よくある質問
 packinfo.faq.text1=ここではGote-Supporterに関するよくある質問が見れます!
@@ -194,6 +187,13 @@ packinfo.faq.q9.a=A. 2023年12月現在、アドオン制作依頼は受けて�
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
 
+packinfo.v169.u1=スタート画面でGote-Supporterの情報をConfigで非表示にできるようになりました。
+packinfo.v169.u2=スタート画面にマイクラのビルド番号をConfigで表示できるようになりました。
+packinfo.v169.u3=ホットバーに数字をConfigで表示できるようになりました。
+packinfo.v169.u4=Gote-Supporter Info画面をわかりやすく書き直しました。
+packinfo.v169.u5=サウンド鑑賞場をオーディオ設定に移動しました。
+packinfo.v169.u6=マイクラ教育版でポーズ画面から「セーブして終了」が消えてたバグを直しました。
+packinfo.v169.u7=このバージョンをもちまして、Gote-Supporterはマイクラ教育版のサポートを終了させていただきます。
 
 packinfo.v168.u1=スタート画面のゲーマータグ、インベントリ画面などのHP表示、チェスト画面などの人形表示をConfigで非表示にできるようになりました。
 packinfo.v168.u2=設定のConfig確認欄でトグルとテキストを分けて見やすくしました。

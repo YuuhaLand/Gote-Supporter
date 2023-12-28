@@ -522,6 +522,9 @@
     ]
   },
 
+  "quit_button": {
+    "ignored": "(not $education_edition)"
+  },
 
   "quit_dialoglabel@gtb.swtich_toggle_label": {
     "text": "deathScreen.quit.confirmToMainMenuWarning"
@@ -702,11 +705,6 @@
         }
       }
     ]
-  },
-
-
-  "quit_button": {
-    "ignored": true
   },
 
   "menu_background/button_panel": {

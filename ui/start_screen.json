@@ -103,7 +103,7 @@
   },
 
 
-  "copyright2": {
+  "copyright_gote": {
     "type": "panel",
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
@@ -117,7 +117,7 @@
           "anchor_to": "top_left",
           "size": [ "default", 10 ],
           "offset": [ 0, -12 ],
-          "text": "Gote-Supporter by ©YukaYama0311",
+          "text": "Gote-Supporter by ©YuuhaLand",
           "layer": 1,
           "controls": [
             {
@@ -164,7 +164,8 @@
       }
     ]
   },
-  "ver_texts": {
+
+  "version_gote": {
     "type": "panel",
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
@@ -244,15 +245,29 @@
     "anchor_to": "bottom_middle",
     "controls": [
       {
-        "copyright2@start.copyright2": {}
-      },
-      {
-        "development_version@start.development_version": {
-          "ignored": "$is_publish"
+        "copyright_vanilla@start.copyright": {
+          "ignored": "$show_gote_version"
         }
       },
       {
-        "ver_texts@start.ver_texts": {}
+        "copyright_gote@start.copyright_gote": {
+          "ignored": "(not $show_gote_version)"
+        }
+      },
+      {
+        "development_version@start.development_version": {
+          "ignored": "(not $show_build_number)"
+        }
+      },
+      {
+        "version_vanilla@start.version": {
+          "ignored": "$show_gote_version"
+        }
+      },
+      {
+        "version_gote@start.version_gote": {
+          "ignored": "(not $show_gote_version)"
+        }
       }
     ]
   },
