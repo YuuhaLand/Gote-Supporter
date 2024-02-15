@@ -494,7 +494,7 @@
             { "howtoplay_9@tabbed_upsell.link_text": {"$text": "https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html"}},
             { "howtoplay_10@tabbed_upsell.text": {"$text": ""}},
             { "howtoplay_11@gtb.features_text_with_bubble": {"$text": "packinfo.about.text7"}},
-            { "howtoplay_12@tabbed_upsell.link_text": {"$text": "https://github.com/Gotemba912/Gote-Supporter/"}},
+            { "howtoplay_12@tabbed_upsell.link_text": {"$text": "https://github.com/YuuhaLand/Gote-Supporter/"}},
             { "howtoplay_13@tabbed_upsell.text": {"$text": ""}},
             { "howtoplay_14@gtb.features_text_with_bubble": {"$text": "packinfo.about.text8"}},
             { "howtoplay_15@tabbed_upsell.link_text": {"$text": "https://mcpedl.com/gote-supporter"}},

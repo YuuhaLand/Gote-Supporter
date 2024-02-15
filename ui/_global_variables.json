@@ -37,7 +37,7 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   "$play_screen_doubleclick|default": true,
   "$show_recoverycompass|default": false,
 
-  "$f1_f8_location|default": "top",
+  "$f1_f8_location|default": "none",
   "$chat_tab_button_type|default": "vertical",
   "$playerlist_key|default": "tab",
 
@@ -47,7 +47,7 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.9",
+  "$gote_ver": "1.6.10",
   "$gote_supporter_enabled": true,
   "$is_goteserver|default": false, 
   "$revival_for_2023|default": false,

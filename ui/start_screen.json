@@ -212,8 +212,18 @@
               "binding_name": "#version"
             },
             {
+              "binding_name": "#development_version"
+            },
+            {
+              "ignored": "$show_build_number",
               "binding_type": "view",
               "source_property_name": "('Minecraft ' + #version)",
+              "target_property_name": "#text"
+            },
+            {
+              "ignored": "(not $show_build_number)",
+              "binding_type": "view",
+              "source_property_name": "('Minecraft ' + #version + ' (' + #development_version + ')')",
               "target_property_name": "#text"
             }
           ],
@@ -237,6 +247,30 @@
     ]
   },
 
+  "version/label": {
+    "text": "#text",
+    "bindings": [
+      {
+        "binding_name": "#version"
+      },
+      {
+        "binding_name": "#development_version"
+      },
+      {
+        "ignored": "$show_build_number",
+        "binding_type": "view",
+        "source_property_name": "#version",
+        "target_property_name": "#text"
+      },
+      {
+        "ignored": "(not $show_build_number)",
+        "binding_type": "view",
+        "source_property_name": "(#version + ' (' + #development_version + ')')",
+        "target_property_name": "#text"
+      }
+    ]
+  },
+
   "text_panel": {
     "type": "panel",
     "size": [ "100%-2px", 10 ],
@@ -252,11 +286,6 @@
       {
         "copyright_gote@start.copyright_gote": {
           "ignored": "(not $show_gote_version)"
-        }
-      },
-      {
-        "development_version@start.development_version": {
-          "ignored": "(not $show_build_number)"
         }
       },
       {

@@ -23,6 +23,18 @@ disconnectionScreen.notAllowed.reason2=ホストがワールドを開き直さ�
 
 xbox.disconectionscreen.accessDenied.reason=ホストがあなたをブロックした可能性があります。
 
+
+options.copyCoordinateUI=座標ユーティリティを有効化
+
+chat.coordinateTypePosition=現在位置
+chat.coordinateTypeFacing=ブロック
+chat.coordinateCopiedToast=座標をコピーしました
+chat.coordinatesInvalid=ブロック未選択
+chat.coordinatesInvalidLong=ブロックが選択されていないためコピーできません
+
+copyCoordinates.copy_position_message=現在位置 %s をコピーしました
+copyCoordinates.copy_facing_message=ブロック位置 %s をコピーしました
+
 feed.daysAgo=%d 日前	#
 feed.report_xbox=Xbox Live に報告	#
 feed.report_club=クラブ管理者に報告	#
@@ -41,7 +53,7 @@ options.gote.toggles=トグル
 options.gote.text=テキスト
 options.gote.hud_compass=HUDにコンパスと時計を表示
 options.gote.show_recoverycompass=HUDのコンパスにリカバリーコンパスを追加(ベータ!)
-options.gote.f1_f8_location=HUDのF1/F8ボタンの位置(タッチ)
+options.gote.f1_f8_location=HUDのF1/F8ボタンの位置(タッチ) §c(不安定)
 options.gote.show_hotbar_navigator=HUDのホットバーナビゲーターの表示(タッチ)
 options.gote.chat_tab_button_type=チャット画面のTabキーの配置
 options.gote.playerlist_key=HUDのプレイヤーリストのキー
@@ -186,6 +198,12 @@ packinfo.faq.q9.a=A. 2023年12月現在、アドオン制作依頼は受けて�
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v1610.u1=チャット画面の「座標UIのコピー」機能をGote-Supporterで改良しました！
+packinfo.v1610.u2=チャット画面のテキストボックス拡張ボタンを押してもフォーカスがボタンから外れなくなりました。
+packinfo.v1610.u3=スタート画面のビルド番号をバージョンの右に表示するようにしました。
+packinfo.v1610.u4=ホットバーの数字が表示されないバグを直しました。
+packinfo.v1610.u5=HUDのF1・F8がデフォルトで非表示になりました。 表示したい場合はConfigを使用して下さい。
 
 packinfo.v169.u1=スタート画面でGote-Supporterの情報をConfigで非表示にできるようになりました。
 packinfo.v169.u2=スタート画面にマイクラのビルド番号をConfigで表示できるようになりました。

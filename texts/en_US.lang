@@ -34,7 +34,7 @@ options.gote.toggles=Toggles
 options.gote.text=Text
 options.gote.hud_compass=Display compass and clock on HUD
 options.gote.show_recoverycompass=Add recovery compass to HUD compass (beta!)
-options.gote.f1_f8_location=Location of F1/F8 buttons on HUD (Touch)
+options.gote.f1_f8_location=Location of F1/F8 buttons on HUD (Touch) §c(Unstable)
 options.gote.show_hotbar_navigator=Show HUD hotbar navigator (touch)
 options.gote.chat_tab_button_type=Placement of the Tab key on the Chat Screen
 options.gote.playerlist_key=HUD player list key
@@ -172,6 +172,12 @@ packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create ad
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v1610.u1=The "Copy Coordinates UI" on the chat screen has been improved with Gote-Supporter!
+packinfo.v1610.u2=Pressing the text box expansion button on the chat screen no longer removes focus from the button.
+packinfo.v1610.u3=The build number on the Start screen is now displayed to the right of the version.
+packinfo.v1610.u4=Fixed a bug where the numbers in the hot bar were not displayed.
+packinfo.v1610.u5=F1 and F8 on the HUD are now hidden by default. If you wish to display them, please use Config.
 
 packinfo.v169.u1=Gote-Supporter information can now be hidden in Config on the Start screen.
 packinfo.v169.u2=Minecraft build number can now be displayed on the Start screen in Config.

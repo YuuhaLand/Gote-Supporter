@@ -1,5 +1,5 @@
-# Gote-Supporter ![ダウンロード](https://img.shields.io/github/downloads/Gotemba912/Gote-Supporter/total?style=plastic)  
-![image](https://github.com/Gotemba912/Gote-Supporter/assets/78265558/987c2caa-df7a-4545-b21e-bbc6f33f3f6d)
+# Gote-Supporter ![ダウンロード](https://img.shields.io/github/downloads/YuuhaLand/Gote-Supporter/total?style=plastic)  
+![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/ef7faf33-8d13-4350-b538-742692a53846)
 
 バニラの要素に物足りなさを感じてませんか?  
 Gote-Supporterは、様々な機能をマイクラに追加することができます!!
@@ -14,22 +14,21 @@ https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html
 
 ## 特徴
 ### HUDの特徴
-![image](https://github.com/Gotemba912/Gote-Supporter/assets/78265558/8cdadf5c-fd9e-481a-a6eb-f1e2ebdfb4df)
+![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/54cbe3bb-ac8f-42db-b0db-b8b6e589db3d)
 - 常に時計とコンパスを表示します。
 - 色分けされた座標表示。
-- モバイルでもF1とF8が押せます。
 - ビネットを非表示にします。
 - かぼちゃのぼかしを非表示にします。
 - キーボードのTabキーを押すと、Java Editionのようなプレイヤーリストが表示されます。Tabキーを押しながらマウスホイールを回すことで、スクロールができます。
 
 ### チャット画面の特徴
-![image](https://github.com/Gotemba912/Gote-Supporter/assets/78265558/581cb880-2083-4fc2-8edd-4910e966219e)
+![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/bc6721e6-23bb-41da-a782-7baa1a2af27f)
 - Tabキーなどをモバイルでも押せます。
 - テキストボックスの右の矢印ボタンを押すと、テキストボックスを大きくすることができます。
 - コマンドを入力した際の候補をクリックまたはタップで補完できます。
 
 ### 設定画面の特徴
-![image](https://github.com/Gotemba912/Gote-Supporter/assets/78265558/9e930d1a-c253-47b3-9c60-c3da68f3c5be)
+![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/9e930d1a-c253-47b3-9c60-c3da68f3c5be)
 - 「クイック設定」で素早く設定変更できます。
 - 「VSync の使用」をビデオ設定で変更できます。
 - タッチ操作をNintendo Switchでも使えるようにします。
@@ -64,10 +63,10 @@ Config機能で、Gote-Supporterをカスタマイズ出来ます!
 また、「Gote-Supporter Config Pack」を使うと、Gote-Supporterのアップデート時に設定が失われないようになります!
 
 詳しくは以下のページをご覧ください!!  
-[Config(Japanese) · Gotemba912/Gote-Supporter Wiki (github.com)](https://github.com/Gotemba912/Gote-Supporter/wiki/Config(Japanese))
+[Config(Japanese) · YuuhaLand/Gote-Supporter Wiki (github.com)](https://github.com/YuuhaLand/Gote-Supporter/wiki/Config(Japanese))
 
 以下のページで生成することも可能です！！  
-https://gotemba912.github.io/minecraft_addons/gote-supporter-config/
+https://yuuhaland.github.io/minecraft_addons/gote-supporter-config/
 ## 注意
 このパックを自作発言しないで下さい。
 
@@ -78,14 +77,14 @@ https://discord.gg/skX9YHp4fC
 ![ディスコード](https://discord.com/api/guilds/1172518832221474818/widget.png)
 
 ## インストール
-- 「Gote-Supporterをダウンロード!」をクリック。
-- 「Assets」の中の「Gote-Supporter_vX.X.X」をクリック。
-- ダウンロードしたmcpackをダブルクリックかMinecraftで開く。
-- 「設定 -> グローバルリソース」でGote-Supporterを有効化。
+1. 「__**Gote-Supporterをダウンロード!**__」をクリック。
+2. 「**Assets**」の中の「__**Gote-Supporter_vX.X.X**__」をクリック。
+3. ダウンロードしたmcpackをダブルクリックかMinecraftで開く。
+4. 「設定 -> グローバルリソース」でGote-Supporterを有効化。
 
 ## ダウンロード
-- [Gote-Supporterをダウンロード!](https://github.com/Gotemba912/Gote-Supporter/releases/latest)
-- [Gote-Supporter Config Packをダウンロード!](https://github.com/Gotemba912/haihubutu/raw/main/minecraft/Gote-Supporter_Config.mcpack)
-- [Gote-Supporter Config Packが生成できるツールはコチラ！](https://gotemba912.github.io/minecraft_addons/gote-supporter-config/)
+- [Gote-Supporterをダウンロード!](https://github.com/YuuhaLand/Gote-Supporter/releases/latest)
+- [Gote-Supporter Config Packをダウンロード!](https://github.com/YuuhaLand/haihubutu/raw/main/minecraft/Gote-Supporter_Config.mcpack)
+- [Gote-Supporter Config Packが生成できるツールはコチラ！](https://yuuhaland.github.io/minecraft_addons/gote-supporter-config/)
 
 ＊ [MCPEDL](https://mcpedl.com/gote-supporter/) にもあります。
