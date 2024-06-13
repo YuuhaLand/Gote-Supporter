@@ -113,9 +113,10 @@ packinfo.about.text3=ビヘイビアーパックを一切使わないため、�
 packinfo.about.text4=この画面ではGote-Supporterについてを知ることが出来ます！
 packinfo.about.text5=このパックは以下のページで紹介しています！
 packinfo.about.text6=ゆうはのブログ (日本語)
-packinfo.about.text7=Github (日本語)
-packinfo.about.text8=MCPEDL (英語)
-packinfo.about.text9=なにかバグを見つけちゃった場合は、以下のディスコ鯖で報告をお願いします！
+packinfo.about.text7=クラフターズコロニー (日本語)
+packinfo.about.text8=Github (日本語)
+packinfo.about.text9=MCPEDL (英語)
+packinfo.about.text10=なにかバグを見つけちゃった場合は、以下のディスコ鯖で報告をお願いします！
 
 ## 特徴
 
@@ -156,15 +157,13 @@ packinfo.music.text2=この画面を閉じても音楽は流れたままにな�
 ##つくったひと
 packinfo.about_author.title=つくったひと
 packinfo.about_author.text1=マイクラ統合版を中心に活動している日本人。
-packinfo.about_author.text2=コマンド・アドオン勢です。
-packinfo.about_author.text3=英語は喋れない。
-packinfo.about_author.text4=一般自動車、バイク、hikakin maniaがきらい。
-packinfo.about_author.text5=ゲームはほとんどマイクラ統合版ばっかりやってます。
-packinfo.about_author.text6=たまにホラゲーやテトリスとかもやるよ。
-packinfo.about_author.text7=最近、私はパソコンのテーマやマイクラとかのUIを昔のように戻すような傾向がある。
-packinfo.about_author.text8=私は英語を自分で喋れないので、DeepLやGoogle翻訳を使います。
-packinfo.about_author.text9=また、アドオン作成依頼やプロジェクトなどへの招待は一切受けません。
-packinfo.about_author.text10=あと、私は教えるのがかなりヘタクソなので教えるのは多分出来ないです。()
+packinfo.about_author.text2=主にコマンド・アドオン勢です。
+packinfo.about_author.text3=自然や都会の景色が好きです。
+packinfo.about_author.text4=マイクラJava版はほとんどやってなくて統合版ばっかりやってます。
+packinfo.about_author.text5=たまにホラゲーやテトリス、原神とかもやるよ。
+packinfo.about_author.text6=私は英語を自分で喋れないので、DeepLやGoogle翻訳を使います。
+packinfo.about_author.text7=また、アドオン作成依頼やプロジェクトなどへの招待は一切受けません。
+packinfo.about_author.text8=あと、私は教えるのがかなりヘタクソなので教えるのは多分出来ないです。
 
 
 ##よくある質問
@@ -188,7 +187,7 @@ packinfo.faq.q7.a=A. 申し訳ないです。 私は制作協力を受けませ�
 packinfo.faq.q8.q=Q. なぜぽまえはこのパックをオープンソース化しているの? お金儲けはしないん?
 packinfo.faq.q8.a=A. 私はこのパックなどをオープンソース化して誰でも私のパックのコードを活用できるようにしています。 どこかの知らない場所で私のコードが使われてても嫌な思いはしないです。 むしろ嬉しい() あとお金儲けはしたくないです。 私はLinkvertiseとかad.flyが大嫌いなので() 余談だけど、マイクラのアドオンはマーケットプレイスのやつ以外全部オープンソースだと思う。 なぜなら、誰でもコードを覗くことができてしまうから。 難読化することはできるけど、復号も簡単にできてしまうし...。 あくまで私の意見なのでお気になさらず。
 packinfo.faq.q9.q=Q. YuuhaLandにアドオン制作を依頼したいです。
-packinfo.faq.q9.a=A. 2023年12月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。
+packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。
 
 
 
@@ -198,6 +197,9 @@ packinfo.faq.q9.a=A. 2023年12月現在、アドオン制作依頼は受けて�
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v1611.u1=一部のリソースパック・サーバーリソースパックが原因でポーズ画面の終了ボタンが消えるバグを直しました。
+packinfo.v1611.u2=サウンド鑑賞場にv1.21 トリッキーな試練のトラックを追加しました。
 
 packinfo.v1610.u1=チャット画面の「座標UIのコピー」機能をGote-Supporterで改良しました！
 packinfo.v1610.u2=チャット画面のテキストボックス拡張ボタンを押してもフォーカスがボタンから外れなくなりました。

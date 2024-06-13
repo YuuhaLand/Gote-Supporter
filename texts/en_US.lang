@@ -89,9 +89,10 @@ packinfo.about.text3=It does not use any behavior packs and can be used on all b
 packinfo.about.text4=On this screen you can learn more about Gote-Supporter!
 packinfo.about.text5=This pack is presented in the following pages!
 packinfo.about.text6=ゆうはのブログ (Japanese)
-packinfo.about.text7=Github (Japanese)
-packinfo.about.text8=MCPEDL (English)
-packinfo.about.text9=If you find any bugs, please report them on the Discord Server below!
+packinfo.about.text7=Crafters Colony (Japanese)
+packinfo.about.text8=Github (Japanese)
+packinfo.about.text9=MCPEDL (English)
+packinfo.about.text10=If you find any bugs, please report them on the Discord Server below!
 
 
 ## 特徴
@@ -124,23 +125,21 @@ packinfo.caution.text3=YuuhaLand is not responsible for any problems caused by t
 packinfo.caution.text4=I will not accept any support or contribution for this add-on.
 
 ## サウンド鑑賞
-packinfo.music.title=Music Appreciation Place
+packinfo.music.title=Music Listen
 packinfo.music.text1=Here you can appreciate the background music of Minecraft!
 packinfo.music.text2=The music will remain playing even if this screen is closed!
 
 ##つくったひと
 
 packinfo.about_author.title=Creator info
-packinfo.about_author.text1=Japanese who is active mainly in the Minecraft integrated version.
+packinfo.about_author.text1=Japanese who is active mainly in the Minecraft Bedrock.
 packinfo.about_author.text2=Commander Add-on Creator.
-packinfo.about_author.text3=I don't speak English.
-packinfo.about_author.text4=I hate cars and motorcycles in general.
-packinfo.about_author.text5=I play games almost exclusively Minecraft BE.
-packinfo.about_author.text6=Sometimes I play horror games or Tetris.
-packinfo.about_author.text7=Lately I have a tendency to revert back to the old UI for PC themes, Minecraft and the like.
-packinfo.about_author.text8=I don't speak English myself, so I use DeepL or Google Translate.
-packinfo.about_author.text9=Also, we do not accept any requests to create add-ons and invitations to projects, etc.
-packinfo.about_author.text10=Also, I'm pretty terrible at teaching, so I probably can't teach.
+packinfo.about_author.text3=I love nature and urban landscapes.
+packinfo.about_author.text4=I hardly play Minecraft Java, all I play is Bedrock!
+packinfo.about_author.text5=Sometimes I play horror games, Tetris, or Genshin Impact.
+packinfo.about_author.text6=I don't speak English myself, so I use DeepL or Google Translate.
+packinfo.about_author.text7=Also, we do not accept any requests to create add-ons and invitations to projects, etc.
+packinfo.about_author.text8=Also, I'm pretty terrible at teaching, so I probably can't teach.
 
 
 ##よくある質問
@@ -164,7 +163,7 @@ packinfo.faq.q7.a=I am sorry. I do not accept production cooperation. I'm making
 packinfo.faq.q8.q=Why are you open sourcing this pack? Don't you want to make money?
 packinfo.faq.q8.a=I am open sourcing this pack and others so that anyone can take advantage of my pack code. I don't feel bad if my code is used in some unknown place. I am rather happy about it. I also don't want to make money. I hate Linkvertise and ad.fly. As a side note, I think all the add-ons for Minecraft are open source, except for the marketplace ones. Because anyone can peek at the code. It can be obfuscated, but it can also be easily decrypted. That's just my opinion, so please don't mind me.
 packinfo.faq.q9.q=I would like to request YukaYama0311 to create an add-on.
-packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create add-ons. I can teach you how to make one, but I'm a §l§cquite bad at teaching people,§r so you may not understand.
+packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add-ons. I can teach you how to make one, but I'm a §l§cquite bad at teaching people,§r so you may not understand.
 
 
 
@@ -172,6 +171,9 @@ packinfo.faq.q9.a=As of April 2023, I am not accepting any requests to create ad
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v1611.u1=Fixed a bug that caused the exit button on the pause screen to disappear due to some resource packs and server resource packs.
+packinfo.v1611.u2=Added v1.21 Tricky Trials track to Music Listen.
 
 packinfo.v1610.u1=The "Copy Coordinates UI" on the chat screen has been improved with Gote-Supporter!
 packinfo.v1610.u2=Pressing the text box expansion button on the chat screen no longer removes focus from the button.

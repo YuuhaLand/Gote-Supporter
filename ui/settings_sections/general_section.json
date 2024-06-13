@@ -677,6 +677,15 @@
                   {"m_v120_2@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - A Familiar Room","$sound_id":"pvp2.a_familiar_room","$sound_vol":1.0,"$is_music":true}},
                   {"m_v120_3@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Bromeliad","$sound_id":"pvp2.bromeliad","$sound_vol":1.0,"$is_music":true}},
                   {"m_v120_4@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Crescent Dunes","$sound_id":"pvp2.crescent_dunes","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_1@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Featherfall","$sound_id":"pvp2.featherfall","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_2@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Watcher","$sound_id":"pvp2.watcher","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_3@tabbed_upsell.play_sound_panel":{"$sound_name":"Aaron Cherof - Puzzlebox","$sound_id":"pvp2.puzzlebox","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_4@tabbed_upsell.play_sound_panel":{"$sound_name":"Kumi Tanioka - komorebi","$sound_id":"pvp2.komorebi","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_5@tabbed_upsell.play_sound_panel":{"$sound_name":"Kumi Tanioka - pokopoko","$sound_id":"pvp2.pokopoko","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_6@tabbed_upsell.play_sound_panel":{"$sound_name":"Kumi Tanioka - yakusoku","$sound_id":"pvp2.yakusoku","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_7@tabbed_upsell.play_sound_panel":{"$sound_name":"Lena Raine - Deeper","$sound_id":"pvp2.deeper","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_8@tabbed_upsell.play_sound_panel":{"$sound_name":"Lena Raine - Eld Unknown","$sound_id":"pvp2.eld_unknown","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_9@tabbed_upsell.play_sound_panel":{"$sound_name":"Lena Raine - Endless","$sound_id":"pvp2.endless","$sound_vol":1.0,"$is_music":true}},
                   { "fh5@tabbed_upsell.text": { "$text":"§l§b%dimension.dimensionName1", "font_scale_factor": 1.5 }},
                   {"m25@tabbed_upsell.play_sound_panel":{"$sound_name":"C418 - Concrete Halls","$sound_id":"pvp2.nether1","$sound_vol":1.0,"$is_music":true}},
                   {"m26@tabbed_upsell.play_sound_panel":{"$sound_name":"C418 - Dead Voxel","$sound_id":"pvp2.nether2","$sound_vol":1.0,"$is_music":true}},
@@ -716,7 +725,10 @@
                   {"m55@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_pigstep.desc","$sound_id":"pvp2.pigstep","$sound_vol":1.0,"$is_music":true}},
                   {"m56@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_otherside.desc","$sound_id":"pvp2.otherside","$sound_vol":1.0,"$is_music":true}},
                   {"m57@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_5.desc","$sound_id":"pvp2.5","$sound_vol":1.0,"$is_music":true}},
-                  {"m_relic@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_relic.desc","$sound_id":"pvp2.relic","$sound_vol":1.0,"$is_music":true}}
+                  {"m_relic@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_relic.desc","$sound_id":"pvp2.relic","$sound_vol":1.0,"$is_music":true}},
+                  {"m_creator@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_creator.desc","$sound_id":"pvp2.creator","$sound_vol":1.0,"$is_music":true}},
+                  {"m_creator_musicbox@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_creator_music_box.desc","$sound_id":"pvp2.creator_music_box","$sound_vol":1.0,"$is_music":true}},
+                  {"m_precipice@tabbed_upsell.play_sound_panel":{"$sound_name":"item.record_precipice.desc","$sound_id":"pvp2.precipice","$sound_vol":1.0,"$is_music":true}}
                 ]
               }
             }

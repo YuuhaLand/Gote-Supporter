@@ -522,10 +522,6 @@
     ]
   },
 
-  "quit_button": {
-    "ignored": "(not $education_edition)"
-  },
-
   "quit_dialoglabel@gtb.swtich_toggle_label": {
     "text": "deathScreen.quit.confirmToMainMenuWarning"
   },
@@ -739,10 +735,13 @@
       },
       {
         "array_name": "controls",
-        "operation": "insert_back",
+        "operation": "replace",
+        "where": [
+          { "quit_button@pause.quit_button": {} }
+        ],
         "value": [
           {
-            "quit_button_2@pause.quit_dialog_swtich_toggle": {
+            "quit_button@pause.quit_dialog_swtich_toggle": {
               "size": [ "100%", 28 ],
               "$toggle_view_binding_name": "quit_dialog",
               "$button_text": "pauseScreen.quit",

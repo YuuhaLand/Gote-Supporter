@@ -87,4 +87,4 @@ https://discord.gg/skX9YHp4fC
 - [Gote-Supporter Config Packをダウンロード!](https://github.com/YuuhaLand/haihubutu/raw/main/minecraft/Gote-Supporter_Config.mcpack)
 - [Gote-Supporter Config Packが生成できるツールはコチラ！](https://yuuhaland.github.io/minecraft_addons/gote-supporter-config/)
 
-＊ [MCPEDL](https://mcpedl.com/gote-supporter/) にもあります。
+＊ [MCPEDL](https://mcpedl.com/gote-supporter/)や[クラフターズコロニー](https://minecraft-mcworld.com/74563/)にも配布しています！

@@ -314,6 +314,96 @@
       }
     ]
   },
+  "pvp2.featherfall": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/featherfall",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.watcher": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/watcher",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.puzzlebox": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/puzzlebox",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.komorebi": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/komorebi",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.pokopoko": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/pokopoko",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.yakusoku": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/yakusoku",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.deeper": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/deeper",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.eld_unknown": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/eld_unknown",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.endless": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/endless",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
 
   //nether
 
@@ -641,6 +731,36 @@
     "sounds": [
       {
         "name": "sounds/music/game/records/relic",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creator": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/creator",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.creator_music_box": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/creator_music_box",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.precipice": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/precipice",
         "stream": true,
         "volume": 1.0
       }

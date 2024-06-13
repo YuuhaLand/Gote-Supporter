@@ -494,14 +494,16 @@
             { "howtoplay_9@tabbed_upsell.link_text": {"$text": "https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html"}},
             { "howtoplay_10@tabbed_upsell.text": {"$text": ""}},
             { "howtoplay_11@gtb.features_text_with_bubble": {"$text": "packinfo.about.text7"}},
-            { "howtoplay_12@tabbed_upsell.link_text": {"$text": "https://github.com/YuuhaLand/Gote-Supporter/"}},
+            { "howtoplay_12@tabbed_upsell.link_text": {"$text": "https://minecraft-mcworld.com/74563/"}},
             { "howtoplay_13@tabbed_upsell.text": {"$text": ""}},
             { "howtoplay_14@gtb.features_text_with_bubble": {"$text": "packinfo.about.text8"}},
-            { "howtoplay_15@tabbed_upsell.link_text": {"$text": "https://mcpedl.com/gote-supporter"}},
+            { "howtoplay_15@tabbed_upsell.link_text": {"$text": "https://github.com/YuuhaLand/Gote-Supporter/"}},
             { "howtoplay_16@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_17@tabbed_upsell.text": {"$text": ""}},
-            { "howtoplay_18@tabbed_upsell.text": {"$text": "packinfo.about.text9"}},
-            { "howtoplay_19@tabbed_upsell.link_text": {"$text": "https://discord.gg/skX9YHp4fC"}},
+            { "howtoplay_17@gtb.features_text_with_bubble": {"$text": "packinfo.about.text9"}},
+            { "howtoplay_18@tabbed_upsell.link_text": {"$text": "https://mcpedl.com/gote-supporter"}},
+            { "howtoplay_19@tabbed_upsell.text": {"$text": ""}},
+            { "howtoplay_20@tabbed_upsell.text": {"$text": "packinfo.about.text10"}},
+            { "howtoplay_21@tabbed_upsell.link_text": {"$text": "https://discord.gg/skX9YHp4fC"}},
             {
               "preview_warning": {
                 "type": "stack_panel",
@@ -777,12 +779,10 @@
             { "howtoplay_3@tabbed_upsell.text": {"$text": "packinfo.about_author.text3"}},
             { "howtoplay_4@tabbed_upsell.text": {"$text": "packinfo.about_author.text4"}},
             { "howtoplay_5@tabbed_upsell.text": {"$text": "packinfo.about_author.text5"}},
+            { "padding": {"type": "panel", "size": [ 0, 5 ]}},
             { "howtoplay_6@tabbed_upsell.text": {"$text": "packinfo.about_author.text6"}},
             { "howtoplay_7@tabbed_upsell.text": {"$text": "packinfo.about_author.text7"}},
-            { "padding": {"type": "panel", "size": [ 0, 5 ]}},
-            { "howtoplay_8@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}},
-            { "howtoplay_9@tabbed_upsell.text": {"$text": "packinfo.about_author.text9"}},
-            { "howtoplay_10@tabbed_upsell.text": {"$text": "packinfo.about_author.text10"}}
+            { "howtoplay_8@tabbed_upsell.text": {"$text": "packinfo.about_author.text8"}}
           ],
           "bindings": [
             {
