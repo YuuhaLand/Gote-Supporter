@@ -7,6 +7,17 @@
     "controls": [
       {
         "1611@tabbed_upsell.version_section": {
+          "$version": "v1.6.12",
+          "$details_controls": [
+            { "date@tabbed_upsell.text": { "text": "2024/06/27" }},
+            { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1612.u1"}},
+            { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1612.u2"}},
+            { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v1612.u3"}}
+          ]
+        }
+      },
+      {
+        "1611@tabbed_upsell.version_section": {
           "$version": "v1.6.11",
           "$details_controls": [
             { "date@tabbed_upsell.text": { "text": "2024/06/13" }},

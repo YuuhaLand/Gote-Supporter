@@ -1,5 +1,10 @@
 {
   "namespace": "trade2",
+
+  "tier_stack_panel": {
+    "bindings": []
+  },
+  
   "screen_panel": {
     "modifications": [
       {

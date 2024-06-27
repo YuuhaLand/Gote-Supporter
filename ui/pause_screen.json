@@ -37,9 +37,13 @@
   "feed_button@pause.pause_button_template": {
     "$pressed_button_name": "button.menu_feed",
     "$focus_id": "button.menu_feed",
-    "$button_text": "pauseScreen.feed",
+    "$button_text": "pauseScreen.realmsStories",
     "anchor_to": "top_left",
     "anchor_from": "top_left"
+  },
+
+  "realms_stories_button_panel": {
+    "ignored": true
   },
 
   "feed_and_screenshot_buttons": {
@@ -51,8 +55,13 @@
     "$sound_pitch|default": 1.0,
     "controls": [
       {
-        "feed_button@pause.feed_button": {
-          "size": [ "fill", "100%" ]
+        "feed_button_panel": {
+          "type": "panel",
+          "size": [ "fill", "100%" ],
+          "controls": [
+            { "feed_button@pause.feed_button": {} },
+            { "unread_story_count_panel@pause.unread_story_count_panel": {} }
+          ]
         }
       },
       {
@@ -76,7 +85,7 @@
     ],
     "bindings": [
       {
-        "binding_name": "#show_clubs",
+        "binding_name": "#in_realm_with_stories",
         "binding_name_override": "#visible",
         "binding_type": "global"
       }
@@ -459,7 +468,7 @@
                 ],
                 "bindings": [
                   {
-                    "binding_name": "(not #show_clubs)",
+                    "binding_name": "(not #in_realm_with_stories)",
                     "binding_name_override": "#visible",
                     "binding_type": "global"
                   }
@@ -472,7 +481,7 @@
                 "size": [ "2%", 0 ],
                 "bindings": [
                   {
-                    "binding_name": "(not #show_clubs)",
+                    "binding_name": "(not #in_realm_with_stories)",
                     "binding_name_override": "#visible",
                     "binding_type": "global"
                   }
@@ -713,18 +722,7 @@
             "feed_button@pause.feed_and_screenshot_buttons": {
               "bindings": [
                 {
-                  "binding_name": "#show_clubs",
-                  "binding_name_override": "#visible",
-                  "binding_type": "global"
-                }
-              ]
-            }
-          },
-          {
-            "feed_padding@pause.vertical_padding": {    
-              "bindings": [
-                {
-                  "binding_name": "#show_clubs",
+                  "binding_name": "#in_realm_with_stories",
                   "binding_name_override": "#visible",
                   "binding_type": "global"
                 }

@@ -172,6 +172,10 @@ packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v1612.u1=The ability to display all levels of villagers has been added again.
+packinfo.v1612.u2=Fixed a bug that caused the feed button to appear even if you were not in Realm.
+packinfo.v1612.u3=Fixed a bug in Realm where both the feed button and Realms story were displayed.
+
 packinfo.v1611.u1=Fixed a bug that caused the exit button on the pause screen to disappear due to some resource packs and server resource packs.
 packinfo.v1611.u2=Added v1.21 Tricky Trials track to Music Listen.
 
