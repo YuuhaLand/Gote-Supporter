@@ -1,5 +1,7 @@
 # Gote-Supporter ![ダウンロード](https://img.shields.io/github/downloads/YuuhaLand/Gote-Supporter/total?style=plastic)  
-![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/ef7faf33-8d13-4350-b538-742692a53846)
+![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/a42f0659-a7dd-4586-94b4-afb000eb7e18)
+
+ロゴは[Lecorice464](https://x.com/464Lecorice)さんが作ってくれました！
 
 バニラの要素に物足りなさを感じてませんか?  
 Gote-Supporterは、様々な機能をマイクラに追加することができます!!
