@@ -12,6 +12,8 @@ container.shulkerboxContains=その他 %d 個...	#
 chat.textbox.place=メッセージを入力
 cmd.textbox.place=コマンドを入力
 
+progressScreen.title.loading=読み込み中%1
+
 disconnectionScreen.sessionNotFound.reason=そのワールドはもう既に閉じられているのかもしれません。
 
 disconnectionScreen.disconnected.reason1=ホストがワールドを閉じたか、
@@ -197,6 +199,11 @@ packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてな
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v1613.u1=設定のGote-Supporter Config画面の一部の文字が英語翻訳されてなかったバグを直しました。
+packinfo.v1613.u2=マイクラv1.21.30でRealmsストーリーボタンが常に表示されるバグを直しました。
+packinfo.v1613.u3=マイクラv1.21.30でポーズ画面のワールド退出確認が出てこないバグを直しました。
+packinfo.v1613.u4=コンテンツログに大量のエラーが出てくるのを直しました。
 
 packinfo.v1612.u1=村人のレベルを全部表示する機能が復活しました!
 packinfo.v1612.u2=Realmに入っていなくてもフィードボタンが表示されるバグを直しました。

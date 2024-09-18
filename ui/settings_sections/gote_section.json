@@ -88,7 +88,7 @@
                       "layer": 1,
                       "size": [ "100%", "100%" ],
                       "text": "$text",
-                      "$text": "マイクライフをより豊かにできるユーザー補助ツールです!\nCreated by YukaYama0311",
+                      "$text": "マイクライフをより豊かにできるユーザー補助ツールです!\nby YuuhaLand",
                       "font_type": "smooth",
                       "offset": [ 1, 0 ],
                       
@@ -240,14 +240,14 @@
           "size": [ "100%", "default" ],
           "font_scale_factor": 1.5,
           "line_padding": 5,
-          "text": "§lトグル"
+          "text": "§l%options.gote.toggles"
         }
       },
       
       {
         "hud_compass@settings_common.option_toggle": {
           "$option_label": "options.gote.hud_compass",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$hud_compass",
           "$toggle_name": "hud_compass",
           "enabled": false
@@ -256,7 +256,7 @@
       {
         "start_screen_gamertag@settings_common.option_toggle": {
           "$option_label": "options.gote.start_screen_gamertag",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$start_screen_gamertag",
           "$toggle_name": "start_screen_gamertag",
           "enabled": false
@@ -265,7 +265,7 @@
       {
         "show_gote_version@settings_common.option_toggle": {
           "$option_label": "options.gote.show_gote_version",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$show_gote_version",
           "$toggle_name": "show_gote_version",
           "enabled": false
@@ -274,7 +274,7 @@
       {
         "show_build_number@settings_common.option_toggle": {
           "$option_label": "options.gote.show_build_number",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$show_build_number",
           "$toggle_name": "show_build_number",
           "enabled": false
@@ -283,7 +283,7 @@
       {
         "inventory_screen_statusbar@settings_common.option_toggle": {
           "$option_label": "options.gote.inventory_screen_statusbar",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$inventory_screen_statusbar",
           "$toggle_name": "inventory_screen_statusbar",
           "enabled": false
@@ -292,7 +292,7 @@
       {
         "chest_screen_paperdoll@settings_common.option_toggle": {
           "$option_label": "options.gote.chest_screen_paperdoll",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$chest_screen_paperdoll",
           "$toggle_name": "chest_screen_paperdoll",
           "enabled": false
@@ -301,7 +301,7 @@
       {
         "show_hotbar_navigator@settings_common.option_toggle": {
           "$option_label": "options.gote.show_hotbar_navigator",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$show_hotbar_navigator",
           "$toggle_name": "show_hotbar_navigator",
           "enabled": false
@@ -310,7 +310,7 @@
       {
         "show_hotbar_number@settings_common.option_toggle": {
           "$option_label": "options.gote.show_hotbar_number",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$show_hotbar_number",
           "$toggle_name": "show_hotbar_number",
           "enabled": false
@@ -319,7 +319,7 @@
       {
         "play_screen_doubleclick@settings_common.option_toggle": {
           "$option_label": "options.gote.play_screen_doubleclick",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$play_screen_doubleclick",
           "$toggle_name": "play_screen_doubleclick",
           "enabled": false
@@ -328,7 +328,7 @@
       {
         "show_recoverycompass@settings_common.option_toggle": {
           "$option_label": "options.gote.show_recoverycompass",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$toggle_default_state": "$show_recoverycompass",
           "$toggle_name": "show_recoverycompass",
           "enabled": false
@@ -345,14 +345,14 @@
           "size": [ "100%", "default" ],
           "font_scale_factor": 1.5,
           "line_padding": 5,
-          "text": "§lテキスト"
+          "text": "§l%options.gote.text"
         }
       },
 
       {
         "f1_f8_location@settings_common.option_text_edit": {
           "$option_label": "options.gote.f1_f8_location",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$default_value": "$f1_f8_location",
           "$text_box_name": "f1_f8_location",
           "enabled": false
@@ -361,7 +361,7 @@
       {
         "chat_tab_button_type@settings_common.option_text_edit": {
           "$option_label": "options.gote.chat_tab_button_type",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$default_value": "$chat_tab_button_type",
           "$text_box_name": "chat_tab_button_type",
           "enabled": false
@@ -370,7 +370,7 @@
       {
         "playerlist_key@settings_common.option_text_edit": {
           "$option_label": "options.gote.playerlist_key",
-          "$option_binding_name": "",
+          "$option_binding_name": "#dummy",
           "$default_value": "$playerlist_key",
           "$text_box_name": "playerlist_key",
           "enabled": false

@@ -8,10 +8,12 @@
     "$tooltip_panel_offset": [ 0, -40 ],
     "$tooltip_popup_image": "textures/ui/infobulb",
     "$tooltip_button_binding_type": "global",
-    "$tooltip_button_collection_name": "",
+    "$tooltip_button_collection_name": "dummy",
     "$tooltip_text_binding_name": "gtb.worldFolderPath.cantget.tooltip",
     "$tooltip_chevron_anchor": "bottom_left",
-    "$tooltip_popup_chevron_offset": [ "40%x", "100%y - 3px" ]
+    "$tooltip_popup_chevron_offset": [ "40%x", "100%y - 3px" ],
+    "bindings": [],
+    "$tooltip_text_bindings": []
   },
 
   "game_section": {

@@ -206,19 +206,24 @@
               "size": [ "100%", "100%cm + 16px" ],
               "controls": [
                 {
-                  "render_distance_popup@common.static_tooltip_popup_with_image_and_text": {
+                  "gote_pocket_warning@common.static_tooltip_popup_with_image_and_text": {
                     "size": [ "100% - 4px", "100%cm + 8px" ],
                     "anchor_from": "top_middle",
                     "anchor_to": "top_middle",
                     "$tooltip_panel_offset": [ 0, 9 ],
                     "$tooltip_popup_image": "textures/ui/WarningGlyph",
-                    "$tooltip_button_binding_type": "global",
-                    "$tooltip_button_collection_name": "",
-                    "$tooltip_popup_visible_binding": "#ui_profile_radio_pocket",
                     "$tooltip_text_binding_name": "gtb.pocket.waring",
                     "$tooltip_chevron_anchor": "top_right",
                     "$tooltip_popup_chevron_offset": [ "-30%x", "-10px" ],
-                    "$tooltip_popup_chevron_texture": "textures/ui/tooltip_inverted_chevron"
+                    "$tooltip_popup_chevron_texture": "textures/ui/tooltip_inverted_chevron",
+                    "$tooltip_text_bindings": [],
+                    "$tooltip_button_binding_type": "",
+                    "bindings": [
+                      {
+                        "binding_name": "#ui_profile_radio_pocket",
+                        "binding_name_override": "#visible"
+                      }
+                    ]
                   }
                 }
               ],
