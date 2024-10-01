@@ -172,6 +172,10 @@ packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v1614.u1=The profile screen can now be opened by clicking on the gamertag on the start screen.
+packinfo.v1614.u2=A bug that made it difficult to use the “Save & Quit” confirmation screen on the pause screen with the controller has been fixed.
+packinfo.v1614.u3=I reviewed the code in its entirety. (I have been working on this project since I was still in the early days of creating add-ons, so there was inefficient code.)
+
 packinfo.v1613.u1=Fixed a bug that some characters in Gote-Supporter Config were not translated into English.
 packinfo.v1613.u2=Fixed a bug in MCPE v1.21.30 where the Realms Stories button was always visible.
 packinfo.v1613.u3=Fixed a bug in MCPE v1.21.30 where the world exit confirmation on the pause screen did not appear.

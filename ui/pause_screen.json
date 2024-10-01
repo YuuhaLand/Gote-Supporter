@@ -1,23 +1,8 @@
 {
   "namespace": "pause",
 
-  "quit_dialog_swtich_toggle@gtb.swtich_toggle": {
+  "quit_dialog_swtich_toggle@gtb.swtich_toggle": { //古いリソパとの互換取る用
     "$toggle_name": "quit_dialog"
-  },
-  "quit_dialog_dlga@gtb.swtich_toggle": {
-    "$toggle_name": "quit_dialog"
-  },
-  "quit_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
-    "$toggle_name": "quit_dialog"
-  },
-  "note_dialog_swtich_toggle@gtb.swtich_toggle": {
-    "$toggle_name": "note_screen"
-  },
-  "note_dialog_swtich_toggle_c@gtb.swtich_toggle_c": {
-    "$toggle_name": "note_screen"
-  },
-  "note_dialog_swtich_toggle_close@gtb.close_swtich_toggle_esc": {
-    "$toggle_name": "note_screen"
   },
 
   "howtoplay_icon": {
@@ -85,6 +70,10 @@
         "binding_type": "global"
       }
     ]
+  },
+
+  "take_screenshot_button": {
+    "bindings": []
   },
 
   "player_button@common_buttons.dark_content_button": {
@@ -354,40 +343,6 @@
       }
     ]
   },
-  
-  "howtoplay_button@common_buttons.light_content_button": {
-    "size": [ 24, 24 ],
-    "$button_content": "pause.howtoplay_icon",
-    "$pressed_button_name": "button.menu_how_to_play"
-  },
-
-  "howtoplay_icon_button": {
-    "type": "panel",
-    "$button_tts_header": "menu.howToPlay",
-    "controls": [
-      { "howtoplay_button@pause.howtoplay_button": {
-        "$focus_id": "howtoplay_button_focus"
-        }
-      }
-    ]
-  },
-
-  "packinfo_button@common_buttons.light_content_button": {
-    "size": [ 24, 24 ],
-    "$button_content": "start.info_icon",
-    "$pressed_button_name": "button.menu_buy_game"
-  },
-
-  "packinfo_icon_button": {
-    "type": "panel",
-    "$button_tts_header": "manifestvalidation.title",
-    "controls": [
-      { "packinfo_button@pause.packinfo_button": {
-        "$focus_id": "packinfo_button_focus"
-        }
-      }
-    ]
-  },
 
   "note_icon_button": {
     "type": "panel",
@@ -455,6 +410,20 @@
               }
             },
             {
+              "note_btn@pause.column_frame": {
+                "size": [ 28, 32 ],
+                "controls": [
+                  { "note_icon_button@pause.note_icon_button": {} }
+                ]
+              }
+            },
+            {
+              "note_padding": {
+                "type": "panel",
+                "size": [ "2%", 0 ]
+              }
+            },
+            {
               "take_screenshot_btn@pause.column_frame": {
                 "ignored": "($is_holographic)",
                 "size": [ 28, 32 ],
@@ -467,56 +436,6 @@
                     "binding_name_override": "#visible",
                     "binding_type": "global"
                   }
-                ]
-              }
-            },
-            {
-              "screenshot_padding": {
-                "type": "panel",
-                "size": [ "2%", 0 ],
-                "bindings": [
-                  {
-                    "binding_name": "(not #is_realm_level)",
-                    "binding_name_override": "#visible",
-                    "binding_type": "global"
-                  }
-                ]
-              }
-            },
-            {
-              "howtoplay_btn@pause.column_frame": {
-                "size": [ 28, 32 ],
-                "controls": [
-                  { "howtoplay_icon_button@pause.howtoplay_icon_button": {} }
-                ],
-                "bindings": []
-              }
-            },
-            {
-              "howtoplay_padding": {
-                "type": "panel",
-                "size": [ "2%", 0 ]
-              }
-            },
-            {
-              "packinfo_btn@pause.column_frame": {
-                "size": [ 28, 32 ],
-                "controls": [
-                  { "packinfo_icon_button@pause.packinfo_icon_button": {} }
-                ]
-              }
-            },
-            {
-              "packinfo_padding": {
-                "type": "panel",
-                "size": [ "2%", 0 ]
-              }
-            },
-            {
-              "note_btn@pause.column_frame": {
-                "size": [ 28, 32 ],
-                "controls": [
-                  { "note_icon_button@pause.note_icon_button": {} }
                 ]
               }
             }
@@ -546,7 +465,8 @@
   },
 
 
-  "quit_dialog_cancel@pause.quit_dialog_swtich_toggle": {
+  "quit_dialog_cancel@gtb.swtich_toggle": {
+    "$toggle_name": "quit_dialog",
     "$checked_control": "common_toggles.toggle_unchecked",
     "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
 
@@ -597,10 +517,12 @@
     ]
   },
 
-  "note_button_dialog@pause.note_dialog_swtich_toggle_c": {
+  "note_button_dialog@gtb.swtich_toggle_c": {
     "size": [ 24, 24 ],
+    "$toggle_name": "note_screen",
     "$toggle_view_binding_name": "note_screen",
     "$button_content": "pause.book_and_quil",
+    "$toggle_tts_name": "gtb.memoScreen.title",
     "$toggle_group_forced_index": 100
   },
 
@@ -658,50 +580,9 @@
         }
       },
       {
-        "memo_close_button@common.toggle": {
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "size": [ 21, 21 ],
-          "offset": [ 5, -21 ],
+        "memo_close_button@gtb.close_button": {
           "layer": 504,
-          "$toggle_name": "note_screen",
-          "$radio_toggle_group": true,
-          "$toggle_default_state": true,
-          "$toggle_group_forced_index": 0,
-          "$return_sound": true,
-          "$close_button_panel_size": [ 15, 15 ],
-          "$default_button_alpha": 1,
-
-          "checked_control": "checked",
-          "unchecked_control": "unchecked",
-          "checked_hover_control": "checked_hover",
-          "unchecked_hover_control": "unchecked_hover",
-          "controls": [
-            {
-              "checked@common.close_button_panel": {
-                "$close_button_texture": "textures/ui/close_button_default",
-                "$button_alpha": "$default_button_alpha"
-      
-              }
-            },
-            {
-              "unchecked@common.close_button_panel": {
-                "$close_button_texture": "textures/ui/close_button_default",
-                "$button_alpha": "$default_button_alpha"
-      
-              }
-            },
-            {
-              "checked_hover@common.close_button_panel": {
-                "$close_button_texture": "textures/ui/close_button_hover"
-              }
-            },
-            {
-              "unchecked_hover@common.close_button_panel": {
-                "$close_button_texture": "textures/ui/close_button_hover"
-              }
-            }
-          ]
+          "$toggle_name": "note_screen"
         }
       }
     ]
@@ -731,14 +612,37 @@
         "operation": "replace",
         "value": [
           {
-            "quit_button@pause.quit_dialog_swtich_toggle": {
+            "quit_button@gtb.swtich_toggle": {
               "size": [ "100%", 28 ],
+              "$toggle_name": "quit_dialog",
               "$toggle_view_binding_name": "quit_dialog",
               "$button_text": "pauseScreen.quit",
               "$toggle_group_forced_index": 100
             }
           }
         ]
+      }
+    ]
+  },
+
+  "pause_screen_main_panels": {
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "quit_dialog",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#quit"
+      },
+      {
+        "binding_type": "view",
+        "source_control_name": "note_screen",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#note"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not (#quit or #note))",
+        "target_property_name": "#visible"
       }
     ]
   },
@@ -757,18 +661,10 @@
               "visible": false,
               "controls": [
                 {
-                  "scrool@common.scrolling_panel": {
-                    "type": "scroll_view",
-                    "size": [ "100%", "100%" ],
-                    "layer": 501,
-                    "$scrolling_content": "common.empty_panel",
-                    "$show_background": false
-                  }
-                },
-                {
-                  "quit_dialog_swtich_toggle_close@pause.quit_dialog_swtich_toggle_close": {
+                  "quit_esc_close@gtb.close_swtich_toggle_esc": {
                     "layer": 502,
                     "size": [ "100%", "100%" ],
+                    "$toggle_name": "quit_dialog",
                     "$toggle_default_state": true,
                     "$toggle_group_forced_index": 0
                   }
@@ -794,18 +690,10 @@
               "size": [ "100%", "100%" ],
               "controls": [
                 {
-                  "scrool@common.scrolling_panel": {
-                    "type": "scroll_view",
-                    "size": [ "100%", "100%" ],
-                    "layer": 501,
-                    "$scrolling_content": "common.empty_panel",
-                    "$show_background": false
-                  }
-                },
-                {
-                  "note_dialog_swtich_toggle_close@pause.note_dialog_swtich_toggle_close": {
+                  "memo_esc_close@gtb.close_swtich_toggle_esc": {
                     "layer": 502,
                     "size": [ "100%", "100%" ],
+                    "$toggle_name": "note_screen",
                     "$toggle_default_state": true,
                     "$toggle_group_forced_index": 0
                   }

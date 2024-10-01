@@ -1,6 +1,10 @@
 {
   "namespace": "anvil_pocket",
 
+  "title_label": {
+    "ignored": true
+  },
+
   "multiline_text_edit_control@common.multiline_text_edit_box": {
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
@@ -23,12 +27,6 @@
         }
       }
     ]
-  },
-
-  "title_label@anvil_pocket.generic_label": {
-    "anchor_from": "left_middle",
-    "anchor_to": "left_middle",
-    "text": ""
   },
 
   "anvil_contents_panel": {

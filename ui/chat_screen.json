@@ -522,6 +522,7 @@
   },
 
   "text_edit_box": {
+    "size": [ "100%", 27 ],
     "anchor_from": "bottom_left",
     "anchor_to": "bottom_left",
     "always_listening": false,
@@ -535,7 +536,7 @@
             "binding_type": "view",
             "source_control_name": "newline_chat",
             "source_property_name": "(not #toggle_state)",
-            "target_property_name": "#enabled"
+            "target_property_name": "#visible"
           }
         ]
       }
@@ -545,11 +546,12 @@
   "newline_text_edit_box@chat.text_edit_box": {
     "anchor_from": "bottom_left",
     "anchor_to": "bottom_left",
-    "size": [ "fill", 60 ],
+    "size": [ "100%", 60 ],
     "offset": [ 0, 0 ],
     "layer": 50,
     "always_listening": false,
     "$text_edit_box_label_size": [ "100%", "100%" ],
+    "visible": false,
 
     "bindings": [
       {
@@ -575,44 +577,12 @@
     ]
   },
 
-  "dummy_button": {
+  "text_box_panel": {
     "type": "panel",
-    "size": [ 27, 27 ],
-    "anchor_from": "bottom_right",
-    "anchor_to": "bottom_right"
-  },
-
-  "dummy_send_button@chat.dummy_button": {
-    "size": [ 55, 27 ]
-  },
-
-  "dummy_textbox_arrow_button@chat.dummy_button": {
-    "size": [ 15, 27 ]
-  },
-
-  "chat_buttom_panel_dummy@chat.chat_bottom_panel": {
-    "min_size": [ "100%", 60 ],
+    "size": [ "fill", 27 ],
     "controls": [
-      { "keyboard_button@chat.dummy_button": {} },
-      {
-        "host_main_button@chat.dummy_button": {
-          "ignored": "$is_pregame",
-          "bindings": [
-            {
-              "binding_name": "#cheats_on",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      { "chat_settings@chat.dummy_button": { } },
-	    {"chat_autocompleteback_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-	    {"chat_autocomplete_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-	    {"chat_previous_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-	    {"chat_up_button@chat.dummy_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-      { "newline_text_edit_box@chat.newline_text_edit_box": {} },
-      { "textbox_arrow_button@chat.dummy_textbox_arrow_button": { } },
-      { "send_button2@chat.dummy_send_button": { "offset": [ -20, 0 ] } }
+      { "text_box@chat.text_edit_box": { } },
+      { "newline_text_edit_box@chat.newline_text_edit_box": {} }
     ]
   },
 
@@ -621,13 +591,13 @@
       { "keyboard_button@chat.keyboard_button": {} },
       { "host_main_button@host_options.host_main_button": { "ignored": "$is_pregame" } },
       { "chat_settings@chat.chat_settings_button": { } },
-	    {"chat_autocompleteback_button@chat.chat_autocompleteback_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-	    {"chat_autocomplete_button@chat.chat_autocomplete_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-	    {"chat_previous_button@chat.chat_previous_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-	    {"chat_up_button@chat.chat_up_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
-      { "text_box@chat.text_edit_box": { } },
+	    { "chat_autocompleteback_button@chat.chat_autocompleteback_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    { "chat_autocomplete_button@chat.chat_autocomplete_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    { "chat_previous_button@chat.chat_previous_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+	    { "chat_up_button@chat.chat_up_button":{ "ignored":"(($chat_tab_button_type = 'vertical') or ($chat_tab_button_type = 'none'))" }},
+      { "text_box_panel@chat.text_box_panel": { } },
       { "textbox_arrow_button@chat.textbox_arrow_button": { } },
-      { "send_button2@chat.send_button": { "offset": [ -20, 0 ] } }
+      { "send_button2@chat.send_button": { } }
     ]
   },  
 
@@ -650,20 +620,19 @@
     ]
   },
 
-  "chat_screen@common.base_screen": {
-    "close_on_player_hurt": false
-  },
-
   "chat_screen_content": {
     "modifications": [
       {
         "array_name": "controls",
         "operation": "insert_front",
         "value": [
-          { "chat_autocomplete_panel@chat.chat_autocomplete_panel": {} },
-          { "chat_buttom_panel_dummy@chat.chat_buttom_panel_dummy":{} }
+          { "chat_autocomplete_panel@chat.chat_autocomplete_panel": {} }
         ]
       }
     ]
+  },
+
+  "chat_screen": {
+    "close_on_player_hurt": false
   }
 }

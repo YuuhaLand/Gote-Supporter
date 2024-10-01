@@ -47,9 +47,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "status_bar@crafting.status_bar": {
-              "bindings": []
-            }
+            "status_bar@crafting.status_bar": {}
           }
         ]
       }

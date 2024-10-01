@@ -1,7 +1,8 @@
 {
   "ui_defs": [
+    "ui/gotemba/gote_info_screen.json",
+    "ui/settings_sections/gote_section.json",
     "ui/_change_logs.json",
-    "ui/_gote_assets.json",
-    "ui/settings_sections/gote_section.json"
+    "ui/_gote_assets.json"
   ]
 }

@@ -57,31 +57,54 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "button.menu_ok",
         "mapping_type": "focused"
+      }
+    ]
+  },
+
+  "close_button@common.toggle": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 21, 21 ],
+    "offset": [ 5, -21 ],
+    "$radio_toggle_group": true,
+    "$toggle_default_state": true,
+    "$toggle_group_forced_index": 0,
+    "$return_sound": true,
+    "$close_button_panel_size": [ 15, 15 ],
+    "$default_button_alpha": 1,
+    "$toggle_tts_name": "accessibility.button.close",
+    "$toggle_tts_toggle_on_text": "",
+    "$toggle_tts_toggle_off_text": "",
+
+    "focus_enabled": false,
+    "checked_control": "checked",
+    "unchecked_control": "unchecked",
+    "checked_hover_control": "checked_hover",
+    "unchecked_hover_control": "unchecked_hover",
+    "controls": [
+      {
+        "checked@common.close_button_panel": {
+          "$close_button_texture": "textures/ui/close_button_default",
+          "$button_alpha": "$default_button_alpha"
+
+        }
       },
       {
-        "from_button_id": "button.controller_back",
-        "to_button_id": "button.controller_back",
-        "mapping_type": "focused",
-        "ignored": "(not $allow_controller_back_button_mapping)"
+        "unchecked@common.close_button_panel": {
+          "$close_button_texture": "textures/ui/close_button_default",
+          "$button_alpha": "$default_button_alpha"
+
+        }
       },
       {
-        "ignored": "(not $enable_directional_toggling)",
-        "from_button_id": "button.menu_left",
-        "to_button_id": "$toggle_off_button",
-        "mapping_type": "pressed",
-        "input_mode_condition": "gamepad_and_not_gaze"
+        "checked_hover@common.close_button_panel": {
+          "$close_button_texture": "textures/ui/close_button_hover"
+        }
       },
       {
-        "ignored": "(not $enable_directional_toggling)",
-        "from_button_id": "button.menu_right",
-        "to_button_id": "$toggle_on_button",
-        "mapping_type": "pressed",
-        "input_mode_condition": "gamepad_and_not_gaze"
-      },
-      {
-        "ignored": "(not $enable_hover_event_mapping)",
-        "to_button_id": "$toggle_hover_event_mapping",
-        "mapping_type": "pressed"
+        "unchecked_hover@common.close_button_panel": {
+          "$close_button_texture": "textures/ui/close_button_hover"
+        }
       }
     ]
   },
@@ -120,7 +143,10 @@
     "$binding_condition": "once",
     
     "$checked_control": "common_toggles.toggle_unchecked",
-    "$checked_hover_control": "common_toggles.toggle_unchecked_hover"
+    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+    "$toggle_tts_name": "",
+    "$toggle_tts_toggle_on_text": "",
+    "$toggle_tts_toggle_off_text": ""
   },
 
   "swtich_toggle_c@common_toggles.light_content_toggle": {
@@ -130,7 +156,10 @@
     "$binding_condition": "once",
     
     "$checked_control": "common_toggles.toggle_unchecked",
-    "$checked_hover_control": "common_toggles.toggle_unchecked_hover"
+    "$checked_hover_control": "common_toggles.toggle_unchecked_hover",
+    "$toggle_tts_name": "",
+    "$toggle_tts_toggle_on_text": "",
+    "$toggle_tts_toggle_off_text": ""
   },
 
   "swtich_toggle_label": {

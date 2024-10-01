@@ -51,9 +51,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "status_bar@crafting.status_bar": {
-              "bindings": []
-            }
+            "status_bar@crafting.status_bar": {}
           },
           {
             "player_renderer@chest.player_renderer": {}
@@ -69,9 +67,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "status_bar@crafting.status_bar": {
-              "bindings": []
-            }
+            "status_bar@crafting.status_bar": {}
           },
           {
             "player_renderer@chest.player_renderer": {}

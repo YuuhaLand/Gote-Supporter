@@ -6,10 +6,21 @@
     "size": [ "100%", "100%c" ],
     "controls": [
       {
-        "1613@tabbed_upsell.version_section": {
+        "1614@gote_info.version_section": {
+          "$version": "v1.6.14",
+          "$details_controls": [
+            { "date@gote_info.text": { "text": "2024/10/01" }},
+            { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1614.u1"}},
+            { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1614.u2"}},
+            { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v1614.u3"}}
+          ]
+        }
+      },
+      {
+        "1613@gote_info.version_section": {
           "$version": "v1.6.13",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2024/09/18" }},
+            { "date@gote_info.text": { "text": "2024/09/18" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1613.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1613.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v1613.u3"}},
@@ -18,10 +29,10 @@
         }
       },
       {
-        "1612@tabbed_upsell.version_section": {
+        "1612@gote_info.version_section": {
           "$version": "v1.6.12",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2024/06/27" }},
+            { "date@gote_info.text": { "text": "2024/06/27" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1612.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1612.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v1612.u3"}}
@@ -29,20 +40,20 @@
         }
       },
       {
-        "1611@tabbed_upsell.version_section": {
+        "1611@gote_info.version_section": {
           "$version": "v1.6.11",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2024/06/13" }},
+            { "date@gote_info.text": { "text": "2024/06/13" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1611.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1611.u2"}}
           ]
         }
       },
       {
-        "v1610@tabbed_upsell.version_section": {
+        "v1610@gote_info.version_section": {
           "$version": "v1.6.10",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2024/02/15" }},
+            { "date@gote_info.text": { "text": "2024/02/15" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1610.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1610.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v1610.u3"}},
@@ -52,10 +63,10 @@
         }
       },
       {
-        "v169@tabbed_upsell.version_section": {
+        "v169@gote_info.version_section": {
           "$version": "v1.6.9",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/12/28" }},
+            { "date@gote_info.text": { "text": "2023/12/28" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v169.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v169.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v169.u3"}},
@@ -66,10 +77,10 @@
         }
       },
       {
-        "v168@tabbed_upsell.version_section": {
+        "v168@gote_info.version_section": {
           "$version": "v1.6.8",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/12/22" }},
+            { "date@gote_info.text": { "text": "2023/12/22" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v168.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v168.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v168.u3"}}
@@ -77,10 +88,10 @@
         }
       },
       {
-        "v167@tabbed_upsell.version_section": {
+        "v167@gote_info.version_section": {
           "$version": "v1.6.7",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/12/03" }},
+            { "date@gote_info.text": { "text": "2023/12/03" }},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v167.u1"}},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v167.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v167.u3"}},
@@ -95,28 +106,28 @@
         }
       },
       {
-        "v166@tabbed_upsell.version_section": {
+        "v166@gote_info.version_section": {
           "$version": "v1.6.6",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/09/20" }},
+            { "date@gote_info.text": { "text": "2023/09/20" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v166.u1"}}
           ]
         }
       },
       {
-        "v165@tabbed_upsell.version_section": {
+        "v165@gote_info.version_section": {
           "$version": "v1.6.5",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/09/18" }},
+            { "date@gote_info.text": { "text": "2023/09/18" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v165.u1"}}
           ]
         }
       },
       {
-        "v164@tabbed_upsell.version_section": {
+        "v164@gote_info.version_section": {
           "$version": "v1.6.4",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/09/10" }},
+            { "date@gote_info.text": { "text": "2023/09/10" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v164.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v164.u2"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v164.u3"}}
@@ -124,20 +135,20 @@
         }
       },
       {
-        "v163@tabbed_upsell.version_section": {
+        "v163@gote_info.version_section": {
           "$version": "v1.6.3",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/08/29" }},
+            { "date@gote_info.text": { "text": "2023/08/29" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v163.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v163.u2"}}
           ]
         }
       },
       {
-        "v162@tabbed_upsell.version_section": {
+        "v162@gote_info.version_section": {
           "$version": "v1.6.2",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/07/31" }},
+            { "date@gote_info.text": { "text": "2023/07/31" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v162.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v162.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v162.u3"}},
@@ -146,10 +157,10 @@
         }
       },
       {
-        "v161@tabbed_upsell.version_section": {
+        "v161@gote_info.version_section": {
           "$version": "v1.6.1",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/06/10" }},
+            { "date@gote_info.text": { "text": "2023/06/10" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v161.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v161.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v161.u3"}},
@@ -161,10 +172,10 @@
         }
       },
       {
-        "v160@tabbed_upsell.version_section": {
+        "v160@gote_info.version_section": {
           "$version": "v1.6.0",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/04/25" }},
+            { "date@gote_info.text": { "text": "2023/04/25" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v160.u3"}},
@@ -179,10 +190,10 @@
         }
       },
       {
-        "v152@tabbed_upsell.version_section": {
+        "v152@gote_info.version_section": {
           "$version": "v1.5.2",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/04/07" }},
+            { "date@gote_info.text": { "text": "2023/04/07" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v152.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v152.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v152.u3"}},
@@ -192,10 +203,10 @@
         }
       },
       {
-        "v151@tabbed_upsell.version_section": {
+        "v151@gote_info.version_section": {
           "$version": "v1.5.1",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/03/11" }},
+            { "date@gote_info.text": { "text": "2023/03/11" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v151.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v151.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v151.u3"}},
@@ -207,10 +218,10 @@
         }
       },
       {
-        "v150@tabbed_upsell.version_section": {
+        "v150@gote_info.version_section": {
           "$version": "v1.5.0",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/02/18" }},
+            { "date@gote_info.text": { "text": "2023/02/18" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v150.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v150.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v150.u3"}},
@@ -224,10 +235,10 @@
         }
       },
       {
-        "v147@tabbed_upsell.version_section": {
+        "v147@gote_info.version_section": {
           "$version": "v1.4.7",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/02/02" }},
+            { "date@gote_info.text": { "text": "2023/02/02" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v147.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v147.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v147.u3"}},
@@ -237,10 +248,10 @@
         }
       },
       {
-        "v146@tabbed_upsell.version_section": {
+        "v146@gote_info.version_section": {
           "$version": "v1.4.6",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/01/28" }},
+            { "date@gote_info.text": { "text": "2023/01/28" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v146.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v146.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v146.u3"}},
@@ -249,10 +260,10 @@
         }
       },
       {
-        "v145@tabbed_upsell.version_section": {
+        "v145@gote_info.version_section": {
           "$version": "v1.4.5",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2023/01/06" }},
+            { "date@gote_info.text": { "text": "2023/01/06" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v145.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v145.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v145.u3"}},
@@ -263,10 +274,10 @@
         }
       },
       {
-        "v144@tabbed_upsell.version_section": {
+        "v144@gote_info.version_section": {
           "$version": "v1.4.4",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/12/24" }},
+            { "date@gote_info.text": { "text": "2022/12/24" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v144.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v144.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v144.u3"}},
@@ -277,19 +288,19 @@
         }
       },
       {
-        "v143@tabbed_upsell.version_section": {
+        "v143@gote_info.version_section": {
           "$version": "v1.4.3",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/10/10" }},
+            { "date@gote_info.text": { "text": "2022/10/10" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v143.u1"}}
           ]
         }
       },
       {
-        "v142@tabbed_upsell.version_section": {
+        "v142@gote_info.version_section": {
           "$version": "v1.4.2",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/09/27" }},
+            { "date@gote_info.text": { "text": "2022/09/27" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v142.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v142.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v142.u3"}},
@@ -300,10 +311,10 @@
         }
       },
       {
-        "v141@tabbed_upsell.version_section": {
+        "v141@gote_info.version_section": {
           "$version": "v1.4.1",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/09/21" }},
+            { "date@gote_info.text": { "text": "2022/09/21" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v141.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v141.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v141.u3"}},
@@ -313,10 +324,10 @@
         }
       },
       {
-        "v140@tabbed_upsell.version_section": {
+        "v140@gote_info.version_section": {
           "$version": "v1.4.0",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/08/30" }},
+            { "date@gote_info.text": { "text": "2022/08/30" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v140.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v140.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v140.u3"}},
@@ -326,20 +337,20 @@
         }
       },
       {
-        "v138@tabbed_upsell.version_section": {
+        "v138@gote_info.version_section": {
           "$version": "v1.3.8",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/07/15" }},
+            { "date@gote_info.text": { "text": "2022/07/15" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v138.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v138.u2"}}
           ]
         }
       },
       {
-        "v137@tabbed_upsell.version_section": {
+        "v137@gote_info.version_section": {
           "$version": "v1.3.7",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/05/10" }},
+            { "date@gote_info.text": { "text": "2022/05/10" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v137.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v137.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v137.u3"}}
@@ -347,10 +358,10 @@
         }
       },
       {
-        "v136@tabbed_upsell.version_section": {
+        "v136@gote_info.version_section": {
           "$version": "v1.3.6",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2022/03/18" }},
+            { "date@gote_info.text": { "text": "2022/03/18" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v136.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v136.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v136.u3"}},
@@ -361,10 +372,10 @@
         }
       },
       {
-        "v135@tabbed_upsell.version_section": {
+        "v135@gote_info.version_section": {
           "$version": "v1.3.5",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/12/05" }},
+            { "date@gote_info.text": { "text": "2021/12/05" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v135.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v135.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v135.u3"}}
@@ -372,10 +383,10 @@
         }
       },
       {
-        "v134@tabbed_upsell.version_section": {
+        "v134@gote_info.version_section": {
           "$version": "v1.3.4",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/12/01" }},
+            { "date@gote_info.text": { "text": "2021/12/01" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v134.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v134.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v134.u3"}}
@@ -383,10 +394,10 @@
         }
       },
       {
-        "v133@tabbed_upsell.version_section": {
+        "v133@gote_info.version_section": {
           "$version": "v1.3.3",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/09/26" }},
+            { "date@gote_info.text": { "text": "2021/09/26" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v133.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v133.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v133.u3"}}
@@ -394,28 +405,28 @@
         }
       },
       {
-        "v132@tabbed_upsell.version_section": {
+        "v132@gote_info.version_section": {
           "$version": "v1.3.2",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/09/22" }},
+            { "date@gote_info.text": { "text": "2021/09/22" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v132.u1"}}
           ]
         }
       },
       {
-        "v131@tabbed_upsell.version_section": {
+        "v131@gote_info.version_section": {
           "$version": "v1.3.1",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/09/17" }},
+            { "date@gote_info.text": { "text": "2021/09/17" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v131.u1"}}
           ]
         }
       },
       {
-        "v126@tabbed_upsell.version_section": {
+        "v126@gote_info.version_section": {
           "$version": "v1.2.6",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/09/09" }},
+            { "date@gote_info.text": { "text": "2021/09/09" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v126.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v126.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v126.u3"}}
@@ -423,10 +434,10 @@
         }
       },
       {
-        "v125@tabbed_upsell.version_section": {
+        "v125@gote_info.version_section": {
           "$version": "v1.2.5",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/08/18" }},
+            { "date@gote_info.text": { "text": "2021/08/18" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v125.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v125.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v125.u3"}}
@@ -434,10 +445,10 @@
         }
       },
       {
-        "v124@tabbed_upsell.version_section": {
+        "v124@gote_info.version_section": {
           "$version": "v1.2.4",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/08/05" }},
+            { "date@gote_info.text": { "text": "2021/08/05" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v124.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v124.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v124.u3"}}
@@ -445,20 +456,20 @@
         }
       },
       {
-        "v123@tabbed_upsell.version_section": {
+        "v123@gote_info.version_section": {
           "$version": "v1.2.3",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/07/29" }},
+            { "date@gote_info.text": { "text": "2021/07/29" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v123.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v123.u2"}}
           ]
         }
       },
       {
-        "v122@tabbed_upsell.version_section": {
+        "v122@gote_info.version_section": {
           "$version": "v1.2.2",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/07/16" }},
+            { "date@gote_info.text": { "text": "2021/07/16" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v122.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v122.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v122.u3"}},
@@ -467,10 +478,10 @@
         }
       },
       {
-        "v121@tabbed_upsell.version_section": {
+        "v121@gote_info.version_section": {
           "$version": "v1.2.1",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/07/02" }},
+            { "date@gote_info.text": { "text": "2021/07/02" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v121.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v121.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v121.u3"}},
@@ -480,10 +491,10 @@
         }
       },
       {
-        "v120@tabbed_upsell.version_section": {
+        "v120@gote_info.version_section": {
           "$version": "v1.2.0",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/06/14" }},
+            { "date@gote_info.text": { "text": "2021/06/14" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v120.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v120.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v120.u3"}},
@@ -492,19 +503,19 @@
         }
       },
       {
-        "v111@tabbed_upsell.version_section": {
+        "v111@gote_info.version_section": {
           "$version": "v1.1.1",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/06/09" }},
+            { "date@gote_info.text": { "text": "2021/06/09" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v111.u1"}}
           ]
         }
       },
       {
-        "v110@tabbed_upsell.version_section": {
+        "v110@gote_info.version_section": {
           "$version": "v1.1.0",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/06/08" }},
+            { "date@gote_info.text": { "text": "2021/06/08" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v110.u1"}},
             { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v110.u2"}},
             { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v110.u3"}}
@@ -512,10 +523,10 @@
         }
       },
       {
-        "v100@tabbed_upsell.version_section": {
+        "v100@gote_info.version_section": {
           "$version": "v1.0.0",
           "$details_controls": [
-            { "date@tabbed_upsell.text": { "text": "2021/04/25" }},
+            { "date@gote_info.text": { "text": "2021/04/25" }},
             { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v100.u1"}}
           ]
         }

@@ -1,6 +1,10 @@
 {
   "namespace": "anvil",
 
+  "title_label": {
+    "ignored": true
+  },
+  
   "multiline_text_edit_control@common.multiline_text_edit_box": {
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
@@ -39,13 +43,6 @@
         "multiline_text_edit_panel@anvil.multiline_text_edit_panel": {}
       }
     ]
-  },
-
-  "title_label@anvil.generic_label": {
-    "offset": [ 0, 3 ],
-    "anchor_from": "bottom_middle",
-    "anchor_to": "bottom_middle",
-    "text": ""
   },
 
   "top_half_panel": {
@@ -114,9 +111,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "status_bar@crafting.status_bar": {
-              "bindings": []
-            }
+            "status_bar@crafting.status_bar": {}
           },
           {
             "player_renderer@chest.player_renderer": {}

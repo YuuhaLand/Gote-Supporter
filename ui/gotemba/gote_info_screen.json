@@ -1,0 +1,917 @@
+{
+  "namespace": "gote_info",
+  "warning_icon": {
+    "type": "image",
+    "texture": "textures/ui/ErrorGlyph",
+    "layer": 3,
+    "size": [ 13, 20 ]
+  },
+
+
+
+  "indexs_panel": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ]
+  },
+
+  "index_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "$button_label|default": "",
+    "$button_icon|default": "textures/blocks/stone",
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 20 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "image": {
+                "type": "image",
+                "texture": "$button_icon",
+                "size": [ 20, 20 ]
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 2, 0 ]
+              }
+            },
+            {
+              "label_panel": {
+                "type": "panel",
+                "size": [ "default", 20 ],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "size": [ "default", 10 ],
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "text": "$button_label",
+                      "color": "$text_color"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "version_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 10 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "gotesupporter": {
+                "type": "label",
+                "text": "('Gote-Supporter ' + $version)",
+                "color": "$text_color",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/chevron_white_down",
+          "color": "$text_color",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -5, 0 ],
+          "size": [ 11, 11 ]
+        }
+      }
+    ]
+  },
+
+  "faq_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 10 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "title": {
+                "type": "label",
+                "text": "('§　%' +$question + '.q')",
+                "color": "$text_color",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/chevron_white_down",
+          "color": "$text_color",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -5, 0 ],
+          "size": [ 11, 11 ]
+        }
+      }
+    ]
+  },
+
+  "version_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "$version|default": "v1.0.0",
+    "$details_controls|default": [],
+    "controls": [
+      {
+        "toggle_button@common_toggles.dark_content_toggle": {
+          "size": [ "100%", 20 ],
+          "$button_content": "gote_info.version_toggle_button_content",
+          "$toggle_name": "$version",
+          "$toggle_view_binding_name": "$version",
+          "$toggle_sound": true
+        }
+      },
+      {
+        "details_panel": {
+          "type": "image",
+          "size": [ "100%", "100%c + 5px" ],
+          "texture": "textures/ui/menubackground",
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "size": [ "100% - 4px", "100%c" ],
+                "layer": 10,
+                "controls": "$details_controls"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$version",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      }
+    ]
+  },
+
+  "faq_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "$question|default": "",
+    "controls": [
+      {
+        "toggle_button@common_toggles.dark_content_toggle": {
+          "size": [ "100%", 20 ],
+          "$button_content": "gote_info.faq_toggle_button_content",
+          "$toggle_name": "$question",
+          "$toggle_view_binding_name": "$question",
+          "$toggle_sound": true
+        }
+      },
+      {
+        "details_panel": {
+          "type": "image",
+          "size": [ "100%", "100%c + 5px" ],
+          "texture": "textures/ui/menubackground",
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "size": [ "100% - 4px", "100%c" ],
+                "layer": 10,
+                "controls": [
+                  {
+                    "anser@gote_info.text": { "$text": "($question + '.a')" }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$question",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      }
+    ]
+  },
+
+  "text": {
+    "type": "label",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [ "100%", "default" ],
+    "shadow": true,
+    "text": "$text",
+    "$text|default": ""
+  },
+
+  "link_text@gote_info.text": {
+    "size": [ "default", "default" ],
+    "max_size": [ "100%", 10000 ],
+    "font_type": "smooth",
+    "color": "$2_color_format",
+    "controls": [
+      {
+        "kasen": {
+          "type": "image",
+          "texture": "textures/ui/White",
+          "color": "$2_color_format",
+          "size": [ "100%", 1 ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle"
+        }
+      }
+    ]
+  },
+  
+  "playsound_play": {
+    "type": "image",
+    "texture": "textures/ui/playsound_play",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "playsound_stop": {
+    "type": "image",
+    "texture": "textures/ui/playsound_stop",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "play_sound_panel": {
+    "type": "panel",
+    "size": [ "100%", 32 ],
+    "controls": [
+      {
+        "sound_panel": {
+          "type": "image", 
+          "size": [ "100%", 30 ],
+          "texture": "textures/ui/White",
+          "color": [ 0.1, 0.1, 0.1 ],
+          "$sound_name|defalut": "dummy",
+          "$sound_id|defalut": "pvp2.music.daisuke",
+          "$sound_vol|defalut": 1.0,
+          "$is_music|defalut": false,
+          "controls": [
+            {
+              "flame": {
+                "type": "image",
+                "texture": "textures/ui/focus_border_white",
+                "size": [ "100%", "100%" ],
+                "color": [ 0, 0, 0 ]
+              }
+            },
+            {
+              "panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100% - 6px", 10 ],
+                "layer": 1,
+                "controls": [
+                  {
+                    "onpu": {
+                      "type": "image",
+                      "texture": "textures/ui/onpu",
+                      "size": [ 10, 10 ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 2, 0 ]
+                    }
+                  },
+                  {
+                    "sound_name": {
+                      "type": "label",
+                      "size": [ "fill", 10 ],
+                      "text": "$sound_name"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "play_stop": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100%c + 3px", 25 ],
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "controls": [
+                  {
+                    "play_button@common_buttons.dark_content_button": {
+                      "size": [ 25, 25 ],
+                      "$button_content": "gote_info.playsound_play",
+                      "sound_name": "$sound_id",
+                      "sound_volume": "$sound_vol",
+                      "$pressed_button_name": "button.dummy"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "ignored": "(not $is_music)",
+                      "size": [ 1, 0 ]
+                    }
+                  },
+                  {
+                    "stop_button@common_buttons.dark_content_button": {
+                      "size": [ 25, 25 ],
+                      "ignored": "(not $is_music)",
+                      "$button_content": "gote_info.playsound_stop",
+                      "sound_name": "$sound_id",
+                      "sound_volume": 0.00000001,
+                      "$pressed_button_name": "button.dummy"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "tab_selector@common_toggles.light_content_toggle": {
+    "size": [ "100%", 30 ],
+    "$toggle_name": "navigation_tab",
+    "$radio_toggle_group": true,
+    "$button_content": "gote_info.index_toggle_button_content"
+  },
+  
+  "left_panel": {
+    "type": "stack_panel",
+    "size": [ "100% - 6px", "100%c" ],
+    "offset": [ 3, 0 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "header_padding": {
+          "type": "panel",
+          "size": [ 0, 10 ]
+        }
+      },
+      {
+        "about_button@gote_info.tab_selector": {
+          "$toggle_view_binding_name": "page_about",
+          "$toggle_group_forced_index": 0,
+          "$button_label": "packinfo.about.title",
+          "$button_icon": "textures/ui/info_icon"
+        }
+      },
+      {
+        "author_button@gote_info.tab_selector": {
+          "$toggle_view_binding_name": "page_author",
+          "$toggle_group_forced_index": 1,
+          "$button_label": "packinfo.about_author.title",
+          "$button_icon": "textures/ui/creator_glyph_color"
+        }
+      },
+      {
+        "features_buton@gote_info.tab_selector": {
+          "$toggle_view_binding_name": "page_features",
+          "$toggle_group_forced_index": 2,
+          "$button_label": "packinfo.features.title",
+          "$button_icon": "textures/ui/filledStar"
+        }
+      },
+      {
+        "update_button@gote_info.tab_selector": {
+          "$toggle_view_binding_name": "page_update",
+          "$toggle_group_forced_index": 3,
+          "$button_label": "packinfo.update.title",
+          "$button_icon": "textures/ui/jump_boost_effect"
+        }
+      },
+      {
+        "faq_button@gote_info.tab_selector": {
+          "$toggle_view_binding_name": "page_faq",
+          "$toggle_group_forced_index": 4,
+          "$button_label": "packinfo.faq.title",
+          "$button_icon": "textures/ui/Feedback"
+        }
+      },
+      {
+        "caution_button@gote_info.tab_selector": {
+          "$toggle_view_binding_name": "page_caution",
+          "$toggle_group_forced_index": 5,
+          "$button_label": "packinfo.caution.title",
+          "$button_icon": "textures/ui/infobulb"
+        }
+      }
+    ]
+  },
+
+  "right_panel": {
+    "type": "stack_panel",
+    "size": [ "100% - 6px", "100%c" ],
+    "offset": [ 3, 0 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "header": {
+          "type": "input_panel",
+          "focus_enabled": true,
+          "size": [ "100%", 1 ]
+        }
+      },
+      {
+        "about_page@gote_info.indexs_panel": {
+          "controls": [
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.about.title" }},
+            { "howtoplay_0@gote_info.text": {"$text": "packinfo.about.text1"}},
+            { "howtoplay_1@gote_info.text": {"$text": "packinfo.about.text2"}},
+            { "howtoplay_2@gote_info.text": {"$text": "packinfo.about.text3"}},
+            { "howtoplay_3@gote_info.text": {"$text": ""}},
+            { "howtoplay_4@gote_info.text": {"$text": "packinfo.about.text4"}},
+            { "howtoplay_5@gote_info.text": {"$text": ""}},
+            { "howtoplay_6@gote_info.text": {"$text": "packinfo.about.text5"}},
+            { "howtoplay_7@gote_info.text": {"$text": ""}},
+            { "howtoplay_8@gtb.features_text_with_bubble": {"$text": "packinfo.about.text6"}},
+            { "howtoplay_9@gote_info.link_text": {"$text": "https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html"}},
+            { "howtoplay_10@gote_info.text": {"$text": ""}},
+            { "howtoplay_11@gtb.features_text_with_bubble": {"$text": "packinfo.about.text7"}},
+            { "howtoplay_12@gote_info.link_text": {"$text": "https://minecraft-mcworld.com/74563/"}},
+            { "howtoplay_13@gote_info.text": {"$text": ""}},
+            { "howtoplay_14@gtb.features_text_with_bubble": {"$text": "packinfo.about.text8"}},
+            { "howtoplay_15@gote_info.link_text": {"$text": "https://github.com/YuuhaLand/Gote-Supporter/"}},
+            { "howtoplay_16@gote_info.text": {"$text": ""}},
+            { "howtoplay_17@gtb.features_text_with_bubble": {"$text": "packinfo.about.text9"}},
+            { "howtoplay_18@gote_info.link_text": {"$text": "https://mcpedl.com/gote-supporter"}},
+            { "howtoplay_19@gote_info.text": {"$text": ""}},
+            { "howtoplay_20@gote_info.text": {"$text": "packinfo.about.text10"}},
+            { "howtoplay_21@gote_info.link_text": {"$text": "https://discord.gg/skX9YHp4fC"}},
+            {
+              "preview_warning": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "ignored": "(not $pre_release)",
+                "controls": [
+                  { "text01@gote_info.text": { "$text": "gtb.previewWarning.honbun1" }},
+                  { "text02@gote_info.text": { "$text": "gtb.previewWarning.honbun2" }}
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_about",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "features_page@gote_info.indexs_panel": {
+          "controls": [
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.features.title" }},
+            { "howtoplay_1@gote_info.text": {"$text": "packinfo.features.text1"}},
+            { "howtoplay_2@gote_info.text": {"$text": ""}},
+            { "howtoplay_3@gote_info.text": {"$text": "packinfo.features.text2"}},
+            { "howtoplay_4@gtb.features_text_with_bubble": {"$text": "packinfo.features.text3"}},
+            { "howtoplay_5@gtb.features_text_with_bubble": {"$text": "packinfo.features.text4"}},
+            { "howtoplay_6@gtb.features_text_with_bubble": {"$text": "packinfo.features.text5"}},
+            { "howtoplay_7@gote_info.text": {"$text": ""}},
+            { "howtoplay_8@gote_info.text": {"$text": "packinfo.features.text6"}},
+            { "howtoplay_9@gtb.features_text_with_bubble": {"$text": "packinfo.features.text7"}},
+            { "howtoplay_10@gtb.features_text_with_bubble": {"$text": "packinfo.features.text8"}},
+            { "howtoplay_11@gtb.features_text_with_bubble": {"$text": "packinfo.features.text9"}},
+            { "howtoplay_12@gote_info.text": {"$text": ""}},
+            { "howtoplay_13@gote_info.text": {"$text": "packinfo.features.text10"}},
+            { "howtoplay_14@gtb.features_text_with_bubble": {"$text": "packinfo.features.text11"}},
+            { "howtoplay_15@gtb.features_text_with_bubble": {"$text": "packinfo.features.text12"}},
+            { "howtoplay_16@gtb.features_text_with_bubble": {"$text": "packinfo.features.text13"}},
+            { "howtoplay_17@gote_info.text": {"$text": "packinfo.features.text14"}},
+            { "howtoplay_18@gote_info.text": {"$text": ""}},
+            { "howtoplay_19@gote_info.text": {"$text": "packinfo.features.text15"}},
+            { "howtoplay_20@gote_info.text": {"$text": "packinfo.features.text16"}},
+            { "howtoplay_21@gote_info.link_text": {"$text": "packinfo.features.text17"}}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_features",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "update_page@gote_info.indexs_panel": {
+          "controls": [
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.update.title" }},
+            { "text01@gote_info.text": { "$text": "packinfo.update.text1" }},
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [ 0, 3 ]
+              }
+            },
+            {
+              "update_description@change_logs.gotesupporter_changelogs": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_update",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "faq_page@gote_info.indexs_panel": {
+          "controls": [
+            { "fm2@how_to_play_common.header": { "$text":"packinfo.faq.title" }},
+            { "text01@gote_info.text": { "$text": "packinfo.faq.text1" }},
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [ 0, 3 ]
+              }
+            },
+            {
+              "q1@gote_info.faq_section": {
+                "$question": "packinfo.faq.q1"
+              }
+            },
+            {
+              "q2@gote_info.faq_section": {
+                "$question": "packinfo.faq.q2"
+              }
+            },
+            {
+              "q3@gote_info.faq_section": {
+                "$question": "packinfo.faq.q3"
+              }
+            },
+            {
+              "q4@gote_info.faq_section": {
+                "$question": "packinfo.faq.q4"
+              }
+            },
+            {
+              "q5@gote_info.faq_section": {
+                "$question": "packinfo.faq.q5"
+              }
+            },
+            {
+              "q6@gote_info.faq_section": {
+                "$question": "packinfo.faq.q6"
+              }
+            },
+            {
+              "q7@gote_info.faq_section": {
+                "$question": "packinfo.faq.q7"
+              }
+            },
+            {
+              "q8@gote_info.faq_section": {
+                "$question": "packinfo.faq.q8"
+              }
+            },
+            {
+              "q9@gote_info.faq_section": {
+                "$question": "packinfo.faq.q9"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_faq",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "caution_page@gote_info.indexs_panel": {
+          "controls": [
+            { "fh2@how_to_play_common.header": { "$text":"packinfo.caution.title" }},
+            { "text01@gote_info.text": { "$text": "packinfo.caution.text1" }},
+            { "text02@gote_info.text": { "$text": "packinfo.caution.text2" }},
+            { "text03@gote_info.text": { "$text": "packinfo.caution.text3" }},
+            { "padding04": { "type": "panel", "size": [ 0, 5 ] }},
+            { "text04@gote_info.text": { "$text": "packinfo.caution.text4" }}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_caution",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "author_page@gote_info.indexs_panel": {
+          "controls": [
+            { "header@how_to_play_common.header": { "$text":"packinfo.about_author.title" }},
+            {
+              "yuuhaland_icon_panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100%", 70 ],
+                "offset": [ 0, 0 ],
+                "controls": [
+                  {
+                    "yuuhaland_icon": {
+                      "type": "image",
+                      "texture": "textures/ui/yuuhaland",
+                      "size": [ 60, 60 ],
+                      "anchor_from": "top_left",
+                      "anchor_to": "top_left"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 4, 0 ]
+                    }
+                  },
+                  {
+                    "texts": {
+                      "type": "stack_panel",
+                      "size": [ "fill", "100%c" ],
+                      "controls": [
+                        {
+                          "by_yuka0745": {
+                            "type": "label",
+                            "text": "§l§dYuuhaLand",
+                            "font_scale_factor": 1.50,
+                            "offset": [ 0, 0 ],
+                            "shadow": true
+                          }
+                        },
+                        {
+                          "padding_01": {
+                            "type": "panel",
+                            "size": [ 0, 10 ]
+                          }
+                        },
+                        {
+                          "twitter_url": {
+                            "type": "stack_panel",
+                            "size": [ "100%", 10 ],
+                            "orientation": "horizontal",
+                            "controls": [
+                              {
+                                "x": {
+                                  "type": "label",
+                                  "text": "§l§8X:",
+                                  "shadow": true
+                                }
+                              },
+                              {
+                                "link": {
+                                  "type": "label",
+                                  "text": " §ex.com/gotemba912",
+                                  "shadow": true,
+                                  "font_type": "smooth"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "youtube_url": {
+                            "type": "stack_panel",
+                            "size": [ "100%", 10 ],
+                            "orientation": "horizontal",
+                            "controls": [
+                              {
+                                "x": {
+                                  "type": "label",
+                                  "text": "§l§cYoutube:",
+                                  "shadow": true
+                                }
+                              },
+                              {
+                                "link": {
+                                  "type": "label",
+                                  "text": " §eyoutube.com/@YuuhaLand",
+                                  "shadow": true,
+                                  "font_type": "smooth"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            { "howtoplay_1@gote_info.text": {"$text": "packinfo.about_author.text1"}},
+            { "howtoplay_2@gote_info.text": {"$text": "packinfo.about_author.text2"}},
+            { "howtoplay_3@gote_info.text": {"$text": "packinfo.about_author.text3"}},
+            { "howtoplay_4@gote_info.text": {"$text": "packinfo.about_author.text4"}},
+            { "howtoplay_5@gote_info.text": {"$text": "packinfo.about_author.text5"}},
+            { "padding": {"type": "panel", "size": [ 0, 5 ]}},
+            { "howtoplay_6@gote_info.text": {"$text": "packinfo.about_author.text6"}},
+            { "howtoplay_7@gote_info.text": {"$text": "packinfo.about_author.text7"}},
+            { "howtoplay_8@gote_info.text": {"$text": "packinfo.about_author.text8"}}
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "page_author",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "footer": {
+          "type": "input_panel",
+          "focus_enabled": true,
+          "size": [ "100%", 20 ]
+        }
+      }
+    ]
+  },
+  
+  
+  "main_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "selector_and_main_content": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100% - 4px", "100% + 1px" ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "controls": [
+            {
+              "tab_selector_panel": {
+                "type": "panel",
+                "size": [ 135, "100%" ],
+                "controls": [
+                  {
+                    "tab_selector@common.scrolling_panel": {
+                      "$show_background": false,
+                      "size": [ "100%", "100% - 2px"],
+                      
+                      "$scrolling_content": "gote_info.left_panel",
+                      "$scroll_size": [ "4px", "100% - 2px" ],
+                      "$scrolling_panel_size": [ "100% - 2px", "100%" ],
+                      "$always_handle_scrolling": false
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "padding1": {
+                "type": "panel",
+                "size": [ 1, 0 ]
+              }
+            },
+            {
+              "divider": {
+                "type": "image",
+                "size": [ 3, "100%" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "layer": 10,
+                "offset": [ 0, 0 ],
+                "texture": "textures/ui/HowToPlayDivider"
+              }
+            },
+            {
+              "padding2": {
+                "type": "panel",
+                "size": [ 1, 0 ]
+              }
+            },
+            {
+              "main_content_panel": {
+                "type": "panel",
+                "size": [ "fill", "100%" ],
+                "controls": [
+                  {
+                    "main_content@common.scrolling_panel": {
+                      "$show_background": false,
+                      "size": [ "100%", "100% - 2px"],
+                      
+                      "$scrolling_content": "gote_info.right_panel",
+                      "$scroll_size": [ "4px", "100% - 2px" ],
+                      "$scrolling_panel_size": [ "100% - 2px", "100%" ],
+                      "$always_handle_scrolling": false
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "root_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "root_panel@common.fullscreen_header": {
+          "$back_button_has_title": true,
+          "$button_text": "('§l§1Gote-Supporter §4v' + $gote_ver)",
+          "$child_control": "gote_info.main_panel",
+          "layer": 10
+        }
+      },
+      {
+        "font_property_panel": {
+          "type": "panel",
+          "size": [ 0, 0 ],
+          "property_bag": {
+            "#font_type": "classic"
+          }
+        }
+      }
+    ]
+  },
+
+  "black": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui/yume_dream",
+    "fill": true
+  }
+}

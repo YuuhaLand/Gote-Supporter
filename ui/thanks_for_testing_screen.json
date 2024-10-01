@@ -38,7 +38,7 @@
       "@common.screen_entrance_animation_pop_alpha"
     ],
     "force_render_below": false,
-    "$screen_content": "tabbed_upsell.root_panel",
-    "$screen_bg_content": "tabbed_upsell.black"
+    "$screen_content": "gote_info.root_panel",
+    "$screen_bg_content": "gote_info.black"
   }
 }
