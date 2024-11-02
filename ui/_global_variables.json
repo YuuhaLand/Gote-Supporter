@@ -34,7 +34,7 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   "$show_hotbar_number|default": false,
   "$show_gote_version|default": true,
   "$show_build_number|default": false,
-  "$play_screen_doubleclick|default": true,
+  "$play_screen_doubleclick|default": false,
   "$show_recoverycompass|default": false,
 
   "$f1_f8_location|default": "none",
@@ -47,7 +47,7 @@ https://github.com/Gotemba912/Gote-Supporter/wiki/Config(English)
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.14",
+  "$gote_ver": "1.6.15",
   "$gote_supporter_enabled": true,
   "$is_goteserver|default": false, 
   "$revival_for_2023|default": false,

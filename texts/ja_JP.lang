@@ -14,6 +14,47 @@ cmd.textbox.place=コマンドを入力
 
 progressScreen.title.loading=読み込み中%1
 
+
+commands.inputpermission.description=プレイヤーが入力できる操作を管理します。
+commands.inputpermission.camera=カメラ
+commands.inputpermission.movement=行動
+commands.inputpermission.jump=ジャンプ
+commands.inputpermission.sneak=しゃがみ
+commands.inputpermission.mount=エンティティに乗る
+commands.inputpermission.dismount=エンティティから降りる
+commands.inputpermission.lateral_movement=移動
+commands.inputpermission.move_forward=前進
+commands.inputpermission.move_backward=後進
+commands.inputpermission.move_left=左へ移動する
+commands.inputpermission.move_right=右へ移動する
+commands.inputpermission.enabled=オン
+commands.inputpermission.disabled=オフ
+commands.inputpermission.set.outputoneplayer=%3 の%1機能を %2 に設定しました。
+commands.inputpermission.set.outputmultipleplayers=%3 人の%1機能を %2 に設定しました。
+commands.inputpermission.query=<%s>: %d %s	#
+commands.inputpermission.queryverbose=<%s>: %d 許可 | %d 拒否
+commands.kick.description=ゲームからプレイヤーを追放する。
+commands.kick.description.edu=ゲームからプレイヤーを追放する。
+commands.kick.no.player=対象にセレクターを使用することはできません。
+commands.kick.not.found=プレイヤー %1$s が見つかりませんでした
+commands.kick.not.yourself=自分自身をゲームから追放することはできません
+commands.kick.success=ゲームから %1$s を追放しました。
+commands.kick.success.reason=ゲームから %1$s を追放しました。 理由: %2$s
+commands.kick.success.reasonedu=ゲームから %1$s を追放しました。 理由: %2$s
+commands.kick.no.host=ホストをゲームから追放することはできません。
+commands.kick.no.teacher=教師をゲームから追放することはできません。
+commands.music.description=音楽トラックの再生を制御できます。
+commands.music.failure.emptyTrackName=空欄でないトラック名を指定する必要があります。
+commands.music.success.queueAction=%s をキューに追加しました。 現在のトラックが終了すると再生されます。
+commands.music.success.playAction=%s を再生しました。
+commands.music.success.stopAction=トラックを停止しました。
+commands.music.success.volumeAction=音楽の音量を %d に更新しました。
+commands.playanimation.description=エンティティに1回限りのアニメーションを再生します。すべての変数が正しく設定されていると仮定します。
+commands.playanimation.success=アニメーションを再生しました。
+commands.transferserver.description=プレイヤーを別のサーバーに転送します。
+commands.transferserver.successful=プレイヤーを転送しました。
+commands.transferserver.invalid.port=無効なポートです。 (0-65535)
+
 disconnectionScreen.sessionNotFound.reason=そのワールドはもう既に閉じられているのかもしれません。
 
 disconnectionScreen.disconnected.reason1=ホストがワールドを閉じたか、
@@ -199,6 +240,10 @@ packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてな
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v1615.u1=採掘時のテクスチャを改良しました。 カウント式ではなくプログレスバーになりました。
+packinfo.v1615.u2=「プレイ画面のワールドのボタンをダブルクリックしないと入れないようにする」がデフォルトで無効になりました。
+packinfo.v1615.u3=一部のマイクラのガバガバ翻訳を直しました。
 
 packinfo.v1614.u1=スタート画面のゲーマータグをクリックするとプロフィール画面に飛べるようになりました。
 packinfo.v1614.u2=ポーズ画面の「セーブして終了」の確認画面がコントローラーで操作しづらかったバグを直しました。

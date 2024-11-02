@@ -172,6 +172,10 @@ packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v1615.u1=Improved textures when mining. It is now a progress bar instead of a countdown.
+packinfo.v1615.u2=The setting to join by double-clicking a world's button on the play screen is now disabled by default.
+packinfo.v1615.u3=Fixed some Minecraft's crazy Japanese.
+
 packinfo.v1614.u1=The profile screen can now be opened by clicking on the gamertag on the start screen.
 packinfo.v1614.u2=A bug that made it difficult to use the “Save & Quit” confirmation screen on the pause screen with the controller has been fixed.
 packinfo.v1614.u3=I reviewed the code in its entirety. (I have been working on this project since I was still in the early days of creating add-ons, so there was inefficient code.)
