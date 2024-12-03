@@ -334,6 +334,15 @@
           "enabled": false
         }
       },
+      {
+        "show_locked_trade_items@settings_common.option_toggle": {
+          "$option_label": "options.gote.show_locked_trade_items",
+          "$option_binding_name": "#dummy",
+          "$toggle_default_state": "$show_locked_trade_items",
+          "$toggle_name": "show_locked_trade_items",
+          "enabled": false
+        }
+      },
 
       {
         "header_text": {

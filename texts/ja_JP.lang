@@ -2,6 +2,10 @@
 pack.description=マイライフをより豊かにできるユーザー補助ツールです!   Created by YuuhaLand
 pack.name.nover=§l§aごて§bサポーター
 
+options.group.graphics.experimental=§e[Ex] §r
+selectWorld.worldTags.experimental=§e[Ex] §r
+selectWorld.worldTags=%2$s%1$s
+selectWorld.worldTags.hardcore= §c
 
 map.position=位置 §bX:%s§r, §aY:%s§r, §cZ:%s§r	#
 
@@ -14,6 +18,8 @@ cmd.textbox.place=コマンドを入力
 
 progressScreen.title.loading=読み込み中%1
 
+hudScreen.daysPlayed=§6%s日間§rプレイ
+hudScreen.daysPlayed.overflow=ものすごく長い
 
 commands.inputpermission.description=プレイヤーが入力できる操作を管理します。
 commands.inputpermission.camera=カメラ
@@ -87,6 +93,14 @@ craftingScreen.tab.none=不明のタブ
 options.quick=クイック
 options.quickTitle=クイック設定
 
+options.creator.deviceInfoMemoryTier=メモリ数
+options.creator.deviceInfoMemoryTier.undetermined=不明
+options.creator.deviceInfoMemoryTier.superLow=ざこ (〜1.5GB)
+options.creator.deviceInfoMemoryTier.low=よわい (2GB)
+options.creator.deviceInfoMemoryTier.mid=ふつう (4GB)
+options.creator.deviceInfoMemoryTier.high=まあまあ (8GB)
+options.creator.deviceInfoMemoryTier.superHigh=つよい (16GB〜)
+options.creator.deviceInfoUseMemoryTierOverride=メモリ数を詐欺る
 options.gote.label1=ここではGote-SupporterのConfigを確認することができます。
 options.gote.label2=ここからGote-Supporterの設定を変更することはできません。
 options.gote.label3=設定は以下のファイルで変更できます!
@@ -107,6 +121,12 @@ options.gote.inventory_screen_statusbar=インベントリ画面などにHPや�
 options.gote.show_gote_version=スタート画面にGote-Supporterの情報を表示
 options.gote.show_build_number=スタート画面にマイクラのビルド番号を表示
 options.gote.show_hotbar_number=ホットバーに数字を表示
+options.gote.show_locked_trade_items=村人が売る予定のアイテムを表示する
+options.languageInWorldWarning=ワールドを開いた状態での言語変更は問題を引き起こすかもしれないのでご注意ください。
+
+settings.switchTouchWarn1=Switchでこれらの設定を変えるとバグが起こるかもしれないです。
+settings.switchTouchWarn2=これらの設定を変える際は自己責任でお願いします。m(__)m
+settings.switchTouchWarn3=YuuhaLandより
 
 ## フィードバックサイト
 
@@ -199,14 +219,10 @@ packinfo.music.text2=この画面を閉じても音楽は流れたままにな�
 
 ##つくったひと
 packinfo.about_author.title=つくったひと
-packinfo.about_author.text1=マイクラ統合版を中心に活動している日本人。
-packinfo.about_author.text2=主にコマンド・アドオン勢です。
-packinfo.about_author.text3=自然や都会の景色が好きです。
-packinfo.about_author.text4=マイクラJava版はほとんどやってなくて統合版ばっかりやってます。
-packinfo.about_author.text5=たまにホラゲーやテトリス、原神とかもやるよ。
-packinfo.about_author.text6=私は英語を自分で喋れないので、DeepLやGoogle翻訳を使います。
-packinfo.about_author.text7=また、アドオン作成依頼やプロジェクトなどへの招待は一切受けません。
-packinfo.about_author.text8=あと、私は教えるのがかなりヘタクソなので教えるのは多分出来ないです。
+packinfo.about_author.text1=マイクラ統合版を中心に活動しているコマンド・アドオン勢です。
+packinfo.about_author.text2=「ごて鯖」でワールドの制作も行っています！
+packinfo.about_author.text3=かつてRealm参加者日本一だったZaia Serverのオペレーターでもあります！
+packinfo.about_author.text4=ごて鯖
 
 
 ##よくある質問
@@ -240,6 +256,12 @@ packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてな
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v1616.u1=Minecraft v1.21.5xへの対応。
+packinfo.v1616.u2=プレイ画面で「ハードコア」と「試験的」のワールドを見やすく見分けれるようになりました。
+packinfo.v1616.u3=取引画面で村人が売る予定のアイテムのエンチャントを確認できるようになりました。
+packinfo.v1616.u4=取引画面で村人が売る予定のアイテムを見れるようにする機能をConfigで無効化できるようになりました。
+packinfo.v1616.u5=プレイ日数が見やすくなりました。 (日本語のみ)
 
 packinfo.v1615.u1=採掘時のテクスチャを改良しました。 カウント式ではなくプログレスバーになりました。
 packinfo.v1615.u2=「プレイ画面のワールドのボタンをダブルクリックしないと入れないようにする」がデフォルトで無効になりました。

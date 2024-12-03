@@ -5,6 +5,11 @@ packname.nover=§l§aGote§d-§bSupporter
 
 map.position=Position §bX:%s§r, §aY:%s§r, §cZ:%s§r	#
 
+options.group.graphics.experimental=§e[Ex] §r
+selectWorld.worldTags.experimental=§e[Ex] §r
+selectWorld.worldTags=%2$s%1$s
+selectWorld.worldTags.hardcore= §c
+
 craftingScreen.tab.none=None
 
 chat.newline=Newline
@@ -25,6 +30,14 @@ xbox.disconectionscreen.accessDenied.reason=Your host may have blocked you.
 options.quick=Quick
 options.quickTitle=Quick Settings
 
+options.creator.deviceInfoMemoryTier=Memory Tier
+options.creator.deviceInfoMemoryTier.undetermined=Undetermined
+options.creator.deviceInfoMemoryTier.superLow=SuperLow (..1.5GB)
+options.creator.deviceInfoMemoryTier.low=Low (2GB)
+options.creator.deviceInfoMemoryTier.mid=Middle (4GB)
+options.creator.deviceInfoMemoryTier.high=High (8GB)
+options.creator.deviceInfoMemoryTier.superHigh=Super High (16GB..)
+options.creator.deviceInfoUseMemoryTierOverride=Enable Memory Tier Override
 options.gote.label1=Here you can check the Config of Gote-Supporter.
 options.gote.label2=Gote-Supporter settings cannot be changed from here.
 options.gote.label3=Settings can be changed in the following files!
@@ -45,6 +58,12 @@ options.gote.inventory_screen_statusbar=Display of HP, hunger level, etc. on inv
 options.gote.show_gote_version=Gote-Supporter information is displayed on the start screen
 options.gote.show_build_number=Minecraft build number on Start screen
 options.gote.show_hotbar_number=Display numbers on hot bar
+options.gote.show_locked_trade_items=Show items that villagers plan to sell
+options.languageInWorldWarning=Changing language while a world is open may cause problems.
+
+settings.switchTouchWarn1=Changing these settings on the Switch may cause bugs or crashes.
+settings.switchTouchWarn2=You are responsible for changing these settings.
+settings.switchTouchWarn3=by YuuhaLand
 
 ## フィードバックサイト
 
@@ -132,14 +151,10 @@ packinfo.music.text2=The music will remain playing even if this screen is closed
 ##つくったひと
 
 packinfo.about_author.title=Creator info
-packinfo.about_author.text1=Japanese who is active mainly in the Minecraft Bedrock.
-packinfo.about_author.text2=Commander Add-on Creator.
-packinfo.about_author.text3=I love nature and urban landscapes.
-packinfo.about_author.text4=I hardly play Minecraft Java, all I play is Bedrock!
-packinfo.about_author.text5=Sometimes I play horror games, Tetris, or Genshin Impact.
-packinfo.about_author.text6=I don't speak English myself, so I use DeepL or Google Translate.
-packinfo.about_author.text7=Also, we do not accept any requests to create add-ons and invitations to projects, etc.
-packinfo.about_author.text8=Also, I'm pretty terrible at teaching, so I probably can't teach.
+packinfo.about_author.text1=I am a creator who focuses on Minecraft BE.
+packinfo.about_author.text2=I also make maps on my server "Gote-Server"!
+packinfo.about_author.text3=I am also an operator of Zaia Server, which used to be the best Realm member Japan!
+packinfo.about_author.text4=My Server (Japanese)
 
 
 ##よくある質問
@@ -171,6 +186,12 @@ packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v1616.u1=Support for Minecraft v1.21.5x.
+packinfo.v1616.u2=It is now easier to distinguish between "hardcore" and "experimental" worlds on the play screen.
+packinfo.v1616.u3=Enchantments for items that have not yet been unlocked can now be viewed on the transaction screen.
+packinfo.v1616.u4=The ability to view locked items on the transaction screen can now be disabled in Config.
+packinfo.v1616.u5=The number of days played is now easier to see. (Japanese only)
 
 packinfo.v1615.u1=Improved textures when mining. It is now a progress bar instead of a countdown.
 packinfo.v1615.u2=The setting to join by double-clicking a world's button on the play screen is now disabled by default.

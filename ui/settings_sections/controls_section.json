@@ -1,0 +1,21 @@
+
+{
+  "namespace": "controls_section",
+
+  "touch_section": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "switch_warn_gote_supporter@general_section.banner_message": {
+              "$message": "%settings.switchTouchWarn1\n%settings.switchTouchWarn2\n\n%settings.switchTouchWarn3",
+              "ignored": "(not $nx_os)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

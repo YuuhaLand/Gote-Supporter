@@ -776,12 +776,9 @@
             { "howtoplay_1@gote_info.text": {"$text": "packinfo.about_author.text1"}},
             { "howtoplay_2@gote_info.text": {"$text": "packinfo.about_author.text2"}},
             { "howtoplay_3@gote_info.text": {"$text": "packinfo.about_author.text3"}},
-            { "howtoplay_4@gote_info.text": {"$text": "packinfo.about_author.text4"}},
-            { "howtoplay_5@gote_info.text": {"$text": "packinfo.about_author.text5"}},
             { "padding": {"type": "panel", "size": [ 0, 5 ]}},
-            { "howtoplay_6@gote_info.text": {"$text": "packinfo.about_author.text6"}},
-            { "howtoplay_7@gote_info.text": {"$text": "packinfo.about_author.text7"}},
-            { "howtoplay_8@gote_info.text": {"$text": "packinfo.about_author.text8"}}
+            { "howtoplay_4@gote_info.text": {"$text": "packinfo.about_author.text4"}},
+            { "howtoplay_5@gote_info.link_text": {"$text": "https://discord.gg/7SnjrqKQeS"}}
           ],
           "bindings": [
             {

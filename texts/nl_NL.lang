@@ -1,1 +1,6 @@
 ﻿map.position=Positie §bX:%s§r, §aY:%s§r, §cZ:%s§r	#
+
+options.group.graphics.experimental=§e[Ex] §r
+selectWorld.worldTags.experimental=§e[Ex] §r
+selectWorld.worldTags=%2$s%1$s
+selectWorld.worldTags.hardcore= §c

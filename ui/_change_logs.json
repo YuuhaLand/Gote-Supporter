@@ -6,6 +6,19 @@
     "size": [ "100%", "100%c" ],
     "controls": [
       {
+        "1616@gote_info.version_section": {
+          "$version": "v1.6.16",
+          "$details_controls": [
+            { "date@gote_info.text": { "text": "2024/12/04" }},
+            { "fp1_@gtb.features_text_with_bubble":{"$text":"packinfo.v1616.u1"}},
+            { "fp2_@gtb.features_text_with_bubble":{"$text":"packinfo.v1616.u2"}},
+            { "fp3_@gtb.features_text_with_bubble":{"$text":"packinfo.v1616.u3"}},
+            { "fp4_@gtb.features_text_with_bubble":{"$text":"packinfo.v1616.u4"}},
+            { "fp5_@gtb.features_text_with_bubble":{"$text":"packinfo.v1616.u5"}}
+          ]
+        }
+      },
+      {
         "1615@gote_info.version_section": {
           "$version": "v1.6.15",
           "$details_controls": [

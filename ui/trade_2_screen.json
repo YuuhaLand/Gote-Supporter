@@ -2,9 +2,55 @@
   "namespace": "trade2",
 
   "tier_stack_panel": {
-    "bindings": []
+    "bindings": [
+      {
+        "ignored": "$show_locked_trade_items",
+        "binding_name": "#tier_visible",
+        "binding_name_override": "#visible",
+        "binding_type": "collection",
+        "binding_collection_name": "$collection_name",
+        "binding_condition": "always"
+      }
+    ]
   },
-  
+
+  "trade_toggle_holder": {
+    "type": "panel",
+    "size": [ "100%", "100%c - 1px" ],
+    "controls": [
+      {
+        "trade_toggle_panel": {
+          "type": "panel",
+          "$toggle_size|default": [ "100%", 24 ],
+          "size": "$toggle_size",
+          "controls": [
+            {
+              "trade_toggle@trade2.trade_toggle": {
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "$button_content": "common.enpty_panel"
+              }
+            },
+            {
+              "toggle_content_holder@trade2.toggle_content_holder": {
+                "layer": 20
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "trade_toggle": {
+    "variables": [
+      {
+        "requires": "$enable_force_trade",
+        "$toggle_enabled_binding_name": "#none"
+      }
+    ]
+  },
+
   "screen_panel": {
     "modifications": [
       {

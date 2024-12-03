@@ -251,6 +251,52 @@
     ]
   },
 
+  "banner_message": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c + 5px" ],
+    "$message|default": "",
+    "controls": [
+      {
+        "banner": {
+          "type": "image",
+          "texture": "textures/ui/Banners",
+          "size": [ "100%", "100%c + 6px" ],
+          "controls": [
+            {
+              "message": {
+                "type": "label",
+                "size": [ "100% - 6px", "default" ],
+                "text": "$message"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "language_section": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "langwarn@general_section.banner_message": {
+              "$message": "options.languageWarning"
+            }
+          },
+          {
+            "inworldwarn@general_section.banner_message": {
+              "$message": "options.languageInWorldWarning",
+              "ignored": "$is_pregame"
+            }
+          }
+        ]
+      }
+    ]
+  },
+
   "sound_kansyou_toggle_button_content": {
     "type": "panel",
     "size": [ "100%", "100%" ],

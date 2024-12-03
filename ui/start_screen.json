@@ -44,26 +44,40 @@
                 "size": [ 24, 24 ],
                 "controls": [
                   {
-                    "gamerpic": {
-                      "type": "image",
-                      "size": [ 22, 22 ],
+                    "gamerpic@common.focus_border_white": {
+                      "layer": 3,
+                      "size": [ 24, 24 ],
                       "offset": [ 0, 4 ],
-                      "layer": 1,
-                      "bindings": [
-                        {
-                          "binding_name": "#gamerpic_texture_path",
-                          "binding_name_override": "#texture"
-                        },
-                        {
-                          "binding_name": "#gamerpic_texture_location_type",
-                          "binding_name_override": "#texture_file_system"
-                        }
-                      ],
                       "controls": [
                         {
-                          "border_white@common.focus_border_white": {
-                            "layer": 3,
-                            "size": [ 24, 24 ]
+                          "gamerpic_renderer": {
+                            "type": "custom",
+                            "renderer": "profile_image_renderer",
+                            "size": [ 22, 22 ],
+                            "layer": 2,
+                            "bindings": [
+                              {
+                                "binding_name": "#profile_image_options"
+                              },
+                              {
+                                "binding_name": "#show_gamerpic",
+                                "binding_name_override": "#visible"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "gamerpic_default": {
+                            "type": "image",
+                            "texture": "textures/ui/gamerpic",
+                            "size": [ 22, 22 ],
+                            "layer": 2,
+                            "bindings": [
+                              {
+                                "binding_name": "(not #show_gamerpic)",
+                                "binding_name_override": "#visible"
+                              }
+                            ]
                           }
                         }
                       ]
@@ -160,6 +174,18 @@
   },
 
 
+  "label_background": {
+    "type": "image",
+    "texture": "textures/ui/White",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [ 3, -1 ],
+    "alpha": 0.6,
+    "color": [ 0, 0, 0 ],
+    "size": [ "100% + 4px", "100% + 2px" ],
+    "layer": -5
+  },
+
   "copyright_gote": {
     "type": "panel",
     "anchor_from": "bottom_middle",
@@ -178,17 +204,7 @@
           "layer": 1,
           "controls": [
             {
-              "label_background": {
-                "type": "image",
-                "texture": "textures/ui/White",
-                "anchor_from": "top_right",
-                "anchor_to": "top_right",
-                "offset": [ 3, -1 ],
-                "alpha": 0.6,
-                "color": [ 0, 0, 0 ],
-                "size": [ "100% + 4px", "100% + 2px" ],
-                "layer": -5
-              }
+              "label_background@start.label_background": {}
             }
           ]
         }
@@ -204,17 +220,7 @@
           "layer": 1,
           "controls": [
             {
-              "label_background": {
-                "type": "image",
-                "texture": "textures/ui/White",
-                "anchor_from": "top_right",
-                "anchor_to": "top_right",
-                "offset": [ 3, -1 ],
-                "alpha": 0.6,
-                "color": [ 0, 0, 0 ],
-                "size": [ "100% + 4px", "100% + 2px" ],
-                "layer": -5
-              }
+              "label_background@start.label_background": {}
             }
           ]
         }
@@ -240,23 +246,13 @@
           "layer": 1,
           "controls": [
             {
-              "label_background": {
-                "type": "image",
-                "texture": "textures/ui/White",
-                "anchor_from": "top_right",
-                "anchor_to": "top_right",
-                "offset": [ 3, -1 ],
-                "alpha": 0.6,
-                "color": [ 0, 0, 0 ],
-                "size": [ "100% + 4px", "100% + 2px" ],
-                "layer": -5
-              }
+              "label_background@start.label_background": {}
             }
           ]
         }
       },
       {
-        "gote-minecraft_version": {
+        "minecraft_version": {
           "type": "label",
           "color": "$main_header_text_color",
           "anchor_from": "top_right",
@@ -264,6 +260,10 @@
           "size": [ "default", 10 ],
           "text": "#text",
           "layer": 1,
+          "property_bag": {
+            "#mc_name": "Minecraft",
+            "#mc_name_display": "Minecraft"
+          },
           "bindings": [
             {
               "binding_name": "#version"
@@ -272,31 +272,27 @@
               "binding_name": "#development_version"
             },
             {
+              "ignored": "(not $pre_release)",
+              "binding_type": "view",
+              "source_property_name": "(#mc_name + ' Preview')",
+              "target_property_name": "#mc_name_display"
+            },
+            {
               "ignored": "$show_build_number",
               "binding_type": "view",
-              "source_property_name": "('Minecraft ' + #version)",
+              "source_property_name": "(#mc_name_display + ' ' + #version)",
               "target_property_name": "#text"
             },
             {
               "ignored": "(not $show_build_number)",
               "binding_type": "view",
-              "source_property_name": "('Minecraft ' + #version + ' (' + #development_version + ')')",
+              "source_property_name": "(#mc_name_display + ' ' + #version + ' (' + #development_version + ')')",
               "target_property_name": "#text"
             }
           ],
           "controls": [
             {
-              "label_background": {
-                "type": "image",
-                "texture": "textures/ui/White",
-                "anchor_from": "top_right",
-                "anchor_to": "top_right",
-                "offset": [ 3, -1 ],
-                "alpha": 0.6,
-                "color": [ 0, 0, 0 ],
-                "size": [ "100% + 4px", "100% + 2px" ],
-                "layer": -5
-              }
+              "label_background@start.label_background": {}
             }
           ]
         }
@@ -329,6 +325,10 @@
   },
 
   "text_panel": {
+    "ignored": true
+  },
+
+  "text_panel_custom": {
     "type": "panel",
     "size": [ "100%-2px", 10 ],
     "offset": [ 0, -1 ],
@@ -392,6 +392,20 @@
                 }
               ]
             }
+          }
+        ]
+      }
+    ]
+  },
+
+  "start_screen_content": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "text_panel_custom@start.text_panel_custom": {}
           }
         ]
       }

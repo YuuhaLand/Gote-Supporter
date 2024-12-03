@@ -16,7 +16,7 @@ https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html
 
 ## 特徴
 ### HUDの特徴
-![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/54cbe3bb-ac8f-42db-b0db-b8b6e589db3d)
+![image](https://raw.githubusercontent.com/YuuhaLand/asetts/refs/heads/main/gote-supporter/IMG_3327.PNG)
 - 常に時計とコンパスを表示します。
 - 色分けされた座標表示。
 - ビネットを非表示にします。
@@ -24,13 +24,13 @@ https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html
 - キーボードのTabキーを押すと、Java Editionのようなプレイヤーリストが表示されます。Tabキーを押しながらマウスホイールを回すことで、スクロールができます。
 
 ### チャット画面の特徴
-![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/bc6721e6-23bb-41da-a782-7baa1a2af27f)
+![image](https://raw.githubusercontent.com/YuuhaLand/asetts/refs/heads/main/gote-supporter/IMG_3326.PNG)
 - Tabキーなどをモバイルでも押せます。
 - テキストボックスの右の矢印ボタンを押すと、テキストボックスを大きくすることができます。
 - コマンドを入力した際の候補をクリックまたはタップで補完できます。
 
 ### 設定画面の特徴
-![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/9e930d1a-c253-47b3-9c60-c3da68f3c5be)
+![image](https://raw.githubusercontent.com/YuuhaLand/asetts/refs/heads/main/gote-supporter/IMG_3327.PNG)
 - 「クイック設定」で素早く設定変更できます。
 - 「VSync の使用」をビデオ設定で変更できます。
 - タッチ操作をNintendo Switchでも使えるようにします。
@@ -50,8 +50,10 @@ https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html
 ### インベントリ画面
 - HPバーなどを常に表示します。
 - チェストやかまど画面などでは、自分のスキンが表示されます。
-### 金床画面:
+### 金床画面
 - アイテムの名前を改行できます。
+### 取引画面
+- 村人が売る予定のアイテムを先に覗くことができます。
 
 ## パック設定
 ### Config機能
