@@ -39,7 +39,7 @@ https://github.com/YuuhaLand/Gote-Supporter/wiki/Config(English)
   "$show_locked_trade_items|default": true,
   "$enable_force_trade|default": false,
 
-  "$f1_f8_location|default": "none",
+  "$f1_f8_location|default": "right",
   "$chat_tab_button_type|default": "vertical",
   "$playerlist_key|default": "tab",
 
@@ -49,7 +49,7 @@ https://github.com/YuuhaLand/Gote-Supporter/wiki/Config(English)
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.16",
+  "$gote_ver": "1.6.17",
   "$gote_supporter_enabled": true,
   "$is_goteserver|default": false, 
   "$revival_for_2023|default": false,

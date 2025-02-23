@@ -60,7 +60,7 @@
                       "anchor_from": "top_left",
                       "anchor_to": "top_left",
                       "text": "$text",
-                      "$text": "('Gote-Supporter v' + $gote_ver)",
+                      "$text": "('Gote-Supporter Legacy v' + $gote_ver)",
                       "layer": 1,
                       
                       "variables": [

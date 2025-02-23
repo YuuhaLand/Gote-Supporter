@@ -227,13 +227,13 @@
             {
               "world_name": {
                 "type": "label",
-                "text": "#worldname",
+                "text": "#players_list_title",
                 "size": [ "100%", "default" ],
                 "color": "$main_header_text_color",
                 "layer": 2,
                 "bindings": [
                   {
-                    "binding_name": "#worldname"
+                    "binding_name": "#players_list_title"
                   }
                 ]
               }
@@ -355,6 +355,31 @@
     ]
   },
 
+  "achievements_button@common_buttons.light_content_button": {
+    "size": [ 24, 24 ],
+    "$button_content": "pause.achievements_icon",
+    "$pressed_button_name": "button.menu_achievements"
+  },
+
+  "achievements_icon_button": {
+    "ignored": "$achievements_ignored",
+    "type": "panel",
+    "$button_tts_header": "menu.achievements",
+    "controls": [
+      {
+        "achievements_button@pause.achievements_button": {
+          "ignored": "$education_edition",
+          "variables": [
+            {
+              "requires": "$achievements_button_focus",
+              "$focus_id": "icon_panel_main_focus"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
   "the_icon_panel": {
     "type": "stack_panel",
     "anchor_to": "bottom_left",

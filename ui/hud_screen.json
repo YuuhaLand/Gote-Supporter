@@ -100,6 +100,7 @@
           "$pressed_button_name": "button.hotbar_inventory_right",
           "size": [ 20, 20 ],
           "offset": [ 112, 0 ],
+          "prevent_touch_input": true,
           "controls": [
             {
               "migi_button_image@hud.migi_button_image": {}
@@ -112,6 +113,7 @@
           "$pressed_button_name": "button.hotbar_inventory_left",
           "size": [ 20, 20 ],
           "offset": [ -112, 0 ],
+          "prevent_touch_input": true,
           "controls": [
             {
               "hidari_button_image@hud.hidari_button_image": {}
@@ -155,6 +157,7 @@
                 "anchor_to": "bottom_right",
                 "size": [ 20, 20 ],
                 "offset": [ -2, -2 ],
+                "prevent_touch_input": true,
                 "controls": [
                   {
                     "f1_button_image@hud.f1_button_image": {}
@@ -169,6 +172,7 @@
                 "anchor_to": "bottom_right",
                 "size": [ 20, 20 ],
                 "offset": [ -2, -23 ],
+                "prevent_touch_input": true,
                 "controls": [
                   {
                     "f8_button_image@hud.f8_button_image": {}

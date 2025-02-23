@@ -1,0 +1,169 @@
+{
+  "namespace": "storage_management",
+
+  "storage_header_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "header_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ "100% - 4px", "100%c + 4px" ],
+          "offset": [ 0, 2 ],
+          "controls": [
+            {
+              "panel": {
+                "type": "panel",
+                "size": [ "100%", 32 ],
+                "controls": [
+                  {
+                    "multiselect_button@common_toggles.light_image_toggle": {
+                      "offset": [ -1, 0 ],
+                      "$toggle_name": "toggle.enableMultiselect",
+                      "$button_content": "storage_management.generic_button",
+                      "$button_texture": "textures/ui/multiselection",
+                      "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                      "size": [ "100%", "100%" ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "other_storage_toggle_text": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+
+    "controls": [
+      {
+        "glyph_and_name": {
+          "type": "label",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 4, 5 ],
+          "text": "dayOneExperience.tab.villager",
+          "color": "$text_color"
+        }
+      },
+      {
+        "arrow_down": {
+          "type": "image",
+          "layer": 2,
+          "offset": [ -10, 0 ],
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "size": [ 8, 8 ],
+          "texture": "textures/ui/arrowDown",
+          "ignored": "(not ($toggle_checked or $toggle_checked_hover))"
+        }
+      },
+      {
+        "arrow_right": {
+          "type": "image",
+          "layer": 2,
+          "offset": [ -10, 0 ],
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "size": [ 8, 8 ],
+          "texture": "textures/ui/arrowRight",
+          "ignored": "($toggle_checked or $toggle_checked_hover)"
+        }
+      }
+    ]
+  },
+
+  "storage_scroll_pane": {
+    "modifications": [
+      {
+        "control_name": "multiselect_padding",
+        "operation": "insert_before",
+        "value": [
+          {
+            "other_storage_setting_panel": {
+              "type": "stack_panel",
+              "size": [ "100% - 2px", "100%c" ],
+              "ignored": "(not $is_pregame)",
+              "controls": [
+                {
+                  "toggle@common_toggles.light_content_toggle": {
+                    "size": [ "100%", 30 ],
+                    "$button_content_size": [ "100% - 6px", "100%" ],
+                    "$button_content": "storage_management.other_storage_toggle_text",
+                    "$toggle_view_binding_name": "other_storage_setting",
+          
+                    "$toggle_name": "other_storage_setting",
+                    "$toggle_tts_name": "accessibility.dropdown.tts.title",
+          
+                    "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+                  }
+                },
+                {
+                  "stack": {
+                    "type": "stack_panel",
+                    "size": [ "100%", "100%c" ],
+                    "bindings": [
+                      {
+                        "binding_type": "view",
+                        "source_control_name": "other_storage_setting",
+                        "source_property_name": "#toggle_state",
+                        "target_property_name": "#visible"
+                      }
+                    ],
+                    "controls": [
+                      {
+                        "clear_cache_button@common_buttons.dark_text_button": {
+                          "size": [ "100%", 25 ],
+                          "$pressed_button_name": "button.clear_cache",
+                          "$clear_cache_button_text|default": "#none",
+                          "$button_text": "$clear_cache_button_text"
+                        }
+                      },
+                      {
+                        "clear_screenshots_cache_button@common_buttons.dark_text_button": {
+                          "size": [ "100%", 25 ],
+                          "ignored": "$education_edition",
+                          "$pressed_button_name": "button.clear_screenshots_cache",
+                          "$clear_screenshots_cache_button_text|default": "#none",
+                          "$button_text": "$clear_screenshots_cache_button_text",
+                          "bindings": [
+                            {
+                              "binding_name": "#screenshots_showcase_enabled",
+                              "binding_name_override": "#visible"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "delete_local_screenshots_button@common_buttons.dark_text_button": {
+                          "size": [ "100%", 25 ],
+                          "ignored": "$education_edition",
+                          "$pressed_button_name": "button.delete_local_screenshots",
+                          "$delete_local_screenshots_button_text|default": "#none",
+                          "$button_text": "$delete_local_screenshots_button_text",
+                          "bindings": [
+                            {
+                              "binding_name": "#screenshots_gallery_enabled",
+                              "binding_name_override": "#visible"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

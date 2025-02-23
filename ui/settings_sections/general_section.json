@@ -167,6 +167,159 @@
     ]
   },
 
+  "general_tab_section": {
+    "modifications": [
+      {
+        "control_name": "only_allow_trusted_skins_toggle",
+        "operation": "insert_after",
+        "value": [
+          {
+            "paddingStorageLocations": {
+              "type": "panel",
+              "size": "$spatialPatternsPadding",
+              "ignored": "($education_edition or ($is_holographic and $is_reality_mode))",
+              "visible": "($storage_location_switch_enabled and not $gear_vr)"
+            }
+          },
+          {
+            "file_storage_dropdown@settings_common.option_dropdown": {
+              "$option_label": "options.filelocation.title",
+              "ignored": "($education_edition or ($is_holographic and $is_reality_mode))",
+              "visible": "($storage_location_switch_enabled and not $gear_vr)",
+              "$dropdown_content": "general_section.file_storage_location_content",
+              "$dropdown_area": "content_area",
+              "$dropdown_name": "file_storage_location",
+              "$option_enabled_binding_name": "#file_storage_location_enabled",
+              "$options_dropdown_toggle_label_binding": "#file_storage_location_toggle_label",
+              "$dropdown_scroll_content_size": [ "100%", "200%" ]
+            }
+          },
+          {
+            "paddingEduStorageLocations": {
+              "type": "panel",
+              "size": "$spatialPatternsPadding",
+              "ignored": "((not $education_edition) or ($is_holographic and $is_reality_mode))",
+              "visible": "($storage_location_switch_enabled and not $gear_vr)"
+            }
+          },
+          {
+            "file_storage_dropdown_edu@settings_common.option_dropdown": {
+              "$option_label": "options.filelocation.title.edu",
+              "ignored": "((not $education_edition) or ($is_holographic and $is_reality_mode))",
+              "visible": "($storage_location_switch_enabled and not $gear_vr)",
+              "$dropdown_content": "general_section.file_storage_location_content",
+              "$dropdown_area": "content_area",
+              "$dropdown_name": "file_storage_location",
+              "$option_enabled_binding_name": "#file_storage_location_enabled",
+              "$options_dropdown_toggle_label_binding": "#file_storage_location_toggle_label",
+              "$dropdown_scroll_content_size": [ "100%", "200%" ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+
+  "account_section/device_id_label": {
+    "ignored": true
+  },
+  "account_section/MinecraftAccount_id_label": {
+    "ignored": true
+  },
+
+  "show_account_info@settings_common.option_toggle_control": {
+    "$toggle_state_binding_name": "#show_account_info",
+    "$option_binding_name": "#show_account_info",
+    "$toggle_name": "show_account_info"
+  },
+
+  "account_section": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "show_account_info_toggle@settings_common.option_toggle": {
+              "$control_name": "general_section.show_account_info",
+              "$option_label": "store.promo.details"
+            }
+          },
+          {
+            "account_info": {
+              "type": "stack_panel",
+              "size": [ "100%", "100%c" ],
+              "bindings": [
+                {
+                  "binding_type": "view",
+                  "source_control_name": "general_section.show_account_info",
+                  "source_property_name": "#toggle_state",
+                  "target_property_name": "#visible"
+                }
+              ],
+              "controls": [
+                {
+                  "device_id_label": {
+                    "type": "label",
+                    "size": [ "100%", "default" ],
+                    "color": "$body_text_color",
+                    "offset": [ 2, 0 ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "text": "#device_id",
+                    "bindings": [
+                      {
+                        "binding_name": "#device_id"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "MinecraftAccount_id_label": {
+                    "type": "label",
+                    "color": "$body_text_color",
+                    "offset": [ 2, 0 ],
+                    "size": [ "100%", "default" ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "text": "#MinecraftAccount_id",
+                    "bindings": [
+                      {
+                        "binding_name": "#MinecraftAccount_id"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "xuid_label": {
+                    "type": "label",
+                    "color": "$body_text_color",
+                    "offset": [ 2, 0 ],
+                    "size": [ "100%", "default" ],
+                    "anchor_from": "top_left",
+                    "anchor_to": "top_left",
+                    "text": "#text",
+                    "bindings": [
+                      {
+                        "binding_name": "#profile_image_options"
+                      },
+                      {
+                        "binding_type": "view",
+                        "source_property_name": "(('XUID: ' + (#profile_image_options - ('%.19s' * #profile_image_options) - '}')) - '\"')",
+                        "target_property_name": "#text"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
   "video_section": {
     "modifications": [
       {

@@ -187,6 +187,13 @@ packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
 
+packinfo.v1617.u1=Support for Minecraft v1.21.6x.
+packinfo.v1617.u2=F1 and F8 on touch now work stably.
+packinfo.v1617.u3=Hotbar navigator for touch now work stably.
+packinfo.v1617.u4=Too many buttons at the top of the storage section of the settings have been consolidated into a single button. (BetterStorageSection)
+packinfo.v1617.u5=Hid DID and other information in the account field of the settings by default.
+packinfo.v1617.u6=You can now see your XUID in the account section of the settings.
+
 packinfo.v1616.u1=Support for Minecraft v1.21.5x.
 packinfo.v1616.u2=It is now easier to distinguish between "hardcore" and "experimental" worlds on the play screen.
 packinfo.v1616.u3=Enchantments for items that have not yet been unlocked can now be viewed on the transaction screen.
