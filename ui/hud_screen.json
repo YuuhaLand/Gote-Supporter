@@ -192,6 +192,7 @@
             {
               "f1_button@common.button": {
                 "$pressed_button_name": "button.hide_gui_all",
+                "prevent_touch_input": true,
                 "anchor_from": "top_middle",
                 "anchor_to": "top_middle",
                 "size": [ 18, 18 ],
@@ -206,6 +207,7 @@
             {
               "f8_button@common.button": {
                 "$pressed_button_name": "button.hide_paperdoll_hud",
+                "prevent_touch_input": true,
                 "anchor_from": "top_middle",
                 "anchor_to": "top_middle",
                 "size": [ 18, 18 ],

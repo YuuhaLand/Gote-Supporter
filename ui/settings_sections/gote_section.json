@@ -60,7 +60,7 @@
                       "anchor_from": "top_left",
                       "anchor_to": "top_left",
                       "text": "$text",
-                      "$text": "('Gote-Supporter Legacy v' + $gote_ver)",
+                      "$text": "('Gote-Supporter v' + $gote_ver)",
                       "layer": 1,
                       
                       "variables": [
@@ -88,7 +88,7 @@
                       "layer": 1,
                       "size": [ "100%", "100%" ],
                       "text": "$text",
-                      "$text": "マイクライフをより豊かにできるユーザー補助ツールです!\nby YuuhaLand",
+                      "$text": "いつものマイクラ生活をちょっと便利に!\nby YuuhaLand",
                       "font_type": "smooth",
                       "offset": [ 1, 0 ],
                       

@@ -257,6 +257,10 @@ packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてな
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
 
+packinfo.v1618.u1=Minecraft v1.21.8xでクリーパーが帯電するバグを修正。
+packinfo.v1618.u2=タッチ操作のF1、F8で画面上部に表示させた時に安定動作しないバグを直しました。
+packinfo.v1618.u3=設定のGote-Supporter Config欄のパック適用例のごてサポの名前がLegacyになってたのを直しました。
+
 packinfo.v1617.u1=Minecraft v1.21.6xへの対応。
 packinfo.v1617.u2=タッチ操作のF1、F8が復活！ 安定動作するようになりました。
 packinfo.v1617.u3=タッチ操作のホットバーナビゲーターが安定動作するようになりました。
