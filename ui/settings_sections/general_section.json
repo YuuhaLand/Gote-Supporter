@@ -5,6 +5,36 @@
     "ignored": "(not $is_pregame or $requires_xbl_signin_to_play)"
   },
 
+  "quick_render_mode": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "bindings": [
+      {
+        "binding_name": "#graphics_mode_dropdown_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ],
+    "controls": [
+      {
+        "label": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "color": "$main_header_text_color",
+          "text": "options.graphicsMode"
+        }
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "graphics_mode_dropdown_content@general_section.graphics_mode_dropdown_content": {}
+      }
+    ]
+  },
+
   "accessibility_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "accessibility_button_toggle",
     "$glyph_color_texture": "textures/ui/speed_effect",
@@ -49,6 +79,57 @@
               "$toggle_name":"#thirdperson_radio_third_front",
               "$option_label": "options.thirdperson.thirdpersonfront",
               "$option_binding_name": "#thirdperson_radio_third_front"
+            }
+          },
+          {
+            "raytracing_render_distance_slider@settings_common.option_slider": {
+              "ignored": "($is_holographic)",
+              "$option_label": "#raytracing_render_distance_slider_label",
+              "$slider_name": "raytracing_render_distance",
+              "$slider_value_binding_name": "#raytracing_render_distance",
+              "$slider_tts_text_value": "#raytracing_render_distance_text_value",
+              "$option_enabled_binding_name": "#raytracing_render_distance_enabled",
+              "$slider_steps_binding_name": "#raytracing_render_distance_steps",
+              "$label_bindings": [
+                {
+                  "binding_name": "$option_label"
+                }
+              ],
+              "controls": [
+                { "rtx_render_distance_warning@general_section.rtx_render_distance_warning": {} },
+                { "option_generic_core@settings_common.option_generic_core": {} }
+              ],
+              "bindings": [
+                {
+                  "binding_name": "#show_raytracing_render_distance",
+                  "binding_name_override": "#visible"
+                }
+              ]
+            }
+          },
+          {
+            "deferred_render_distance_slider@settings_common.option_slider": {
+              "ignored": "($is_holographic or not $new_video_settings)",
+              "$option_label": "#deferred_render_distance_slider_label",
+              "$slider_name": "deferred_render_distance",
+              "$slider_value_binding_name": "#deferred_render_distance",
+              "$slider_tts_text_value": "#deferred_render_distance_text_value",
+              "$option_enabled_binding_name": "#deferred_render_distance_enabled",
+              "$slider_steps_binding_name": "#deferred_render_distance_steps",
+              "$label_bindings": [
+                {
+                  "binding_name": "$option_label"
+                }
+              ],
+              "controls": [
+                { "option_generic_core@settings_common.option_generic_core": {} }
+              ],
+              "bindings": [
+                {
+                  "binding_name": "#show_deferred_render_distance",
+                  "binding_name_override": "#visible"
+                }
+              ]
             }
           },
           {
@@ -109,13 +190,7 @@
             }
           },
           {
-            "option_toggle_vrhidehud@settings_common.option_toggle": {
-              "ignored": "(not $is_holographic)",
-              "$option_label": "options.vrHideHud",
-              "$option_binding_name": "#vr_hide_hud",
-              "$option_enabled_binding_name": "#vr_hide_hud_enabled",
-              "$toggle_name": "vr_hide_hud"
-            }
+            "quick_render_mode@general_section.quick_render_mode": {}
           },
           {"header_2@how_to_play_common.header":{"$text":"options.sounds.title"}},
           {
@@ -890,6 +965,11 @@
                   {"m_v121_7@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Deeper","$sound_id":"pvp2.deeper","$sound_vol":1.0,"$is_music":true}},
                   {"m_v121_8@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Eld Unknown","$sound_id":"pvp2.eld_unknown","$sound_vol":1.0,"$is_music":true}},
                   {"m_v121_9@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Endless","$sound_id":"pvp2.endless","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_1@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Below and Above","$sound_id":"pvp2.below_and_above","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_2@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Broken Clocks","$sound_id":"pvp2.broken_clocks","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_3@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Fireflies","$sound_id":"pvp2.fireflies","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_4@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Lilypad","$sound_id":"pvp2.lilypad","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_5@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - O's Piano","$sound_id":"pvp2.os_piano","$sound_vol":1.0,"$is_music":true}},
                   { "fh5@gote_info.text": { "$text":"§l§b%dimension.dimensionName1", "font_scale_factor": 1.5 }},
                   {"m25@gote_info.play_sound_panel":{"$sound_name":"C418 - Concrete Halls","$sound_id":"pvp2.nether1","$sound_vol":1.0,"$is_music":true}},
                   {"m26@gote_info.play_sound_panel":{"$sound_name":"C418 - Dead Voxel","$sound_id":"pvp2.nether2","$sound_vol":1.0,"$is_music":true}},
@@ -932,7 +1012,8 @@
                   {"m_relic@gote_info.play_sound_panel":{"$sound_name":"item.record_relic.desc","$sound_id":"pvp2.relic","$sound_vol":1.0,"$is_music":true}},
                   {"m_creator@gote_info.play_sound_panel":{"$sound_name":"item.record_creator.desc","$sound_id":"pvp2.creator","$sound_vol":1.0,"$is_music":true}},
                   {"m_creator_musicbox@gote_info.play_sound_panel":{"$sound_name":"item.record_creator_music_box.desc","$sound_id":"pvp2.creator_music_box","$sound_vol":1.0,"$is_music":true}},
-                  {"m_precipice@gote_info.play_sound_panel":{"$sound_name":"item.record_precipice.desc","$sound_id":"pvp2.precipice","$sound_vol":1.0,"$is_music":true}}
+                  {"m_precipice@gote_info.play_sound_panel":{"$sound_name":"item.record_precipice.desc","$sound_id":"pvp2.precipice","$sound_vol":1.0,"$is_music":true}},
+                  {"m_tears@gote_info.play_sound_panel":{"$sound_name":"item.record_tears.desc","$sound_id":"pvp2.tears","$sound_vol":1.0,"$is_music":true}}
                 ]
               }
             }

@@ -404,6 +404,56 @@
       }
     ]
   },
+  "pvp2.below_and_above": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/below_and_above",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.broken_clocks": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/broken_clocks",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.fireflies": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/fireflies",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.lilypad": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/lilypad",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.os_piano": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/os_piano",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
 
   //nether
 
@@ -761,6 +811,16 @@
     "sounds": [
       {
         "name": "sounds/music/game/records/precipice",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
+  "pvp2.tears": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/tears",
         "stream": true,
         "volume": 1.0
       }
