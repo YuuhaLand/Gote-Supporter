@@ -1,0 +1,505 @@
+{
+  "namespace": "gote_info_sections",
+
+  "header": {
+    "type": "input_panel",
+    "size": [ "100%", 0 ],
+    "focus_enabled": true,
+    "hover_enabled": true
+  },
+
+  "version_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 10 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "gotesupporter": {
+                "type": "label",
+                "text": "('Gote-Supporter ' + $version)",
+                "color": "$text_color",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/chevron_white_down",
+          "color": "$text_color",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -5, 0 ],
+          "size": [ 11, 11 ]
+        }
+      }
+    ]
+  },
+
+  "faq_toggle_button_content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "labels": {
+          "type": "stack_panel",
+          "size": [ "100%", 10 ],
+          "offset": [ 2, 0 ],
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "title": {
+                "type": "label",
+                "text": "('§　%' +$question + '.q')",
+                "color": "$text_color",
+                "font_type": "#font_type",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "font_property_panel",
+                    "source_property_name": "#font_type",
+                    "target_property_name": "#font_type"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dropdown_chevron": {
+          "type": "image",
+          "texture": "textures/ui/chevron_white_down",
+          "color": "$text_color",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [ -5, 0 ],
+          "size": [ 11, 11 ]
+        }
+      }
+    ]
+  },
+
+  "version_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "$version|default": "v1.0.0",
+    "$details_controls|default": [],
+    "controls": [
+      {
+        "toggle_button@common_toggles.dark_content_toggle": {
+          "size": [ "100%", 20 ],
+          "$button_content": "gote_info_sections.version_toggle_button_content",
+          "$toggle_name": "$version",
+          "$toggle_view_binding_name": "$version",
+          "$toggle_sound": true
+        }
+      },
+      {
+        "details_panel": {
+          "type": "image",
+          "size": [ "100%", "100%c + 5px" ],
+          "texture": "textures/ui/menubackground",
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "size": [ "100% - 4px", "100%c" ],
+                "layer": 10,
+                "controls": "$details_controls"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$version",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      }
+    ]
+  },
+
+  "faq_text": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "$question|default": "",
+    "controls": [
+      {
+        "toggle_button@common_toggles.dark_content_toggle": {
+          "size": [ "100%", 20 ],
+          "$button_content": "gote_info_sections.faq_toggle_button_content",
+          "$toggle_name": "$question",
+          "$toggle_view_binding_name": "$question",
+          "$toggle_sound": true
+        }
+      },
+      {
+        "details_panel": {
+          "type": "image",
+          "size": [ "100%", "100%c + 5px" ],
+          "texture": "textures/ui/menubackground",
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "size": [ "100% - 4px", "100%c" ],
+                "layer": 10,
+                "controls": [
+                  {
+                    "anser@gote_info_sections.text": { "$text": "($question + '.a')" }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$question",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      }
+    ]
+  },
+
+  "text": {
+    "type": "label",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [ "100%", "default" ],
+    "shadow": true,
+    "text": "$text",
+    "$text|default": ""
+  },
+
+  "link_text@gote_info_sections.text": {
+    "size": [ "default", "default" ],
+    "max_size": [ "100%", 10000 ],
+    "font_type": "smooth",
+    "color": "$2_color_format",
+    "controls": [
+      {
+        "kasen": {
+          "type": "image",
+          "texture": "textures/ui/White",
+          "color": "$2_color_format",
+          "size": [ "100%", 1 ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle"
+        }
+      }
+    ]
+  },
+
+  "welcome_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "header@gote_info_sections.header": {} },
+      { "howtoplay_0@gote_info_sections.text": {"$text": "packinfo.about.text1"}},
+      { "howtoplay_1@gote_info_sections.text": {"$text": "packinfo.about.text2"}},
+      { "howtoplay_2@gote_info_sections.text": {"$text": "packinfo.about.text3"}},
+      { "howtoplay_3@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_4@gote_info_sections.text": {"$text": "packinfo.about.text4"}},
+      { "howtoplay_5@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_6@gote_info_sections.text": {"$text": "packinfo.about.text5"}},
+      { "howtoplay_7@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_8@gtb.features_text_with_bubble": {"$text": "packinfo.about.text6"}},
+      { "howtoplay_9@gote_info_sections.link_text": {"$text": "https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html"}},
+      { "howtoplay_10@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_11@gtb.features_text_with_bubble": {"$text": "packinfo.about.text7"}},
+      { "howtoplay_12@gote_info_sections.link_text": {"$text": "https://minecraft-mcworld.com/74563/"}},
+      { "howtoplay_13@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_14@gtb.features_text_with_bubble": {"$text": "packinfo.about.text8"}},
+      { "howtoplay_15@gote_info_sections.link_text": {"$text": "https://github.com/YuuhaLand/Gote-Supporter/"}},
+      { "howtoplay_16@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_17@gtb.features_text_with_bubble": {"$text": "packinfo.about.text9"}},
+      { "howtoplay_18@gote_info_sections.link_text": {"$text": "https://mcpedl.com/gote-supporter"}},
+      { "howtoplay_19@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_20@gote_info_sections.text": {"$text": "packinfo.about.text10"}},
+      { "howtoplay_21@gote_info_sections.link_text": {"$text": "https://discord.gg/skX9YHp4fC"}},
+      {
+        "preview_warning": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%c" ],
+          "ignored": "(not $pre_release)",
+          "controls": [
+            { "text01@gote_info_sections.text": { "$text": "gtb.previewWarning.honbun1" }},
+            { "text02@gote_info_sections.text": { "$text": "gtb.previewWarning.honbun2" }}
+          ]
+        }
+      },
+      { "footer@gote_info_sections.header": {} }
+    ]
+  },
+  
+  "features_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "header@gote_info_sections.header": {} },
+      { "howtoplay_1@gote_info_sections.text": {"$text": "packinfo.features.text1"}},
+      { "howtoplay_2@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_3@gote_info_sections.text": {"$text": "packinfo.features.text2"}},
+      { "howtoplay_4@gtb.features_text_with_bubble": {"$text": "packinfo.features.text3"}},
+      { "howtoplay_5@gtb.features_text_with_bubble": {"$text": "packinfo.features.text4"}},
+      { "howtoplay_6@gtb.features_text_with_bubble": {"$text": "packinfo.features.text5"}},
+      { "howtoplay_7@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_8@gote_info_sections.text": {"$text": "packinfo.features.text6"}},
+      { "howtoplay_9@gtb.features_text_with_bubble": {"$text": "packinfo.features.text7"}},
+      { "howtoplay_10@gtb.features_text_with_bubble": {"$text": "packinfo.features.text8"}},
+      { "howtoplay_11@gtb.features_text_with_bubble": {"$text": "packinfo.features.text9"}},
+      { "howtoplay_12@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_13@gote_info_sections.text": {"$text": "packinfo.features.text10"}},
+      { "howtoplay_14@gtb.features_text_with_bubble": {"$text": "packinfo.features.text11"}},
+      { "howtoplay_15@gtb.features_text_with_bubble": {"$text": "packinfo.features.text12"}},
+      { "howtoplay_16@gtb.features_text_with_bubble": {"$text": "packinfo.features.text13"}},
+      { "howtoplay_17@gote_info_sections.text": {"$text": "packinfo.features.text14"}},
+      { "howtoplay_18@gote_info_sections.text": {"$text": ""}},
+      { "howtoplay_19@gote_info_sections.text": {"$text": "packinfo.features.text15"}},
+      { "howtoplay_20@gote_info_sections.text": {"$text": "packinfo.features.text16"}},
+      { "howtoplay_21@gote_info_sections.link_text": {"$text": "packinfo.features.text17"}},
+      { "footer@gote_info_sections.header": {} }
+    ]
+  },
+  
+  "update_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "header@gote_info_sections.header": {} },
+      { "text01@gote_info_sections.text": { "$text": "packinfo.update.text1" }},
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      },
+      {
+        "update_description@gote_change_logs.gotesupporter_changelogs": {}
+      },
+      { "footer@gote_info_sections.header": {} }
+    ]
+  },
+  
+  "faq_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "header@gote_info_sections.header": {} },
+      { "text01@gote_info_sections.text": { "$text": "packinfo.faq.text1" }},
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 3 ]
+        }
+      },
+      {
+        "q1@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q1"
+        }
+      },
+      {
+        "q2@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q2"
+        }
+      },
+      {
+        "q3@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q3"
+        }
+      },
+      {
+        "q4@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q4"
+        }
+      },
+      {
+        "q5@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q5"
+        }
+      },
+      {
+        "q6@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q6"
+        }
+      },
+      {
+        "q7@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q7"
+        }
+      },
+      {
+        "q8@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q8"
+        }
+      },
+      {
+        "q9@gote_info_sections.faq_text": {
+          "$question": "packinfo.faq.q9"
+        }
+      },
+      { "footer@gote_info_sections.header": {} }
+    ]
+  },
+
+  "caution_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "header@gote_info_sections.header": {} },
+      { "text01@gote_info_sections.text": { "$text": "packinfo.caution.text1" }},
+      { "text02@gote_info_sections.text": { "$text": "packinfo.caution.text2" }},
+      { "text03@gote_info_sections.text": { "$text": "packinfo.caution.text3" }},
+      { "padding04": { "type": "panel", "size": [ 0, 5 ] }},
+      { "text04@gote_info_sections.text": { "$text": "packinfo.caution.text4" }},
+      { "footer@gote_info_sections.header": {} }
+    ]
+  },
+  
+  "author_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "header@gote_info_sections.header": {} },
+      {
+        "yuuhaland_icon_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 70 ],
+          "offset": [ 0, 0 ],
+          "controls": [
+            {
+              "yuuhaland_icon": {
+                "type": "image",
+                "texture": "textures/ui/yuuhaland",
+                "size": [ 60, 60 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            },
+            {
+              "padding": {
+                "type": "panel",
+                "size": [ 4, 0 ]
+              }
+            },
+            {
+              "texts": {
+                "type": "stack_panel",
+                "size": [ "fill", "100%c" ],
+                "controls": [
+                  {
+                    "by_yuka0745": {
+                      "type": "label",
+                      "text": "§l§dYuuhaLand",
+                      "font_scale_factor": 1.50,
+                      "offset": [ 0, 0 ],
+                      "shadow": true
+                    }
+                  },
+                  {
+                    "padding_01": {
+                      "type": "panel",
+                      "size": [ 0, 10 ]
+                    }
+                  },
+                  {
+                    "twitter_url": {
+                      "type": "stack_panel",
+                      "size": [ "100%", 10 ],
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "twitter": {
+                            "type": "label",
+                            "text": "§l§bTwitter:",
+                            "shadow": true
+                          }
+                        },
+                        {
+                          "link": {
+                            "type": "label",
+                            "text": " §etwitter.com/gotemba912",
+                            "shadow": true,
+                            "font_type": "smooth"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "youtube_url": {
+                      "type": "stack_panel",
+                      "size": [ "100%", 10 ],
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "youtube": {
+                            "type": "label",
+                            "text": "§l§cYoutube:",
+                            "shadow": true
+                          }
+                        },
+                        {
+                          "link": {
+                            "type": "label",
+                            "text": " §eyoutube.com/@YuuhaLand",
+                            "shadow": true,
+                            "font_type": "smooth"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      { "howtoplay_1@gote_info_sections.text": {"$text": "packinfo.about_author.text1"}},
+      { "howtoplay_2@gote_info_sections.text": {"$text": "packinfo.about_author.text2"}},
+      { "howtoplay_3@gote_info_sections.text": {"$text": "packinfo.about_author.text3"}},
+      { "padding": {"type": "panel", "size": [ 0, 5 ]}},
+      { "howtoplay_4@gote_info_sections.text": {"$text": "packinfo.about_author.text4"}},
+      { "howtoplay_5@gote_info_sections.link_text": {"$text": "https://discord.gg/7SnjrqKQeS"}},
+      { "footer@gote_info_sections.header": {} }
+    ]
+  }
+}

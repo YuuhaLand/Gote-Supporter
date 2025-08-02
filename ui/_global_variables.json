@@ -49,7 +49,7 @@ https://github.com/YuuhaLand/Gote-Supporter/wiki/Config(English)
   
   //これらの設定は変更しないようお願いします!!
   //Please do not change these settings!
-  "$gote_ver": "1.6.19",
+  "$gote_ver": "1.7.0",
   "$gote_supporter_enabled": true,
   "$is_goteserver|default": false, 
   "$revival_for_2023|default": false,

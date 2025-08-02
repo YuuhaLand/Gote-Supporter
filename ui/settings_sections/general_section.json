@@ -1,6 +1,116 @@
 {
   "namespace": "general_section",
 
+  "playsound_play": {
+    "type": "image",
+    "texture": "textures/ui/playsound_play",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "playsound_stop": {
+    "type": "image",
+    "texture": "textures/ui/playsound_stop",
+    "layer": 3,
+    "size": [ 16, 16 ]
+  },
+  
+  "play_sound_panel": {
+    "type": "panel",
+    "size": [ "100%", 32 ],
+    "controls": [
+      {
+        "sound_panel": {
+          "type": "image", 
+          "size": [ "100%", 30 ],
+          "texture": "textures/ui/White",
+          "color": [ 0.1, 0.1, 0.1 ],
+          "$sound_name|defalut": "dummy",
+          "$sound_id|defalut": "pvp2.music.daisuke",
+          "$sound_vol|defalut": 1.0,
+          "$is_music|defalut": false,
+          "controls": [
+            {
+              "flame": {
+                "type": "image",
+                "texture": "textures/ui/focus_border_white",
+                "size": [ "100%", "100%" ],
+                "color": [ 0, 0, 0 ]
+              }
+            },
+            {
+              "panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100% - 6px", 10 ],
+                "layer": 1,
+                "controls": [
+                  {
+                    "onpu": {
+                      "type": "image",
+                      "texture": "textures/ui/onpu",
+                      "size": [ 10, 10 ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 2, 0 ]
+                    }
+                  },
+                  {
+                    "sound_name": {
+                      "type": "label",
+                      "size": [ "fill", 10 ],
+                      "text": "$sound_name"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "play_stop": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100%c + 3px", 25 ],
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "controls": [
+                  {
+                    "play_button@common_buttons.dark_content_button": {
+                      "size": [ 25, 25 ],
+                      "$button_content": "general_section.playsound_play",
+                      "sound_name": "$sound_id",
+                      "sound_volume": "$sound_vol",
+                      "$pressed_button_name": "button.dummy"
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "ignored": "(not $is_music)",
+                      "size": [ 1, 0 ]
+                    }
+                  },
+                  {
+                    "stop_button@common_buttons.dark_content_button": {
+                      "size": [ 25, 25 ],
+                      "ignored": "(not $is_music)",
+                      "$button_content": "general_section.playsound_stop",
+                      "sound_name": "$sound_id",
+                      "sound_volume": 0.00000001,
+                      "$pressed_button_name": "button.dummy"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "gamertag_controls/sign_out": {
     "ignored": "(not $is_pregame or $requires_xbl_signin_to_play)"
   },
@@ -920,100 +1030,101 @@
                 "size": [ "100% - 4px", "100%c" ],
                 "layer": 10,
                 "controls": [
-                  { "text01@gote_info.text": { "$text": "packinfo.music.text1" }},
-                  { "text02@gote_info.text": { "$text": "packinfo.music.text2" }},
+                  { "text01@gote_info_sections.text": { "$text": "packinfo.music.text1" }},
+                  { "text02@gote_info_sections.text": { "$text": "packinfo.music.text2" }},
                   { "padding01": { "type": "panel", "size": [ 0, 10 ] }},
-                  { "fh3@gote_info.text": { "$text":"§l§b%accessibility.screenName.start", "font_scale_factor": 1.5 }},
-                  {"m1@gote_info.play_sound_panel":{"$sound_name":"C418 - Mutation","$sound_id":"pvp2.menu1","$sound_vol":1.0,"$is_music":true}},
-                  {"m2@gote_info.play_sound_panel":{"$sound_name":"C418 - Moog City 2","$sound_id":"pvp2.menu2","$sound_vol":1.0,"$is_music":true}},
-                  {"m3@gote_info.play_sound_panel":{"$sound_name":"C418 - Beginning 2","$sound_id":"pvp2.menu3","$sound_vol":1.0,"$is_music":true}},
-                  {"m4@gote_info.play_sound_panel":{"$sound_name":"C418 - Floating Trees","$sound_id":"pvp2.menu4","$sound_vol":1.0,"$is_music":true}},
-                  {"m5@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Infinite Amethyst","$sound_id":"pvp2.infinite_amethyst","$sound_vol":1.0,"$is_music":true}},
-                  {"m6@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Left To Bloom","$sound_id":"pvp2.left_to_bloom","$sound_vol":1.0,"$is_music":true}},
-                  {"m7@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - One More Day","$sound_id":"pvp2.one_more_day","$sound_vol":1.0,"$is_music":true}},
-                  {"m8@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Stand Tall","$sound_id":"pvp2.stand_tall","$sound_vol":1.0,"$is_music":true}},
-                  {"m9@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Wending","$sound_id":"pvp2.wending","$sound_vol":1.0,"$is_music":true}},
-                  {"m58@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Aerie","$sound_id":"pvp2.aerie","$sound_vol":1.0,"$is_music":true}},
-                  {"m59@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Firebugs","$sound_id":"pvp2.firebugs","$sound_vol":1.0,"$is_music":true}},
-                  {"m60@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Labyrinthine","$sound_id":"pvp2.labyrinthine","$sound_vol":1.0,"$is_music":true}},
-                  { "fh4@gote_info.text": { "$text":"§l§b%gameMode.survival", "font_scale_factor": 1.5 }},
-                  {"m10@gote_info.play_sound_panel":{"$sound_name":"C418 - Minecraft","$sound_id":"pvp2.calm1","$sound_vol":1.0,"$is_music":true}},
-                  {"m11@gote_info.play_sound_panel":{"$sound_name":"C418 - Clark","$sound_id":"pvp2.calm2","$sound_vol":1.0,"$is_music":true}},
-                  {"m12@gote_info.play_sound_panel":{"$sound_name":"C418 - Sweden","$sound_id":"pvp2.calm3","$sound_vol":1.0,"$is_music":true}},
-                  {"m14@gote_info.play_sound_panel":{"$sound_name":"C418 - Subwoofer Lullaby","$sound_id":"pvp2.hal1","$sound_vol":1.0,"$is_music":true}},
-                  {"m15@gote_info.play_sound_panel":{"$sound_name":"C418 - Living Mice","$sound_id":"pvp2.hal2","$sound_vol":1.0,"$is_music":true}},
-                  {"m16@gote_info.play_sound_panel":{"$sound_name":"C418 - Haggstrom","$sound_id":"pvp2.hal3","$sound_vol":1.0,"$is_music":true}},
-                  {"m17@gote_info.play_sound_panel":{"$sound_name":"C418 - Danny","$sound_id":"pvp2.hal4","$sound_vol":1.0,"$is_music":true}},
-                  {"m18@gote_info.play_sound_panel":{"$sound_name":"C418 - Key","$sound_id":"pvp2.nuance1","$sound_vol":1.0,"$is_music":true}},
-                  {"m19@gote_info.play_sound_panel":{"$sound_name":"C418 - Oxygène","$sound_id":"pvp2.nuance2","$sound_vol":1.0,"$is_music":true}},
-                  {"m20@gote_info.play_sound_panel":{"$sound_name":"C418 - Dry Hands","$sound_id":"pvp2.piano1","$sound_vol":1.0,"$is_music":true}},
-                  {"m21@gote_info.play_sound_panel":{"$sound_name":"C418 - Wet Hands","$sound_id":"pvp2.piano2","$sound_vol":1.0,"$is_music":true}},
-                  {"m22@gote_info.play_sound_panel":{"$sound_name":"C418 - Mice On Venus","$sound_id":"pvp2.piano3","$sound_vol":1.0,"$is_music":true}},
-                  {"m23@gote_info.play_sound_panel":{"$sound_name":"Kumi Tanioka - Floating Dream","$sound_id":"pvp2.floating_dream","$sound_vol":1.0,"$is_music":true}},
-                  {"m24@gote_info.play_sound_panel":{"$sound_name":"Kumi Tanioka - Comforting Memories","$sound_id":"pvp2.comforting_memories","$sound_vol":1.0,"$is_music":true}},
-                  {"m13@gote_info.play_sound_panel":{"$sound_name":"Kumi Tanioka - An Ordinary Day","$sound_id":"pvp2.an_ordinary_day","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v120_1@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - Echo in the Wind","$sound_id":"pvp2.echo_in_the_wind","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v120_2@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - A Familiar Room","$sound_id":"pvp2.a_familiar_room","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v120_3@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - Bromeliad","$sound_id":"pvp2.bromeliad","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v120_4@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - Crescent Dunes","$sound_id":"pvp2.crescent_dunes","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_1@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - Featherfall","$sound_id":"pvp2.featherfall","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_2@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - Watcher","$sound_id":"pvp2.watcher","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_3@gote_info.play_sound_panel":{"$sound_name":"Aaron Cherof - Puzzlebox","$sound_id":"pvp2.puzzlebox","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_4@gote_info.play_sound_panel":{"$sound_name":"Kumi Tanioka - komorebi","$sound_id":"pvp2.komorebi","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_5@gote_info.play_sound_panel":{"$sound_name":"Kumi Tanioka - pokopoko","$sound_id":"pvp2.pokopoko","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_6@gote_info.play_sound_panel":{"$sound_name":"Kumi Tanioka - yakusoku","$sound_id":"pvp2.yakusoku","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_7@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Deeper","$sound_id":"pvp2.deeper","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_8@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Eld Unknown","$sound_id":"pvp2.eld_unknown","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v121_9@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Endless","$sound_id":"pvp2.endless","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v12190_1@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Below and Above","$sound_id":"pvp2.below_and_above","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v12190_2@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Broken Clocks","$sound_id":"pvp2.broken_clocks","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v12190_3@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Fireflies","$sound_id":"pvp2.fireflies","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v12190_4@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - Lilypad","$sound_id":"pvp2.lilypad","$sound_vol":1.0,"$is_music":true}},
-                  {"m_v12190_5@gote_info.play_sound_panel":{"$sound_name":"Amos Roddy - O's Piano","$sound_id":"pvp2.os_piano","$sound_vol":1.0,"$is_music":true}},
-                  { "fh5@gote_info.text": { "$text":"§l§b%dimension.dimensionName1", "font_scale_factor": 1.5 }},
-                  {"m25@gote_info.play_sound_panel":{"$sound_name":"C418 - Concrete Halls","$sound_id":"pvp2.nether1","$sound_vol":1.0,"$is_music":true}},
-                  {"m26@gote_info.play_sound_panel":{"$sound_name":"C418 - Dead Voxel","$sound_id":"pvp2.nether2","$sound_vol":1.0,"$is_music":true}},
-                  {"m27@gote_info.play_sound_panel":{"$sound_name":"C418 - Warmth","$sound_id":"pvp2.nether3","$sound_vol":1.0,"$is_music":true}},
-                  {"m28@gote_info.play_sound_panel":{"$sound_name":"C418 - Ballad of the Cats","$sound_id":"pvp2.nether4","$sound_vol":1.0,"$is_music":true}},
-                  {"m29@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - So Below","$sound_id":"pvp2.so_below","$sound_vol":1.0,"$is_music":true}},
-                  {"m30@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Chrysopoenia","$sound_id":"pvp2.chrysopoeia","$sound_vol":1.0,"$is_music":true}},
-                  {"m31@gote_info.play_sound_panel":{"$sound_name":"Lena Raine - Rubedo","$sound_id":"pvp2.rubedo","$sound_vol":1.0,"$is_music":true}},
-                  { "fh6@gote_info.text": { "$text":"§l§b%dimension.dimensionName2", "font_scale_factor": 1.5 }},
-                  {"m61@gote_info.play_sound_panel":{"$sound_name":"C418 - The End","$sound_id":"pvp2.end","$sound_vol":1.0,"$is_music":true}},
-                  {"m32@gote_info.play_sound_panel":{"$sound_name":"C418 - End Boss","$sound_id":"pvp2.endboss","$sound_vol":1.0,"$is_music":true}},
-                  {"m33@gote_info.play_sound_panel":{"$sound_name":"C418 - Alpha","$sound_id":"pvp2.credits","$sound_vol":1.0,"$is_music":true}},
-                  { "fh7@gote_info.text": { "$text":"§l§b%tile.water.name", "font_scale_factor": 1.5 }},
-                  {"m34@gote_info.play_sound_panel":{"$sound_name":"C418 - Axolotl","$sound_id":"pvp2.axolotl","$sound_vol":1.0,"$is_music":true}},
-                  {"m35@gote_info.play_sound_panel":{"$sound_name":"C418 - Dragon Fish","$sound_id":"pvp2.dragon_fish","$sound_vol":1.0,"$is_music":true}},
-                  {"m36@gote_info.play_sound_panel":{"$sound_name":"C418 - Shuniji","$sound_id":"pvp2.shuniji","$sound_vol":1.0,"$is_music":true}},
-                  { "fh8@gote_info.text": { "$text":"§l§b%gameMode.creative", "font_scale_factor": 1.5 }},
-                  {"m37@gote_info.play_sound_panel":{"$sound_name":"C418 - Biome Fest","$sound_id":"pvp2.creative1","$sound_vol":1.0,"$is_music":true}},
-                  {"m38@gote_info.play_sound_panel":{"$sound_name":"C418 - Blind Spots","$sound_id":"pvp2.creative2","$sound_vol":1.0,"$is_music":true}},
-                  {"m39@gote_info.play_sound_panel":{"$sound_name":"C418 - Haunt Muskie","$sound_id":"pvp2.creative3","$sound_vol":1.0,"$is_music":true}},
-                  {"m40@gote_info.play_sound_panel":{"$sound_name":"C418 - Aria Math","$sound_id":"pvp2.creative4","$sound_vol":1.0,"$is_music":true}},
-                  {"m41@gote_info.play_sound_panel":{"$sound_name":"C418 - Dreiton","$sound_id":"pvp2.creative5","$sound_vol":1.0,"$is_music":true}},
-                  {"m42@gote_info.play_sound_panel":{"$sound_name":"C418 - Taswell","$sound_id":"pvp2.creative6","$sound_vol":1.0,"$is_music":true}},
-                  { "fh9@gote_info.text": { "$text":"§l§b%item.record.name", "font_scale_factor": 1.5 }},
-                  {"m43@gote_info.play_sound_panel":{"$sound_name":"item.record_13.desc","$sound_id":"pvp2.13","$sound_vol":1.0,"$is_music":true}},
-                  {"m44@gote_info.play_sound_panel":{"$sound_name":"item.record_cat.desc","$sound_id":"pvp2.cat","$sound_vol":1.0,"$is_music":true}},
-                  {"m45@gote_info.play_sound_panel":{"$sound_name":"item.record_blocks.desc","$sound_id":"pvp2.blocks","$sound_vol":1.0,"$is_music":true}},
-                  {"m46@gote_info.play_sound_panel":{"$sound_name":"item.record_chirp.desc","$sound_id":"pvp2.chirp","$sound_vol":1.0,"$is_music":true}},
-                  {"m47@gote_info.play_sound_panel":{"$sound_name":"item.record_far.desc","$sound_id":"pvp2.far","$sound_vol":1.0,"$is_music":true}},
-                  {"m48@gote_info.play_sound_panel":{"$sound_name":"item.record_mall.desc","$sound_id":"pvp2.mall","$sound_vol":1.0,"$is_music":true}},
-                  {"m49@gote_info.play_sound_panel":{"$sound_name":"item.record_mellohi.desc","$sound_id":"pvp2.mellohi","$sound_vol":1.0,"$is_music":true}},
-                  {"m50@gote_info.play_sound_panel":{"$sound_name":"item.record_stal.desc","$sound_id":"pvp2.stal","$sound_vol":1.0,"$is_music":true}},
-                  {"m51@gote_info.play_sound_panel":{"$sound_name":"item.record_strad.desc","$sound_id":"pvp2.strad","$sound_vol":1.0,"$is_music":true}},
-                  {"m52@gote_info.play_sound_panel":{"$sound_name":"item.record_ward.desc","$sound_id":"pvp2.ward","$sound_vol":1.0,"$is_music":true}},
-                  {"m53@gote_info.play_sound_panel":{"$sound_name":"item.record_11.desc","$sound_id":"pvp2.11","$sound_vol":1.0,"$is_music":true}},
-                  {"m54@gote_info.play_sound_panel":{"$sound_name":"item.record_wait.desc","$sound_id":"pvp2.wait","$sound_vol":1.0,"$is_music":true}},
-                  {"m55@gote_info.play_sound_panel":{"$sound_name":"item.record_pigstep.desc","$sound_id":"pvp2.pigstep","$sound_vol":1.0,"$is_music":true}},
-                  {"m56@gote_info.play_sound_panel":{"$sound_name":"item.record_otherside.desc","$sound_id":"pvp2.otherside","$sound_vol":1.0,"$is_music":true}},
-                  {"m57@gote_info.play_sound_panel":{"$sound_name":"item.record_5.desc","$sound_id":"pvp2.5","$sound_vol":1.0,"$is_music":true}},
-                  {"m_relic@gote_info.play_sound_panel":{"$sound_name":"item.record_relic.desc","$sound_id":"pvp2.relic","$sound_vol":1.0,"$is_music":true}},
-                  {"m_creator@gote_info.play_sound_panel":{"$sound_name":"item.record_creator.desc","$sound_id":"pvp2.creator","$sound_vol":1.0,"$is_music":true}},
-                  {"m_creator_musicbox@gote_info.play_sound_panel":{"$sound_name":"item.record_creator_music_box.desc","$sound_id":"pvp2.creator_music_box","$sound_vol":1.0,"$is_music":true}},
-                  {"m_precipice@gote_info.play_sound_panel":{"$sound_name":"item.record_precipice.desc","$sound_id":"pvp2.precipice","$sound_vol":1.0,"$is_music":true}},
-                  {"m_tears@gote_info.play_sound_panel":{"$sound_name":"item.record_tears.desc","$sound_id":"pvp2.tears","$sound_vol":1.0,"$is_music":true}}
+                  { "fh3@gote_info_sections.text": { "$text":"§l§b%accessibility.screenName.start", "font_scale_factor": 1.5 }},
+                  {"m1@general_section.play_sound_panel":{"$sound_name":"C418 - Mutation","$sound_id":"pvp2.menu1","$sound_vol":1.0,"$is_music":true}},
+                  {"m2@general_section.play_sound_panel":{"$sound_name":"C418 - Moog City 2","$sound_id":"pvp2.menu2","$sound_vol":1.0,"$is_music":true}},
+                  {"m3@general_section.play_sound_panel":{"$sound_name":"C418 - Beginning 2","$sound_id":"pvp2.menu3","$sound_vol":1.0,"$is_music":true}},
+                  {"m4@general_section.play_sound_panel":{"$sound_name":"C418 - Floating Trees","$sound_id":"pvp2.menu4","$sound_vol":1.0,"$is_music":true}},
+                  {"m5@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Infinite Amethyst","$sound_id":"pvp2.infinite_amethyst","$sound_vol":1.0,"$is_music":true}},
+                  {"m6@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Left To Bloom","$sound_id":"pvp2.left_to_bloom","$sound_vol":1.0,"$is_music":true}},
+                  {"m7@general_section.play_sound_panel":{"$sound_name":"Lena Raine - One More Day","$sound_id":"pvp2.one_more_day","$sound_vol":1.0,"$is_music":true}},
+                  {"m8@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Stand Tall","$sound_id":"pvp2.stand_tall","$sound_vol":1.0,"$is_music":true}},
+                  {"m9@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Wending","$sound_id":"pvp2.wending","$sound_vol":1.0,"$is_music":true}},
+                  {"m58@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Aerie","$sound_id":"pvp2.aerie","$sound_vol":1.0,"$is_music":true}},
+                  {"m59@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Firebugs","$sound_id":"pvp2.firebugs","$sound_vol":1.0,"$is_music":true}},
+                  {"m60@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Labyrinthine","$sound_id":"pvp2.labyrinthine","$sound_vol":1.0,"$is_music":true}},
+                  { "fh4@gote_info_sections.text": { "$text":"§l§b%gameMode.survival", "font_scale_factor": 1.5 }},
+                  {"m10@general_section.play_sound_panel":{"$sound_name":"C418 - Minecraft","$sound_id":"pvp2.calm1","$sound_vol":1.0,"$is_music":true}},
+                  {"m11@general_section.play_sound_panel":{"$sound_name":"C418 - Clark","$sound_id":"pvp2.calm2","$sound_vol":1.0,"$is_music":true}},
+                  {"m12@general_section.play_sound_panel":{"$sound_name":"C418 - Sweden","$sound_id":"pvp2.calm3","$sound_vol":1.0,"$is_music":true}},
+                  {"m14@general_section.play_sound_panel":{"$sound_name":"C418 - Subwoofer Lullaby","$sound_id":"pvp2.hal1","$sound_vol":1.0,"$is_music":true}},
+                  {"m15@general_section.play_sound_panel":{"$sound_name":"C418 - Living Mice","$sound_id":"pvp2.hal2","$sound_vol":1.0,"$is_music":true}},
+                  {"m16@general_section.play_sound_panel":{"$sound_name":"C418 - Haggstrom","$sound_id":"pvp2.hal3","$sound_vol":1.0,"$is_music":true}},
+                  {"m17@general_section.play_sound_panel":{"$sound_name":"C418 - Danny","$sound_id":"pvp2.hal4","$sound_vol":1.0,"$is_music":true}},
+                  {"m18@general_section.play_sound_panel":{"$sound_name":"C418 - Key","$sound_id":"pvp2.nuance1","$sound_vol":1.0,"$is_music":true}},
+                  {"m19@general_section.play_sound_panel":{"$sound_name":"C418 - Oxygène","$sound_id":"pvp2.nuance2","$sound_vol":1.0,"$is_music":true}},
+                  {"m20@general_section.play_sound_panel":{"$sound_name":"C418 - Dry Hands","$sound_id":"pvp2.piano1","$sound_vol":1.0,"$is_music":true}},
+                  {"m21@general_section.play_sound_panel":{"$sound_name":"C418 - Wet Hands","$sound_id":"pvp2.piano2","$sound_vol":1.0,"$is_music":true}},
+                  {"m22@general_section.play_sound_panel":{"$sound_name":"C418 - Mice On Venus","$sound_id":"pvp2.piano3","$sound_vol":1.0,"$is_music":true}},
+                  {"m23@general_section.play_sound_panel":{"$sound_name":"Kumi Tanioka - Floating Dream","$sound_id":"pvp2.floating_dream","$sound_vol":1.0,"$is_music":true}},
+                  {"m24@general_section.play_sound_panel":{"$sound_name":"Kumi Tanioka - Comforting Memories","$sound_id":"pvp2.comforting_memories","$sound_vol":1.0,"$is_music":true}},
+                  {"m13@general_section.play_sound_panel":{"$sound_name":"Kumi Tanioka - An Ordinary Day","$sound_id":"pvp2.an_ordinary_day","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v120_1@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - Echo in the Wind","$sound_id":"pvp2.echo_in_the_wind","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v120_2@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - A Familiar Room","$sound_id":"pvp2.a_familiar_room","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v120_3@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - Bromeliad","$sound_id":"pvp2.bromeliad","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v120_4@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - Crescent Dunes","$sound_id":"pvp2.crescent_dunes","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_1@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - Featherfall","$sound_id":"pvp2.featherfall","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_2@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - Watcher","$sound_id":"pvp2.watcher","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_3@general_section.play_sound_panel":{"$sound_name":"Aaron Cherof - Puzzlebox","$sound_id":"pvp2.puzzlebox","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_4@general_section.play_sound_panel":{"$sound_name":"Kumi Tanioka - komorebi","$sound_id":"pvp2.komorebi","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_5@general_section.play_sound_panel":{"$sound_name":"Kumi Tanioka - pokopoko","$sound_id":"pvp2.pokopoko","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_6@general_section.play_sound_panel":{"$sound_name":"Kumi Tanioka - yakusoku","$sound_id":"pvp2.yakusoku","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_7@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Deeper","$sound_id":"pvp2.deeper","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_8@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Eld Unknown","$sound_id":"pvp2.eld_unknown","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v121_9@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Endless","$sound_id":"pvp2.endless","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_1@general_section.play_sound_panel":{"$sound_name":"Amos Roddy - Below and Above","$sound_id":"pvp2.below_and_above","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_2@general_section.play_sound_panel":{"$sound_name":"Amos Roddy - Broken Clocks","$sound_id":"pvp2.broken_clocks","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_3@general_section.play_sound_panel":{"$sound_name":"Amos Roddy - Fireflies","$sound_id":"pvp2.fireflies","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_4@general_section.play_sound_panel":{"$sound_name":"Amos Roddy - Lilypad","$sound_id":"pvp2.lilypad","$sound_vol":1.0,"$is_music":true}},
+                  {"m_v12190_5@general_section.play_sound_panel":{"$sound_name":"Amos Roddy - O's Piano","$sound_id":"pvp2.os_piano","$sound_vol":1.0,"$is_music":true}},
+                  { "fh5@gote_info_sections.text": { "$text":"§l§b%dimension.dimensionName1", "font_scale_factor": 1.5 }},
+                  {"m25@general_section.play_sound_panel":{"$sound_name":"C418 - Concrete Halls","$sound_id":"pvp2.nether1","$sound_vol":1.0,"$is_music":true}},
+                  {"m26@general_section.play_sound_panel":{"$sound_name":"C418 - Dead Voxel","$sound_id":"pvp2.nether2","$sound_vol":1.0,"$is_music":true}},
+                  {"m27@general_section.play_sound_panel":{"$sound_name":"C418 - Warmth","$sound_id":"pvp2.nether3","$sound_vol":1.0,"$is_music":true}},
+                  {"m28@general_section.play_sound_panel":{"$sound_name":"C418 - Ballad of the Cats","$sound_id":"pvp2.nether4","$sound_vol":1.0,"$is_music":true}},
+                  {"m29@general_section.play_sound_panel":{"$sound_name":"Lena Raine - So Below","$sound_id":"pvp2.so_below","$sound_vol":1.0,"$is_music":true}},
+                  {"m30@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Chrysopoenia","$sound_id":"pvp2.chrysopoeia","$sound_vol":1.0,"$is_music":true}},
+                  {"m31@general_section.play_sound_panel":{"$sound_name":"Lena Raine - Rubedo","$sound_id":"pvp2.rubedo","$sound_vol":1.0,"$is_music":true}},
+                  { "fh6@gote_info_sections.text": { "$text":"§l§b%dimension.dimensionName2", "font_scale_factor": 1.5 }},
+                  {"m61@general_section.play_sound_panel":{"$sound_name":"C418 - The End","$sound_id":"pvp2.end","$sound_vol":1.0,"$is_music":true}},
+                  {"m32@general_section.play_sound_panel":{"$sound_name":"C418 - End Boss","$sound_id":"pvp2.endboss","$sound_vol":1.0,"$is_music":true}},
+                  {"m33@general_section.play_sound_panel":{"$sound_name":"C418 - Alpha","$sound_id":"pvp2.credits","$sound_vol":1.0,"$is_music":true}},
+                  { "fh7@gote_info_sections.text": { "$text":"§l§b%tile.water.name", "font_scale_factor": 1.5 }},
+                  {"m34@general_section.play_sound_panel":{"$sound_name":"C418 - Axolotl","$sound_id":"pvp2.axolotl","$sound_vol":1.0,"$is_music":true}},
+                  {"m35@general_section.play_sound_panel":{"$sound_name":"C418 - Dragon Fish","$sound_id":"pvp2.dragon_fish","$sound_vol":1.0,"$is_music":true}},
+                  {"m36@general_section.play_sound_panel":{"$sound_name":"C418 - Shuniji","$sound_id":"pvp2.shuniji","$sound_vol":1.0,"$is_music":true}},
+                  { "fh8@gote_info_sections.text": { "$text":"§l§b%gameMode.creative", "font_scale_factor": 1.5 }},
+                  {"m37@general_section.play_sound_panel":{"$sound_name":"C418 - Biome Fest","$sound_id":"pvp2.creative1","$sound_vol":1.0,"$is_music":true}},
+                  {"m38@general_section.play_sound_panel":{"$sound_name":"C418 - Blind Spots","$sound_id":"pvp2.creative2","$sound_vol":1.0,"$is_music":true}},
+                  {"m39@general_section.play_sound_panel":{"$sound_name":"C418 - Haunt Muskie","$sound_id":"pvp2.creative3","$sound_vol":1.0,"$is_music":true}},
+                  {"m40@general_section.play_sound_panel":{"$sound_name":"C418 - Aria Math","$sound_id":"pvp2.creative4","$sound_vol":1.0,"$is_music":true}},
+                  {"m41@general_section.play_sound_panel":{"$sound_name":"C418 - Dreiton","$sound_id":"pvp2.creative5","$sound_vol":1.0,"$is_music":true}},
+                  {"m42@general_section.play_sound_panel":{"$sound_name":"C418 - Taswell","$sound_id":"pvp2.creative6","$sound_vol":1.0,"$is_music":true}},
+                  { "fh9@gote_info_sections.text": { "$text":"§l§b%item.record.name", "font_scale_factor": 1.5 }},
+                  {"m43@general_section.play_sound_panel":{"$sound_name":"item.record_13.desc","$sound_id":"pvp2.13","$sound_vol":1.0,"$is_music":true}},
+                  {"m44@general_section.play_sound_panel":{"$sound_name":"item.record_cat.desc","$sound_id":"pvp2.cat","$sound_vol":1.0,"$is_music":true}},
+                  {"m45@general_section.play_sound_panel":{"$sound_name":"item.record_blocks.desc","$sound_id":"pvp2.blocks","$sound_vol":1.0,"$is_music":true}},
+                  {"m46@general_section.play_sound_panel":{"$sound_name":"item.record_chirp.desc","$sound_id":"pvp2.chirp","$sound_vol":1.0,"$is_music":true}},
+                  {"m47@general_section.play_sound_panel":{"$sound_name":"item.record_far.desc","$sound_id":"pvp2.far","$sound_vol":1.0,"$is_music":true}},
+                  {"m48@general_section.play_sound_panel":{"$sound_name":"item.record_mall.desc","$sound_id":"pvp2.mall","$sound_vol":1.0,"$is_music":true}},
+                  {"m49@general_section.play_sound_panel":{"$sound_name":"item.record_mellohi.desc","$sound_id":"pvp2.mellohi","$sound_vol":1.0,"$is_music":true}},
+                  {"m50@general_section.play_sound_panel":{"$sound_name":"item.record_stal.desc","$sound_id":"pvp2.stal","$sound_vol":1.0,"$is_music":true}},
+                  {"m51@general_section.play_sound_panel":{"$sound_name":"item.record_strad.desc","$sound_id":"pvp2.strad","$sound_vol":1.0,"$is_music":true}},
+                  {"m52@general_section.play_sound_panel":{"$sound_name":"item.record_ward.desc","$sound_id":"pvp2.ward","$sound_vol":1.0,"$is_music":true}},
+                  {"m53@general_section.play_sound_panel":{"$sound_name":"item.record_11.desc","$sound_id":"pvp2.11","$sound_vol":1.0,"$is_music":true}},
+                  {"m54@general_section.play_sound_panel":{"$sound_name":"item.record_wait.desc","$sound_id":"pvp2.wait","$sound_vol":1.0,"$is_music":true}},
+                  {"m55@general_section.play_sound_panel":{"$sound_name":"item.record_pigstep.desc","$sound_id":"pvp2.pigstep","$sound_vol":1.0,"$is_music":true}},
+                  {"m56@general_section.play_sound_panel":{"$sound_name":"item.record_otherside.desc","$sound_id":"pvp2.otherside","$sound_vol":1.0,"$is_music":true}},
+                  {"m57@general_section.play_sound_panel":{"$sound_name":"item.record_5.desc","$sound_id":"pvp2.5","$sound_vol":1.0,"$is_music":true}},
+                  {"m_relic@general_section.play_sound_panel":{"$sound_name":"item.record_relic.desc","$sound_id":"pvp2.relic","$sound_vol":1.0,"$is_music":true}},
+                  {"m_creator@general_section.play_sound_panel":{"$sound_name":"item.record_creator.desc","$sound_id":"pvp2.creator","$sound_vol":1.0,"$is_music":true}},
+                  {"m_creator_musicbox@general_section.play_sound_panel":{"$sound_name":"item.record_creator_music_box.desc","$sound_id":"pvp2.creator_music_box","$sound_vol":1.0,"$is_music":true}},
+                  {"m_precipice@general_section.play_sound_panel":{"$sound_name":"item.record_precipice.desc","$sound_id":"pvp2.precipice","$sound_vol":1.0,"$is_music":true}},
+                  {"m_tears@general_section.play_sound_panel":{"$sound_name":"item.record_tears.desc","$sound_id":"pvp2.tears","$sound_vol":1.0,"$is_music":true}},
+                  {"m_lava_chicken@general_section.play_sound_panel":{"$sound_name":"item.record_lava_chicken.desc","$sound_id":"pvp2.lava_chicken","$sound_vol":1.0,"$is_music":true}}
                 ]
               }
             }

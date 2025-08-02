@@ -26,14 +26,23 @@
           "controls": [
             {
               "trade_toggle@trade2.trade_toggle": {
+                "ignored": "(not $show_locked_trade_items)",
                 "anchor_from": "top_middle",
                 "anchor_to": "top_middle",
-                "$button_content": "common.enpty_panel"
+                "$button_content": "common.empty_panel"
               }
             },
             {
               "toggle_content_holder@trade2.toggle_content_holder": {
+                "ignored": "(not $show_locked_trade_items)",
                 "layer": 20
+              }
+            },
+            {
+              "trade_toggle_banira@trade2.trade_toggle": {
+                "ignored": "$show_locked_trade_items",
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle"
               }
             }
           ]

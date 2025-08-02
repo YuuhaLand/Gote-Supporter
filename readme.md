@@ -1,5 +1,5 @@
 # Gote-Supporter ![ダウンロード](https://img.shields.io/github/downloads/YuuhaLand/Gote-Supporter/total?style=plastic)  
-![image](https://github.com/YuuhaLand/Gote-Supporter/assets/78265558/a42f0659-a7dd-4586-94b4-afb000eb7e18)
+![image](https://raw.githubusercontent.com/YuuhaLand/files/refs/heads/main/gote-supporter/gote-supportertitle.png)
 
 ロゴは[Lecorice464](https://x.com/464Lecorice)さんが作ってくれました！
 
@@ -77,11 +77,10 @@ https://yuuhaland.github.io/minecraft_addons/gote-supporter-config/
 
 ## バグ報告
 バグ報告はこちらのDiscordサーバーにてお願いします！  
-※こちらのサーバーにはバグ報告以外の機能はありません！  
 https://discord.gg/skX9YHp4fC  
 ![ディスコード](https://discord.com/api/guilds/1172518832221474818/widget.png)
 
-## インストール
+## 導入方法
 1. 「__**Gote-Supporterをダウンロード!**__」をクリック。
 2. 「**Assets**」の中の「__**Gote-Supporter_vX.X.X**__」をクリック。
 3. ダウンロードしたmcpackをダブルクリックかMinecraftで開く。

@@ -188,7 +188,7 @@ packinfo.features.text1=このパックを使うと、マイクラにちょっ�
 packinfo.features.text2=例えば、HUDでは......。
 packinfo.features.text3=画面左下にコンパスと時計が表示されます。 (非表示にもできます)
 packinfo.features.text4=Tabキーを押すとJava版のようなプレイヤーリストが表示されます。 (キーボードのみ)
-packinfo.features.text5=タッチでF1,F8が押せます。 (現在2指で押さないと反応しない模様)
+packinfo.features.text5=タッチでF1,F8が押せます。
 packinfo.features.text6=インベントリ画面では......。
 packinfo.features.text7=画面下部にHPや空腹度などを表示します。
 packinfo.features.text8=チェスト画面などに自分の人形表示が見れます。
@@ -207,7 +207,7 @@ packinfo.caution.title=ご注意
 packinfo.caution.text1=このパックは、日本製のパックです。
 packinfo.caution.text2=英語への翻訳にはDeepLやGoogle翻訳を使用しています。
 packinfo.caution.text3=このパックを使用したことにより起こった問題について、YuuhaLandは一切の責任を負いかねます。
-packinfo.caution.text4=このアドオンに対するサポート・貢献は一切受けません。
+packinfo.caution.text4=このアドオンに対する貢献/協力は一切受けません。
 
 
 ## サウンド鑑賞
@@ -230,7 +230,7 @@ packinfo.faq.title=よくある質問
 packinfo.faq.text1=ここではGote-Supporterに関するよくある質問が見れます!
 
 packinfo.faq.q1.q=Q. このパックはワールドのリソースパックに適用して良い?
-packinfo.faq.q1.a=A. もちろんです! このパックは自由にワールド或いはサーバーのリソースパックに適用できます!
+packinfo.faq.q1.a=A. もちろんです! このパックは自由にワールドやサーバーのリソースパックに適用できます!
 packinfo.faq.q2.q=Q. なんか他のアドオンと相性悪いからちょっといじってもいい?
 packinfo.faq.q2.a=A. もちろんです! このパックは自由に改変してどうぞ!
 packinfo.faq.q3.q=Q. このパックのあの機能を私のパックに組み込んでそれを配布して良い?
@@ -238,15 +238,15 @@ packinfo.faq.q3.a=A. もちろんです! 私のコードがあなたのパック
 packinfo.faq.q4.q=Q. このパックをYoutubeとかで紹介したい!
 packinfo.faq.q4.a=A. 大歓迎です! お友達などにじゃんじゃん紹介してください!
 packinfo.faq.q5.q=Q. とある鯖に入ったらごてサポが勝手に無効になったんだけど...
-packinfo.faq.q5.a=A. 鯖によって、グローバルリソースを禁止にしている鯖があります。そのような鯖ではごてサポを使うことはできません。
+packinfo.faq.q5.a=A. 鯖によって、グローバルリソースを禁止にしている鯖があります。そのような鯖では回避方法を使わない限りごてサポを使うことはできません。
 packinfo.faq.q6.q=Q. バグを見つけた! どこに報告すれば良い?
 packinfo.faq.q6.a=A. バグを見つけたらDiscordサーバーにてご報告お願いします!
 packinfo.faq.q7.q=Q. このパックの制作に協力したい!
-packinfo.faq.q7.a=A. 申し訳ないです。 私は制作協力を受けません。 私は一人で気ままに作っていってるので（）
+packinfo.faq.q7.a=A. 申し訳ないです。 私は制作協力を受けません。 私は一人で気ままに作ってるので()
 packinfo.faq.q8.q=Q. なぜぽまえはこのパックをオープンソース化しているの? お金儲けはしないん?
 packinfo.faq.q8.a=A. 私はこのパックなどをオープンソース化して誰でも私のパックのコードを活用できるようにしています。 どこかの知らない場所で私のコードが使われてても嫌な思いはしないです。 むしろ嬉しい() あとお金儲けはしたくないです。 私はLinkvertiseとかad.flyが大嫌いなので() 余談だけど、マイクラのアドオンはマーケットプレイスのやつ以外全部オープンソースだと思う。 なぜなら、誰でもコードを覗くことができてしまうから。 難読化することはできるけど、復号も簡単にできてしまうし...。 あくまで私の意見なのでお気になさらず。
 packinfo.faq.q9.q=Q. YuuhaLandにアドオン制作を依頼したいです。
-packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてないです。 作り方を教えるのは一応できるけどわたしは人に教えるのが§l§cかなりヘタクソ§rなのでご理解いただけないかもしれないです。
+packinfo.faq.q9.a=A. アドオン制作依頼は受けてないです。
 
 
 
@@ -256,6 +256,12 @@ packinfo.faq.q9.a=A. 2024年6月現在、アドオン制作依頼は受けてな
 
 packinfo.update.title=アップデート情報
 packinfo.update.text1=このページでは、 Gote-Supporter の更新情報を見ることができます。
+
+packinfo.v170.u1=アイコンを更新しました。
+packinfo.v170.u2=パック情報画面を更新しました。
+packinfo.v170.u3=サウンド鑑賞場に「Lava Chicken」を追加しました。
+packinfo.v170.u4=Configの「村人が売る予定のアイテムを表示する」がfalseの時、未開放のアイテム情報が見えなくなりました。
+packinfo.v170.u4=取引画面でコンテンツログが表示されるバグを直しました。
 
 packinfo.v1619.u1=クイック設定にグラフィックモードを素早く切り替えることができるトグルを追加しました。
 packinfo.v1619.u2=Vibrant Visualsが有効の時にクイック設定に描画距離の設定が無いバグを直しました。

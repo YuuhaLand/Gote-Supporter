@@ -121,7 +121,7 @@ packinfo.features.text1=This pack allows you to add a little extra functionality
 packinfo.features.text2=For example, HUD
 packinfo.features.text3=Compass and clock are displayed in the lower left corner of the screen. (They can also be hidden.)
 packinfo.features.text4=Pressing the Tab key displays the player list like the Java version. (Keyboard only)
-packinfo.features.text5=F1 and F8 can be pressed by touch. (Currently, you have to press with two fingers to get a response.)
+packinfo.features.text5=F1 and F8 can be pressed by touch.
 packinfo.features.text6=For example, inventory screen
 packinfo.features.text7=HP and hunger level are displayed at the bottom of the screen.
 packinfo.features.text8=You can see your doll display on the chest screen and other screens.
@@ -186,6 +186,12 @@ packinfo.faq.q9.a=As of June 2024, I am not accepting any requests to create add
 
 packinfo.update.title=Changelog
 packinfo.update.text1=On this page, you can see the changelog of Gote-Supporter.
+
+packinfo.v170.u1=Updated pack icon.
+packinfo.v170.u2=The pack information screen has been updated.
+packinfo.v170.u3=Added "Lava Chicken" to Music Listen.
+packinfo.v170.u4=When "Show items that villagers plan to sell" in Config is set to false, information about unlocked items is no longer visible.
+packinfo.v170.u4=Fixed a bug where content logs were displayed on the trading screen.
 
 packinfo.v1619.u1=A toggle has been added to Quick Settings to allow quick switching between graphic modes.
 packinfo.v1619.u2=Fixed a bug where the Render Distance setting did not appear in the Quick Settings when Vibrant Visuals was enabled.

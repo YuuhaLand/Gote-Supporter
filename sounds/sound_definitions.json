@@ -826,6 +826,16 @@
       }
     ]
   },
+  "pvp2.lava_chicken": {
+    "category": "ui",
+    "sounds": [
+      {
+        "name": "sounds/music/game/records/lava_chicken",
+        "stream": true,
+        "volume": 1.0
+      }
+    ]
+  },
 
   //water
   
