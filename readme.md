@@ -16,7 +16,7 @@ https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html
 
 ## 特徴
 ### HUDの特徴
-![image](https://raw.githubusercontent.com/YuuhaLand/asetts/refs/heads/main/gote-supporter/IMG_3575.PNG)
+![image](https://raw.githubusercontent.com/YuuhaLand/files/refs/heads/main/gote-supporter/IMG_3575.PNG)
 - タッチ操作でF1とF8が押せます。
 - 常に時計とコンパスを表示します。
 - 色分けされた座標表示。
@@ -25,13 +25,13 @@ https://gote-server-yuka.blogspot.com/2021/09/gote-supporter.html
 - キーボードのTabキーを押すと、Java Editionのようなプレイヤーリストが表示されます。Tabキーを押しながらマウスホイールを回すことで、スクロールができます。
 
 ### チャット画面の特徴
-![image](https://raw.githubusercontent.com/YuuhaLand/asetts/refs/heads/main/gote-supporter/IMG_3326.PNG)
+![image](https://raw.githubusercontent.com/YuuhaLand/files/refs/heads/main/gote-supporter/IMG_3326.PNG)
 - Tabキーなどをモバイルでも押せます。
 - テキストボックスの右の矢印ボタンを押すと、テキストボックスを大きくすることができます。
 - コマンドを入力した際の候補をクリックまたはタップで補完できます。
 
 ### 設定画面の特徴
-![image](https://raw.githubusercontent.com/YuuhaLand/asetts/refs/heads/main/gote-supporter/IMG_3325.PNG)
+![image](https://raw.githubusercontent.com/YuuhaLand/files/refs/heads/main/gote-supporter/IMG_3325.PNG)
 - 「クイック設定」で素早く設定変更できます。
 - 「VSync の使用」をビデオ設定で変更できます。
 - タッチ操作をNintendo Switchでも使えるようにします。
